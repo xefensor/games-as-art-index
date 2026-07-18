@@ -4,9 +4,26 @@ The Index is curated rather than comprehensive. A resource should offer durable 
 
 ## Suggest without editing code
 
-Open a **Suggest a resource** issue and provide the original source, creator, format, and a concrete explanation of its value. Report broken links or inaccurate metadata with the **Catalogue problem** form.
+Use the website's **Contribute** page or the repository's issue forms:
 
-## Submit a catalogue change
+- Open **Suggest a resource** for a new talk, book, article, archive, tool, or other source. Include the original URL, creator, format, and a concrete explanation of its value.
+- Open **Catalogue problem** for a broken or redirected link, incorrect metadata, thumbnail or embed failure, duplicate, or other problem with a published entry.
+
+An issue is a proposal, not a pending database record. A maintainer verifies it and makes or reviews the catalogue change.
+
+## Correct an entry in the GitHub website
+
+For a small, exact correction, you do not need to clone the repository:
+
+1. Open the resource in the Index and select **View source record**.
+2. In GitHub, use the pencil button to edit the JSON file.
+3. Describe what you corrected and cite the original source or other evidence.
+4. Select **Propose changes**. GitHub creates a branch or fork and starts a pull request.
+5. Complete the pull-request checklist and wait for the automated checks and editorial review.
+
+New entries usually begin with a suggestion issue because they also need catalogue ordering and a verified thumbnail. Experienced contributors may submit the complete record, catalogue update, and thumbnail in one pull request.
+
+## Submit a catalogue change from a local clone
 
 1. Create a branch from `main`.
 2. Add or edit one file in `content/resources/` or `content/collections/`.

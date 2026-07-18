@@ -192,6 +192,7 @@ assert.equal(browseReport.getAttribute("target"), "_blank", "GitHub reports do n
 const redirectedDetail = createLibrary(`#/resource/${secondId}`, {}, trustCatalogue);
 assert.match(redirectedDetail.document.querySelector(".resource-trust").textContent, /Redirected/, "resource pages explain redirected links");
 assert.ok(redirectedDetail.document.querySelector(".resource-actions .report-control"), "resource pages also expose reporting");
+assert.match(redirectedDetail.document.querySelector(".resource-actions .source-record-control").getAttribute("href"), new RegExp(`content/resources/${secondId}\\.json$`), "resource pages link directly to their GitHub source record");
 
 const youtubeResources = catalogue.resources.filter(item => /(?:youtube\.com|youtu\.be)/i.test(item.url));
 assert.equal(youtubeResources.length, 10, "the current catalogue identifies every supported YouTube resource");
@@ -239,9 +240,12 @@ const unsupportedDetail = createLibrary("#/resource/door-problem");
 assert.equal(unsupportedDetail.document.querySelector(".resource-embed"), null, "resources without a supported provider do not show an embed");
 
 const contribution = createLibrary("#/suggest");
-assert.match(contribution.document.querySelector(".contribution-heading h1").textContent, /improve the Index/i, "the contribution page explains its purpose directly");
+assert.match(contribution.document.querySelector(".contribution-heading h1").textContent, /smallest useful contribution/i, "the contribution page explains its purpose directly");
+assert.equal(contribution.document.querySelectorAll(".contribution-options article").length, 3, "the page separates suggestions, reports, and direct edits");
 assert.match(contribution.document.querySelector('.contribution-options a[href*="resource-suggestion.yml"]').getAttribute("href"), /^https:\/\/github\.com\//, "resource suggestions use the public GitHub issue form");
 assert.match(contribution.document.querySelector('.contribution-options a[href*="broken-link.yml"]').getAttribute("href"), /^https:\/\/github\.com\//, "catalogue problems use the public GitHub issue form");
+assert.match(contribution.document.querySelector('.contribution-options a[href$="CONTRIBUTING.md"]').getAttribute("href"), /^https:\/\/github\.com\//, "exact edits point to the pull-request guide");
+assert.equal(contribution.document.querySelectorAll(".contribution-decision article").length, 4, "the page explains review, checks, and deployment");
 assert.equal(contribution.document.querySelector("#suggestionForm"), null, "the site no longer implies that browser-local suggestions reach maintainers");
 
 const curator = createLibrary("#/curator", {}, trustCatalogue);
