@@ -10,6 +10,7 @@
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
     "catalogue:build": "node scripts/build-catalogue.mjs",
     "catalogue:check": "node scripts/build-catalogue.mjs --check",
+    "pages:build": "npm run catalogue:build && node scripts/build-pages.mjs",
     "validate:catalogue": "npm run catalogue:check && node scripts/validate-catalogue.mjs",
     "validate:thumbnails": "node scripts/validate-thumbnails.mjs",
     "thumbnails:sync": "node scripts/sync-thumbnails.mjs",

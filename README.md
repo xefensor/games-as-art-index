@@ -2,12 +2,16 @@
 
 A curated, account-free index of game development, history, and criticism, built from useful talks, books, articles, papers, guides, documentation, courses, and archives.
 
+**Website:** [xefensor.github.io/games-as-art-index](https://xefensor.github.io/games-as-art-index/)
+
 ## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
+
+The public website is deployed to GitHub Pages from `main`. The Pages workflow validates the catalogue and interface, builds a repository-path-safe static artifact, and publishes it only after those checks pass.
 
 ## Current catalogue
 
