@@ -10,14 +10,22 @@ const linkSnapshot = JSON.parse(await readFile(new URL("../public/link-status.js
 const thumbnailManifest = JSON.parse(await readFile(new URL("../public/thumbnail-manifest.json", import.meta.url), "utf8"));
 catalogue.thumbnails = thumbnailManifest;
 
-function createLibrary(hash = "#/browse", seed = {}, libraryData = catalogue) {
+function createLibrary(route = "#/browse", seed = {}, libraryData = catalogue) {
   const { window } = parseHTML(html);
   const values = new Map(Object.entries(seed));
-  const location = { origin: "https://example.test", pathname: "/", search: "", hash };
+  const initial = new URL(route.startsWith("#") ? `/${route}` : route, "https://example.test");
+  const location = { origin: initial.origin, pathname: initial.pathname, search: initial.search, hash: initial.hash };
+  Object.defineProperty(location, "href", { get() { return `${this.origin}${this.pathname}${this.search}${this.hash}`; } });
+  const applyLocation = href => {
+    const target = new URL(href, location.href);
+    location.pathname = target.pathname;
+    location.search = target.search;
+    location.hash = target.hash;
+  };
   const history = {
     state: null,
-    pushState(state, _title, href) { this.state = state; location.hash = new URL(href, location.origin).hash; },
-    replaceState(state, _title, href) { this.state = state; location.hash = new URL(href, location.origin).hash; }
+    pushState(state, _title, href) { this.state = state; applyLocation(href); },
+    replaceState(state, _title, href) { this.state = state; applyLocation(href); }
   };
   Object.assign(window, {
     __GAA_INITIALIZED__: false,
@@ -47,6 +55,8 @@ function createLibrary(hash = "#/browse", seed = {}, libraryData = catalogue) {
 const initial = createLibrary();
 assert.match(initial.document.querySelector(".brand").textContent, /Index/, "the public brand uses the Games as Art Index name");
 assert.match(initial.document.title, /Games as Art Index/, "page titles use the Index identity");
+assert.equal(initial.location.pathname, "/browse/", "legacy hash routes are replaced with clean paths on startup");
+assert.equal(initial.location.hash, "", "clean navigation removes the legacy route hash");
 assert.equal(initial.document.querySelectorAll(".resource-card").length, 24, "detailed view starts with 24 cards");
 assert.equal(initial.document.querySelectorAll(".resource-card .resource-cover.has-image img").length, 24, "every detailed resource card starts with a thumbnail");
 assert.equal(Object.keys(thumbnailManifest.resources).length, catalogue.resources.length, "the thumbnail manifest covers the complete catalogue");
@@ -62,7 +72,8 @@ assert.equal(initial.document.querySelectorAll(".resource-list-item").length, 24
 assert.equal(initial.document.querySelectorAll(".resource-card").length, 0, "compact view replaces cards");
 assert.equal(initial.document.querySelectorAll(".resource-list-item .list-state").length, 24, "every compact row reserves the status column");
 assert.ok(initial.document.querySelector(".resource-list-item .list-state.is-empty"), "unmarked rows keep an invisible alignment placeholder");
-assert.equal(initial.location.hash, "#/browse?view=list", "compact view is reflected in the URL");
+assert.equal(initial.location.pathname, "/browse/", "compact view remains on the clean browse path");
+assert.equal(initial.location.search, "?view=list", "compact view is reflected in the query string");
 assert.equal(initial.values.get("gaa-browse-view"), '"list"', "compact preference is saved locally");
 assert.ok(initial.document.querySelector(".resource-list-item .direct-control[href^=\"http\"]"), "compact rows include direct links");
 
@@ -87,7 +98,16 @@ const urlOverride = createLibrary("#/browse?view=cards", { "gaa-browse-view": '"
 assert.equal(urlOverride.document.querySelectorAll(".resource-card").length, 24, "URL view overrides the local preference");
 
 const firstId = catalogue.resources[0].id;
+const cleanBrowse = createLibrary("/browse/");
+const firstCleanLink = cleanBrowse.document.querySelector(`[data-resource-id="${firstId}"] .card-main`);
+assert.equal(firstCleanLink.getAttribute("href"), `/resource/${firstId}/`, "rendered resource cards expose crawlable clean links");
+assert.equal(firstCleanLink.dataset.indexRoute, `/resource/${firstId}`, "clean links retain their client-side route target");
+const directResource = createLibrary(`/resource/${firstId}/`);
+assert.match(directResource.document.querySelector(".resource-intro h1").textContent, new RegExp(catalogue.resources[0].title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "a resource renders when loaded directly from its clean path");
+directResource.document.querySelector('.breadcrumb a[data-index-route="/browse"]').click();
+assert.equal(directResource.location.pathname, "/browse/", "client navigation changes the clean pathname without a reload");
 const visited = createLibrary(`#/resource/${firstId}`);
+assert.equal(visited.location.pathname, `/resource/${firstId}/`, "legacy resource hashes upgrade to canonical resource paths");
 assert.equal(JSON.parse(visited.values.get("gaa-library-history"))[0], firstId, "opening a resource records it as visited");
 visited.location.hash = "#/browse?view=list";
 visited.window.dispatchEvent(new visited.window.Event("hashchange"));
@@ -133,7 +153,7 @@ const collectionStatus = guided.document.querySelector(`[data-resource-id="${fir
 collectionStatus.querySelector('option[value="finished"]').selected = true;
 collectionStatus.dispatchEvent(new guided.window.Event("change", { bubbles: true }));
 assert.match(guided.document.querySelector(".collection-stat-grid strong").textContent, new RegExp(`1/${firstCollection.resources.length}`), "finishing a resource updates collection progress");
-assert.ok(guided.document.querySelector(".collection-actions a[href^=\"#/resource/\"]"), "collection pages point to the next unfinished resource");
+assert.ok(guided.document.querySelector(".collection-actions a[href^=\"/resource/\"]"), "collection pages point to the next unfinished resource with a clean URL");
 
 const collectionIndex = createLibrary("#/collections", { "gaa-library-queue": guided.values.get("gaa-library-queue") });
 assert.match(collectionIndex.document.querySelector(".collection-card .collection-progress small").textContent, /1 of .* finished/i, "collection cards expose local completion progress");
@@ -261,7 +281,8 @@ assert.equal(curator.document.querySelectorAll("[data-curator-tab]").length, 3, 
 assert.equal(curator.document.querySelector('#curator-tab-health').getAttribute("aria-selected"), "true", "link health is the initial curator tab");
 assert.equal(curator.document.querySelector('#curator-panel-catalogue').hasAttribute("hidden"), true, "inactive curator panels do not lengthen the page");
 curator.document.querySelector('#curator-tab-catalogue').click();
-assert.equal(curator.location.hash, "#/curator?tab=catalogue", "tab selection is reflected in the curator URL");
+assert.equal(curator.location.pathname, "/curator/", "the curator keeps a clean path when changing tabs");
+assert.equal(curator.location.search, "?tab=catalogue", "tab selection is reflected in the curator query string");
 assert.equal(curator.document.querySelector('#curator-tab-catalogue').getAttribute("aria-selected"), "true", "the selected curator tab is exposed accessibly");
 assert.equal(curator.document.querySelector('#curator-panel-catalogue').hasAttribute("hidden"), false, "the selected curator panel is visible");
 assert.equal(curator.document.querySelector('#curator-panel-health').hasAttribute("hidden"), true, "the previous curator panel is hidden");

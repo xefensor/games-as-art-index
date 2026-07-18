@@ -39,6 +39,25 @@ function initializeGamesAsArtLibrary() {
   };
   const githubProblemUrl = item => `${githubUrls.problems}&title=${encodeURIComponent(`Catalogue problem: ${item.title}`)}`;
   const githubResourceFileUrl = item => `${githubRepository}/blob/main/content/resources/${encodeURIComponent(item.id)}.json`;
+  const locationHref = location.href || `${location.origin}${location.pathname}${location.search || ""}${location.hash || ""}`;
+  const siteRootUrl = new URL(document.querySelector('meta[name="gaa-site-root"]')?.content || "/", locationHref);
+  const siteRootPath = siteRootUrl.pathname.endsWith("/") ? siteRootUrl.pathname : `${siteRootUrl.pathname}/`;
+  const routeParts = route => {
+    const [pathname, query = ""] = String(route || "/").split("?");
+    const normalized = pathname === "/" ? "" : `${pathname.replace(/^\/+|\/+$/g, "")}/`;
+    return { pathname: normalized, query };
+  };
+  const routeHref = route => {
+    const { pathname, query } = routeParts(route);
+    const target = new URL(pathname, siteRootUrl);
+    target.search = query;
+    return `${target.pathname}${target.search}`;
+  };
+  const assetHref = value => {
+    if (!value || !value.startsWith("/")) return value || "";
+    const target = new URL(value.slice(1), siteRootUrl);
+    return `${target.pathname}${target.search}`;
+  };
   const storage = {
     get(key, fallback) {
       try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
@@ -47,13 +66,18 @@ function initializeGamesAsArtLibrary() {
       try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; }
     }
   };
-  const routeFromLocation = state => location.hash.startsWith("#/") ? location.hash.slice(1) : state?.gaaRoute || "/";
+  const routeFromLocation = state => {
+    if (location.hash.startsWith("#/")) return location.hash.slice(1);
+    if (!location.pathname.startsWith(siteRootPath)) return state?.gaaRoute || "/";
+    const relative = location.pathname.slice(siteRootPath.length).replace(/(?:^|\/)index\.html$/, "").replace(/\/+$/, "");
+    return `${relative ? `/${relative}` : "/"}${location.search || ""}`;
+  };
   let routeSpec = routeFromLocation(history.state);
   const frameworkNavigate = window.__VINEXT_RSC_NAVIGATE__;
   if (typeof frameworkNavigate === "function" && !frameworkNavigate.__gaaLibraryWrapped) {
     const wrappedNavigate = function (href, redirectCount, kind, ...rest) {
       const target = new URL(href, window.location.origin);
-      if (kind === "traverse" && target.hash.startsWith("#/")) return Promise.resolve();
+      if (kind === "traverse" && target.origin === window.location.origin && target.pathname.startsWith(siteRootPath)) return Promise.resolve();
       return frameworkNavigate.call(this, href, redirectCount, kind, ...rest);
     };
     Object.defineProperty(wrappedNavigate, "__gaaLibraryWrapped", { value: true });
@@ -263,7 +287,7 @@ function initializeGamesAsArtLibrary() {
   const relevanceTypes = taxonomy.relevance || unique(resources.flatMap(item => item.relevance || []));
 
   const thumbnailEntry = item => data.thumbnails?.resources?.[item.id] || (resourceOrder.has(item.id) ? { path: `/thumbnails/${item.id}.webp`, method: "local" } : null);
-  const thumbnailUrl = item => thumbnailEntry(item)?.path || item.image || "";
+  const thumbnailUrl = item => assetHref(thumbnailEntry(item)?.path || item.image || "");
   const googleBooksIsbn = item => item.type === "Book" ? resourceUrl(item).match(/(?:978|979)\d{10}/)?.[0] || "" : "";
   const embedPanel = item => {
     const videoId = youtubeVideoId(item);
@@ -542,7 +566,7 @@ function initializeGamesAsArtLibrary() {
     const tabButton = (id, label, count) => `<button type="button" id="curator-tab-${id}" class="${activeTab === id ? "active" : ""}" role="tab" data-curator-tab="${id}" aria-controls="curator-panel-${id}" aria-selected="${activeTab === id}"><span>${label}</span><small>${count}</small></button>`;
     return `<section class="curator-page shell"><p class="breadcrumb"><a href="#/suggest">Contribute</a> / Editorial workspace</p><header class="curator-heading"><div><span class="eyebrow">GitHub-backed editorial workflow</span><h1>Maintain the public catalogue.</h1><p>Use the deployed link-health snapshot to find problems, prepare structured record files in the browser, and send every lasting change through a reviewed GitHub pull request.</p></div><div class="page-count"><strong>${issueCount}</strong><span>resources need attention</span></div></header>
       <nav class="curator-tabs" role="tablist" aria-label="Catalogue maintenance sections">${tabButton("health", "Link health", issueCount)}${tabButton("catalogue", "Prepare records", catalogueDrafts().length)}${tabButton("suggestions", "GitHub workflow", "4 steps")}</nav>
-      <div class="curator-tab-panel" id="curator-panel-health" role="tabpanel" aria-labelledby="curator-tab-health" data-curator-panel="health" ${activeTab === "health" ? "" : "hidden"}><section class="maintenance-dashboard"><header><div><span class="eyebrow">Published verification snapshot</span><h2>What needs checking first</h2><p>Latest automated snapshot: ${linkGenerated}. The list below reflects deployed catalogue data. Report findings on GitHub so they are visible, reviewable, and connected to the eventual fix.</p></div><div class="maintenance-actions"><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Report a problem ↗</a><a href="${githubUrls.actions}" target="_blank" rel="noreferrer">View automated checks ↗</a><a href="/link-status.json" target="_blank" rel="noreferrer">Open snapshot JSON ↗</a></div></header><div class="maintenance-stats">${Object.entries(trustStates).map(([key, state]) => `<div data-trust="${key}"><strong>${trustCounts[key]}</strong><span>${state.label}</span></div>`).join("")}<div><strong>${issueCount}</strong><span>needs attention</span></div></div><div class="maintenance-list">${attention.length ? attention.map(entry => `<article data-maintenance-resource="${entry.item.id}"><div class="maintenance-state">${trustBadge(entry.item)}</div><strong>${entry.item.title}</strong><small>${entry.item.creator} · Last verified ${checkedDate(entry.trust.checkedAt)}</small><div class="maintenance-row-actions"><a href="${escapeHtml(resourceUrl(entry.item))}" target="_blank" rel="noreferrer">Open source ↗</a><a href="${githubResourceFileUrl(entry.item)}" target="_blank" rel="noreferrer">View record ↗</a><a href="${githubProblemUrl(entry.item)}" target="_blank" rel="noreferrer">Report ↗</a></div></article>`).join("") : `<div class="empty-state"><h3>No maintenance alerts.</h3><p>Every resource in the latest deployed snapshot is currently classified as working.</p></div>`}</div></section></div>
+      <div class="curator-tab-panel" id="curator-panel-health" role="tabpanel" aria-labelledby="curator-tab-health" data-curator-panel="health" ${activeTab === "health" ? "" : "hidden"}><section class="maintenance-dashboard"><header><div><span class="eyebrow">Published verification snapshot</span><h2>What needs checking first</h2><p>Latest automated snapshot: ${linkGenerated}. The list below reflects deployed catalogue data. Report findings on GitHub so they are visible, reviewable, and connected to the eventual fix.</p></div><div class="maintenance-actions"><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Report a problem ↗</a><a href="${githubUrls.actions}" target="_blank" rel="noreferrer">View automated checks ↗</a><a href="${assetHref("/link-status.json")}" target="_blank" rel="noreferrer">Open snapshot JSON ↗</a></div></header><div class="maintenance-stats">${Object.entries(trustStates).map(([key, state]) => `<div data-trust="${key}"><strong>${trustCounts[key]}</strong><span>${state.label}</span></div>`).join("")}<div><strong>${issueCount}</strong><span>needs attention</span></div></div><div class="maintenance-list">${attention.length ? attention.map(entry => `<article data-maintenance-resource="${entry.item.id}"><div class="maintenance-state">${trustBadge(entry.item)}</div><strong>${entry.item.title}</strong><small>${entry.item.creator} · Last verified ${checkedDate(entry.trust.checkedAt)}</small><div class="maintenance-row-actions"><a href="${escapeHtml(resourceUrl(entry.item))}" target="_blank" rel="noreferrer">Open source ↗</a><a href="${githubResourceFileUrl(entry.item)}" target="_blank" rel="noreferrer">View record ↗</a><a href="${githubProblemUrl(entry.item)}" target="_blank" rel="noreferrer">Report ↗</a></div></article>`).join("") : `<div class="empty-state"><h3>No maintenance alerts.</h3><p>Every resource in the latest deployed snapshot is currently classified as working.</p></div>`}</div></section></div>
       <div class="curator-tab-panel" id="curator-panel-catalogue" role="tabpanel" aria-labelledby="curator-tab-catalogue" data-curator-panel="catalogue" ${activeTab === "catalogue" ? "" : "hidden"}>${catalogueBuilderView()}</div>
       <div class="curator-tab-panel" id="curator-panel-suggestions" role="tabpanel" aria-labelledby="curator-tab-suggestions" data-curator-panel="suggestions" ${activeTab === "suggestions" ? "" : "hidden"}><section class="github-workflow"><header><span class="eyebrow">One public source of truth</span><h2>How a change reaches the Index</h2><p>GitHub holds the catalogue, discussion, review history, and deployment checks. Local browser drafts are only preparation material until their JSON is included in a pull request.</p></header><ol><li><span>01</span><div><strong>Open an issue</strong><p>Use a structured resource suggestion or problem report so the idea can be checked before anyone edits the catalogue.</p></div></li><li><span>02</span><div><strong>Verify the source</strong><p>Confirm the original URL, creator, publisher, format, access, length, metadata, and why the resource is useful.</p></div></li><li><span>03</span><div><strong>Open a pull request</strong><p>Add or update one file in <code>content/resources/</code>. Automated validation checks the catalogue, thumbnails, links, and reader interface.</p></div></li><li><span>04</span><div><strong>Review, merge, deploy</strong><p>After editorial review, merging to <code>main</code> rebuilds the catalogue and publishes the GitHub Pages site.</p></div></li></ol><div class="github-workflow-actions"><a class="primary-action" href="${githubUrls.suggestions}" target="_blank" rel="noreferrer">Suggest a resource ↗</a><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Report a problem ↗</a><a href="${githubUrls.pulls}" target="_blank" rel="noreferrer">View pull requests ↗</a><a href="${githubUrls.contributing}" target="_blank" rel="noreferrer">Contribution guide ↗</a></div></section></div>
     </section>${siteFooter()}`;
@@ -550,6 +574,15 @@ function initializeGamesAsArtLibrary() {
 
   function aboutView() {
     return `<section class="about-page shell"><header class="page-heading"><div><span class="eyebrow">About the index</span><h1>A map to existing knowledge—not another authority.</h1><p>The index helps people locate useful work by developers, researchers, authors, archivists, and educators.</p></div></header><div class="about-grid"><section><span>01</span><h2>What is indexed</h2><p>Talks, books, articles, papers, guides, documentation, courses, interviews, and archives related to making, studying, and preserving digital games.</p></section><section><span>02</span><h2>What each record explains</h2><p>What the resource is, why it may be useful, what it teaches, who it suits, how much time it needs, how it can be accessed, and what to explore afterward.</p></section><section><span>03</span><h2>How records are classified</h2><p>A controlled set of formats, broad subjects, experience levels, access types, length categories, and practical, historical, or theoretical uses supports consistent filtering.</p></section><section><span>04</span><h2>What it does not claim</h2><p>Inclusion is not a guarantee that every argument is correct. Annotations are not reviews, summaries are not replacements, and external resources remain responsible for their content.</p></section></div><div class="editorial-note"><span class="eyebrow">Public catalogue</span><p>The index currently contains ${resources.length} English-language records. It favors durable educational and historical material over news, product promotion, and release coverage. Suggestions and corrections are reviewed in the public GitHub repository.</p></div></section>${siteFooter()}`;
+  }
+
+  function normalizeInternalLinks(root = document) {
+    root.querySelectorAll('a[href^="#/"]').forEach(link => {
+      const route = link.getAttribute("href").slice(1);
+      link.dataset.indexRoute = route;
+      link.setAttribute("href", routeHref(route));
+    });
+    root.querySelectorAll("a[data-index-route]").forEach(link => link.setAttribute("href", routeHref(link.dataset.indexRoute || "/")));
   }
 
   function render() {
@@ -571,6 +604,7 @@ function initializeGamesAsArtLibrary() {
       console.error("The resource index could not render", route, error);
       content.innerHTML = `<section class="runtime-error shell"><span class="eyebrow">Page error</span><h1>This page could not be displayed.</h1><p><a href="#/">Return to the index homepage →</a></p></section>`;
     }
+    normalizeInternalLinks();
     document.body.dataset.view = route;
     document.body.classList.remove("filters-open");
     document.title = resourceId && resource(resourceId) ? `${resource(resourceId).title} — Games as Art Index` : collectionId && collection(collectionId) ? `${collection(collectionId).title} — Games as Art Index` : route === "/browse" ? "Browse — Games as Art Index" : route === "/collections" ? "Collections — Games as Art Index" : route === "/saved" ? "Saved — Games as Art Index" : route === "/suggest" ? "Contribute — Games as Art Index" : route === "/curator" ? "Editorial workspace — Games as Art Index" : route === "/about" ? "About — Games as Art Index" : "Games as Art Index — Game development, history, and criticism";
@@ -583,13 +617,13 @@ function initializeGamesAsArtLibrary() {
     if (route === "/") setupHome();
     if (route === "/curator") setupCurator();
     if (resourceId && resource(resourceId)) rememberResource(resourceId);
+    normalizeInternalLinks();
   }
 
   function navigate(nextRoute, { replace = false } = {}) {
     const next = nextRoute || "/";
-    const nextHash = `#${next}`;
     routeSpec = next;
-    history[replace ? "replaceState" : "pushState"]({ gaaRoute: routeSpec, gaaLibraryRoute: true }, "", `${location.pathname}${location.search}${nextHash}`);
+    history[replace ? "replaceState" : "pushState"]({ gaaRoute: routeSpec, gaaLibraryRoute: true }, "", routeHref(next));
     render();
   }
 
@@ -641,7 +675,7 @@ function initializeGamesAsArtLibrary() {
       const nextRoute = `/browse${params.size ? `?${params.toString()}` : ""}`;
       if (nextRoute === routeSpec) return;
       routeSpec = nextRoute;
-      history[mode === "push" ? "pushState" : "replaceState"]({ gaaRoute: routeSpec, gaaLibraryRoute: true }, "", `${location.pathname}${location.search}#${routeSpec}`);
+      history[mode === "push" ? "pushState" : "replaceState"]({ gaaRoute: routeSpec, gaaLibraryRoute: true }, "", routeHref(routeSpec));
     };
     const renderChips = state => {
       const chips = Object.entries(state).filter(([key, value]) => key !== "view" && value && value !== defaults[key]);
@@ -692,6 +726,7 @@ function initializeGamesAsArtLibrary() {
         const explanation = term && searchOnlyCount && hasStructuredFilters ? `${searchOnlyCount} resources match “${escapeHtml(term)}” before the other filters are applied.` : term ? `Nothing in the catalogue closely matches “${escapeHtml(term)}”.` : "The selected filters do not overlap.";
         grid.innerHTML = `<div class="empty-state browse-empty"><span class="eyebrow">No results</span><h3>Try a wider route through the index.</h3><p>${explanation}</p><div>${hasStructuredFilters ? `<button type="button" data-empty-clear="filters">Clear filters${term ? ", keep search" : ""}</button>` : ""}${suggestions.map(value => `<button type="button" data-related-query="${escapeHtml(value)}">Search ${escapeHtml(value)}</button>`).join("")}<button type="button" data-empty-clear="all">Show the full index</button></div></div>`;
       }
+      normalizeInternalLinks(grid);
       if (sync) syncBrowseUrl(state, mode);
     };
 
@@ -1334,6 +1369,7 @@ function initializeGamesAsArtLibrary() {
     const suggestions = relatedTermsFor(term);
     const noResults = term && !matches.length ? `<div class="search-no-results"><strong>No close match yet.</strong><p>Try a related catalogue term:</p>${suggestions.map(value => `<button type="button" data-search="${escapeHtml(value)}">${escapeHtml(value)}</button>`).join("")}</div>` : "";
     searchResults.innerHTML = `<p class="search-status">${term ? `${matches.length} close ${matches.length === 1 ? "match" : "matches"} shown` : "Recommended starting points"}</p>${matches.map(item => `<a href="#/resource/${item.id}" data-search-route><span>${item.type}</span><strong>${item.title}</strong><small>${item.creator} · ${item.year}</small><b>→</b></a>`).join("")}${noResults}${term ? `<a class="all-results" href="#/browse?q=${encodeURIComponent(query)}" data-search-route>Browse all matching resources →</a>` : ""}`;
+    normalizeInternalLinks(searchResults);
   }
 
   function setTheme(mode) {
@@ -1446,8 +1482,12 @@ function initializeGamesAsArtLibrary() {
       if (frame && item && /^(?:978|979)\d{10}$/.test(isbn || "")) loadGoogleBook(frame, item, isbn);
       return;
     }
-    const routeLink = event.target.closest('a[href^="#/"]');
-    if (routeLink) { event.preventDefault(); navigate(routeLink.getAttribute("href").slice(1)); }
+    const routeLink = event.target.closest('a[data-index-route], a[href^="#/"]');
+    if (routeLink) {
+      event.preventDefault();
+      const legacyRoute = routeLink.getAttribute("href")?.startsWith("#/") ? routeLink.getAttribute("href").slice(1) : "";
+      navigate(routeLink.dataset.indexRoute || legacyRoute || "/");
+    }
     const openSearch = event.target.closest("[data-open-search]") || event.target.closest("#openSearch");
     if (openSearch) { search(""); searchDialog.showModal(); setTimeout(() => searchInput.focus(), 30); }
     const suggestion = event.target.closest("[data-search]");
@@ -1513,8 +1553,10 @@ function initializeGamesAsArtLibrary() {
     routeSpec = nextRoute;
     render();
   };
-  window.addEventListener("popstate", event => { if (location.hash.startsWith("#/")) restoreRoute(event.state, true); });
-  window.addEventListener("hashchange", () => restoreRoute(history.state));
+  window.addEventListener("popstate", event => restoreRoute(event.state, true));
+  window.addEventListener("hashchange", () => {
+    if (location.hash.startsWith("#/")) navigate(location.hash.slice(1), { replace: true });
+  });
   window.addEventListener("pageshow", event => { if (event.persisted) restoreRoute(history.state, true); });
   window.__GAA_RESTORE__ = () => restoreRoute(history.state, true);
   if (typeof matchMedia === "function") {

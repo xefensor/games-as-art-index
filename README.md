@@ -22,11 +22,13 @@ The public website is deployed to GitHub Pages from `main`. The Pages workflow v
 - Complete thumbnail coverage with source-aware discovery and generated editorial fallbacks
 - Click-to-load YouTube players (including verified official videos attached to publisher records), publisher-hosted PDF readers, and Google Books previews on supported resource pages, with original source links preserved
 - Resource pages with metadata, audience, learning outcomes, related records, and link-check dates
+- Permanent clean URLs for every resource and collection, with legacy hash links upgraded automatically
+- Crawlable static pages with route-specific titles, descriptions, canonical URLs, social previews, structured data, and a generated sitemap
 - A committed editorial audit that distinguishes automated source checks, manual verification, and source-backed versus generated thumbnails
 - Automatic system theme plus explicit Auto, Light, and Dark controls
 - Locally saved resources and recently viewed history, with no account
 - Public GitHub issue forms for suggestions and catalogue problems, plus an in-browser JSON record-preparation tool for pull requests
-- Responsive navigation and meaningful server-rendered fallback content
+- Responsive navigation and meaningful static fallback content
 
 Catalogue records are maintained as one file per entry under `content/resources/`; collections live under `content/collections/`, and taxonomy plus stable display order live in `content/catalogue.json`. `npm run catalogue:build` deterministically generates `public/catalogue.json` for the website. `public/data.js` loads that generated file and `public/app.js` renders the browser interface.
 

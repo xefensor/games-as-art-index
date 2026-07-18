@@ -31,6 +31,8 @@ jobs:
         run: npm run validate:catalogue && npm run validate:thumbnails
       - name: Check browser interactions
         run: npm run check:browse
+      - name: Build static Pages routes
+        run: npm run pages:build
       - name: Build production site
         run: npm run build
       - name: Ensure the build did not change committed files

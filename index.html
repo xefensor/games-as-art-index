@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A curated index of game development, history, and criticism.">
+    <meta name="gaa-site-root" content="/">
     <title>Games as Art Index — Game development, history, and criticism</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +23,16 @@
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header" id="siteHeader">
-      <a class="brand" href="#/" aria-label="Games as Art Index — home">
+      <a class="brand" href="/" data-index-route="/" aria-label="Games as Art Index — home">
         <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>Games <em>as</em> Art <small>Index</small></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#/browse">Browse</a>
-        <a href="#/collections">Collections</a>
-        <a href="#/saved">Saved</a>
-        <a href="#/suggest">Contribute</a>
-        <a href="#/about">About</a>
+        <a href="/browse/" data-index-route="/browse">Browse</a>
+        <a href="/collections/" data-index-route="/collections">Collections</a>
+        <a href="/saved/" data-index-route="/saved">Saved</a>
+        <a href="/suggest/" data-index-route="/suggest">Contribute</a>
+        <a href="/about/" data-index-route="/about">About</a>
       </nav>
       <div class="header-actions">
         <button class="header-search" id="openSearch" type="button"><span>Search index</span><kbd>/</kbd></button>
@@ -39,11 +40,11 @@
         <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav"><i></i><i></i></button>
       </div>
       <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-        <a href="#/browse">Browse</a>
-        <a href="#/collections">Collections</a>
-        <a href="#/saved">Saved</a>
-        <a href="#/suggest">Contribute</a>
-        <a href="#/about">About</a>
+        <a href="/browse/" data-index-route="/browse">Browse</a>
+        <a href="/collections/" data-index-route="/collections">Collections</a>
+        <a href="/saved/" data-index-route="/saved">Saved</a>
+        <a href="/suggest/" data-index-route="/suggest">Contribute</a>
+        <a href="/about/" data-index-route="/about">About</a>
         <button id="mobileTheme" type="button">Theme: <span>Auto</span></button>
       </nav>
     </header>
@@ -74,7 +75,7 @@
     </div>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="/data.js?v=index-10"></script>
-    <script src="/app.js?v=index-10"></script>
+    <script src="/data.js?v=index-11"></script>
+    <script src="/app.js?v=index-11"></script>
   </body>
 </html>
