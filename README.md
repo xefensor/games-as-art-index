@@ -24,7 +24,7 @@ The public website is deployed to GitHub Pages from `main`. The Pages workflow v
 - Resource pages with metadata, audience, learning outcomes, related records, and link-check dates
 - Automatic system theme plus explicit Auto, Light, and Dark controls
 - Locally saved resources and recently viewed history, with no account
-- Browser-local suggestion drafts, an editorial review queue, and JSON export
+- Public GitHub issue forms for suggestions and catalogue problems, plus an in-browser JSON record-preparation tool for pull requests
 - Responsive navigation and meaningful server-rendered fallback content
 
 Catalogue records are maintained as one file per entry under `content/resources/`; collections live under `content/collections/`, and taxonomy plus stable display order live in `content/catalogue.json`. `npm run catalogue:build` deterministically generates `public/catalogue.json` for the website. `public/data.js` loads that generated file and `public/app.js` renders the browser interface.
@@ -76,4 +76,4 @@ The catalogue points to existing knowledge rather than reproducing it. Each reco
 
 Future additions should favor durable educational, technical, historical, or critical material over news and product promotion. Records move through `draft`, `reviewed`, `published`, and `needs-rechecking` editorial states. Links and metadata should be checked before publication.
 
-The in-site curator workbench is browser-local and intentionally not presented as secure administration. A shared multi-user submission inbox will require authenticated server storage.
+The in-site editorial workspace reads the deployed link-health snapshot and can prepare record JSON locally. It does not publish or override catalogue data: accepted edits are reviewed in GitHub and merged through pull requests.

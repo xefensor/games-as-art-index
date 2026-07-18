@@ -26,6 +26,19 @@ function initializeGamesAsArtLibrary() {
   window.__GAA_INITIALIZED__ = true;
   const resources = data.resources || [];
   const collections = data.collections || [];
+  const githubRepository = "https://github.com/xefensor/games-as-art-index";
+  const githubUrls = {
+    repository: githubRepository,
+    suggestions: `${githubRepository}/issues/new?template=resource-suggestion.yml`,
+    problems: `${githubRepository}/issues/new?template=broken-link.yml`,
+    issues: `${githubRepository}/issues`,
+    pulls: `${githubRepository}/pulls`,
+    actions: `${githubRepository}/actions`,
+    contributing: `${githubRepository}/blob/main/CONTRIBUTING.md`,
+    records: `${githubRepository}/tree/main/content/resources`
+  };
+  const githubProblemUrl = item => `${githubUrls.problems}&title=${encodeURIComponent(`Catalogue problem: ${item.title}`)}`;
+  const githubResourceFileUrl = item => `${githubRepository}/blob/main/content/resources/${encodeURIComponent(item.id)}.json`;
   const storage = {
     get(key, fallback) {
       try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
@@ -76,9 +89,7 @@ function initializeGamesAsArtLibrary() {
   };
   const isVisited = id => storage.get("gaa-library-history", []).includes(id);
   const linkChecks = new Map((data.linkStatus?.results || []).map(result => [result.id, result]));
-  const linkReviews = () => storage.get("gaa-link-reviews", {});
-  const saveLinkReviews = reviews => storage.set("gaa-link-reviews", reviews);
-  const resourceUrl = item => linkReviews()[item.id]?.url || item.url;
+  const resourceUrl = item => item.url;
   const youtubeVideoId = item => {
     const configuredId = item.embed?.provider === "youtube" ? item.embed.videoId : "";
     if (/^[A-Za-z0-9_-]{11}$/.test(configuredId || "")) return configuredId;
@@ -97,16 +108,14 @@ function initializeGamesAsArtLibrary() {
   };
   const trustState = item => {
     const check = linkChecks.get(item.id);
-    const review = linkReviews()[item.id];
     let key = "working";
-    if (review && trustStates[review.status]) key = review.status;
-    else if (check?.status === "broken") key = "broken";
+    if (check?.status === "broken") key = "broken";
     else if (check?.redirected) key = "redirected";
     else if (check && check.status !== "ok") key = "needs-rechecking";
     else if (!check && (Date.now() - Date.parse(`${item.lastChecked}T00:00:00Z`)) / 86400000 > 180) key = "needs-rechecking";
-    const checkedAt = review?.reviewedAt || check?.checkedAt || `${item.lastChecked}T00:00:00Z`;
-    const detail = review ? `A curator marked this link ${trustStates[key].label.toLowerCase()} in this browser${review.note ? `: ${review.note}` : "."}` : check?.checkMethod === "manual" ? check.note || "A curator opened and verified the original source." : key === "working" ? "The original link responded successfully at the latest check." : key === "redirected" ? "The source now redirects to a different URL and should be reviewed." : key === "broken" ? "The latest automated check received a broken response." : check ? "The automated checker could not confirm the source and a person should review it." : "The catalogue verification date is older than six months.";
-    return { key, label: review ? `${trustStates[key].label} · local` : trustStates[key].label, priority: trustStates[key].priority, checkedAt, check, review, detail };
+    const checkedAt = check?.checkedAt || `${item.lastChecked}T00:00:00Z`;
+    const detail = check?.checkMethod === "manual" ? check.note || "A curator opened and verified the original source." : key === "working" ? "The original link responded successfully at the latest check." : key === "redirected" ? "The source now redirects to a different URL and should be reviewed." : key === "broken" ? "The latest automated check received a broken response." : check ? "The automated checker could not confirm the source and a person should review it." : "The catalogue verification date is older than six months.";
+    return { key, label: trustStates[key].label, priority: trustStates[key].priority, checkedAt, check, detail };
   };
   const trustBadge = (item, compact = false) => {
     const trust = trustState(item);
@@ -114,7 +123,7 @@ function initializeGamesAsArtLibrary() {
   };
   const problemReports = () => storage.get("gaa-resource-reports", []).filter(report => resource(report.resourceId));
   const saveProblemReports = reports => storage.set("gaa-resource-reports", reports);
-  const reportButton = item => `<button class="report-control" type="button" data-report-resource="${item.id}" aria-label="Report a problem with ${escapeHtml(item.title)}" title="Report a problem">⚑</button>`;
+  const reportButton = item => `<a class="report-control" href="${githubProblemUrl(item)}" target="_blank" rel="noreferrer" aria-label="Report a problem with ${escapeHtml(item.title)} on GitHub" title="Report a problem on GitHub">⚑</a>`;
   const resourceMinutes = item => {
     const minutes = String(item.length || "").match(/([\d,]+)\s*min/i);
     if (minutes) return Number(minutes[1].replace(/,/g, ""));
@@ -379,7 +388,7 @@ function initializeGamesAsArtLibrary() {
   }
 
   function siteFooter() {
-    return `<footer class="site-footer shell"><div><a class="brand footer-brand" href="#/"><span class="brand-bars"><i></i><i></i><i></i></span><span>Games <em>as</em> Art <small>Index</small></span></a><p>A curated index of game development, history, and criticism.</p></div><nav><a href="#/browse">Browse all</a><a href="#/collections">Collections</a><a href="#/saved">Saved locally</a><a href="#/suggest">Suggest a resource</a><a href="#/about">About the index</a></nav><small>${resources.length} records · English · No account required</small></footer>`;
+    return `<footer class="site-footer shell"><div><a class="brand footer-brand" href="#/"><span class="brand-bars"><i></i><i></i><i></i></span><span>Games <em>as</em> Art <small>Index</small></span></a><p>A curated index of game development, history, and criticism.</p></div><nav><a href="#/browse">Browse all</a><a href="#/collections">Collections</a><a href="#/saved">Saved locally</a><a href="#/suggest">Contribute</a><a href="#/about">About the index</a></nav><small>${resources.length} records · English · Browsing needs no account · Contributions reviewed on GitHub</small></footer>`;
   }
 
   function personalizedHomeView() {
@@ -493,19 +502,20 @@ function initializeGamesAsArtLibrary() {
   }
 
   function suggestView() {
-    const queueCount = suggestionQueue().length;
-    return `<section class="suggest-page shell"><header class="page-heading"><div><span class="eyebrow">No account required</span><h1>Suggest a useful resource.</h1><p>Describe an original talk, book, article, course, paper, guide, or archive that deserves careful cataloguing.</p></div><div class="page-count"><strong id="suggestionCount">${queueCount}</strong><span>in this browser’s queue</span></div></header>
-      <div class="suggest-layout"><form class="suggest-form" id="suggestionForm"><div class="form-section"><span class="eyebrow">The source</span><label><span>Title *</span><input name="title" required autocomplete="off"></label><div class="form-pair"><label><span>Creator or author *</span><input name="creator" required autocomplete="off"></label><label><span>Publisher or channel</span><input name="publisher" autocomplete="off"></label></div><label><span>Original URL *</span><input name="url" type="url" required placeholder="https://" inputmode="url"></label></div>
-        <div class="form-section"><span class="eyebrow">How it belongs</span><div class="form-pair"><label><span>Format *</span><select name="type" required><option value="">Choose a format</option>${types.map(type => `<option>${type}</option>`).join("")}</select></label><label><span>Main subject *</span><select name="subject" required><option value="">Choose a subject</option>${subjects.map(subject => `<option>${subject}</option>`).join("")}</select></label></div><div class="form-pair"><label><span>Access</span><select name="access"><option value="">Not sure</option>${accessTypes.map(access => `<option>${access}</option>`).join("")}</select></label><label><span>Suitable level</span><select name="level"><option value="">Not sure</option>${levels.map(level => `<option>${level}</option>`).join("")}</select></label></div><label><span>What is it? *</span><textarea name="description" required rows="5" placeholder="A factual summary of what the resource contains."></textarea></label><label><span>Why is it useful? *</span><textarea name="useful" required rows="4" placeholder="What could a developer or researcher learn from it?"></textarea></label><label><span>Topics or games</span><input name="keywords" placeholder="Comma-separated, for example: level design, Half-Life"></label></div>
-        <div class="suggest-actions"><button class="primary-action" type="submit">Save to local review queue</button><button type="button" id="clearSuggestionDraft">Clear draft</button><p id="suggestionStatus" role="status" aria-live="polite">Draft changes are saved automatically on this device.</p></div></form>
-        <aside class="suggest-explainer"><span class="eyebrow">How this prototype works</span><h2>Local first, honest about its limits.</h2><ol><li><strong>Draft locally</strong><span>The form remembers unfinished text in this browser.</span></li><li><strong>Queue for review</strong><span>Saving adds a structured record to the local curator workbench.</span></li><li><strong>Export for handoff</strong><span>Download the queue as JSON so it can be reviewed or merged elsewhere.</span></li></ol><p>No suggestion is uploaded to a server. A real multi-user inbox will require an authenticated backend later.</p><div><a href="#/curator?tab=suggestions">Open suggestion review →</a><button type="button" data-export-suggestions ${queueCount ? "" : "disabled"}>Export current queue</button></div></aside>
-      </div></section>${siteFooter()}`;
+    return `<section class="suggest-page shell"><header class="page-heading contribution-heading"><div><span class="eyebrow">Community contributions</span><h1>Help improve the Index.</h1><p>Suggestions and corrections are public GitHub issues. Accepted changes become reviewed pull requests, pass automated checks, and then appear on this site.</p></div><div class="page-count"><strong>GitHub</strong><span>public review and history</span></div></header>
+      <div class="contribution-options">
+        <article><span class="contribution-number">01</span><div><span class="eyebrow">Add to the catalogue</span><h2>Suggest a resource</h2><p>Share an original talk, book, article, paper, guide, course, documentation set, or archive. A short issue form asks for the source and why it belongs.</p></div><a class="primary-action" href="${githubUrls.suggestions}" target="_blank" rel="noreferrer">Open suggestion form ↗</a></article>
+        <article><span class="contribution-number">02</span><div><span class="eyebrow">Correct the catalogue</span><h2>Report a problem</h2><p>Flag broken links, redirects, inaccurate metadata, embed failures, thumbnail problems, or duplicate records.</p></div><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Open problem report ↗</a></article>
+        <article><span class="contribution-number">03</span><div><span class="eyebrow">For complete edits</span><h2>Prepare a record</h2><p>Use the on-site editor to check a full resource record, download its JSON, and include it in a pull request.</p></div><a href="#/curator?tab=catalogue">Open record editor →</a></article>
+      </div>
+      <div class="contribution-guidance"><section><span class="eyebrow">What makes a useful suggestion</span><h2>Original, durable, and genuinely useful.</h2><p>The Index favors primary sources and substantial educational, historical, technical, or critical work. It does not aim to catalogue news, advertising, store pages, or disposable promotion.</p><ul><li>Prefer the creator, publisher, conference, journal, or project page.</li><li>Explain what the resource contains—not only whether you liked it.</li><li>Include its format, year, access conditions, and length when known.</li></ul></section><aside><span class="eyebrow">Before you submit</span><h3>GitHub is the public editorial inbox.</h3><p>You need a GitHub account to open an issue or pull request. Reading the Index, saving resources, and visited history remain account-free and local to this browser.</p><a href="${githubUrls.contributing}" target="_blank" rel="noreferrer">Read the contribution guide ↗</a><a href="${githubUrls.repository}" target="_blank" rel="noreferrer">View the public repository ↗</a></aside></div>
+    </section>${siteFooter()}`;
   }
 
   function catalogueBuilderView() {
     const draftCount = catalogueDrafts().length;
     const optionList = values => values.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("");
-    return `<section class="catalogue-builder"><header class="saved-section-header"><div><span class="eyebrow">Curator tool</span><h2>Build catalogue records</h2></div><p>Add individual records, revise existing ones, or stage a CSV or JSON batch. Changes stay in this browser until exported.</p></header>
+    return `<section class="catalogue-builder"><header class="saved-section-header"><div><span class="eyebrow">Pull-request preparation tool</span><h2>Prepare catalogue records</h2></div><p>Create or revise records locally, run the same structural checks in the browser, then download JSON for a GitHub pull request. This tool does not publish changes by itself.</p></header>
       <div class="catalogue-builder-toolbar"><label><span>Edit a published record</span><select id="catalogueRecordSource"><option value="">Choose a record</option>${resources.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.title)}</option>`).join("")}</select></label><button type="button" id="editCatalogueRecord">Copy into editor</button><button type="button" id="newCatalogueRecord">+ New record</button><label class="catalogue-import-control">Import CSV or JSON<input id="importCatalogueRecords" type="file" accept=".csv,.json,text/csv,application/json"></label><button type="button" id="downloadCatalogueTemplate">CSV template</button></div>
       <div class="catalogue-builder-layout"><aside class="catalogue-draft-rail"><header><strong>Staged records</strong><span id="catalogueDraftCount">${draftCount}</span></header><div id="catalogueDraftList"></div></aside>
         <div class="catalogue-editor-shell"><div class="catalogue-editor-empty" id="catalogueEditorEmpty"><span class="eyebrow">Nothing selected</span><h3>Start a new record or edit an existing one.</h3><p>Imported records will also appear in the staged list.</p></div><form id="catalogueEditorForm" hidden novalidate>
@@ -514,18 +524,14 @@ function initializeGamesAsArtLibrary() {
           <footer><button type="button" id="suggestCatalogueMetadata">Suggest missing metadata</button><span id="catalogueAutosaveStatus" role="status" aria-live="polite">Changes save automatically on this device.</span></footer>
         </form></div>
         <aside class="catalogue-quality-panel"><section><span class="eyebrow">Record check</span><div id="catalogueValidation"><p>Select a staged record to see its checks.</p></div></section><section><span class="eyebrow">Catalogue preview</span><div id="catalogueRecordPreview"><p>The reader-facing preview will appear here.</p></div></section></aside></div>
-      <div class="catalogue-builder-export"><div><strong id="catalogueExportSummary">${draftCount ? `${draftCount} staged` : "No staged changes"}</strong><span>The export preserves collections and replaces or adds only the staged records.</span></div><button type="button" id="exportUpdatedCatalogue" disabled>Export updated catalogue.json</button></div><p class="catalogue-import-status" id="catalogueImportStatus" role="status" aria-live="polite"></p>
+      <div class="catalogue-builder-export"><div><strong id="catalogueExportSummary">${draftCount ? `${draftCount} staged` : "No staged changes"}</strong><span>One valid draft downloads as <code>content/resources/&lt;id&gt;.json</code>. Multiple drafts download as a review bundle that can be split into record files before opening a pull request.</span></div><button type="button" id="exportUpdatedCatalogue" disabled>Download staged JSON</button></div><p class="catalogue-import-status" id="catalogueImportStatus" role="status" aria-live="polite"></p>
     </section>`;
   }
 
   function curatorView() {
-    const queue = suggestionQueue();
-    const reports = problemReports();
-    const openReports = reports.filter(report => report.status !== "resolved");
-    const maintenance = resources.map(item => ({ item, trust: trustState(item), reports: openReports.filter(report => report.resourceId === item.id) })).sort((left, right) => right.reports.length - left.reports.length || left.trust.priority - right.trust.priority || String(left.trust.checkedAt).localeCompare(String(right.trust.checkedAt)));
-    const attention = maintenance.filter(entry => entry.reports.length || entry.trust.key !== "working" || entry.trust.review);
-    const issueCount = maintenance.filter(entry => entry.reports.length || entry.trust.key !== "working").length;
-    const reviewCount = Object.keys(linkReviews()).filter(id => resource(id)).length;
+    const maintenance = resources.map(item => ({ item, trust: trustState(item) })).sort((left, right) => left.trust.priority - right.trust.priority || String(left.trust.checkedAt).localeCompare(String(right.trust.checkedAt)));
+    const attention = maintenance.filter(entry => entry.trust.key !== "working");
+    const issueCount = attention.length;
     const trustCounts = Object.fromEntries(Object.keys(trustStates).map(key => [key, maintenance.filter(entry => entry.trust.key === key).length]));
     const linkGenerated = data.linkStatus?.generatedAt ? checkedDate(data.linkStatus.generatedAt) : "No automated snapshot loaded";
     const curatorTabs = ["health", "catalogue", "suggestions"];
@@ -533,17 +539,16 @@ function initializeGamesAsArtLibrary() {
     const rememberedTab = storage.get("gaa-curator-tab", "health");
     const activeTab = curatorTabs.includes(requestedTab) ? requestedTab : curatorTabs.includes(rememberedTab) ? rememberedTab : "health";
     const tabButton = (id, label, count) => `<button type="button" id="curator-tab-${id}" class="${activeTab === id ? "active" : ""}" role="tab" data-curator-tab="${id}" aria-controls="curator-panel-${id}" aria-selected="${activeTab === id}"><span>${label}</span><small>${count}</small></button>`;
-    return `<section class="curator-page shell"><p class="breadcrumb"><a href="#/suggest">Suggest a resource</a> / Local curator workbench</p><header class="curator-heading"><div><span class="eyebrow">Browser-local editorial and maintenance tool</span><h1>Catalogue maintenance</h1><p>Review link health, verification age, local problem reports, and proposed catalogue additions. Nothing here is uploaded automatically.</p></div><div class="page-count"><strong>${issueCount}</strong><span>resources need attention</span></div></header>
-      <nav class="curator-tabs" role="tablist" aria-label="Catalogue maintenance sections">${tabButton("health", "Link health", issueCount)}${tabButton("catalogue", "Catalogue editor", catalogueDrafts().length)}${tabButton("suggestions", "Suggestions", queue.length)}</nav>
-      <div class="curator-tab-panel" id="curator-panel-health" role="tabpanel" aria-labelledby="curator-tab-health" data-curator-panel="health" ${activeTab === "health" ? "" : "hidden"}><section class="maintenance-dashboard"><header><div><span class="eyebrow">Trust overview</span><h2>What needs checking first</h2><p>Latest automated snapshot: ${linkGenerated}. Open a source, then record a correction or a manual decision. Local reviews override the automated state on this device.</p></div><div class="maintenance-actions"><button type="button" data-export-link-reviews ${reviewCount ? "" : "disabled"}>Export link reviews</button><button type="button" data-export-problem-reports ${reports.length ? "" : "disabled"}>Export problem reports</button><a href="/link-status.json" target="_blank" rel="noreferrer">Open link-check JSON ↗</a></div></header><div class="maintenance-stats">${Object.entries(trustStates).map(([key, state]) => `<div data-trust="${key}"><strong>${trustCounts[key]}</strong><span>${state.label}</span></div>`).join("")}<div><strong>${reviewCount}</strong><span>local reviews</span></div><div><strong>${openReports.length}</strong><span>local reports</span></div></div><div class="maintenance-list">${attention.length ? attention.map(entry => { const review = entry.trust.review; const currentUrl = resourceUrl(entry.item); return `<article data-maintenance-resource="${entry.item.id}" class="${review ? "is-locally-reviewed" : ""}"><div class="maintenance-state">${trustBadge(entry.item)}${entry.reports.length ? `<span class="report-count">${entry.reports.length} ${entry.reports.length === 1 ? "report" : "reports"}</span>` : ""}</div><strong>${entry.item.title}</strong><small>${entry.item.creator} · ${review ? "Reviewed locally" : "Last verified"} ${checkedDate(entry.trust.checkedAt)}</small><div class="maintenance-row-actions"><a href="${escapeHtml(currentUrl)}" target="_blank" rel="noreferrer">Open link ↗</a><button type="button" data-review-link="${entry.item.id}" aria-expanded="false">Review / fix</button></div><form class="link-review-form" data-link-review-form="${entry.item.id}" hidden><div><label><span>Resource URL</span><input name="reviewUrl" type="url" value="${escapeHtml(currentUrl)}" required></label>${currentUrl !== entry.item.url ? `<small>Published URL: ${escapeHtml(entry.item.url)}</small>` : ""}</div><label><span>Review note</span><textarea name="reviewNote" rows="2" placeholder="What did you verify or change?">${escapeHtml(review?.note || "")}</textarea></label><div class="link-review-decisions"><span>Record decision</span><button type="button" data-link-review-status="working">Mark working</button><button type="button" data-link-review-status="needs-rechecking">Needs rechecking</button><button type="button" data-link-review-status="broken">Confirm broken</button></div><p class="link-review-feedback" role="status" aria-live="polite">Marking a link working stages its URL and verification date in the Catalogue editor for export.</p></form></article>`; }).join("") : `<div class="empty-state"><h3>No maintenance alerts.</h3><p>All current links are verified and there are no open local reports.</p></div>`}</div></section>
-      ${reports.length ? `<section class="problem-report-queue"><header class="saved-section-header"><div><span class="eyebrow">Stored in this browser</span><h2>Problem reports</h2></div><p>Resolve reports after checking the original source, then export them for handoff if needed.</p></header><div>${reports.map(report => { const item = resource(report.resourceId); return `<article data-problem-report="${report.id}" class="${report.status === "resolved" ? "is-resolved" : ""}"><div><span>${report.type}</span><strong>${item.title}</strong><small>${checkedDate(report.reportedAt)} · ${report.status === "resolved" ? "Resolved" : "Open"}</small></div><p>${escapeHtml(report.note || "No additional note.")}</p><button type="button" data-resolve-report="${report.id}">${report.status === "resolved" ? "Reopen" : "Mark resolved"}</button></article>`; }).join("")}</div></section>` : ""}</div>
+    return `<section class="curator-page shell"><p class="breadcrumb"><a href="#/suggest">Contribute</a> / Editorial workspace</p><header class="curator-heading"><div><span class="eyebrow">GitHub-backed editorial workflow</span><h1>Maintain the public catalogue.</h1><p>Use the deployed link-health snapshot to find problems, prepare structured record files in the browser, and send every lasting change through a reviewed GitHub pull request.</p></div><div class="page-count"><strong>${issueCount}</strong><span>resources need attention</span></div></header>
+      <nav class="curator-tabs" role="tablist" aria-label="Catalogue maintenance sections">${tabButton("health", "Link health", issueCount)}${tabButton("catalogue", "Prepare records", catalogueDrafts().length)}${tabButton("suggestions", "GitHub workflow", "4 steps")}</nav>
+      <div class="curator-tab-panel" id="curator-panel-health" role="tabpanel" aria-labelledby="curator-tab-health" data-curator-panel="health" ${activeTab === "health" ? "" : "hidden"}><section class="maintenance-dashboard"><header><div><span class="eyebrow">Published verification snapshot</span><h2>What needs checking first</h2><p>Latest automated snapshot: ${linkGenerated}. The list below reflects deployed catalogue data. Report findings on GitHub so they are visible, reviewable, and connected to the eventual fix.</p></div><div class="maintenance-actions"><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Report a problem ↗</a><a href="${githubUrls.actions}" target="_blank" rel="noreferrer">View automated checks ↗</a><a href="/link-status.json" target="_blank" rel="noreferrer">Open snapshot JSON ↗</a></div></header><div class="maintenance-stats">${Object.entries(trustStates).map(([key, state]) => `<div data-trust="${key}"><strong>${trustCounts[key]}</strong><span>${state.label}</span></div>`).join("")}<div><strong>${issueCount}</strong><span>needs attention</span></div></div><div class="maintenance-list">${attention.length ? attention.map(entry => `<article data-maintenance-resource="${entry.item.id}"><div class="maintenance-state">${trustBadge(entry.item)}</div><strong>${entry.item.title}</strong><small>${entry.item.creator} · Last verified ${checkedDate(entry.trust.checkedAt)}</small><div class="maintenance-row-actions"><a href="${escapeHtml(resourceUrl(entry.item))}" target="_blank" rel="noreferrer">Open source ↗</a><a href="${githubResourceFileUrl(entry.item)}" target="_blank" rel="noreferrer">View record ↗</a><a href="${githubProblemUrl(entry.item)}" target="_blank" rel="noreferrer">Report ↗</a></div></article>`).join("") : `<div class="empty-state"><h3>No maintenance alerts.</h3><p>Every resource in the latest deployed snapshot is currently classified as working.</p></div>`}</div></section></div>
       <div class="curator-tab-panel" id="curator-panel-catalogue" role="tabpanel" aria-labelledby="curator-tab-catalogue" data-curator-panel="catalogue" ${activeTab === "catalogue" ? "" : "hidden"}>${catalogueBuilderView()}</div>
-      <div class="curator-tab-panel" id="curator-panel-suggestions" role="tabpanel" aria-labelledby="curator-tab-suggestions" data-curator-panel="suggestions" ${activeTab === "suggestions" ? "" : "hidden"}><section class="suggestion-maintenance"><header class="saved-section-header"><div><span class="eyebrow">Proposed additions</span><h2>Suggestion review queue</h2></div><p>Local suggestions remain separate from the published catalogue until exported and reviewed.</p></header><div class="curator-toolbar"><div id="curatorSummary"></div><span class="curator-total"><strong id="curatorCount">${queue.length}</strong>total</span><button type="button" data-export-suggestions ${queue.length ? "" : "disabled"}>Export all as JSON</button><button type="button" id="exportPublished" ${queue.some(item => item.status === "published") ? "" : "disabled"}>Export publication-ready</button></div><div class="curator-queue" id="curatorQueue"></div></section></div>
+      <div class="curator-tab-panel" id="curator-panel-suggestions" role="tabpanel" aria-labelledby="curator-tab-suggestions" data-curator-panel="suggestions" ${activeTab === "suggestions" ? "" : "hidden"}><section class="github-workflow"><header><span class="eyebrow">One public source of truth</span><h2>How a change reaches the Index</h2><p>GitHub holds the catalogue, discussion, review history, and deployment checks. Local browser drafts are only preparation material until their JSON is included in a pull request.</p></header><ol><li><span>01</span><div><strong>Open an issue</strong><p>Use a structured resource suggestion or problem report so the idea can be checked before anyone edits the catalogue.</p></div></li><li><span>02</span><div><strong>Verify the source</strong><p>Confirm the original URL, creator, publisher, format, access, length, metadata, and why the resource is useful.</p></div></li><li><span>03</span><div><strong>Open a pull request</strong><p>Add or update one file in <code>content/resources/</code>. Automated validation checks the catalogue, thumbnails, links, and reader interface.</p></div></li><li><span>04</span><div><strong>Review, merge, deploy</strong><p>After editorial review, merging to <code>main</code> rebuilds the catalogue and publishes the GitHub Pages site.</p></div></li></ol><div class="github-workflow-actions"><a class="primary-action" href="${githubUrls.suggestions}" target="_blank" rel="noreferrer">Suggest a resource ↗</a><a href="${githubUrls.problems}" target="_blank" rel="noreferrer">Report a problem ↗</a><a href="${githubUrls.pulls}" target="_blank" rel="noreferrer">View pull requests ↗</a><a href="${githubUrls.contributing}" target="_blank" rel="noreferrer">Contribution guide ↗</a></div></section></div>
     </section>${siteFooter()}`;
   }
 
   function aboutView() {
-    return `<section class="about-page shell"><header class="page-heading"><div><span class="eyebrow">About the index</span><h1>A map to existing knowledge—not another authority.</h1><p>The index helps people locate useful work by developers, researchers, authors, archivists, and educators.</p></div></header><div class="about-grid"><section><span>01</span><h2>What is indexed</h2><p>Talks, books, articles, papers, guides, documentation, courses, interviews, and archives related to making, studying, and preserving digital games.</p></section><section><span>02</span><h2>What each record explains</h2><p>What the resource is, why it may be useful, what it teaches, who it suits, how much time it needs, how it can be accessed, and what to explore afterward.</p></section><section><span>03</span><h2>How records are classified</h2><p>A controlled set of formats, broad subjects, experience levels, access types, length categories, and practical, historical, or theoretical uses supports consistent filtering.</p></section><section><span>04</span><h2>What it does not claim</h2><p>Inclusion is not a guarantee that every argument is correct. Annotations are not reviews, summaries are not replacements, and external resources remain responsible for their content.</p></section></div><div class="editorial-note"><span class="eyebrow">Current prototype</span><p>The index currently contains ${resources.length} English-language records. It favors durable educational and historical material over news, product promotion, and release coverage.</p></div></section>${siteFooter()}`;
+    return `<section class="about-page shell"><header class="page-heading"><div><span class="eyebrow">About the index</span><h1>A map to existing knowledge—not another authority.</h1><p>The index helps people locate useful work by developers, researchers, authors, archivists, and educators.</p></div></header><div class="about-grid"><section><span>01</span><h2>What is indexed</h2><p>Talks, books, articles, papers, guides, documentation, courses, interviews, and archives related to making, studying, and preserving digital games.</p></section><section><span>02</span><h2>What each record explains</h2><p>What the resource is, why it may be useful, what it teaches, who it suits, how much time it needs, how it can be accessed, and what to explore afterward.</p></section><section><span>03</span><h2>How records are classified</h2><p>A controlled set of formats, broad subjects, experience levels, access types, length categories, and practical, historical, or theoretical uses supports consistent filtering.</p></section><section><span>04</span><h2>What it does not claim</h2><p>Inclusion is not a guarantee that every argument is correct. Annotations are not reviews, summaries are not replacements, and external resources remain responsible for their content.</p></section></div><div class="editorial-note"><span class="eyebrow">Public catalogue</span><p>The index currently contains ${resources.length} English-language records. It favors durable educational and historical material over news, product promotion, and release coverage. Suggestions and corrections are reviewed in the public GitHub repository.</p></div></section>${siteFooter()}`;
   }
 
   function render() {
@@ -567,7 +572,7 @@ function initializeGamesAsArtLibrary() {
     }
     document.body.dataset.view = route;
     document.body.classList.remove("filters-open");
-    document.title = resourceId && resource(resourceId) ? `${resource(resourceId).title} — Games as Art Index` : collectionId && collection(collectionId) ? `${collection(collectionId).title} — Games as Art Index` : route === "/browse" ? "Browse — Games as Art Index" : route === "/collections" ? "Collections — Games as Art Index" : route === "/saved" ? "Saved — Games as Art Index" : route === "/suggest" ? "Suggest a resource — Games as Art Index" : route === "/curator" ? "Local curator workbench — Games as Art Index" : route === "/about" ? "About — Games as Art Index" : "Games as Art Index — Game development, history, and criticism";
+    document.title = resourceId && resource(resourceId) ? `${resource(resourceId).title} — Games as Art Index` : collectionId && collection(collectionId) ? `${collection(collectionId).title} — Games as Art Index` : route === "/browse" ? "Browse — Games as Art Index" : route === "/collections" ? "Collections — Games as Art Index" : route === "/saved" ? "Saved — Games as Art Index" : route === "/suggest" ? "Contribute — Games as Art Index" : route === "/curator" ? "Editorial workspace — Games as Art Index" : route === "/about" ? "About — Games as Art Index" : "Games as Art Index — Game development, history, and criticism";
     menu.classList.remove("open");
     menuButton.setAttribute("aria-expanded", "false");
     window.scrollTo(0, 0);
@@ -575,7 +580,6 @@ function initializeGamesAsArtLibrary() {
     if (route === "/saved") setupSaved();
     if (collectionId && collection(collectionId)) setupCollection(collection(collectionId));
     if (route === "/") setupHome();
-    if (route === "/suggest") setupSuggestionForm();
     if (route === "/curator") setupCurator();
     if (resourceId && resource(resourceId)) rememberResource(resourceId);
   }
@@ -1204,15 +1208,16 @@ function initializeGamesAsArtLibrary() {
     exportButton?.addEventListener("click", () => {
       const invalid = drafts.filter(draft => validateDraft(draft).errors.length);
       if (!drafts.length || invalid.length) { if (importStatus) importStatus.textContent = "Resolve every blocking record error before exporting."; return; }
-      const merged = resources.map(item => clone(item));
-      drafts.forEach(draft => {
-        const record = clone(draft.record);
-        const index = draft.baseId ? merged.findIndex(item => item.id === draft.baseId) : -1;
-        if (index >= 0) merged[index] = record; else merged.push(record);
-      });
-      const payload = { schemaVersion: data.schemaVersion || 1, updatedAt: today, editorialStatuses: data.editorialStatuses, taxonomy: data.taxonomy, collections: data.collections, resources: merged };
-      download(`games-as-art-index-catalogue-${today}.json`, `${JSON.stringify(payload, null, 2)}\n`, "application/json");
-      if (importStatus) importStatus.textContent = `Exported ${merged.length} catalogue records, including ${drafts.length} staged ${drafts.length === 1 ? "change" : "changes"}.`;
+      const stagedRecords = drafts.map(draft => clone(draft.record));
+      if (stagedRecords.length === 1) {
+        const record = stagedRecords[0];
+        download(`${record.id}.json`, `${JSON.stringify(record, null, 2)}\n`, "application/json");
+        if (importStatus) importStatus.textContent = `Downloaded ${record.id}.json. Place it in content/resources/ in your pull request.`;
+        return;
+      }
+      const payload = { schemaVersion: 1, preparedAt: today, targetDirectory: "content/resources", resources: stagedRecords };
+      download(`games-as-art-index-staged-records-${today}.json`, `${JSON.stringify(payload, null, 2)}\n`, "application/json");
+      if (importStatus) importStatus.textContent = `Downloaded ${stagedRecords.length} staged records as a review bundle. Split them into one <id>.json file per resource before opening a pull request.`;
     });
     drawList(); showActive();
   }
@@ -1446,23 +1451,6 @@ function initializeGamesAsArtLibrary() {
     if (openSearch) { search(""); searchDialog.showModal(); setTimeout(() => searchInput.focus(), 30); }
     const suggestion = event.target.closest("[data-search]");
     if (suggestion) { searchInput.value = suggestion.dataset.search; search(suggestion.dataset.search); }
-    const reportTrigger = event.target.closest("[data-report-resource]");
-    if (reportTrigger) {
-      event.preventDefault();
-      const item = resource(reportTrigger.dataset.reportResource);
-      const dialog = document.querySelector("#reportDialog");
-      if (item && dialog) {
-        document.querySelector("#reportResourceId").value = item.id;
-        document.querySelector("#reportResourceTitle").textContent = item.title;
-        const issueType = document.querySelector("#reportIssueType");
-        const suggestedType = trustState(item).key === "broken" ? "broken" : "outdated";
-        issueType.dataset.suggestedType = suggestedType;
-        try { issueType.value = suggestedType; } catch {}
-        document.querySelector("#reportIssueNote").value = "";
-        dialog.showModal();
-      }
-    }
-    if (event.target.closest("[data-close-report]")) document.querySelector("#reportDialog")?.close();
     const saver = event.target.closest("[data-save]");
     if (saver) {
       event.preventDefault();
@@ -1493,22 +1481,6 @@ function initializeGamesAsArtLibrary() {
     if (event.target.closest("#menuButton")) { const open = !menu.classList.contains("open"); menu.classList.toggle("open", open); menuButton.setAttribute("aria-expanded", String(open)); }
     if (event.target.closest("[data-search-route]")) searchDialog.close();
     if (!event.target.closest("#themeButton") && !event.target.closest(".theme-popover")) themePopover.hidden = true;
-  });
-
-  document.addEventListener("submit", event => {
-    if (!event.target.matches("#resourceReportForm")) return;
-    event.preventDefault();
-    const resourceId = document.querySelector("#reportResourceId")?.value;
-    const issueType = document.querySelector("#reportIssueType");
-    const type = issueType?.value || issueType?.dataset.suggestedType;
-    const note = document.querySelector("#reportIssueNote")?.value.trim() || "";
-    if (!resource(resourceId) || !["broken", "redirected", "outdated", "metadata", "other"].includes(type)) return;
-    const reports = problemReports();
-    reports.unshift({ id: `report-${Date.now().toString(36)}`, resourceId, type, note, status: "open", reportedAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-    saveProblemReports(reports);
-    document.querySelector("#reportDialog")?.close();
-    toast.textContent = "Problem report saved in this browser";
-    toast.classList.add("show"); clearTimeout(window.__GAA_TOAST_TIMER__); window.__GAA_TOAST_TIMER__ = setTimeout(() => toast.classList.remove("show"), 2200);
   });
 
   document.addEventListener("change", event => {

@@ -391,6 +391,24 @@ kbd { color: var(--muted); border: 0; background: transparent; font: 400 11px va
 .editorial-note p { max-width: 800px; margin: 12px 0 0; font: 400 19px/1.55 var(--serif); }
 
 .suggest-page, .curator-page { padding-bottom: 85px; }
+.contribution-heading p { max-width: 760px; }
+.contribution-options { margin-top: 38px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--rule); background: var(--rule); gap: 1px; }
+.contribution-options article { min-height: 360px; padding: 27px; display: flex; flex-direction: column; background: var(--raised); }
+.contribution-number { margin-bottom: 46px; color: var(--accent); font: 600 9px var(--mono); }
+.contribution-options h2 { margin: 10px 0 13px; font: 500 31px/1.05 var(--serif); }
+.contribution-options p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.contribution-options article > a { margin-top: auto; padding: 11px 12px; border: 1px solid var(--text); font-size: 9px; font-weight: 700; text-align: center; text-transform: uppercase; }
+.contribution-options article > a:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
+.contribution-guidance { margin-top: 34px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr); gap: 34px; align-items: start; }
+.contribution-guidance section { padding: 34px; border: 1px solid var(--rule); background: var(--raised); }
+.contribution-guidance h2 { max-width: 650px; margin: 12px 0 16px; font: 500 39px/1.03 var(--serif); }
+.contribution-guidance section > p, .contribution-guidance li, .contribution-guidance aside p { color: var(--muted); line-height: 1.6; }
+.contribution-guidance ul { margin: 24px 0 0; padding: 0; list-style: none; }
+.contribution-guidance li { padding: 11px 0 11px 24px; position: relative; border-top: 1px solid var(--rule); }
+.contribution-guidance li:before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+.contribution-guidance aside { position: sticky; top: 105px; padding: 28px; border-left: 3px solid var(--accent); background: var(--subtle); }
+.contribution-guidance h3 { margin: 11px 0 12px; font: 500 28px/1.08 var(--serif); }
+.contribution-guidance aside a { margin-top: 8px; padding: 10px 11px; display: block; border: 1px solid var(--rule); font-size: 8px; font-weight: 700; text-align: center; text-transform: uppercase; }
 .suggest-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .7fr); gap: 34px; padding-top: 38px; align-items: start; }
 .suggest-form { border: 1px solid var(--rule); background: var(--raised); }
 .form-section { padding: 28px; border-bottom: 1px solid var(--rule); }
@@ -435,7 +453,7 @@ kbd { color: var(--muted); border: 0; background: transparent; font: 400 11px va
 .maintenance-actions { display: flex; gap: 7px; }
 .maintenance-actions button, .maintenance-actions a { padding: 9px 11px; border: 1px solid var(--rule); background: transparent; font-size: 8px; font-weight: 700; text-transform: uppercase; white-space: nowrap; }
 .maintenance-actions button:disabled { opacity: .45; cursor: default; }
-.maintenance-stats { display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid var(--rule); background: var(--raised); }
+.maintenance-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border: 1px solid var(--rule); background: var(--raised); }
 .maintenance-stats > div { padding: 18px; border-right: 1px solid var(--rule); }
 .maintenance-stats > div:last-child { border-right: 0; }
 .maintenance-stats strong, .maintenance-stats span { display: block; }
@@ -545,6 +563,18 @@ kbd { color: var(--muted); border: 0; background: transparent; font: 400 11px va
 .catalogue-builder-export button:disabled { opacity: .4; cursor: not-allowed; }
 .catalogue-import-status { min-height: 16px; margin: 10px 0 0; }
 .suggestion-maintenance { padding-top: 48px; }
+.github-workflow { padding: 50px 0 62px; }
+.github-workflow > header { max-width: 780px; }
+.github-workflow h2 { margin: 9px 0 13px; font: 500 43px/1.02 var(--serif); }
+.github-workflow > header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.github-workflow ol { margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border: 1px solid var(--rule); background: var(--rule); list-style: none; }
+.github-workflow li { min-height: 190px; padding: 24px; display: grid; grid-template-columns: 40px 1fr; gap: 12px; background: var(--raised); }
+.github-workflow li > span { color: var(--accent); font: 600 9px var(--mono); }
+.github-workflow li strong { font: 500 24px var(--serif); }
+.github-workflow li p { margin: 10px 0 0; color: var(--muted); line-height: 1.6; }
+.github-workflow-actions { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.github-workflow-actions a { padding: 11px 13px; border: 1px solid var(--text); font-size: 8px; font-weight: 700; text-transform: uppercase; }
+.github-workflow-actions a:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
 .curator-toolbar { padding: 22px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; border-bottom: 1px solid var(--rule); }
 .curator-toolbar > div { margin-right: auto; display: flex; flex-wrap: wrap; gap: 15px; }
 .curator-toolbar span { color: var(--muted); font: 500 8px var(--mono); text-transform: uppercase; }
@@ -761,6 +791,9 @@ kbd { color: var(--muted); border: 0; background: transparent; font: 400 11px va
   .search-results > a { grid-template-columns: 55px 1fr 20px; }
   .search-results > a small { display: none; }
   .theme-popover { right: 18px; top: 59px; }
+  .contribution-options, .contribution-guidance, .github-workflow ol { grid-template-columns: 1fr; }
+  .contribution-options article { min-height: 290px; }
+  .contribution-guidance aside { position: static; }
   .form-pair, .curator-fields { grid-template-columns: 1fr; }
   .curator-fields .wide { grid-column: auto; }
   .form-section, .suggest-actions { padding-inline: 18px; }

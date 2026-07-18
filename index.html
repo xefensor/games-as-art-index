@@ -30,7 +30,7 @@
         <a href="#/browse">Browse</a>
         <a href="#/collections">Collections</a>
         <a href="#/saved">Saved</a>
-        <a href="#/suggest">Suggest</a>
+        <a href="#/suggest">Contribute</a>
         <a href="#/about">About</a>
       </nav>
       <div class="header-actions">
@@ -42,7 +42,7 @@
         <a href="#/browse">Browse</a>
         <a href="#/collections">Collections</a>
         <a href="#/saved">Saved</a>
-        <a href="#/suggest">Suggest</a>
+        <a href="#/suggest">Contribute</a>
         <a href="#/about">About</a>
         <button id="mobileTheme" type="button">Theme: <span>Auto</span></button>
       </nav>
@@ -66,17 +66,6 @@
       </form>
     </dialog>
 
-    <dialog class="report-dialog" id="reportDialog">
-      <form class="report-form" id="resourceReportForm" method="dialog">
-        <header><div><span class="eyebrow">Local problem report</span><strong id="reportResourceTitle">Report a resource</strong></div><button type="button" data-close-report aria-label="Close report">Close ×</button></header>
-        <input id="reportResourceId" name="resourceId" type="hidden">
-        <label><span>What is wrong?</span><select id="reportIssueType" name="type" required><option value="broken">The link is broken</option><option value="redirected">The link goes somewhere unexpected</option><option value="outdated">The information appears outdated</option><option value="metadata">The catalogue description or metadata is wrong</option><option value="other">Another problem</option></select></label>
-        <label><span>Optional note</span><textarea id="reportIssueNote" name="note" rows="4" placeholder="What did you encounter?"></textarea></label>
-        <p>This report remains in this browser until it is exported from the curator workbench.</p>
-        <footer><button type="button" data-close-report>Cancel</button><button class="primary-action" type="submit">Save local report</button></footer>
-      </form>
-    </dialog>
-
     <div class="theme-popover" id="themePopover" hidden>
       <span class="eyebrow">Appearance</span>
       <button type="button" data-theme-mode="auto">Auto <i>System</i></button>
@@ -85,7 +74,7 @@
     </div>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="/data.js?v=index-7"></script>
-    <script src="/app.js?v=index-7"></script>
+    <script src="/data.js?v=index-8"></script>
+    <script src="/app.js?v=index-8"></script>
   </body>
 </html>

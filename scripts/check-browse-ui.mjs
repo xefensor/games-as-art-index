@@ -184,14 +184,10 @@ const trustBrowse = createLibrary("#/browse?trust=broken&view=list", {}, trustCa
 assert.equal(trustBrowse.document.querySelectorAll(".resource-list-item").length, 1, "the link-state filter isolates broken resources");
 assert.equal(trustBrowse.document.querySelector(".resource-list-item").dataset.resourceId, thirdId);
 assert.equal(trustBrowse.document.querySelector(".trust-badge").textContent.trim().startsWith("Broken"), true, "compact rows show the latest verification state");
-assert.ok(trustBrowse.document.querySelector(".report-control"), "browse results provide a local problem-report control");
-trustBrowse.document.querySelector(".report-control").click();
-assert.equal(trustBrowse.document.querySelector("#reportResourceId").value, thirdId, "the report dialog targets the selected resource");
-assert.equal(trustBrowse.document.querySelector("#reportIssueType").dataset.suggestedType, "broken", "broken links preselect the matching report type");
-trustBrowse.document.querySelector("#reportIssueNote").value = "The original page returns an error.";
-trustBrowse.document.querySelector("#resourceReportForm").dispatchEvent(new trustBrowse.window.Event("submit", { bubbles: true, cancelable: true }));
-const storedReports = JSON.parse(trustBrowse.values.get("gaa-resource-reports"));
-assert.equal(storedReports[0].resourceId, thirdId, "problem reports are saved locally");
+const browseReport = trustBrowse.document.querySelector(".report-control");
+assert.ok(browseReport, "browse results provide a catalogue problem control");
+assert.match(browseReport.getAttribute("href"), /^https:\/\/github\.com\/xefensor\/games-as-art-index\/issues\/new\?template=broken-link\.yml/, "problem reports open the public GitHub issue form");
+assert.equal(browseReport.getAttribute("target"), "_blank", "GitHub reports do not replace the current catalogue view");
 
 const redirectedDetail = createLibrary(`#/resource/${secondId}`, {}, trustCatalogue);
 assert.match(redirectedDetail.document.querySelector(".resource-trust").textContent, /Redirected/, "resource pages explain redirected links");
@@ -242,13 +238,21 @@ assert.ok(bookDetail.document.querySelector(".book-frame").classList.contains("i
 const unsupportedDetail = createLibrary("#/resource/door-problem");
 assert.equal(unsupportedDetail.document.querySelector(".resource-embed"), null, "resources without a supported provider do not show an embed");
 
-const curator = createLibrary("#/curator", { "gaa-resource-reports": JSON.stringify(storedReports) }, trustCatalogue);
-assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"]`), "the maintenance dashboard prioritizes broken resources with reports");
+const contribution = createLibrary("#/suggest");
+assert.match(contribution.document.querySelector(".contribution-heading h1").textContent, /improve the Index/i, "the contribution page explains its purpose directly");
+assert.match(contribution.document.querySelector('.contribution-options a[href*="resource-suggestion.yml"]').getAttribute("href"), /^https:\/\/github\.com\//, "resource suggestions use the public GitHub issue form");
+assert.match(contribution.document.querySelector('.contribution-options a[href*="broken-link.yml"]').getAttribute("href"), /^https:\/\/github\.com\//, "catalogue problems use the public GitHub issue form");
+assert.equal(contribution.document.querySelector("#suggestionForm"), null, "the site no longer implies that browser-local suggestions reach maintainers");
+
+const curator = createLibrary("#/curator", {}, trustCatalogue);
+assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"]`), "the maintenance dashboard prioritizes broken resources from the deployed snapshot");
 const maintenanceBadge = curator.document.querySelector(`[data-maintenance-resource="${thirdId}"] .trust-badge`);
 assert.match(maintenanceBadge.textContent, /18 Jul 2026/, "maintenance badges use a short readable verification date");
 assert.doesNotMatch(maintenanceBadge.textContent, /T\d{2}:\d{2}/, "maintenance badges never expose raw ISO timestamps");
 assert.ok(curator.document.querySelector(".maintenance-stats [data-trust=\"redirected\"]"), "the curator dashboard summarizes every trust state");
-assert.ok(curator.document.querySelector("[data-export-problem-reports]"), "local reports can be exported for handoff");
+assert.match(curator.document.querySelector(".curator-heading .eyebrow").textContent, /GitHub-backed/i, "the editorial workspace identifies GitHub as its source of truth");
+assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"] a[href*="content/resources/${thirdId}.json"]`), "maintenance rows link to the published source record");
+assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"] a[href*="broken-link.yml"]`), "maintenance rows can open a structured GitHub report");
 assert.equal(curator.document.querySelectorAll("[data-curator-tab]").length, 3, "catalogue maintenance is divided into three focused tabs");
 assert.equal(curator.document.querySelector('#curator-tab-health').getAttribute("aria-selected"), "true", "link health is the initial curator tab");
 assert.equal(curator.document.querySelector('#curator-panel-catalogue').hasAttribute("hidden"), true, "inactive curator panels do not lengthen the page");
@@ -289,27 +293,6 @@ await new Promise(resolve => setTimeout(resolve, 0));
 assert.equal(JSON.parse(curator.values.get("gaa-catalogue-drafts")).length, 2, "JSON imports add complete resources to the staged catalogue");
 assert.match(curator.document.querySelector("#catalogueImportStatus").textContent, /Imported 1 record/i, "imports report a human-readable result");
 assert.equal(curator.document.querySelector("#exportUpdatedCatalogue").disabled, false, "valid imported records can be exported with staged edits");
-curator.document.querySelector("[data-resolve-report]").click();
-assert.equal(JSON.parse(curator.values.get("gaa-resource-reports"))[0].status, "resolved", "curators can resolve and reopen local reports");
-const linkCurator = createLibrary("#/curator", {}, trustCatalogue);
-const reviewTrigger = linkCurator.document.querySelector(`[data-maintenance-resource="${thirdId}"] [data-review-link]`);
-assert.ok(reviewTrigger, "resources needing attention provide a review and repair action");
-reviewTrigger.click();
-const linkReviewForm = linkCurator.document.querySelector(`[data-link-review-form="${thirdId}"]`);
-assert.equal(linkReviewForm.hasAttribute("hidden"), false, "the link review form opens within the affected row");
-const replacementUrl = "https://example.test/repaired-resource";
-linkReviewForm.querySelector('[name="reviewUrl"]').value = replacementUrl;
-linkReviewForm.querySelector('[name="reviewNote"]').value = "Replacement source checked manually.";
-linkReviewForm.querySelector('[data-link-review-status="working"]').click();
-const storedLinkReview = JSON.parse(linkCurator.values.get("gaa-link-reviews"))[thirdId];
-assert.equal(storedLinkReview.status, "working", "a curator can mark an automated failure as working locally");
-assert.equal(storedLinkReview.url, replacementUrl, "a reviewed replacement URL is saved locally");
-const stagedLinkFix = JSON.parse(linkCurator.values.get("gaa-catalogue-drafts")).find(draft => draft.baseId === thirdId);
-assert.equal(stagedLinkFix.record.url, replacementUrl, "a working replacement URL is staged for catalogue export");
-assert.match(linkCurator.document.querySelector(`[data-maintenance-resource="${thirdId}"] .trust-badge`).textContent, /Working · local/i, "manual decisions override the displayed automated state");
-assert.equal(linkCurator.document.querySelector("[data-export-link-reviews]").disabled, false, "manual link decisions can be exported for handoff");
-const reviewedResource = createLibrary(`#/resource/${thirdId}`, { "gaa-link-reviews": JSON.stringify({ [thirdId]: storedLinkReview }) }, trustCatalogue);
-assert.equal(reviewedResource.document.querySelector(".resource-actions .primary-action").getAttribute("href"), replacementUrl, "reader-facing direct links use a reviewed replacement URL");
 const csvCurator = createLibrary("#/curator");
 const csvRecord = { ...structuredClone(importedRecord), id: "csv-design-resource", title: "CSV Design Resource", url: "https://example.test/csv-design-resource", editorialStatus: importedRecord.editorial.status, editorialReviewedAt: importedRecord.editorial.reviewedAt, editorialNote: "" };
 delete csvRecord.editorial;
@@ -325,6 +308,7 @@ assert.equal(csvCurator.document.querySelector("#exportUpdatedCatalogue").disabl
 const rememberedCuratorTab = createLibrary("#/curator", { "gaa-curator-tab": '"suggestions"' });
 assert.equal(rememberedCuratorTab.document.querySelector('#curator-tab-suggestions').getAttribute("aria-selected"), "true", "the last curator tab is restored on a later visit");
 assert.equal(rememberedCuratorTab.document.querySelector('#curator-panel-suggestions').hasAttribute("hidden"), false, "the remembered curator panel opens directly");
+assert.equal(rememberedCuratorTab.document.querySelectorAll(".github-workflow li").length, 4, "the GitHub workflow explains the complete issue-to-deployment path");
 
 const currentTrustCatalogue = structuredClone(catalogue);
 currentTrustCatalogue.linkStatus = linkSnapshot;
@@ -332,4 +316,4 @@ assert.ok(blowCollection.resources.every(id => linkSnapshot.results.find(item =>
 const currentBroken = createLibrary("#/browse?trust=broken&view=list", {}, currentTrustCatalogue);
 assert.equal(currentBroken.document.querySelectorAll(".resource-list-item").length, linkSnapshot.summary.broken, "the published trust filter reflects the current full link-check snapshot");
 
-console.log("Index UI checks passed: browsing, queue, guided collections, recommendations, trust filters, local reports, curator maintenance, saving and visited markers.");
+console.log("Index UI checks passed: browsing, queue, guided collections, recommendations, trust filters, GitHub contributions, editorial maintenance, saving and visited markers.");
