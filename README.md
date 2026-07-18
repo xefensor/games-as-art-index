@@ -1,0 +1,75 @@
+# Games as Art Index
+
+A curated, account-free index of game development, history, and criticism, built from useful talks, books, articles, papers, guides, documentation, courses, and archives.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Current catalogue
+
+- 78 factual resource records with original external links
+- Typo-tolerant search across title, creator, publisher, game, format, level, and topic
+- Shareable URL filters for subject, format, access, experience, length, purpose, and sort order
+- Ten curated starting collections
+- Complete thumbnail coverage with source-aware discovery and generated editorial fallbacks
+- Click-to-load YouTube players (including verified official videos attached to publisher records), publisher-hosted PDF readers, and Google Books previews on supported resource pages, with original source links preserved
+- Resource pages with metadata, audience, learning outcomes, related records, and link-check dates
+- Automatic system theme plus explicit Auto, Light, and Dark controls
+- Locally saved resources and recently viewed history, with no account
+- Browser-local suggestion drafts, an editorial review queue, and JSON export
+- Responsive navigation and meaningful server-rendered fallback content
+
+Catalogue records are maintained as one file per entry under `content/resources/`; collections live under `content/collections/`, and taxonomy plus stable display order live in `content/catalogue.json`. `npm run catalogue:build` deterministically generates `public/catalogue.json` for the website. `public/data.js` loads that generated file and `public/app.js` renders the browser interface.
+
+## Contributing through GitHub
+
+Resource suggestions and catalogue problems use structured GitHub issue forms. Published changes go through pull requests with automated catalogue, thumbnail, browser, and production-build checks. See [CONTRIBUTING.md](CONTRIBUTING.md) for the editorial criteria and workflow.
+
+The generated public catalogue is committed so deployments remain self-contained, but contributors should edit the source files under `content/`. CI rejects a pull request when generated output is stale.
+
+## Thumbnail maintenance
+
+Every resource uses a local optimized thumbnail recorded in `public/thumbnail-manifest.json`. Catalogue image URLs remain as acquisition metadata, but the reader interface consistently loads the normalized local set.
+
+Discover and refresh source images, then generate editorial covers where a suitable image is unavailable:
+
+```bash
+npm run thumbnails:sync -- --refresh
+```
+
+Refresh one resource with `npm run thumbnails:sync -- --id resource-id`. Validate complete coverage without making network requests:
+
+```bash
+npm run validate:thumbnails
+```
+
+The manifest records the resource page, selected image source, acquisition method, verification date, dimensions, and file size. Thumbnail validation runs automatically before every production build.
+
+## Catalogue maintenance
+
+Validate the complete catalogue before committing changes:
+
+```bash
+npm run catalogue:build
+npm run validate:catalogue
+```
+
+Check original resource links and write `reports/link-check-report.json`:
+
+```bash
+npm run check:links
+```
+
+The link checker classifies successful, restricted, redirected, broken, timed-out, and network-error results separately. Use `npm run check:links -- --help` for limits and timeout options. Validation runs automatically before every production build.
+
+## Editorial model
+
+The catalogue points to existing knowledge rather than reproducing it. Each record should identify its original creator and publisher, link to the original source, describe the subject factually, and avoid presenting its short annotation as a definitive review.
+
+Future additions should favor durable educational, technical, historical, or critical material over news and product promotion. Records move through `draft`, `reviewed`, `published`, and `needs-rechecking` editorial states. Links and metadata should be checked before publication.
+
+The in-site curator workbench is browser-local and intentionally not presented as secure administration. A shared multi-user submission inbox will require authenticated server storage.
