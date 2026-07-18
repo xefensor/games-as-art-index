@@ -1,0 +1,5 @@
+content/ @xefensor
+public/catalogue.json @xefensor
+public/thumbnail-manifest.json @xefensor
+public/thumbnails/ @xefensor
+.github/ @xefensor

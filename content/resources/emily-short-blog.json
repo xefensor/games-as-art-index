@@ -1,0 +1,49 @@
+{
+  "id": "emily-short-blog",
+  "type": "Article archive",
+  "title": "Emily Short’s Interactive Storytelling",
+  "creator": "Emily Short",
+  "publisher": "Emily Short",
+  "year": 2023,
+  "length": "Article archive",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Interactive fiction",
+    "Dialogue",
+    "Narrative systems"
+  ],
+  "games": [],
+  "description": "A large archive of analysis, reviews, design notes, tools, and talks about interactive fiction, choice design, conversation systems, procedural narrative, and the history of the form.",
+  "useful": "The archive links practical design problems to a wide range of playable work and earlier research.",
+  "url": "https://emshort.blog/",
+  "image": "",
+  "subjects": [
+    "Narrative",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Historical",
+    "Theoretical"
+  ],
+  "audience": "Writers, narrative designers, and researchers who want examples beyond mainstream cinematic games.",
+  "learning": [
+    "Find precedents for specific interactive-story problems",
+    "Compare different structures for choice and conversation",
+    "Build a broader vocabulary of interactive fiction"
+  ],
+  "next": [
+    "game-writing",
+    "procedural-storytelling",
+    "narrative-legos"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

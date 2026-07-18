@@ -1,0 +1,13 @@
+{
+  "id": "narrative-design",
+  "title": "Design interactive stories",
+  "description": "Begin with the distinctive properties of digital narrative, then study writing, systems, and procedural structures.",
+  "color": "violet",
+  "resources": [
+    "hamlet-holodeck",
+    "game-writing",
+    "emily-short-blog",
+    "narrative-legos",
+    "procedural-storytelling"
+  ]
+}

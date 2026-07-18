@@ -1,0 +1,60 @@
+{
+  "id": "braid-rewind-implementation",
+  "type": "Talk",
+  "title": "The Implementation of Rewind in Braid",
+  "creator": "Jonathan Blow",
+  "publisher": "GDC Vault",
+  "year": 2010,
+  "length": "60 min",
+  "access": "Free",
+  "level": "Advanced",
+  "topics": [
+    "Time systems",
+    "State management",
+    "Technical design"
+  ],
+  "games": [
+    "Braid"
+  ],
+  "description": "A technical GDC lecture on storing, reconstructing, and replaying Braid's world state so that players can rewind long stretches of play accurately within console memory limits.",
+  "useful": "It connects a defining game mechanic to concrete engineering constraints and shows how implementation choices determine which higher-level design ideas remain possible.",
+  "url": "https://gdcvault.com/play/1012210/The-Implementation-of-Rewind-in",
+  "embed": {
+    "provider": "youtube",
+    "videoId": "8dinUbg2h70",
+    "source": "GDC Festival of Gaming"
+  },
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "GDC Vault session page opened successfully during editorial review."
+  },
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Game design"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Gameplay programmers and technical designers working on deterministic simulation, replay, rollback, or mechanics built around historical state.",
+  "learning": [
+    "Separate reversible state from effects that can be reconstructed",
+    "Budget a long gameplay history within strict memory limits",
+    "Relate engine architecture to the design space of a mechanic"
+  ],
+  "next": [
+    "blow-indie-prototyping",
+    "blow-truth-game-design",
+    "game-programming-patterns"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the GDC Vault session record."
+  }
+}

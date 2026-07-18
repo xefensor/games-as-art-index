@@ -1,0 +1,48 @@
+{
+  "id": "rules-of-play",
+  "type": "Book",
+  "title": "Rules of Play",
+  "creator": "Katie Salen Tekinbaş and Eric Zimmerman",
+  "publisher": "MIT Press",
+  "year": 2003,
+  "length": "688 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Game design",
+    "Game studies",
+    "Systems"
+  ],
+  "games": [],
+  "description": "A large textbook and reference work that develops a vocabulary for rules, play, culture, systems, interaction, and meaningful play.",
+  "useful": "Best used as a reference or structured course text rather than a quick practical manual.",
+  "url": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262240451-L.jpg?default=false",
+  "featured": true,
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical"
+  ],
+  "audience": "Students, teachers, and designers who need a broad reference vocabulary for games and play.",
+  "learning": [
+    "Analyze games as rules, play, systems, and culture",
+    "Distinguish formal structures from player experience",
+    "Use meaningful play as one design lens"
+  ],
+  "next": [
+    "mda-framework",
+    "characteristics-of-games",
+    "game-design-reader"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "level-and-space",
+  "title": "Design levels that teach",
+  "description": "Learn how routes, landmarks, architecture, difficulty, and repetition guide a player through space.",
+  "color": "gold",
+  "resources": [
+    "architectural-level-design",
+    "valve-level-design",
+    "witness-architecture",
+    "designing-celeste",
+    "designing-journey"
+  ]
+}

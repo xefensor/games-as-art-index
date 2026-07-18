@@ -1,0 +1,47 @@
+{
+  "id": "game-audio-implementation",
+  "type": "Book",
+  "title": "Game Audio Implementation",
+  "creator": "Richard Stevens and Dave Raybould",
+  "publisher": "Focal Press",
+  "year": 2015,
+  "length": "464 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Audio middleware",
+    "Unreal Engine",
+    "Implementation"
+  ],
+  "games": [],
+  "description": "A practical implementation guide built around exercises in game engines and audio middleware. It covers triggers, spatial sound, interactive music, dialogue, mixing, optimization, and troubleshooting.",
+  "useful": "It focuses on getting sound into a functioning game, bridging a common gap between asset creation and technical implementation.",
+  "url": "https://gameaudioimplementation.com/",
+  "image": "https://covers.openlibrary.org/b/isbn/9781138777248-L.jpg?default=false",
+  "subjects": [
+    "Audio",
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Sound designers and technical audio students moving from a digital audio workstation into game tools.",
+  "learning": [
+    "Implement events, ambience, and spatial sound",
+    "Build interactive music and dialogue systems",
+    "Test and optimize audio inside an engine"
+  ],
+  "next": [
+    "game-audio-tutorial",
+    "designing-sound",
+    "unreal-get-started"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

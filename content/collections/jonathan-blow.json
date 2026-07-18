@@ -1,0 +1,18 @@
+{
+  "id": "jonathan-blow",
+  "title": "Jonathan Blow—from Braid to The Witness",
+  "description": "Follow Blow's work from early independent prototyping through Braid's rewind system, his design philosophy, and the long development of The Witness.",
+  "color": "gold",
+  "resources": [
+    "blow-indie-prototyping",
+    "braid-rewind-implementation",
+    "blow-truth-game-design",
+    "witness-architecture",
+    "witness-audio",
+    "blow-medium-is-message",
+    "blow-design-deep-games",
+    "witness-music",
+    "witness-science-language-reality",
+    "witness-dev-archive"
+  ]
+}

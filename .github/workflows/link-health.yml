@@ -1,0 +1,48 @@
+name: Check source links
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Check external links
+        id: link_check
+        continue-on-error: true
+        run: npm run check:links -- --fail-on-broken
+      - name: Upload complete link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: reports/link-check-report.json
+          retention-days: 30
+      - name: Open a maintenance issue for broken links
+        if: steps.link_check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Automated link check found broken resources"
+          body="The scheduled link check found one or more broken original sources. Download the link-check-report artifact from this workflow run, verify each result manually, and submit corrections through a pull request.\n\nWorkflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          existing="$(gh issue list --state open --search \"$title in:title\" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

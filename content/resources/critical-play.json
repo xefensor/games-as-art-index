@@ -1,0 +1,48 @@
+{
+  "id": "critical-play",
+  "type": "Book",
+  "title": "Critical Play",
+  "creator": "Mary Flanagan",
+  "publisher": "MIT Press",
+  "year": 2009,
+  "length": "336 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Game studies",
+    "Art",
+    "Critical design"
+  ],
+  "games": [],
+  "description": "A history and theory of games made to question social, cultural, and political assumptions, from folk practices to digital works.",
+  "useful": "Broadens a design library beyond commercial usability and entertainment goals.",
+  "url": "https://mitpress.mit.edu/9780262518659/critical-play/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262518659-L.jpg?default=false",
+  "subjects": [
+    "Criticism & theory",
+    "History"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Artists, critics, researchers, and designers interested in games that question social conventions.",
+  "learning": [
+    "Place critical games within a longer cultural history",
+    "Recognize play used as intervention and argument",
+    "Broaden design goals beyond usability and entertainment"
+  ],
+  "next": [
+    "game-design-reader",
+    "rules-of-play",
+    "witness-music"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

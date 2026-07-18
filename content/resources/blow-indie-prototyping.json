@@ -1,0 +1,55 @@
+{
+  "id": "blow-indie-prototyping",
+  "type": "Talk",
+  "title": "Indie Prototyping, Braid, & Making Innovative Games",
+  "creator": "Jonathan Blow",
+  "publisher": "GDC Vault",
+  "year": 2007,
+  "length": "60 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Prototyping",
+    "Independent development",
+    "Game mechanics"
+  ],
+  "games": [
+    "Braid"
+  ],
+  "description": "A pre-release GDC session in which Blow explains how small experimental prototypes led toward Braid and how developers can search for mechanics with unexplored consequences.",
+  "useful": "It records the design process before Braid became a finished success, making the uncertainty, discarded ideas, and value of exploratory work unusually visible.",
+  "url": "https://gdcvault.com/play/1014831/Indie-Prototyping-Braid-Making-Innovative",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "GDC Vault session page opened successfully during editorial review."
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Independent developers and students deciding how to prototype, evaluate an unusual mechanic, and turn experiments into a larger project.",
+  "learning": [
+    "Use prototypes to investigate questions rather than prove a pitch",
+    "Recognize when one mechanic supports a wider design space",
+    "Compare early design intentions with the finished Braid"
+  ],
+  "next": [
+    "braid-rewind-implementation",
+    "blow-truth-game-design",
+    "blow-design-deep-games"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the GDC Vault session record."
+  }
+}

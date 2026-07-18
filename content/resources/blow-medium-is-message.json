@@ -1,0 +1,55 @@
+{
+  "id": "blow-medium-is-message",
+  "type": "Talk",
+  "title": "Game Design: The Medium Is the Message",
+  "creator": "Jonathan Blow",
+  "publisher": "CreativeMornings Portland",
+  "year": 2013,
+  "length": "48 min",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Games as art",
+    "Creative responsibility",
+    "Design philosophy"
+  ],
+  "games": [
+    "Braid",
+    "The Witness"
+  ],
+  "description": "A public lecture about the ideas games communicate through rules, rewards, and repeated actions, and about the responsibility involved in choosing what a game asks its players to practice.",
+  "useful": "It is an accessible entry into Blow's broader cultural argument, with enough concrete game examples to support agreement, criticism, or comparison with other design traditions.",
+  "url": "https://www.youtube.com/watch?v=AxFzf6yIfcc",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "CreativeMornings video opened successfully during editorial review."
+  },
+  "image": "https://i.ytimg.com/vi/AxFzf6yIfcc/hqdefault.jpg",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Theoretical"
+  ],
+  "audience": "Developers, students, and general audiences looking for a clear introduction to games as expressive systems rather than neutral entertainment products.",
+  "learning": [
+    "Identify messages carried by rules and reward structures",
+    "Discuss artistic responsibility without reducing games to stories",
+    "Question what repeated player actions normalize or rehearse"
+  ],
+  "next": [
+    "blow-truth-game-design",
+    "persuasive-games",
+    "witness-music"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the CreativeMornings recording."
+  }
+}

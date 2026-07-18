@@ -1,0 +1,57 @@
+{
+  "id": "blow-design-deep-games",
+  "type": "Talk",
+  "title": "How to Design Deep Games",
+  "creator": "Jonathan Blow",
+  "publisher": "Indievelopment",
+  "year": 2014,
+  "length": "48 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Deep work",
+    "Long projects",
+    "Creative process"
+  ],
+  "games": [
+    "Braid",
+    "The Witness"
+  ],
+  "description": "A keynote about pursuing difficult, open-ended creative work, developing specialized judgment, and sustaining projects whose destination cannot be fully specified before the work begins.",
+  "useful": "It addresses the human process behind ambitious independent games and offers a counterweight to production advice built only around speed, predictability, and market validation.",
+  "url": "https://www.youtube.com/watch?v=sIKZyvYj6Tc",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Conference recording opened successfully during editorial review."
+  },
+  "image": "https://i.ytimg.com/vi/sIKZyvYj6Tc/hqdefault.jpg",
+  "subjects": [
+    "Production",
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Independent developers and small teams deciding whether a difficult long-term project deserves the time, uncertainty, and specialization it demands.",
+  "learning": [
+    "Distinguish deep exploration from routine production work",
+    "Use internal direction when a project cannot be fully planned",
+    "Assess the personal cost and value of long creative projects"
+  ],
+  "next": [
+    "blow-indie-prototyping",
+    "playful-production",
+    "witness-dev-archive"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the published conference recording."
+  }
+}

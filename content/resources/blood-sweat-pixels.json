@@ -1,0 +1,52 @@
+{
+  "id": "blood-sweat-pixels",
+  "type": "Book",
+  "title": "Blood, Sweat, and Pixels",
+  "creator": "Jason Schreier",
+  "publisher": "HarperCollins",
+  "year": 2017,
+  "length": "304 pages",
+  "access": "Paid",
+  "level": "All levels",
+  "topics": [
+    "Production",
+    "Crunch",
+    "Project history"
+  ],
+  "games": [
+    "Stardew Valley",
+    "Uncharted 4",
+    "The Witcher 3"
+  ],
+  "description": "Ten reported accounts reconstruct difficult game productions, from solo development to large studios. The book covers delays, redesigns, technical problems, management, cancellation, and crunch through interviews with participants.",
+  "useful": "It makes production risk legible through concrete projects and people rather than reducing development to success stories.",
+  "url": "https://www.harpercollins.com/products/blood-sweat-and-pixels-jason-schreier",
+  "image": "https://covers.openlibrary.org/b/isbn/9780062651235-L.jpg?default=false",
+  "subjects": [
+    "Production",
+    "History"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Historical",
+    "Practical"
+  ],
+  "audience": "Developers, students, and general readers seeking a reported view of how games are actually made.",
+  "learning": [
+    "Recognize recurring production risks across different teams",
+    "Separate public launch narratives from development history",
+    "Discuss the human cost of scope, delay, and crunch"
+  ],
+  "next": [
+    "press-reset",
+    "playful-production",
+    "spelunky-book"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

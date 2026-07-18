@@ -1,0 +1,47 @@
+{
+  "id": "vghf-library",
+  "type": "Archive",
+  "title": "Video Game History Foundation Library",
+  "creator": "Video Game History Foundation",
+  "publisher": "VGHF",
+  "year": 2025,
+  "length": "Digital library",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Game history",
+    "Preservation",
+    "Research"
+  ],
+  "games": [],
+  "description": "A research library for digitized game magazines, development material, ephemera, and catalogued archival collections.",
+  "useful": "A starting point for historical research that depends on primary documents rather than retrospective summaries.",
+  "url": "https://gamehistory.org/library/",
+  "image": "",
+  "featured": true,
+  "subjects": [
+    "History"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Historical"
+  ],
+  "audience": "Researchers, writers, developers, and curious players looking for primary historical material.",
+  "learning": [
+    "Search digitized magazines and archival holdings",
+    "Distinguish primary documents from later summaries",
+    "Build evidence for historical research questions"
+  ],
+  "next": [
+    "gdc-vault",
+    "game-design-reader",
+    "id-source-code"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

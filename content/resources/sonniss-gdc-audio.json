@@ -1,0 +1,47 @@
+{
+  "id": "sonniss-gdc-audio",
+  "type": "Archive",
+  "title": "GameAudioGDC Sound Effects Archive",
+  "creator": "Sonniss",
+  "publisher": "Sonniss",
+  "year": 2026,
+  "length": "Sound library archive",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Sound libraries",
+    "Field recording",
+    "Production"
+  ],
+  "games": [],
+  "description": "An annual collection of professionally recorded sound-effect samples released around GDC. The archive spans ambiences, vehicles, impacts, interfaces, creatures, machinery, and many specialist recordings.",
+  "useful": "It provides legal production material for learning and commercial media work; users should still read the current license and observe its AI-training restriction.",
+  "url": "https://sonniss.com/gameaudiogdc/",
+  "image": "",
+  "subjects": [
+    "Audio",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Sound designers, students, and small teams needing source recordings for legitimate media production.",
+  "learning": [
+    "Locate source material by sound category",
+    "Turn raw recordings into project-specific assets",
+    "Check license terms before using a library"
+  ],
+  "next": [
+    "game-audio-tutorial",
+    "game-audio-implementation",
+    "witness-audio"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

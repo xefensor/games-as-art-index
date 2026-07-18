@@ -1,0 +1,48 @@
+{
+  "id": "igda-accessibility-resources",
+  "type": "Guide",
+  "title": "Game Accessibility Resources for Developers",
+  "creator": "IGDA Game Accessibility SIG",
+  "publisher": "IGDA GASIG",
+  "year": 2026,
+  "length": "Resource archive",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Accessibility",
+    "Research",
+    "Community"
+  ],
+  "games": [],
+  "description": "A community-maintained starting page for developers and researchers, linking guidelines, methods, examples, publications, organizations, and specialist resources related to accessible games.",
+  "useful": "It provides routes into a broader accessibility community and evidence base when one guideline set is not enough.",
+  "url": "https://igda-gasig.org/how/for-developers-researchers/",
+  "image": "",
+  "subjects": [
+    "Accessibility",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Developers, researchers, educators, and advocates looking for further specialist material or collaborators.",
+  "learning": [
+    "Locate organizations and specialist guidance",
+    "Find research for an unfamiliar access need",
+    "Continue beyond introductory checklists"
+  ],
+  "next": [
+    "accessibility-guidelines",
+    "accessible-player-experiences",
+    "inclusive-game-design-paper"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

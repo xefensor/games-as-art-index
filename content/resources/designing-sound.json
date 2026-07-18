@@ -1,0 +1,48 @@
+{
+  "id": "designing-sound",
+  "type": "Book",
+  "title": "Designing Sound",
+  "creator": "Andy Farnell",
+  "publisher": "MIT Press",
+  "year": 2010,
+  "length": "688 pages",
+  "access": "Paid",
+  "level": "Advanced",
+  "topics": [
+    "Sound synthesis",
+    "Procedural audio",
+    "Pure Data"
+  ],
+  "games": [],
+  "description": "A technical guide to constructing sounds from physical and perceptual models using Pure Data. Examples cover impacts, machines, vehicles, fire, weather, voices, and other sound families.",
+  "useful": "It teaches how a sound behaves rather than only how to search for or process a prerecorded sample.",
+  "url": "https://mitpress.mit.edu/9780262014410/designing-sound/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262014410-L.jpg?default=false",
+  "subjects": [
+    "Audio",
+    "Programming"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Sound designers and audio programmers comfortable with synthesis, patching, and technical detail.",
+  "learning": [
+    "Model sound from physical behavior",
+    "Construct procedural effects in Pure Data",
+    "Organize complex effects from reusable components"
+  ],
+  "next": [
+    "game-audio-implementation",
+    "game-audio-tutorial",
+    "sonniss-gdc-audio"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

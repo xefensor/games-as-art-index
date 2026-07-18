@@ -1,0 +1,51 @@
+{
+  "id": "prince-of-persia-postmortem",
+  "type": "Talk",
+  "title": "Classic Game Postmortem: Prince of Persia",
+  "creator": "Jordan Mechner",
+  "publisher": "Game Developer / GDC",
+  "year": 2011,
+  "length": "60 min",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Game history",
+    "Animation",
+    "Production"
+  ],
+  "games": [
+    "Prince of Persia"
+  ],
+  "description": "Jordan Mechner looks back at four years of designing, programming, and animating Prince of Persia for the Apple II.",
+  "useful": "A first-hand production history covering rotoscoped animation, solo development, influences, and scope.",
+  "url": "https://www.gamedeveloper.com/audio/video-postmortem-the-making-of-i-prince-of-persia-i-",
+  "image": "",
+  "subjects": [
+    "History",
+    "Visual art",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Historical",
+    "Practical"
+  ],
+  "audience": "Independent developers, animators, and readers studying early personal computer production.",
+  "learning": [
+    "Understand how rotoscoping shaped character movement",
+    "Follow a four-year solo development process",
+    "See how technical limits influenced the finished design"
+  ],
+  "next": [
+    "doom-postmortem",
+    "spelunky-book",
+    "racing-the-beam"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "game-writing",
+  "type": "Book",
+  "title": "Game Writing",
+  "creator": "Chris Bateman, editor",
+  "publisher": "Bloomsbury Academic",
+  "year": 2021,
+  "length": "Book",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Game writing",
+    "Nonlinear narrative",
+    "Dialogue"
+  ],
+  "games": [],
+  "description": "A revised collection on the practical craft of writing for games, including interactive structure, dialogue, characters, documentation, voice production, and collaboration with a development team.",
+  "useful": "It introduces the concrete deliverables and constraints of game writing rather than treating narrative only as plot analysis.",
+  "url": "https://www.bloomsbury.com/us/game-writing-9781501348969/",
+  "image": "https://covers.openlibrary.org/b/isbn/9781501348969-L.jpg?default=false",
+  "subjects": [
+    "Narrative",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Writers entering game development and teams that need a shared understanding of narrative work.",
+  "learning": [
+    "Plan writing for branching and interactive structures",
+    "Prepare dialogue and narrative documentation",
+    "Collaborate with design, audio, and production roles"
+  ],
+  "next": [
+    "emily-short-blog",
+    "hamlet-holodeck",
+    "narrative-legos"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

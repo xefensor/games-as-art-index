@@ -1,0 +1,50 @@
+{
+  "id": "narrative-legos",
+  "type": "Talk",
+  "title": "Narrative Legos",
+  "creator": "Ken Levine",
+  "publisher": "GDC",
+  "year": 2014,
+  "length": "30 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Procedural narrative",
+    "NPCs",
+    "Replayability"
+  ],
+  "games": [
+    "BioShock"
+  ],
+  "description": "Ken Levine proposes reusable narrative elements driven by characters’ passions, relationships, and changing states. The talk sketches an alternative to fixed branching plots for replayable story systems.",
+  "useful": "It is a clear, debatable design proposal that helps teams discuss what systemic narrative would actually require.",
+  "url": "https://www.youtube.com/watch?v=58FWUkA8y2Q",
+  "image": "https://i.ytimg.com/vi/58FWUkA8y2Q/hqdefault.jpg",
+  "subjects": [
+    "Narrative",
+    "Game design"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Theoretical",
+    "Practical"
+  ],
+  "audience": "Narrative and systems designers exploring replayable character-driven stories.",
+  "learning": [
+    "Describe a state-driven alternative to branching plots",
+    "Connect character relationships to systemic change",
+    "Identify production questions left open by a design concept"
+  ],
+  "next": [
+    "procedural-storytelling",
+    "emily-short-blog",
+    "hamlet-holodeck"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

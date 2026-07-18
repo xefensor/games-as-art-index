@@ -1,0 +1,47 @@
+{
+  "id": "unity-create-code",
+  "type": "Course",
+  "title": "Create with Code",
+  "creator": "Unity Technologies",
+  "publisher": "Unity Learn",
+  "year": 2020,
+  "length": "Course",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Programming",
+    "Engine",
+    "3D"
+  ],
+  "games": [],
+  "description": "A project-based beginner course introducing Unity and C# through several small prototypes and practical programming challenges.",
+  "useful": "Provides a defined sequence for learning editor basics and scripting instead of assembling unrelated tutorials.",
+  "url": "https://learn.unity.com/course/create-with-code",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Beginning Unity users who want a guided route through the editor and C# scripting.",
+  "learning": [
+    "Navigate Unity's project and scene workflow",
+    "Write C# behavior for several small prototypes",
+    "Practice debugging through structured challenges"
+  ],
+  "next": [
+    "game-programming-patterns",
+    "finishing-a-game",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

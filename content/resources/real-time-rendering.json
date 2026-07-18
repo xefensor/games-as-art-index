@@ -1,0 +1,48 @@
+{
+  "id": "real-time-rendering",
+  "type": "Book",
+  "title": "Real-Time Rendering, Fourth Edition",
+  "creator": "Tomas Akenine-Möller, Eric Haines, and Naty Hoffman",
+  "publisher": "CRC Press / Routledge",
+  "year": 2018,
+  "length": "1,198 pages",
+  "access": "Paid",
+  "level": "Advanced",
+  "topics": [
+    "Rendering",
+    "Graphics",
+    "Algorithms"
+  ],
+  "games": [],
+  "description": "A comprehensive reference to the modern real-time graphics pipeline, transforms, shading, textures, lighting, shadows, sampling, acceleration, and many production rendering techniques.",
+  "useful": "A durable technical reference for understanding why rendering systems work, rather than only how to operate one engine’s tools.",
+  "url": "https://www.routledge.com/Real-Time-Rendering-Fourth-Edition/Akenine-Moller-Haines-Hoffman/p/book/9781138627000",
+  "image": "https://covers.openlibrary.org/b/isbn/9781138627000-L.jpg?default=false",
+  "subjects": [
+    "Programming",
+    "Visual art"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Graphics programmers and advanced technical artists who are comfortable with mathematics and rendering code.",
+  "learning": [
+    "Map the stages of a real-time rendering pipeline",
+    "Compare lighting, shadow, and sampling techniques",
+    "Choose further research from a broad technical reference"
+  ],
+  "next": [
+    "pbr-book",
+    "book-of-shaders",
+    "tf2-illustrative-rendering"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "witness-audio",
+  "type": "Article",
+  "title": "The Witness Audio: 1,000 Subtle Layers",
+  "creator": "Andrew Lackey",
+  "publisher": "The Witness development blog",
+  "year": 2013,
+  "length": "9 min read",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Audio",
+    "Environment art",
+    "Production"
+  ],
+  "games": [
+    "The Witness"
+  ],
+  "description": "A production report on recording, editing, layering, and placing environmental sound across The Witness's island.",
+  "useful": "Shows how detailed sound work can support location and attention without relying on a continuous score.",
+  "url": "https://the-witness.net/news/2013/02/the-witness-audio-1000-subtle-layers/",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+  },
+  "image": "",
+  "subjects": [
+    "Audio",
+    "Production"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Sound designers and environment teams building a detailed sense of place.",
+  "learning": [
+    "Plan field recording for a large environment",
+    "Layer subtle sounds without overwhelming the player",
+    "Connect materials and locations to an audio system"
+  ],
+  "next": [
+    "witness-music",
+    "doom-behind-music",
+    "witness-dev-archive"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

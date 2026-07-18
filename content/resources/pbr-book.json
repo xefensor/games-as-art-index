@@ -1,0 +1,48 @@
+{
+  "id": "pbr-book",
+  "type": "Book",
+  "title": "Physically Based Rendering",
+  "creator": "Matt Pharr, Wenzel Jakob, and Greg Humphreys",
+  "publisher": "PBRT",
+  "year": 2023,
+  "length": "Online fourth edition",
+  "access": "Free",
+  "level": "Advanced",
+  "topics": [
+    "Rendering",
+    "Ray tracing",
+    "Light transport"
+  ],
+  "games": [],
+  "description": "The complete online fourth edition explains a working physically based renderer from mathematical foundations through geometry, materials, light transport, sampling, and implementation.",
+  "useful": "It pairs rigorous explanation with real source code, making it valuable both as a textbook and as an implementation reference.",
+  "url": "https://pbr-book.org/4ed/contents",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262048026-L.jpg?default=false",
+  "subjects": [
+    "Programming",
+    "Visual art"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Advanced graphics programmers and researchers studying physically based rendering or ray tracing.",
+  "learning": [
+    "Follow a renderer from camera rays to final image",
+    "Understand sampling and light transport",
+    "Connect rendering equations to implementation"
+  ],
+  "next": [
+    "real-time-rendering",
+    "book-of-shaders",
+    "tf2-illustrative-rendering"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

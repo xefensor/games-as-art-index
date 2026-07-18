@@ -1,0 +1,13 @@
+{
+  "id": "first-project",
+  "title": "Finish a first project",
+  "description": "Engine instruction, scope advice, accessibility, and a sustainable route from prototype to release.",
+  "color": "violet",
+  "resources": [
+    "godot-first-2d",
+    "unity-create-code",
+    "finishing-a-game",
+    "playful-production",
+    "gaming-accessibility-fundamentals"
+  ]
+}

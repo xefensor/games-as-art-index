@@ -1,0 +1,51 @@
+{
+  "id": "procedural-storytelling",
+  "type": "Book",
+  "title": "Procedural Storytelling in Game Design",
+  "creator": "Tanya X. Short and Tarn Adams, editors",
+  "publisher": "CRC Press / Routledge",
+  "year": 2019,
+  "length": "392 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Procedural narrative",
+    "Worldbuilding",
+    "Systems"
+  ],
+  "games": [
+    "Dwarf Fortress"
+  ],
+  "description": "A multi-author practical collection on generating characters, histories, worlds, plots, dialogue, and player stories through systems. Case studies expose both productive methods and common failures.",
+  "useful": "The variety of contributors prevents procedural narrative from being reduced to one algorithm or one kind of game.",
+  "url": "https://www.routledge.com/Procedural-Storytelling-in-Game-Design/Short-Adams/p/book/9781138595309",
+  "image": "https://covers.openlibrary.org/b/isbn/9781138595309-L.jpg?default=false",
+  "subjects": [
+    "Narrative",
+    "Game design",
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Narrative designers and programmers building stories that respond to systems and player action.",
+  "learning": [
+    "Choose what parts of a story system should generate",
+    "Design data and rules that support meaningful variation",
+    "Recognize coherence and authorship problems in procedural narrative"
+  ],
+  "next": [
+    "narrative-legos",
+    "emily-short-blog",
+    "characteristics-of-games"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

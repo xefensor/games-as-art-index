@@ -1,0 +1,52 @@
+{
+  "id": "id-source-code",
+  "type": "Archive",
+  "title": "id Software Source Code",
+  "creator": "id Software",
+  "publisher": "GitHub",
+  "year": 2012,
+  "length": "Code archive",
+  "access": "Free",
+  "level": "Advanced",
+  "topics": [
+    "Programming",
+    "Game history",
+    "Engine"
+  ],
+  "games": [
+    "DOOM",
+    "Quake",
+    "Wolfenstein 3D"
+  ],
+  "description": "Official repositories containing source releases for several historic id Software engines and games, with their accompanying licenses and build material.",
+  "useful": "Primary technical evidence for studying how influential real-time engines were organized and implemented.",
+  "url": "https://github.com/id-Software",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "History"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Historical",
+    "Practical"
+  ],
+  "audience": "Advanced programmers and historians comfortable reading legacy C and engine repositories.",
+  "learning": [
+    "Inspect primary source from historic engines",
+    "Compare organization across several id releases",
+    "Relate technical implementation to historical accounts"
+  ],
+  "next": [
+    "doom-postmortem",
+    "racing-the-beam",
+    "i-am-error"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

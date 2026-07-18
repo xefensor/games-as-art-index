@@ -1,0 +1,54 @@
+{
+  "id": "tf2-illustrative-rendering",
+  "type": "Paper",
+  "title": "Illustrative Rendering in Team Fortress 2",
+  "creator": "Jason Mitchell, Moby Francke, and Dhabih Eng",
+  "publisher": "Valve",
+  "year": 2007,
+  "length": "Conference paper",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Art direction",
+    "Rendering",
+    "Shaders"
+  ],
+  "games": [
+    "Team Fortress 2"
+  ],
+  "description": "Valve’s paper explains how concept art, character silhouettes, material response, and a custom shading model work together to produce Team Fortress 2’s illustrative visual style.",
+  "useful": "A strong case study in translating art direction into technical rendering decisions instead of applying style only as surface decoration.",
+  "url": "https://www.valvesoftware.com/en/publications",
+  "embed": {
+    "provider": "pdf",
+    "url": "https://cdn.fastly.steamstatic.com/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2.pdf"
+  },
+  "image": "",
+  "subjects": [
+    "Visual art",
+    "Programming"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Technical artists, character artists, and graphics programmers connecting a visual target to rendering code.",
+  "learning": [
+    "Connect silhouette design with gameplay readability",
+    "Identify shading choices behind an illustrative style",
+    "Treat art direction as a cross-disciplinary system"
+  ],
+  "next": [
+    "real-time-rendering",
+    "book-of-shaders",
+    "color-and-light"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

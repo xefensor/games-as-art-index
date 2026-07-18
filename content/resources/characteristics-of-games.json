@@ -1,0 +1,48 @@
+{
+  "id": "characteristics-of-games",
+  "type": "Book",
+  "title": "Characteristics of Games",
+  "creator": "George Skaff Elias, Richard Garfield, and K. Robert Gutschera",
+  "publisher": "MIT Press",
+  "year": 2012,
+  "length": "336 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Game design",
+    "Systems",
+    "Player behavior"
+  ],
+  "games": [],
+  "description": "An analytical book about multiplayer games, incentives, skill, luck, uncertainty, feedback, kingmaking, and other recurring design characteristics.",
+  "useful": "Helps designers compare structures across tabletop and digital games without depending on genre labels.",
+  "url": "https://mitpress.mit.edu/9780262017138/characteristics-of-games/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262017138-L.jpg?default=false",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical",
+    "Practical"
+  ],
+  "audience": "System designers comparing incentives and player behavior across different kinds of games.",
+  "learning": [
+    "Compare games through recurring structural characteristics",
+    "Reason about skill, luck, uncertainty, and incentives",
+    "Spot multiplayer problems such as kingmaking and runaway leaders"
+  ],
+  "next": [
+    "rules-of-play",
+    "mda-framework",
+    "elements-game-design"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

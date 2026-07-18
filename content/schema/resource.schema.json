@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Games as Art Index resource",
+  "type": "object",
+  "required": [
+    "id", "type", "title", "creator", "publisher", "year", "length", "access", "level",
+    "topics", "games", "description", "useful", "url", "subjects", "lengthClass", "relevance",
+    "audience", "learning", "next", "lastChecked", "addedAt", "editorial"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "type": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "creator": { "type": "string", "minLength": 1 },
+    "publisher": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 1950 },
+    "length": { "type": "string", "minLength": 1 },
+    "access": { "type": "string", "enum": ["Free", "Paid", "Mixed"] },
+    "level": { "type": "string", "enum": ["Introductory", "Intermediate", "Advanced", "All levels"] },
+    "topics": { "$ref": "#/$defs/nonEmptyStrings" },
+    "games": { "$ref": "#/$defs/strings" },
+    "description": { "type": "string", "minLength": 80 },
+    "useful": { "type": "string", "minLength": 45 },
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "image": { "type": "string" },
+    "subjects": { "$ref": "#/$defs/nonEmptyStrings" },
+    "lengthClass": { "type": "string", "enum": ["Under 30 min", "30–120 min", "Long-form", "Reference"] },
+    "relevance": { "$ref": "#/$defs/nonEmptyStrings" },
+    "audience": { "type": "string", "minLength": 1 },
+    "learning": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "string", "minLength": 1 } },
+    "next": { "type": "array", "minItems": 3, "maxItems": 3, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+    "lastChecked": { "$ref": "#/$defs/date" },
+    "addedAt": { "$ref": "#/$defs/date" },
+    "featured": { "type": "boolean" },
+    "editorial": {
+      "type": "object",
+      "required": ["status", "reviewedAt", "note"],
+      "properties": {
+        "status": { "type": "string", "enum": ["draft", "reviewed", "published", "needs-rechecking"] },
+        "reviewedAt": { "$ref": "#/$defs/date" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "manualLinkStatus": {
+      "type": "object",
+      "required": ["status", "checkedAt", "note"],
+      "properties": {
+        "status": { "const": "ok" },
+        "checkedAt": { "$ref": "#/$defs/date" },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "embed": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["provider", "url"],
+          "properties": {
+            "provider": { "const": "pdf" },
+            "url": { "type": "string", "format": "uri", "pattern": "^https://.*\\.pdf$" }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["provider", "videoId", "source"],
+          "properties": {
+            "provider": { "const": "youtube" },
+            "videoId": { "type": "string", "pattern": "^[A-Za-z0-9_-]{11}$" },
+            "source": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "date": { "type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "strings": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonEmptyStrings": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+  },
+  "additionalProperties": false
+}

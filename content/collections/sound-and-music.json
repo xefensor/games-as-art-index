@@ -1,0 +1,13 @@
+{
+  "id": "sound-and-music",
+  "title": "Build game audio deliberately",
+  "description": "Move from listening and composition principles to implementation, procedural sound, and production assets.",
+  "color": "blue",
+  "resources": [
+    "composers-guide-game-music",
+    "game-audio-tutorial",
+    "doom-behind-music",
+    "designing-sound",
+    "sonniss-gdc-audio"
+  ]
+}

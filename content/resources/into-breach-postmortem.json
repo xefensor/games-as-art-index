@@ -1,0 +1,50 @@
+{
+  "id": "into-breach-postmortem",
+  "type": "Talk",
+  "title": "Into the Breach Design Postmortem",
+  "creator": "Matthew Davis",
+  "publisher": "GDC",
+  "year": 2019,
+  "length": "54 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Game design",
+    "Constraints",
+    "Balancing"
+  ],
+  "games": [
+    "Into the Breach"
+  ],
+  "description": "Matthew Davis reconstructs the long search for Into the Breach’s design, including discarded prototypes, perfect-information combat, board size, enemy intent, time pressure, difficulty, and extensive simplification.",
+  "useful": "It demonstrates that a coherent ruleset can emerge through years of cuts and reframing rather than from one complete initial idea.",
+  "url": "https://www.youtube.com/watch?v=s_I07Iq_2XM",
+  "image": "https://i.ytimg.com/vi/s_I07Iq_2XM/hqdefault.jpg",
+  "subjects": [
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Historical",
+    "Practical"
+  ],
+  "audience": "Systems designers and small teams working through prototypes that are promising but not yet coherent.",
+  "learning": [
+    "Use constraints to clarify a tactical design",
+    "Communicate enemy intent through perfect information",
+    "Recognize simplification as a major design activity"
+  ],
+  "next": [
+    "ftl-postmortem",
+    "characteristics-of-games",
+    "game-design-workshop"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

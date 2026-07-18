@@ -1,0 +1,56 @@
+{
+  "id": "witness-science-language-reality",
+  "type": "Interview",
+  "title": "The Witness Creator on Science, Language, and Reality",
+  "creator": "Matt Peckham and Jonathan Blow",
+  "publisher": "TIME",
+  "year": 2016,
+  "length": "12 min read",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Nonverbal communication",
+    "Puzzle design",
+    "Interpretation"
+  ],
+  "games": [
+    "Braid",
+    "The Witness"
+  ],
+  "description": "A post-release interview in which Blow discusses The Witness as nonverbal communication, its deliberately limited interactions, its relationship to Braid, and its interest in perception and truth.",
+  "useful": "Because it was published after players encountered the finished game, the interview helps compare stated intention with the actual experience and reception of The Witness.",
+  "url": "https://time.com/4355763/the-witness-jonathan-blow-interview/",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "TIME interview opened successfully during editorial review."
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Players, critics, and developers looking for a concise first-person account of what The Witness was intended to communicate and why its interaction is so constrained.",
+  "learning": [
+    "Relate minimal interaction to nonverbal communication",
+    "Compare the design aims of Braid and The Witness",
+    "Separate a creator's stated intention from critical interpretation"
+  ],
+  "next": [
+    "witness-music",
+    "blow-truth-game-design",
+    "witness-dev-archive"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the TIME interview page."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "art-of-screenshake",
+  "type": "Talk",
+  "title": "The Art of Screenshake",
+  "creator": "Jan Willem Nijman",
+  "publisher": "INDIGO / Vlambeer",
+  "year": 2013,
+  "length": "28 min",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Game feel",
+    "Visual effects",
+    "Prototyping"
+  ],
+  "games": [
+    "Nuclear Throne"
+  ],
+  "description": "A compact demonstration of animation, recoil, particles, sound, pauses, and camera movement applied to a simple action-game prototype.",
+  "useful": "A practical before-and-after vocabulary for making player actions feel more legible and forceful.",
+  "url": "https://www.youtube.com/watch?v=AJdEqssNZ-U",
+  "image": "https://i.ytimg.com/vi/AJdEqssNZ-U/hqdefault.jpg",
+  "subjects": [
+    "Game design",
+    "Visual art"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Beginning designers and programmers polishing action prototypes.",
+  "learning": [
+    "Make actions easier to read with immediate feedback",
+    "Combine recoil, particles, pauses, and camera motion",
+    "Judge polish through clear before-and-after comparisons"
+  ],
+  "next": [
+    "juice-it-or-lose-it",
+    "elements-game-design",
+    "godot-first-2d"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

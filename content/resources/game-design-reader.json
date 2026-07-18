@@ -1,0 +1,49 @@
+{
+  "id": "game-design-reader",
+  "type": "Book",
+  "title": "The Game Design Reader",
+  "creator": "Katie Salen Tekinbaş and Eric Zimmerman, editors",
+  "publisher": "MIT Press",
+  "year": 2005,
+  "length": "954 pages",
+  "access": "Paid",
+  "level": "Advanced",
+  "topics": [
+    "Game studies",
+    "Game design",
+    "History"
+  ],
+  "games": [],
+  "description": "A wide-ranging anthology of historical and contemporary writing about games, play, systems, narrative, culture, and design practice.",
+  "useful": "A sourcebook for readers who want contrasting arguments instead of one unified method.",
+  "url": "https://mitpress.mit.edu/9780262195362/the-game-design-reader/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262195362-L.jpg?default=false",
+  "subjects": [
+    "Criticism & theory",
+    "History",
+    "Game design"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Advanced students and researchers who want contrasting foundational texts rather than one method.",
+  "learning": [
+    "Compare major arguments about games and play",
+    "Place design ideas in historical and cultural context",
+    "Use an anthology as a route into primary texts"
+  ],
+  "next": [
+    "rules-of-play",
+    "critical-play",
+    "characteristics-of-games"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

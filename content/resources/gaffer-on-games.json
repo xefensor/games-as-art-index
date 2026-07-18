@@ -1,0 +1,47 @@
+{
+  "id": "gaffer-on-games",
+  "type": "Article archive",
+  "title": "Gaffer On Games",
+  "creator": "Glenn Fiedler",
+  "publisher": "Gaffer On Games",
+  "year": 2018,
+  "length": "Article archive",
+  "access": "Free",
+  "level": "Advanced",
+  "topics": [
+    "Physics",
+    "Networking",
+    "Simulation"
+  ],
+  "games": [],
+  "description": "An archive of technical articles on fixed timesteps, integration, constraints, deterministic simulation, state synchronization, packet design, and networked physics.",
+  "useful": "The explanations identify practical failure modes that are often missing from shorter physics and multiplayer tutorials.",
+  "url": "https://gafferongames.com/",
+  "image": "",
+  "subjects": [
+    "Programming"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Intermediate and advanced programmers building real-time physics or multiplayer systems.",
+  "learning": [
+    "Choose stable approaches to simulation time",
+    "Compare networking models and their tradeoffs",
+    "Recognize common numerical and packet-level failures"
+  ],
+  "next": [
+    "game-programming-patterns",
+    "red-blob-pathfinding",
+    "real-time-rendering"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

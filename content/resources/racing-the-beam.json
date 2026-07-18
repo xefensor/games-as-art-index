@@ -1,0 +1,50 @@
+{
+  "id": "racing-the-beam",
+  "type": "Book",
+  "title": "Racing the Beam",
+  "creator": "Nick Montfort and Ian Bogost",
+  "publisher": "MIT Press",
+  "year": 2009,
+  "length": "192 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Game history",
+    "Hardware",
+    "Programming"
+  ],
+  "games": [
+    "Atari VCS"
+  ],
+  "description": "A platform study of the Atari VCS that connects hardware architecture to the visual and mechanical techniques used by cartridge developers.",
+  "useful": "A strong introduction to understanding creative work through the capabilities and limits of a platform.",
+  "url": "https://mitpress.mit.edu/9780262539760/racing-the-beam/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262539760-L.jpg?default=false",
+  "subjects": [
+    "History",
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Historical",
+    "Theoretical"
+  ],
+  "audience": "Programmers, historians, and designers studying the relationship between hardware and creative form.",
+  "learning": [
+    "Understand the Atari VCS as a design constraint",
+    "Connect hardware behavior to visible game techniques",
+    "Read individual games as responses to a platform"
+  ],
+  "next": [
+    "i-am-error",
+    "id-source-code",
+    "doom-postmortem"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

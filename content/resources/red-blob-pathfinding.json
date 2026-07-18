@@ -1,0 +1,47 @@
+{
+  "id": "red-blob-pathfinding",
+  "type": "Guide",
+  "title": "Introduction to A*",
+  "creator": "Amit Patel",
+  "publisher": "Red Blob Games",
+  "year": 2014,
+  "length": "Interactive guide",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Programming",
+    "AI",
+    "Algorithms"
+  ],
+  "games": [],
+  "description": "An interactive visual introduction to breadth-first search, Dijkstra's algorithm, greedy best-first search, and A* pathfinding.",
+  "useful": "Diagrams make it easier to understand what the frontier, cost, and heuristic are doing at each step.",
+  "url": "https://www.redblobgames.com/pathfinding/a-star/introduction.html",
+  "image": "",
+  "subjects": [
+    "Programming"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Programmers and technical designers learning or debugging grid-based pathfinding.",
+  "learning": [
+    "Compare breadth-first, Dijkstra, greedy, and A* search",
+    "Understand frontier, cost, and heuristic behavior",
+    "Choose a search approach for a particular problem"
+  ],
+  "next": [
+    "game-programming-patterns",
+    "godot-first-2d",
+    "id-source-code"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

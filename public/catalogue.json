@@ -1,0 +1,4063 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-18",
+  "editorialStatuses": [
+    "draft",
+    "reviewed",
+    "published",
+    "needs-rechecking"
+  ],
+  "taxonomy": {
+    "subjects": [
+      "Game design",
+      "Programming",
+      "Visual art",
+      "Audio",
+      "Narrative",
+      "Production",
+      "History",
+      "Criticism & theory",
+      "Accessibility"
+    ],
+    "levels": [
+      "Introductory",
+      "Intermediate",
+      "Advanced",
+      "All levels"
+    ],
+    "access": [
+      "Free",
+      "Paid",
+      "Mixed"
+    ],
+    "lengths": [
+      "Under 30 min",
+      "30–120 min",
+      "Long-form",
+      "Reference"
+    ],
+    "relevance": [
+      "Practical",
+      "Historical",
+      "Theoretical"
+    ]
+  },
+  "collections": [
+    {
+      "id": "start-game-design",
+      "title": "Start studying game design",
+      "description": "A practical route from basic vocabulary to playtesting, analysis, and a first design process.",
+      "color": "red",
+      "resources": [
+        "elements-game-design",
+        "game-design-workshop",
+        "mda-framework",
+        "juice-it-or-lose-it",
+        "designing-games"
+      ]
+    },
+    {
+      "id": "level-and-space",
+      "title": "Design levels that teach",
+      "description": "Learn how routes, landmarks, architecture, difficulty, and repetition guide a player through space.",
+      "color": "gold",
+      "resources": [
+        "architectural-level-design",
+        "valve-level-design",
+        "witness-architecture",
+        "designing-celeste",
+        "designing-journey"
+      ]
+    },
+    {
+      "id": "sound-and-music",
+      "title": "Build game audio deliberately",
+      "description": "Move from listening and composition principles to implementation, procedural sound, and production assets.",
+      "color": "blue",
+      "resources": [
+        "composers-guide-game-music",
+        "game-audio-tutorial",
+        "doom-behind-music",
+        "designing-sound",
+        "sonniss-gdc-audio"
+      ]
+    },
+    {
+      "id": "history-from-sources",
+      "title": "Game history from primary sources",
+      "description": "Postmortems, code, archives, and platform studies for evidence-led historical work.",
+      "color": "green",
+      "resources": [
+        "doom-postmortem",
+        "prince-of-persia-postmortem",
+        "id-source-code",
+        "vghf-library",
+        "racing-the-beam",
+        "i-am-error"
+      ]
+    },
+    {
+      "id": "first-project",
+      "title": "Finish a first project",
+      "description": "Engine instruction, scope advice, accessibility, and a sustainable route from prototype to release.",
+      "color": "violet",
+      "resources": [
+        "godot-first-2d",
+        "unity-create-code",
+        "finishing-a-game",
+        "playful-production",
+        "gaming-accessibility-fundamentals"
+      ]
+    },
+    {
+      "id": "technical-foundations",
+      "title": "Strengthen technical foundations",
+      "description": "A progressive route through game architecture, simulation, shaders, and real-time rendering.",
+      "color": "blue",
+      "resources": [
+        "game-programming-patterns",
+        "gaffer-on-games",
+        "book-of-shaders",
+        "catlike-coding",
+        "real-time-rendering",
+        "pbr-book"
+      ]
+    },
+    {
+      "id": "games-critically",
+      "title": "Write and think about games",
+      "description": "A reading path for criticism that connects close attention, history, culture, and procedural argument.",
+      "color": "red",
+      "resources": [
+        "how-talk-videogames",
+        "game-studies-journal",
+        "critical-play",
+        "persuasive-games",
+        "queer-games-avant-garde"
+      ]
+    },
+    {
+      "id": "narrative-design",
+      "title": "Design interactive stories",
+      "description": "Begin with the distinctive properties of digital narrative, then study writing, systems, and procedural structures.",
+      "color": "violet",
+      "resources": [
+        "hamlet-holodeck",
+        "game-writing",
+        "emily-short-blog",
+        "narrative-legos",
+        "procedural-storytelling"
+      ]
+    },
+    {
+      "id": "inclusive-design",
+      "title": "Make games more accessible",
+      "description": "A production-ready sequence of foundations, design patterns, platform guidance, and team resources.",
+      "color": "green",
+      "resources": [
+        "gaming-accessibility-fundamentals",
+        "accessible-player-experiences",
+        "accessibility-guidelines",
+        "xbox-accessibility-guidelines",
+        "inclusive-game-design-paper"
+      ]
+    },
+    {
+      "id": "jonathan-blow",
+      "title": "Jonathan Blow—from Braid to The Witness",
+      "description": "Follow Blow's work from early independent prototyping through Braid's rewind system, his design philosophy, and the long development of The Witness.",
+      "color": "gold",
+      "resources": [
+        "blow-indie-prototyping",
+        "braid-rewind-implementation",
+        "blow-truth-game-design",
+        "witness-architecture",
+        "witness-audio",
+        "blow-medium-is-message",
+        "blow-design-deep-games",
+        "witness-music",
+        "witness-science-language-reality",
+        "witness-dev-archive"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "designing-journey",
+      "type": "Talk",
+      "title": "Designing Journey",
+      "creator": "Jenova Chen",
+      "publisher": "GDC Vault",
+      "year": 2013,
+      "length": "60 min",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Game design",
+        "Social design",
+        "Production"
+      ],
+      "games": [
+        "Journey"
+      ],
+      "description": "Journey's creative director explains the game's original idea, emotional structure, anonymous multiplayer, iteration, and production difficulties.",
+      "useful": "A clear example of tracing an artistic intention through concrete design and production choices.",
+      "url": "https://gdcvault.com/play/1017700/Designing",
+      "embed": {
+        "provider": "youtube",
+        "videoId": "UGCkVHSvjzM",
+        "source": "GDC Festival of Gaming"
+      },
+      "image": "",
+      "featured": true,
+      "subjects": [
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Designers and small teams trying to connect mechanics, emotion, and production decisions.",
+      "learning": [
+        "Shape an experience around an emotional arc",
+        "Design anonymous cooperation without conventional communication",
+        "Protect a creative goal through iteration and production problems"
+      ],
+      "next": [
+        "mda-framework",
+        "spelunky-book",
+        "playful-production"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "doom-postmortem",
+      "type": "Talk",
+      "title": "Classic Game Postmortem: DOOM",
+      "creator": "Tom Hall and John Romero",
+      "publisher": "Game Developer / GDC",
+      "year": 2011,
+      "length": "60 min",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Game history",
+        "Production",
+        "Level design"
+      ],
+      "games": [
+        "DOOM"
+      ],
+      "description": "Two original id Software designers reconstruct DOOM's development, showing early material and recounting the decisions that shaped the 1993 game.",
+      "useful": "Useful when studying how a small team, technical constraints, and changing scope affected a landmark project.",
+      "url": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
+      "embed": {
+        "provider": "youtube",
+        "videoId": "NnkCujnYNSo",
+        "source": "GDC Festival of Gaming"
+      },
+      "image": "",
+      "featured": true,
+      "subjects": [
+        "History",
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Developers and historians interested in how influential games emerge from small teams and changing plans.",
+      "learning": [
+        "Trace DOOM from early plans to the released game",
+        "See how tools and technology affected level design",
+        "Recognize the effect of team structure and scope changes"
+      ],
+      "next": [
+        "id-source-code",
+        "racing-the-beam",
+        "prince-of-persia-postmortem"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "prince-of-persia-postmortem",
+      "type": "Talk",
+      "title": "Classic Game Postmortem: Prince of Persia",
+      "creator": "Jordan Mechner",
+      "publisher": "Game Developer / GDC",
+      "year": 2011,
+      "length": "60 min",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Game history",
+        "Animation",
+        "Production"
+      ],
+      "games": [
+        "Prince of Persia"
+      ],
+      "description": "Jordan Mechner looks back at four years of designing, programming, and animating Prince of Persia for the Apple II.",
+      "useful": "A first-hand production history covering rotoscoped animation, solo development, influences, and scope.",
+      "url": "https://www.gamedeveloper.com/audio/video-postmortem-the-making-of-i-prince-of-persia-i-",
+      "image": "",
+      "subjects": [
+        "History",
+        "Visual art",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Independent developers, animators, and readers studying early personal computer production.",
+      "learning": [
+        "Understand how rotoscoping shaped character movement",
+        "Follow a four-year solo development process",
+        "See how technical limits influenced the finished design"
+      ],
+      "next": [
+        "doom-postmortem",
+        "spelunky-book",
+        "racing-the-beam"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "doom-behind-music",
+      "type": "Talk",
+      "title": "DOOM: Behind the Music",
+      "creator": "Mick Gordon",
+      "publisher": "GDC",
+      "year": 2017,
+      "length": "60 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Audio",
+        "Music",
+        "Production"
+      ],
+      "games": [
+        "DOOM (2016)"
+      ],
+      "description": "Composer Mick Gordon presents the instruments, signal chains, experiments, and constraints behind DOOM's reactive score.",
+      "useful": "Shows how a strong musical identity can emerge from technical process rather than genre references alone.",
+      "url": "https://www.youtube.com/watch?v=U4FNBMZsqrY",
+      "image": "https://i.ytimg.com/vi/U4FNBMZsqrY/hqdefault.jpg",
+      "featured": true,
+      "subjects": [
+        "Audio",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Composers, sound designers, and creative directors developing a distinctive audio identity.",
+      "learning": [
+        "Turn creative constraints into an audio process",
+        "Build timbres through recording and signal processing",
+        "Connect an adaptive score to the pace of play"
+      ],
+      "next": [
+        "witness-audio",
+        "witness-music",
+        "designing-journey"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "art-of-screenshake",
+      "type": "Talk",
+      "title": "The Art of Screenshake",
+      "creator": "Jan Willem Nijman",
+      "publisher": "INDIGO / Vlambeer",
+      "year": 2013,
+      "length": "28 min",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Game feel",
+        "Visual effects",
+        "Prototyping"
+      ],
+      "games": [
+        "Nuclear Throne"
+      ],
+      "description": "A compact demonstration of animation, recoil, particles, sound, pauses, and camera movement applied to a simple action-game prototype.",
+      "useful": "A practical before-and-after vocabulary for making player actions feel more legible and forceful.",
+      "url": "https://www.youtube.com/watch?v=AJdEqssNZ-U",
+      "image": "https://i.ytimg.com/vi/AJdEqssNZ-U/hqdefault.jpg",
+      "subjects": [
+        "Game design",
+        "Visual art"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Beginning designers and programmers polishing action prototypes.",
+      "learning": [
+        "Make actions easier to read with immediate feedback",
+        "Combine recoil, particles, pauses, and camera motion",
+        "Judge polish through clear before-and-after comparisons"
+      ],
+      "next": [
+        "juice-it-or-lose-it",
+        "elements-game-design",
+        "godot-first-2d"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "juice-it-or-lose-it",
+      "type": "Talk",
+      "title": "Juice It or Lose It",
+      "creator": "Martin Jonasson and Petri Purho",
+      "publisher": "Nordic Game",
+      "year": 2012,
+      "length": "14 min",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Game feel",
+        "Visual effects",
+        "Prototyping"
+      ],
+      "games": [
+        "Breakout"
+      ],
+      "description": "A plain Breakout clone is transformed step by step with animation, particles, sound, camera effects, and physical exaggeration.",
+      "useful": "The short format makes it easy to connect each polish technique to the change it produces on screen.",
+      "url": "https://www.youtube.com/watch?v=Fy0aCDmgnxg",
+      "image": "https://i.ytimg.com/vi/Fy0aCDmgnxg/hqdefault.jpg",
+      "subjects": [
+        "Game design",
+        "Visual art"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Students and prototype developers who want a fast introduction to game feel.",
+      "learning": [
+        "Identify small effects that strengthen an action",
+        "Layer sound, animation, particles, and camera feedback",
+        "Evaluate polish without changing a game's core rules"
+      ],
+      "next": [
+        "art-of-screenshake",
+        "elements-game-design",
+        "finishing-a-game"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "rules-of-play",
+      "type": "Book",
+      "title": "Rules of Play",
+      "creator": "Katie Salen Tekinbaş and Eric Zimmerman",
+      "publisher": "MIT Press",
+      "year": 2003,
+      "length": "688 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game design",
+        "Game studies",
+        "Systems"
+      ],
+      "games": [],
+      "description": "A large textbook and reference work that develops a vocabulary for rules, play, culture, systems, interaction, and meaningful play.",
+      "useful": "Best used as a reference or structured course text rather than a quick practical manual.",
+      "url": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262240451-L.jpg?default=false",
+      "featured": true,
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical"
+      ],
+      "audience": "Students, teachers, and designers who need a broad reference vocabulary for games and play.",
+      "learning": [
+        "Analyze games as rules, play, systems, and culture",
+        "Distinguish formal structures from player experience",
+        "Use meaningful play as one design lens"
+      ],
+      "next": [
+        "mda-framework",
+        "characteristics-of-games",
+        "game-design-reader"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "characteristics-of-games",
+      "type": "Book",
+      "title": "Characteristics of Games",
+      "creator": "George Skaff Elias, Richard Garfield, and K. Robert Gutschera",
+      "publisher": "MIT Press",
+      "year": 2012,
+      "length": "336 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game design",
+        "Systems",
+        "Player behavior"
+      ],
+      "games": [],
+      "description": "An analytical book about multiplayer games, incentives, skill, luck, uncertainty, feedback, kingmaking, and other recurring design characteristics.",
+      "useful": "Helps designers compare structures across tabletop and digital games without depending on genre labels.",
+      "url": "https://mitpress.mit.edu/9780262017138/characteristics-of-games/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262017138-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Practical"
+      ],
+      "audience": "System designers comparing incentives and player behavior across different kinds of games.",
+      "learning": [
+        "Compare games through recurring structural characteristics",
+        "Reason about skill, luck, uncertainty, and incentives",
+        "Spot multiplayer problems such as kingmaking and runaway leaders"
+      ],
+      "next": [
+        "rules-of-play",
+        "mda-framework",
+        "elements-game-design"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "racing-the-beam",
+      "type": "Book",
+      "title": "Racing the Beam",
+      "creator": "Nick Montfort and Ian Bogost",
+      "publisher": "MIT Press",
+      "year": 2009,
+      "length": "192 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game history",
+        "Hardware",
+        "Programming"
+      ],
+      "games": [
+        "Atari VCS"
+      ],
+      "description": "A platform study of the Atari VCS that connects hardware architecture to the visual and mechanical techniques used by cartridge developers.",
+      "useful": "A strong introduction to understanding creative work through the capabilities and limits of a platform.",
+      "url": "https://mitpress.mit.edu/9780262539760/racing-the-beam/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262539760-L.jpg?default=false",
+      "subjects": [
+        "History",
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Historical",
+        "Theoretical"
+      ],
+      "audience": "Programmers, historians, and designers studying the relationship between hardware and creative form.",
+      "learning": [
+        "Understand the Atari VCS as a design constraint",
+        "Connect hardware behavior to visible game techniques",
+        "Read individual games as responses to a platform"
+      ],
+      "next": [
+        "i-am-error",
+        "id-source-code",
+        "doom-postmortem"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "i-am-error",
+      "type": "Book",
+      "title": "I Am Error",
+      "creator": "Nathan Altice",
+      "publisher": "MIT Press",
+      "year": 2015,
+      "length": "440 pages",
+      "access": "Paid",
+      "level": "Advanced",
+      "topics": [
+        "Game history",
+        "Hardware",
+        "Programming"
+      ],
+      "games": [
+        "Nintendo Entertainment System"
+      ],
+      "description": "A detailed platform study of the Famicom and NES, including hardware, controllers, cartridges, development practices, and design conventions.",
+      "useful": "For readers who want technical history to remain connected to software design and culture.",
+      "url": "https://mitpress.mit.edu/9780262534543/i-am-error/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262534543-L.jpg?default=false",
+      "subjects": [
+        "History",
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Historical",
+        "Theoretical"
+      ],
+      "audience": "Advanced readers researching the NES, platform studies, or the material history of game design.",
+      "learning": [
+        "Map NES hardware to software conventions",
+        "Understand cartridges, controllers, and development practices",
+        "Connect platform architecture with game aesthetics and culture"
+      ],
+      "next": [
+        "racing-the-beam",
+        "id-source-code",
+        "vghf-library"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "critical-play",
+      "type": "Book",
+      "title": "Critical Play",
+      "creator": "Mary Flanagan",
+      "publisher": "MIT Press",
+      "year": 2009,
+      "length": "336 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game studies",
+        "Art",
+        "Critical design"
+      ],
+      "games": [],
+      "description": "A history and theory of games made to question social, cultural, and political assumptions, from folk practices to digital works.",
+      "useful": "Broadens a design library beyond commercial usability and entertainment goals.",
+      "url": "https://mitpress.mit.edu/9780262518659/critical-play/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262518659-L.jpg?default=false",
+      "subjects": [
+        "Criticism & theory",
+        "History"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Artists, critics, researchers, and designers interested in games that question social conventions.",
+      "learning": [
+        "Place critical games within a longer cultural history",
+        "Recognize play used as intervention and argument",
+        "Broaden design goals beyond usability and entertainment"
+      ],
+      "next": [
+        "game-design-reader",
+        "rules-of-play",
+        "witness-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "spelunky-book",
+      "type": "Book",
+      "title": "Spelunky",
+      "creator": "Derek Yu",
+      "publisher": "Boss Fight Books",
+      "year": 2016,
+      "length": "224 pages",
+      "access": "Paid",
+      "level": "All levels",
+      "topics": [
+        "Production",
+        "Game design",
+        "Independent games"
+      ],
+      "games": [
+        "Spelunky"
+      ],
+      "description": "The game's creator recounts its development while discussing randomization, difficulty, feedback, team dynamics, and finishing a project.",
+      "useful": "Unusually direct access to the reasoning and compromises behind one independent game.",
+      "url": "https://bossfightbooks.com/products/spelunky-by-derek-yu",
+      "image": "",
+      "featured": true,
+      "subjects": [
+        "Production",
+        "Game design"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Independent developers who want a candid account of designing and finishing one game.",
+      "learning": [
+        "Develop difficulty and randomization through iteration",
+        "Use feedback to make demanding systems legible",
+        "Understand how a solo project grows into a team production"
+      ],
+      "next": [
+        "finishing-a-game",
+        "playful-production",
+        "designing-journey"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "playful-production",
+      "type": "Book",
+      "title": "A Playful Production Process",
+      "creator": "Richard Lemarchand",
+      "publisher": "MIT Press",
+      "year": 2021,
+      "length": "408 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Production",
+        "Prototyping",
+        "Teamwork"
+      ],
+      "games": [],
+      "description": "A start-to-finish production framework connecting concept development, prototypes, playtesting, iteration, teamwork, and sustainable scheduling.",
+      "useful": "A practical overview for students and small teams that explicitly argues against uncontrolled crunch.",
+      "url": "https://mitpress.mit.edu/9780262045513/a-playful-production-process/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262045513-L.jpg?default=false",
+      "subjects": [
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Students, new producers, and small teams planning a complete project without relying on crunch.",
+      "learning": [
+        "Move from concept to prototype and production",
+        "Plan playtesting and iteration throughout a project",
+        "Build healthier schedules and team practices"
+      ],
+      "next": [
+        "finishing-a-game",
+        "door-problem",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-design-reader",
+      "type": "Book",
+      "title": "The Game Design Reader",
+      "creator": "Katie Salen Tekinbaş and Eric Zimmerman, editors",
+      "publisher": "MIT Press",
+      "year": 2005,
+      "length": "954 pages",
+      "access": "Paid",
+      "level": "Advanced",
+      "topics": [
+        "Game studies",
+        "Game design",
+        "History"
+      ],
+      "games": [],
+      "description": "A wide-ranging anthology of historical and contemporary writing about games, play, systems, narrative, culture, and design practice.",
+      "useful": "A sourcebook for readers who want contrasting arguments instead of one unified method.",
+      "url": "https://mitpress.mit.edu/9780262195362/the-game-design-reader/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262195362-L.jpg?default=false",
+      "subjects": [
+        "Criticism & theory",
+        "History",
+        "Game design"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Advanced students and researchers who want contrasting foundational texts rather than one method.",
+      "learning": [
+        "Compare major arguments about games and play",
+        "Place design ideas in historical and cultural context",
+        "Use an anthology as a route into primary texts"
+      ],
+      "next": [
+        "rules-of-play",
+        "critical-play",
+        "characteristics-of-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "elements-game-design",
+      "type": "Book",
+      "title": "Elements of Game Design",
+      "creator": "Robert Zubek",
+      "publisher": "MIT Press",
+      "year": 2020,
+      "length": "256 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Game design",
+        "Systems",
+        "Prototyping"
+      ],
+      "games": [],
+      "description": "An introductory textbook organized around mechanics and systems, gameplay, and player experience, with tools for analyzing and constructing designs.",
+      "useful": "A more compact starting point for readers who find larger game-design textbooks difficult to enter.",
+      "url": "https://mitpress.mit.edu/9780262362870/elements-of-game-design/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262043915-L.jpg?default=false",
+      "subjects": [
+        "Game design"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Beginning designers looking for a structured introduction to mechanics, systems, and experience.",
+      "learning": [
+        "Separate mechanics, gameplay, and player experience",
+        "Analyze how systems produce patterns of play",
+        "Turn design ideas into testable prototypes"
+      ],
+      "next": [
+        "mda-framework",
+        "juice-it-or-lose-it",
+        "rules-of-play"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "mda-framework",
+      "type": "Paper",
+      "title": "MDA: A Formal Approach to Game Design and Game Research",
+      "creator": "Robin Hunicke, Marc LeBlanc, and Robert Zubek",
+      "publisher": "Northwestern University",
+      "year": 2004,
+      "length": "5 pages",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Game design",
+        "Systems",
+        "Research"
+      ],
+      "games": [],
+      "description": "A short paper proposing mechanics, dynamics, and aesthetics as connected perspectives for designers, researchers, and critics.",
+      "useful": "A compact shared vocabulary; most useful when treated as one analytical model rather than a universal law.",
+      "url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
+      "embed": {
+        "provider": "pdf",
+        "url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf"
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Theoretical",
+        "Practical"
+      ],
+      "audience": "Designers, students, and researchers who need a compact shared analytical model.",
+      "learning": [
+        "Distinguish mechanics, dynamics, and aesthetics",
+        "Compare designer and player perspectives",
+        "Use MDA as a lens without treating it as a law"
+      ],
+      "next": [
+        "elements-game-design",
+        "rules-of-play",
+        "characteristics-of-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "door-problem",
+      "type": "Article",
+      "title": "The Door Problem",
+      "creator": "Liz England",
+      "publisher": "Liz England",
+      "year": 2014,
+      "length": "8 min read",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Production",
+        "Teamwork",
+        "Game design"
+      ],
+      "games": [],
+      "description": "A single fictional door is used to explain how designers, artists, programmers, writers, audio staff, testers, and producers contribute to a game.",
+      "useful": "A concise explanation of why apparently small features cross many disciplines and dependencies.",
+      "url": "https://lizengland.com/blog/2014/04/the-door-problem/",
+      "image": "",
+      "subjects": [
+        "Production"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "New developers and collaborators trying to understand who does what on a game team.",
+      "learning": [
+        "See how one feature crosses many disciplines",
+        "Identify dependencies hidden inside simple design requests",
+        "Understand common responsibilities across a development team"
+      ],
+      "next": [
+        "playful-production",
+        "finishing-a-game",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "finishing-a-game",
+      "type": "Article",
+      "title": "Finishing a Game",
+      "creator": "Derek Yu",
+      "publisher": "Make Games",
+      "year": 2010,
+      "length": "12 min read",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Production",
+        "Independent games",
+        "Scope"
+      ],
+      "games": [],
+      "description": "Practical advice on choosing an idea, planning, protecting the core experience, handling unfinished work, testing, and releasing.",
+      "useful": "A grounded checklist for developers who repeatedly begin projects but struggle to complete them.",
+      "url": "https://makegames.tumblr.com/post/1136623767/finishing-a-game",
+      "image": "",
+      "subjects": [
+        "Production"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Solo and small-team developers who start projects more easily than they finish them.",
+      "learning": [
+        "Choose a project small enough to complete",
+        "Protect the core while cutting secondary work",
+        "Move through testing, polish, and release"
+      ],
+      "next": [
+        "playful-production",
+        "spelunky-book",
+        "door-problem"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "blow-indie-prototyping",
+      "type": "Talk",
+      "title": "Indie Prototyping, Braid, & Making Innovative Games",
+      "creator": "Jonathan Blow",
+      "publisher": "GDC Vault",
+      "year": 2007,
+      "length": "60 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Prototyping",
+        "Independent development",
+        "Game mechanics"
+      ],
+      "games": [
+        "Braid"
+      ],
+      "description": "A pre-release GDC session in which Blow explains how small experimental prototypes led toward Braid and how developers can search for mechanics with unexplored consequences.",
+      "useful": "It records the design process before Braid became a finished success, making the uncertainty, discarded ideas, and value of exploratory work unusually visible.",
+      "url": "https://gdcvault.com/play/1014831/Indie-Prototyping-Braid-Making-Innovative",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "GDC Vault session page opened successfully during editorial review."
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Independent developers and students deciding how to prototype, evaluate an unusual mechanic, and turn experiments into a larger project.",
+      "learning": [
+        "Use prototypes to investigate questions rather than prove a pitch",
+        "Recognize when one mechanic supports a wider design space",
+        "Compare early design intentions with the finished Braid"
+      ],
+      "next": [
+        "braid-rewind-implementation",
+        "blow-truth-game-design",
+        "blow-design-deep-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the GDC Vault session record."
+      }
+    },
+    {
+      "id": "braid-rewind-implementation",
+      "type": "Talk",
+      "title": "The Implementation of Rewind in Braid",
+      "creator": "Jonathan Blow",
+      "publisher": "GDC Vault",
+      "year": 2010,
+      "length": "60 min",
+      "access": "Free",
+      "level": "Advanced",
+      "topics": [
+        "Time systems",
+        "State management",
+        "Technical design"
+      ],
+      "games": [
+        "Braid"
+      ],
+      "description": "A technical GDC lecture on storing, reconstructing, and replaying Braid's world state so that players can rewind long stretches of play accurately within console memory limits.",
+      "useful": "It connects a defining game mechanic to concrete engineering constraints and shows how implementation choices determine which higher-level design ideas remain possible.",
+      "url": "https://gdcvault.com/play/1012210/The-Implementation-of-Rewind-in",
+      "embed": {
+        "provider": "youtube",
+        "videoId": "8dinUbg2h70",
+        "source": "GDC Festival of Gaming"
+      },
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "GDC Vault session page opened successfully during editorial review."
+      },
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Game design"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Gameplay programmers and technical designers working on deterministic simulation, replay, rollback, or mechanics built around historical state.",
+      "learning": [
+        "Separate reversible state from effects that can be reconstructed",
+        "Budget a long gameplay history within strict memory limits",
+        "Relate engine architecture to the design space of a mechanic"
+      ],
+      "next": [
+        "blow-indie-prototyping",
+        "blow-truth-game-design",
+        "game-programming-patterns"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the GDC Vault session record."
+      }
+    },
+    {
+      "id": "blow-truth-game-design",
+      "type": "Talk",
+      "title": "Truth in Game Design",
+      "creator": "Jonathan Blow",
+      "publisher": "GDC Vault",
+      "year": 2011,
+      "length": "80 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Systems",
+        "Design philosophy",
+        "Emergence"
+      ],
+      "games": [
+        "Braid",
+        "The Witness"
+      ],
+      "description": "A GDC Europe lecture arguing that designers can study the consequences of a coherent rule system instead of forcing every result to conform to a predetermined message or scenario.",
+      "useful": "This is a central statement of Blow's design philosophy and gives readers a precise argument they can compare with the mechanics and structure of his games.",
+      "url": "https://gdcvault.com/play/1014982/Truth-in-Game",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "GDC Vault session page opened successfully during editorial review."
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Designers and critics interested in systemic meaning, emergence, and the relationship between authored intention and discoveries made during development.",
+      "learning": [
+        "Distinguish investigating a system from imposing a conclusion",
+        "Explain how simple rules can produce unplanned consequences",
+        "Evaluate the claim that games can model discoverable truths"
+      ],
+      "next": [
+        "blow-medium-is-message",
+        "blow-design-deep-games",
+        "witness-science-language-reality"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the GDC Vault session record."
+      }
+    },
+    {
+      "id": "blow-medium-is-message",
+      "type": "Talk",
+      "title": "Game Design: The Medium Is the Message",
+      "creator": "Jonathan Blow",
+      "publisher": "CreativeMornings Portland",
+      "year": 2013,
+      "length": "48 min",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Games as art",
+        "Creative responsibility",
+        "Design philosophy"
+      ],
+      "games": [
+        "Braid",
+        "The Witness"
+      ],
+      "description": "A public lecture about the ideas games communicate through rules, rewards, and repeated actions, and about the responsibility involved in choosing what a game asks its players to practice.",
+      "useful": "It is an accessible entry into Blow's broader cultural argument, with enough concrete game examples to support agreement, criticism, or comparison with other design traditions.",
+      "url": "https://www.youtube.com/watch?v=AxFzf6yIfcc",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "CreativeMornings video opened successfully during editorial review."
+      },
+      "image": "https://i.ytimg.com/vi/AxFzf6yIfcc/hqdefault.jpg",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Theoretical"
+      ],
+      "audience": "Developers, students, and general audiences looking for a clear introduction to games as expressive systems rather than neutral entertainment products.",
+      "learning": [
+        "Identify messages carried by rules and reward structures",
+        "Discuss artistic responsibility without reducing games to stories",
+        "Question what repeated player actions normalize or rehearse"
+      ],
+      "next": [
+        "blow-truth-game-design",
+        "persuasive-games",
+        "witness-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the CreativeMornings recording."
+      }
+    },
+    {
+      "id": "blow-design-deep-games",
+      "type": "Talk",
+      "title": "How to Design Deep Games",
+      "creator": "Jonathan Blow",
+      "publisher": "Indievelopment",
+      "year": 2014,
+      "length": "48 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Deep work",
+        "Long projects",
+        "Creative process"
+      ],
+      "games": [
+        "Braid",
+        "The Witness"
+      ],
+      "description": "A keynote about pursuing difficult, open-ended creative work, developing specialized judgment, and sustaining projects whose destination cannot be fully specified before the work begins.",
+      "useful": "It addresses the human process behind ambitious independent games and offers a counterweight to production advice built only around speed, predictability, and market validation.",
+      "url": "https://www.youtube.com/watch?v=sIKZyvYj6Tc",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Conference recording opened successfully during editorial review."
+      },
+      "image": "https://i.ytimg.com/vi/sIKZyvYj6Tc/hqdefault.jpg",
+      "subjects": [
+        "Production",
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Independent developers and small teams deciding whether a difficult long-term project deserves the time, uncertainty, and specialization it demands.",
+      "learning": [
+        "Distinguish deep exploration from routine production work",
+        "Use internal direction when a project cannot be fully planned",
+        "Assess the personal cost and value of long creative projects"
+      ],
+      "next": [
+        "blow-indie-prototyping",
+        "playful-production",
+        "witness-dev-archive"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the published conference recording."
+      }
+    },
+    {
+      "id": "witness-science-language-reality",
+      "type": "Interview",
+      "title": "The Witness Creator on Science, Language, and Reality",
+      "creator": "Matt Peckham and Jonathan Blow",
+      "publisher": "TIME",
+      "year": 2016,
+      "length": "12 min read",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Nonverbal communication",
+        "Puzzle design",
+        "Interpretation"
+      ],
+      "games": [
+        "Braid",
+        "The Witness"
+      ],
+      "description": "A post-release interview in which Blow discusses The Witness as nonverbal communication, its deliberately limited interactions, its relationship to Braid, and its interest in perception and truth.",
+      "useful": "Because it was published after players encountered the finished game, the interview helps compare stated intention with the actual experience and reception of The Witness.",
+      "url": "https://time.com/4355763/the-witness-jonathan-blow-interview/",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "TIME interview opened successfully during editorial review."
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Players, critics, and developers looking for a concise first-person account of what The Witness was intended to communicate and why its interaction is so constrained.",
+      "learning": [
+        "Relate minimal interaction to nonverbal communication",
+        "Compare the design aims of Braid and The Witness",
+        "Separate a creator's stated intention from critical interpretation"
+      ],
+      "next": [
+        "witness-music",
+        "blow-truth-game-design",
+        "witness-dev-archive"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": "Verified against the TIME interview page."
+      }
+    },
+    {
+      "id": "witness-architecture",
+      "type": "Article",
+      "title": "Architecture in The Witness",
+      "creator": "Luis Antonio and Jonathan Blow",
+      "publisher": "The Witness development blog",
+      "year": 2011,
+      "length": "8 min read",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Level design",
+        "Environment art",
+        "Puzzle design"
+      ],
+      "games": [
+        "The Witness"
+      ],
+      "description": "A development note about making architecture and puzzle scenarios together rather than treating buildings as neutral decoration.",
+      "useful": "A concrete case where level design, puzzle design, and visual development cannot be separated into clean stages.",
+      "url": "https://the-witness.net/news/2011/12/architecture-in-the-witness/",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Visual art"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Level designers, environment artists, and puzzle designers working on spatial problems together.",
+      "learning": [
+        "Develop architecture and puzzles as one system",
+        "Use spaces to frame player attention",
+        "Avoid treating environment art as late decoration"
+      ],
+      "next": [
+        "valve-level-design",
+        "witness-dev-archive",
+        "designing-journey"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "witness-audio",
+      "type": "Article",
+      "title": "The Witness Audio: 1,000 Subtle Layers",
+      "creator": "Andrew Lackey",
+      "publisher": "The Witness development blog",
+      "year": 2013,
+      "length": "9 min read",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Audio",
+        "Environment art",
+        "Production"
+      ],
+      "games": [
+        "The Witness"
+      ],
+      "description": "A production report on recording, editing, layering, and placing environmental sound across The Witness's island.",
+      "useful": "Shows how detailed sound work can support location and attention without relying on a continuous score.",
+      "url": "https://the-witness.net/news/2013/02/the-witness-audio-1000-subtle-layers/",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+      },
+      "image": "",
+      "subjects": [
+        "Audio",
+        "Production"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Sound designers and environment teams building a detailed sense of place.",
+      "learning": [
+        "Plan field recording for a large environment",
+        "Layer subtle sounds without overwhelming the player",
+        "Connect materials and locations to an audio system"
+      ],
+      "next": [
+        "witness-music",
+        "doom-behind-music",
+        "witness-dev-archive"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "witness-music",
+      "type": "Article",
+      "title": "On Music, Sound Effects and Story",
+      "creator": "Jonathan Blow",
+      "publisher": "The Witness development blog",
+      "year": 2015,
+      "length": "10 min read",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Audio",
+        "Game studies",
+        "Creative direction"
+      ],
+      "games": [
+        "The Witness"
+      ],
+      "description": "A direct explanation of why The Witness avoids a conventional musical score and minimizes explicit story delivery.",
+      "useful": "A first-party design argument that can be compared against the finished game's priorities.",
+      "url": "https://the-witness.net/news/2015/11/on-music-sound-effects-story/",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+      },
+      "image": "",
+      "subjects": [
+        "Audio",
+        "Narrative",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Theoretical"
+      ],
+      "audience": "Creative directors, audio designers, and critics examining deliberate omission as a design choice.",
+      "learning": [
+        "Understand the argument for omitting a musical score",
+        "Relate sound strategy to attention and perception",
+        "Evaluate story delivery against a game's larger purpose"
+      ],
+      "next": [
+        "witness-audio",
+        "witness-dev-archive",
+        "critical-play"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "accessibility-guidelines",
+      "type": "Guide",
+      "title": "Game Accessibility Guidelines",
+      "creator": "Independent developer and accessibility group",
+      "publisher": "Game Accessibility Guidelines",
+      "year": 2021,
+      "length": "Reference",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Accessibility",
+        "UX",
+        "Production"
+      ],
+      "games": [],
+      "description": "A categorized reference of basic, intermediate, and advanced accessibility considerations for controls, visuals, audio, language, and cognition.",
+      "useful": "Useful during planning and review because each guideline includes intent, examples, and implementation notes.",
+      "url": "https://gameaccessibilityguidelines.com/full-list/",
+      "image": "",
+      "featured": true,
+      "subjects": [
+        "Accessibility",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Designers, developers, producers, and testers reviewing accessibility throughout production.",
+      "learning": [
+        "Find guidance by impairment and feature area",
+        "Separate basic, intermediate, and advanced measures",
+        "Use examples and implementation notes during reviews"
+      ],
+      "next": [
+        "playful-production",
+        "door-problem",
+        "godot-first-2d"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-programming-patterns",
+      "type": "Book",
+      "title": "Game Programming Patterns",
+      "creator": "Robert Nystrom",
+      "publisher": "Genever Benning",
+      "year": 2014,
+      "length": "354 pages",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Programming",
+        "Architecture",
+        "Tools"
+      ],
+      "games": [],
+      "description": "A freely readable book explaining reusable software patterns through game-oriented examples, including loops, components, events, data locality, and object pools.",
+      "useful": "A bridge between general software-pattern vocabulary and the particular constraints of real-time games.",
+      "url": "https://gameprogrammingpatterns.com/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780990582908-L.jpg?default=false",
+      "subjects": [
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Intermediate programmers who know basic code and want stronger game architecture vocabulary.",
+      "learning": [
+        "Recognize recurring structures in game code",
+        "Compare patterns by cost and appropriate use",
+        "Apply events, components, loops, and data locality"
+      ],
+      "next": [
+        "red-blob-pathfinding",
+        "id-source-code",
+        "unreal-get-started"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "red-blob-pathfinding",
+      "type": "Guide",
+      "title": "Introduction to A*",
+      "creator": "Amit Patel",
+      "publisher": "Red Blob Games",
+      "year": 2014,
+      "length": "Interactive guide",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Programming",
+        "AI",
+        "Algorithms"
+      ],
+      "games": [],
+      "description": "An interactive visual introduction to breadth-first search, Dijkstra's algorithm, greedy best-first search, and A* pathfinding.",
+      "useful": "Diagrams make it easier to understand what the frontier, cost, and heuristic are doing at each step.",
+      "url": "https://www.redblobgames.com/pathfinding/a-star/introduction.html",
+      "image": "",
+      "subjects": [
+        "Programming"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Programmers and technical designers learning or debugging grid-based pathfinding.",
+      "learning": [
+        "Compare breadth-first, Dijkstra, greedy, and A* search",
+        "Understand frontier, cost, and heuristic behavior",
+        "Choose a search approach for a particular problem"
+      ],
+      "next": [
+        "game-programming-patterns",
+        "godot-first-2d",
+        "id-source-code"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "godot-first-2d",
+      "type": "Course",
+      "title": "Your First 2D Game",
+      "creator": "Godot Engine community",
+      "publisher": "Godot documentation",
+      "year": 2026,
+      "length": "Tutorial series",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Programming",
+        "Engine",
+        "2D"
+      ],
+      "games": [],
+      "description": "A step-by-step project covering scenes, player movement, animation, collisions, enemy spawning, scoring, sound, and exporting in Godot.",
+      "useful": "A complete small project for developers who already know basic programming and want to learn Godot's structure.",
+      "url": "https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Beginning Godot users who already understand basic programming concepts.",
+      "learning": [
+        "Build a small game from scenes and scripts",
+        "Add movement, collisions, enemies, score, and sound",
+        "Export a finished Godot project"
+      ],
+      "next": [
+        "game-programming-patterns",
+        "finishing-a-game",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "unity-create-code",
+      "type": "Course",
+      "title": "Create with Code",
+      "creator": "Unity Technologies",
+      "publisher": "Unity Learn",
+      "year": 2020,
+      "length": "Course",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Programming",
+        "Engine",
+        "3D"
+      ],
+      "games": [],
+      "description": "A project-based beginner course introducing Unity and C# through several small prototypes and practical programming challenges.",
+      "useful": "Provides a defined sequence for learning editor basics and scripting instead of assembling unrelated tutorials.",
+      "url": "https://learn.unity.com/course/create-with-code",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Beginning Unity users who want a guided route through the editor and C# scripting.",
+      "learning": [
+        "Navigate Unity's project and scene workflow",
+        "Write C# behavior for several small prototypes",
+        "Practice debugging through structured challenges"
+      ],
+      "next": [
+        "game-programming-patterns",
+        "finishing-a-game",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "unreal-get-started",
+      "type": "Documentation",
+      "title": "Get Started with Unreal Engine",
+      "creator": "Epic Games",
+      "publisher": "Unreal Engine documentation",
+      "year": 2026,
+      "length": "Documentation path",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Engine",
+        "Programming",
+        "3D"
+      ],
+      "games": [],
+      "description": "Epic's official entry point for installing Unreal Engine and learning projects, actors, levels, Blueprints, C++, packaging, and editor workflows.",
+      "useful": "The safest starting map for a large documentation set that can otherwise be difficult to navigate.",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/get-started",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "New Unreal Engine users who need an official map of the editor, Blueprints, C++, and packaging.",
+      "learning": [
+        "Understand projects, actors, levels, and assets",
+        "Locate Blueprint and C++ learning paths",
+        "Move from installation to a packaged project"
+      ],
+      "next": [
+        "game-programming-patterns",
+        "finishing-a-game",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "valve-level-design",
+      "type": "Documentation",
+      "title": "Valve Level Design Documentation",
+      "creator": "Valve Developer Community",
+      "publisher": "Valve",
+      "year": 2026,
+      "length": "Reference collection",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Level design",
+        "Tools",
+        "Engine"
+      ],
+      "games": [
+        "Half-Life",
+        "Portal",
+        "Source games"
+      ],
+      "description": "A community-maintained index of Valve mapping concepts, Hammer workflows, entities, optimization, compile tools, and game-specific techniques.",
+      "useful": "Combines production terminology with technical implementation details for GoldSrc and Source projects.",
+      "url": "https://developer.valvesoftware.com/wiki/Category:Level_Design",
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Programming"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Mappers and technical level designers working with GoldSrc, Source, Half-Life, or Portal.",
+      "learning": [
+        "Find Hammer tools and mapping terminology",
+        "Connect entities and compile tools to level behavior",
+        "Locate game-specific optimization and workflow guidance"
+      ],
+      "next": [
+        "witness-architecture",
+        "doom-postmortem",
+        "id-source-code"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "id-source-code",
+      "type": "Archive",
+      "title": "id Software Source Code",
+      "creator": "id Software",
+      "publisher": "GitHub",
+      "year": 2012,
+      "length": "Code archive",
+      "access": "Free",
+      "level": "Advanced",
+      "topics": [
+        "Programming",
+        "Game history",
+        "Engine"
+      ],
+      "games": [
+        "DOOM",
+        "Quake",
+        "Wolfenstein 3D"
+      ],
+      "description": "Official repositories containing source releases for several historic id Software engines and games, with their accompanying licenses and build material.",
+      "useful": "Primary technical evidence for studying how influential real-time engines were organized and implemented.",
+      "url": "https://github.com/id-Software",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "History"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Advanced programmers and historians comfortable reading legacy C and engine repositories.",
+      "learning": [
+        "Inspect primary source from historic engines",
+        "Compare organization across several id releases",
+        "Relate technical implementation to historical accounts"
+      ],
+      "next": [
+        "doom-postmortem",
+        "racing-the-beam",
+        "i-am-error"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "vghf-library",
+      "type": "Archive",
+      "title": "Video Game History Foundation Library",
+      "creator": "Video Game History Foundation",
+      "publisher": "VGHF",
+      "year": 2025,
+      "length": "Digital library",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Game history",
+        "Preservation",
+        "Research"
+      ],
+      "games": [],
+      "description": "A research library for digitized game magazines, development material, ephemera, and catalogued archival collections.",
+      "useful": "A starting point for historical research that depends on primary documents rather than retrospective summaries.",
+      "url": "https://gamehistory.org/library/",
+      "image": "",
+      "featured": true,
+      "subjects": [
+        "History"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Historical"
+      ],
+      "audience": "Researchers, writers, developers, and curious players looking for primary historical material.",
+      "learning": [
+        "Search digitized magazines and archival holdings",
+        "Distinguish primary documents from later summaries",
+        "Build evidence for historical research questions"
+      ],
+      "next": [
+        "gdc-vault",
+        "game-design-reader",
+        "id-source-code"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "gdc-vault",
+      "type": "Archive",
+      "title": "GDC Vault",
+      "creator": "Game Developers Conference",
+      "publisher": "GDC",
+      "year": 2026,
+      "length": "Video and slide archive",
+      "access": "Mixed",
+      "level": "All levels",
+      "topics": [
+        "Production",
+        "Game design",
+        "Programming",
+        "Audio"
+      ],
+      "games": [],
+      "description": "The official archive of GDC session videos, audio, and presentation material, combining free records with subscriber-only sessions.",
+      "useful": "The largest single professional-talk collection in this catalogue; search by speaker, discipline, event, or game.",
+      "url": "https://gdcvault.com/",
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Programming",
+        "Production",
+        "Audio"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Developers and students searching for professional talks by discipline, speaker, event, or game.",
+      "learning": [
+        "Search a large professional conference archive",
+        "Separate free sessions from subscriber material",
+        "Use talks as starting points for deeper research"
+      ],
+      "next": [
+        "designing-journey",
+        "doom-postmortem",
+        "doom-behind-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "witness-dev-archive",
+      "type": "Archive",
+      "title": "The Witness Development Archive",
+      "creator": "Thekla",
+      "publisher": "The Witness development blog",
+      "year": 2016,
+      "length": "Article archive",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Puzzle design",
+        "Environment art",
+        "Production",
+        "Audio"
+      ],
+      "games": [
+        "The Witness"
+      ],
+      "description": "Development posts published during production, covering architecture, graphics, tools, audio, playtesting, puzzle work, and release preparation.",
+      "useful": "A rare chronological record that lets readers compare individual production problems across one long project.",
+      "url": "https://the-witness.net/news/category/development/",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Official archive opened successfully in a browser; the site rejects some automated checks."
+      },
+      "image": "",
+      "subjects": [
+        "Game design",
+        "Visual art",
+        "Audio",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Developers and researchers studying one game's design across several disciplines and years.",
+      "learning": [
+        "Follow production problems in chronological context",
+        "Compare architecture, graphics, tools, audio, and puzzles",
+        "Connect individual decisions to a finished creative direction"
+      ],
+      "next": [
+        "witness-architecture",
+        "witness-audio",
+        "witness-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-design-workshop",
+      "type": "Book",
+      "title": "Game Design Workshop",
+      "creator": "Tracy Fullerton",
+      "publisher": "CRC Press / Routledge",
+      "year": 2023,
+      "length": "Textbook",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Game design",
+        "Playtesting",
+        "Prototyping"
+      ],
+      "games": [],
+      "description": "A playcentric textbook that takes a game from initial idea through formal systems, prototyping, playtesting, iteration, and presentation. Exercises and examples make it usable as either a course or a self-directed process.",
+      "useful": "One of the clearest complete introductions to designing around the experience of players rather than around features alone.",
+      "url": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
+      "image": "https://covers.openlibrary.org/b/isbn/9781032607009-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Students, beginning designers, and teams looking for a repeatable playtesting-led process.",
+      "learning": [
+        "Turn an experience goal into a playable prototype",
+        "Plan and run useful playtests",
+        "Iterate formal and dramatic elements from evidence"
+      ],
+      "next": [
+        "elements-game-design",
+        "designing-games",
+        "playful-production"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-feel-book",
+      "type": "Book",
+      "title": "Game Feel",
+      "creator": "Steve Swink",
+      "publisher": "Morgan Kaufmann / Elsevier",
+      "year": 2008,
+      "length": "376 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game feel",
+        "Controls",
+        "Feedback"
+      ],
+      "games": [],
+      "description": "A focused study of the moment-to-moment sensation of controlling a game. Swink separates input, response, context, polish, metaphor, and rules, then uses playable examples to show how changing them alters the experience.",
+      "useful": "It gives designers a concrete vocabulary for something that is often discussed only as an instinct or a vague sense of polish.",
+      "url": "https://www.sciencedirect.com/book/monograph/9780123743282/game-feel",
+      "image": "https://covers.openlibrary.org/b/isbn/9780123743282-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Designers and programmers tuning controls, feedback, movement, or action-game prototypes.",
+      "learning": [
+        "Separate the components that produce game feel",
+        "Tune input and response through playable comparison",
+        "Connect audiovisual polish to underlying control"
+      ],
+      "next": [
+        "art-of-screenshake",
+        "juice-it-or-lose-it",
+        "theory-of-fun"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "designing-games",
+      "type": "Book",
+      "title": "Designing Games",
+      "creator": "Tynan Sylvester",
+      "publisher": "O’Reilly Media",
+      "year": 2013,
+      "length": "416 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Game design",
+        "Player experience",
+        "Decision making"
+      ],
+      "games": [
+        "RimWorld"
+      ],
+      "description": "A designer-led account of how rules, uncertainty, rewards, fiction, and social context combine into experiences. It moves between general principles and detailed examples rather than prescribing one universal design formula.",
+      "useful": "Strong for readers who understand basic mechanics but want to reason more precisely about emotions, choices, and player stories.",
+      "url": "https://tynansylvester.com/book/",
+      "image": "https://covers.openlibrary.org/b/isbn/9781449337933-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Intermediate designers trying to connect system design with emotion and player interpretation.",
+      "learning": [
+        "Design choices around emotional effects",
+        "Reason about uncertainty and rewards",
+        "Use fiction and rules as mutually supporting tools"
+      ],
+      "next": [
+        "game-design-workshop",
+        "characteristics-of-games",
+        "theory-of-fun"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "theory-of-fun",
+      "type": "Book",
+      "title": "A Theory of Fun for Game Design",
+      "creator": "Raph Koster",
+      "publisher": "O’Reilly Media",
+      "year": 2013,
+      "length": "300 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Game design",
+        "Learning",
+        "Player psychology"
+      ],
+      "games": [],
+      "description": "An illustrated argument that much of the pleasure of games comes from recognizing and mastering patterns. The second edition adds material while preserving the short, approachable structure of the original.",
+      "useful": "A readable starting point for questioning what players learn from rules, although its central theory is best compared with other perspectives.",
+      "url": "https://www.oreilly.com/library/view/theory-of-fun/9781449363208/",
+      "image": "https://covers.openlibrary.org/b/isbn/9781449363215-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical"
+      ],
+      "audience": "New designers and general readers looking for an accessible argument about why play can be pleasurable.",
+      "learning": [
+        "Relate play to pattern recognition and learning",
+        "Distinguish surface fiction from underlying challenge",
+        "Critique a broad theory using examples of your own"
+      ],
+      "next": [
+        "elements-game-design",
+        "rules-of-play",
+        "designing-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "architectural-level-design",
+      "type": "Book",
+      "title": "Architectural Approach to Level Design",
+      "creator": "Christopher W. Totten",
+      "publisher": "CRC Press / Routledge",
+      "year": 2019,
+      "length": "626 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Level design",
+        "Architecture",
+        "Spatial design"
+      ],
+      "games": [],
+      "description": "A second-edition guide that brings architectural history, spatial experience, circulation, landmarks, emotion, tutorials, and procedural methods into level-design practice.",
+      "useful": "It treats a level as an inhabited space with perceptual and emotional structure, not merely a route between encounters.",
+      "url": "https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367",
+      "image": "https://covers.openlibrary.org/b/isbn/9780815361367-L.jpg?default=false",
+      "subjects": [
+        "Game design",
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Level designers and environment artists who want a deeper spatial vocabulary.",
+      "learning": [
+        "Apply circulation, landmarks, and spatial rhythm",
+        "Use architecture to shape emotion and navigation",
+        "Design tutorial spaces around player perception"
+      ],
+      "next": [
+        "valve-level-design",
+        "witness-architecture",
+        "designing-celeste"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "book-of-shaders",
+      "type": "Guide",
+      "title": "The Book of Shaders",
+      "creator": "Patricio Gonzalez Vivo and Jen Lowe",
+      "publisher": "The Book of Shaders",
+      "year": 2015,
+      "length": "Interactive guide",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Shaders",
+        "GLSL",
+        "Generative art"
+      ],
+      "games": [],
+      "description": "A browser-based introduction to fragment shaders, shapes, color, noise, matrices, patterns, and simulation. Editable examples let readers change GLSL code and see the result immediately.",
+      "useful": "The live exercises make mathematical graphics concepts visible and experimentally approachable.",
+      "url": "https://thebookofshaders.com/",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Programmers and technical artists with basic coding knowledge who are new to shader programming.",
+      "learning": [
+        "Write basic fragment shaders in GLSL",
+        "Construct shapes, patterns, and noise",
+        "Use immediate visual feedback to explore equations"
+      ],
+      "next": [
+        "catlike-coding",
+        "real-time-rendering",
+        "pbr-book"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "real-time-rendering",
+      "type": "Book",
+      "title": "Real-Time Rendering, Fourth Edition",
+      "creator": "Tomas Akenine-Möller, Eric Haines, and Naty Hoffman",
+      "publisher": "CRC Press / Routledge",
+      "year": 2018,
+      "length": "1,198 pages",
+      "access": "Paid",
+      "level": "Advanced",
+      "topics": [
+        "Rendering",
+        "Graphics",
+        "Algorithms"
+      ],
+      "games": [],
+      "description": "A comprehensive reference to the modern real-time graphics pipeline, transforms, shading, textures, lighting, shadows, sampling, acceleration, and many production rendering techniques.",
+      "useful": "A durable technical reference for understanding why rendering systems work, rather than only how to operate one engine’s tools.",
+      "url": "https://www.routledge.com/Real-Time-Rendering-Fourth-Edition/Akenine-Moller-Haines-Hoffman/p/book/9781138627000",
+      "image": "https://covers.openlibrary.org/b/isbn/9781138627000-L.jpg?default=false",
+      "subjects": [
+        "Programming",
+        "Visual art"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Graphics programmers and advanced technical artists who are comfortable with mathematics and rendering code.",
+      "learning": [
+        "Map the stages of a real-time rendering pipeline",
+        "Compare lighting, shadow, and sampling techniques",
+        "Choose further research from a broad technical reference"
+      ],
+      "next": [
+        "pbr-book",
+        "book-of-shaders",
+        "tf2-illustrative-rendering"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "pbr-book",
+      "type": "Book",
+      "title": "Physically Based Rendering",
+      "creator": "Matt Pharr, Wenzel Jakob, and Greg Humphreys",
+      "publisher": "PBRT",
+      "year": 2023,
+      "length": "Online fourth edition",
+      "access": "Free",
+      "level": "Advanced",
+      "topics": [
+        "Rendering",
+        "Ray tracing",
+        "Light transport"
+      ],
+      "games": [],
+      "description": "The complete online fourth edition explains a working physically based renderer from mathematical foundations through geometry, materials, light transport, sampling, and implementation.",
+      "useful": "It pairs rigorous explanation with real source code, making it valuable both as a textbook and as an implementation reference.",
+      "url": "https://pbr-book.org/4ed/contents",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262048026-L.jpg?default=false",
+      "subjects": [
+        "Programming",
+        "Visual art"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Advanced graphics programmers and researchers studying physically based rendering or ray tracing.",
+      "learning": [
+        "Follow a renderer from camera rays to final image",
+        "Understand sampling and light transport",
+        "Connect rendering equations to implementation"
+      ],
+      "next": [
+        "real-time-rendering",
+        "book-of-shaders",
+        "tf2-illustrative-rendering"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "gaffer-on-games",
+      "type": "Article archive",
+      "title": "Gaffer On Games",
+      "creator": "Glenn Fiedler",
+      "publisher": "Gaffer On Games",
+      "year": 2018,
+      "length": "Article archive",
+      "access": "Free",
+      "level": "Advanced",
+      "topics": [
+        "Physics",
+        "Networking",
+        "Simulation"
+      ],
+      "games": [],
+      "description": "An archive of technical articles on fixed timesteps, integration, constraints, deterministic simulation, state synchronization, packet design, and networked physics.",
+      "useful": "The explanations identify practical failure modes that are often missing from shorter physics and multiplayer tutorials.",
+      "url": "https://gafferongames.com/",
+      "image": "",
+      "subjects": [
+        "Programming"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Intermediate and advanced programmers building real-time physics or multiplayer systems.",
+      "learning": [
+        "Choose stable approaches to simulation time",
+        "Compare networking models and their tradeoffs",
+        "Recognize common numerical and packet-level failures"
+      ],
+      "next": [
+        "game-programming-patterns",
+        "red-blob-pathfinding",
+        "real-time-rendering"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "catlike-coding",
+      "type": "Guide",
+      "title": "Unity C# and Shader Tutorials",
+      "creator": "Jasper Flick",
+      "publisher": "Catlike Coding",
+      "year": 2026,
+      "length": "Tutorial archive",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Unity",
+        "C#",
+        "Shaders"
+      ],
+      "games": [],
+      "description": "A long-running set of carefully sequenced Unity tutorials covering procedural meshes, rendering, movement, physics, data, and editor tooling. Older series target older Unity releases and are clearly labeled.",
+      "useful": "Projects explain the code and mathematics in depth instead of asking readers to copy an unexplained final result.",
+      "url": "https://catlikecoding.com/unity/tutorials/",
+      "image": "",
+      "subjects": [
+        "Programming",
+        "Visual art"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Unity developers who know basic C# and want deeper graphics, mathematics, and systems practice.",
+      "learning": [
+        "Build procedural and graphical systems step by step",
+        "Translate mathematics into Unity C# and shaders",
+        "Judge whether a tutorial matches the installed Unity version"
+      ],
+      "next": [
+        "book-of-shaders",
+        "game-programming-patterns",
+        "real-time-rendering"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "animators-survival-kit",
+      "type": "Book",
+      "title": "The Animator’s Survival Kit",
+      "creator": "Richard Williams",
+      "publisher": "Faber and Faber",
+      "year": 2012,
+      "length": "392 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Animation",
+        "Timing",
+        "Movement"
+      ],
+      "games": [],
+      "description": "A heavily illustrated manual on timing, spacing, walks, runs, weight, dialogue, acting, and the working methods of hand-drawn animation. Its principles transfer readily to 2D and 3D game animation.",
+      "useful": "The drawings make subtle differences in weight and rhythm easier to see than an abstract list of animation principles.",
+      "url": "https://us.macmillan.com/books/9780865478978/theanimatorssurvivalkit/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780865478978-L.jpg?default=false",
+      "subjects": [
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Beginning animators, gameplay animators, and designers who need to communicate clearly about motion.",
+      "learning": [
+        "Control motion through timing and spacing",
+        "Construct convincing walks and changes of weight",
+        "Analyze animation frame by frame"
+      ],
+      "next": [
+        "prince-of-persia-postmortem",
+        "art-of-screenshake",
+        "game-feel-book"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "color-and-light",
+      "type": "Book",
+      "title": "Color and Light",
+      "creator": "James Gurney",
+      "publisher": "Andrews McMeel Publishing",
+      "year": 2010,
+      "length": "224 pages",
+      "access": "Paid",
+      "level": "All levels",
+      "topics": [
+        "Color",
+        "Lighting",
+        "Painting"
+      ],
+      "games": [],
+      "description": "An illustrated guide to light sources, color relationships, surfaces, atmosphere, visual perception, and practical observation. Although written for painters, it directly supports concept, environment, and lighting work.",
+      "useful": "It connects color theory to observed physical situations, making it more practical than choosing palettes by mood alone.",
+      "url": "https://jamesgurney.com/products/color-and-light-a-guide-for-the-realist-painter-signed-by-james-gurney",
+      "image": "https://covers.openlibrary.org/b/isbn/9780740797712-L.jpg?default=false",
+      "subjects": [
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Concept artists, environment artists, lighting artists, and visually curious developers.",
+      "learning": [
+        "Identify how light sources affect color",
+        "Describe material and atmospheric effects",
+        "Use observation to make invented scenes more coherent"
+      ],
+      "next": [
+        "art-of-firewatch",
+        "tf2-illustrative-rendering",
+        "book-of-shaders"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "pixel-logic",
+      "type": "Book",
+      "title": "Pixel Logic",
+      "creator": "Michael Azzi",
+      "publisher": "Pixel Logic",
+      "year": 2019,
+      "length": "242 pages",
+      "access": "Mixed",
+      "level": "Introductory",
+      "topics": [
+        "Pixel art",
+        "Sprites",
+        "Animation"
+      ],
+      "games": [],
+      "description": "A visual guide to pixel clusters, lines, curves, anti-aliasing, color, light, texture, sprites, tiles, and animation. A free preview explains the approach before purchase.",
+      "useful": "Examples are built around pixel-level decisions rather than treating pixel art as merely low-resolution illustration.",
+      "url": "https://pixellogicbook.com/",
+      "image": "",
+      "subjects": [
+        "Visual art"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Beginning pixel artists and small teams producing readable 2D game assets.",
+      "learning": [
+        "Build clean forms from intentional pixel clusters",
+        "Control color and contrast at small scales",
+        "Prepare sprites and tiles for animation"
+      ],
+      "next": [
+        "animators-survival-kit",
+        "color-and-light",
+        "art-of-screenshake"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "tf2-illustrative-rendering",
+      "type": "Paper",
+      "title": "Illustrative Rendering in Team Fortress 2",
+      "creator": "Jason Mitchell, Moby Francke, and Dhabih Eng",
+      "publisher": "Valve",
+      "year": 2007,
+      "length": "Conference paper",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Art direction",
+        "Rendering",
+        "Shaders"
+      ],
+      "games": [
+        "Team Fortress 2"
+      ],
+      "description": "Valve’s paper explains how concept art, character silhouettes, material response, and a custom shading model work together to produce Team Fortress 2’s illustrative visual style.",
+      "useful": "A strong case study in translating art direction into technical rendering decisions instead of applying style only as surface decoration.",
+      "url": "https://www.valvesoftware.com/en/publications",
+      "embed": {
+        "provider": "pdf",
+        "url": "https://cdn.fastly.steamstatic.com/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2.pdf"
+      },
+      "image": "",
+      "subjects": [
+        "Visual art",
+        "Programming"
+      ],
+      "lengthClass": "Under 30 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Technical artists, character artists, and graphics programmers connecting a visual target to rendering code.",
+      "learning": [
+        "Connect silhouette design with gameplay readability",
+        "Identify shading choices behind an illustrative style",
+        "Treat art direction as a cross-disciplinary system"
+      ],
+      "next": [
+        "real-time-rendering",
+        "book-of-shaders",
+        "color-and-light"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "art-of-firewatch",
+      "type": "Talk",
+      "title": "The Art of Firewatch",
+      "creator": "Jane Ng",
+      "publisher": "GDC",
+      "year": 2015,
+      "length": "57 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Art direction",
+        "Environment art",
+        "Production"
+      ],
+      "games": [
+        "Firewatch"
+      ],
+      "description": "Environment artist Jane Ng explains how a very small team built Firewatch’s stylized Wyoming wilderness, from visual goals and terrain tools to trees, props, lighting, and production tradeoffs.",
+      "useful": "It shows how art direction becomes a feasible production plan when a small team cannot solve every asset by hand.",
+      "url": "https://www.youtube.com/watch?v=SdxQ3HlhTE8",
+      "image": "https://i.ytimg.com/vi/SdxQ3HlhTE8/hqdefault.jpg",
+      "subjects": [
+        "Visual art",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Environment artists, art directors, and small teams planning a cohesive 3D world.",
+      "learning": [
+        "Turn a visual target into production constraints",
+        "Combine procedural terrain with authored detail",
+        "Prioritize tools and assets for a small art team"
+      ],
+      "next": [
+        "color-and-light",
+        "witness-architecture",
+        "tf2-illustrative-rendering"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "designing-sound",
+      "type": "Book",
+      "title": "Designing Sound",
+      "creator": "Andy Farnell",
+      "publisher": "MIT Press",
+      "year": 2010,
+      "length": "688 pages",
+      "access": "Paid",
+      "level": "Advanced",
+      "topics": [
+        "Sound synthesis",
+        "Procedural audio",
+        "Pure Data"
+      ],
+      "games": [],
+      "description": "A technical guide to constructing sounds from physical and perceptual models using Pure Data. Examples cover impacts, machines, vehicles, fire, weather, voices, and other sound families.",
+      "useful": "It teaches how a sound behaves rather than only how to search for or process a prerecorded sample.",
+      "url": "https://mitpress.mit.edu/9780262014410/designing-sound/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262014410-L.jpg?default=false",
+      "subjects": [
+        "Audio",
+        "Programming"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Sound designers and audio programmers comfortable with synthesis, patching, and technical detail.",
+      "learning": [
+        "Model sound from physical behavior",
+        "Construct procedural effects in Pure Data",
+        "Organize complex effects from reusable components"
+      ],
+      "next": [
+        "game-audio-implementation",
+        "game-audio-tutorial",
+        "sonniss-gdc-audio"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "composers-guide-game-music",
+      "type": "Book",
+      "title": "A Composer’s Guide to Game Music",
+      "creator": "Winifred Phillips",
+      "publisher": "MIT Press",
+      "year": 2014,
+      "length": "288 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Music",
+        "Adaptive music",
+        "Career"
+      ],
+      "games": [],
+      "description": "A working composer’s introduction to the artistic, technical, and professional demands of game music, including interactivity, workflow, collaboration, pitching, and career development.",
+      "useful": "It explains what makes composing for games different from writing a linear score while remaining accessible to newcomers.",
+      "url": "https://mitpress.mit.edu/9780262534499/a-composers-guide-to-game-music/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262534499-L.jpg?default=false",
+      "subjects": [
+        "Audio",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Composers and audio students considering interactive music or their first game collaboration.",
+      "learning": [
+        "Plan music for interactive structures",
+        "Communicate with a game-development team",
+        "Understand common production and career expectations"
+      ],
+      "next": [
+        "game-audio-tutorial",
+        "doom-behind-music",
+        "witness-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-audio-implementation",
+      "type": "Book",
+      "title": "Game Audio Implementation",
+      "creator": "Richard Stevens and Dave Raybould",
+      "publisher": "Focal Press",
+      "year": 2015,
+      "length": "464 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Audio middleware",
+        "Unreal Engine",
+        "Implementation"
+      ],
+      "games": [],
+      "description": "A practical implementation guide built around exercises in game engines and audio middleware. It covers triggers, spatial sound, interactive music, dialogue, mixing, optimization, and troubleshooting.",
+      "useful": "It focuses on getting sound into a functioning game, bridging a common gap between asset creation and technical implementation.",
+      "url": "https://gameaudioimplementation.com/",
+      "image": "https://covers.openlibrary.org/b/isbn/9781138777248-L.jpg?default=false",
+      "subjects": [
+        "Audio",
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Sound designers and technical audio students moving from a digital audio workstation into game tools.",
+      "learning": [
+        "Implement events, ambience, and spatial sound",
+        "Build interactive music and dialogue systems",
+        "Test and optimize audio inside an engine"
+      ],
+      "next": [
+        "game-audio-tutorial",
+        "designing-sound",
+        "unreal-get-started"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "sonniss-gdc-audio",
+      "type": "Archive",
+      "title": "GameAudioGDC Sound Effects Archive",
+      "creator": "Sonniss",
+      "publisher": "Sonniss",
+      "year": 2026,
+      "length": "Sound library archive",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Sound libraries",
+        "Field recording",
+        "Production"
+      ],
+      "games": [],
+      "description": "An annual collection of professionally recorded sound-effect samples released around GDC. The archive spans ambiences, vehicles, impacts, interfaces, creatures, machinery, and many specialist recordings.",
+      "useful": "It provides legal production material for learning and commercial media work; users should still read the current license and observe its AI-training restriction.",
+      "url": "https://sonniss.com/gameaudiogdc/",
+      "image": "",
+      "subjects": [
+        "Audio",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Sound designers, students, and small teams needing source recordings for legitimate media production.",
+      "learning": [
+        "Locate source material by sound category",
+        "Turn raw recordings into project-specific assets",
+        "Check license terms before using a library"
+      ],
+      "next": [
+        "game-audio-tutorial",
+        "game-audio-implementation",
+        "witness-audio"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-audio-tutorial",
+      "type": "Book",
+      "title": "The Game Audio Tutorial",
+      "creator": "Richard Stevens and Dave Raybould",
+      "publisher": "Focal Press / Routledge",
+      "year": 2011,
+      "length": "446 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Audio",
+        "Implementation",
+        "Interactive music"
+      ],
+      "games": [],
+      "description": "A practical introduction to sound and music for interactive games, supported by exercises and example material. It moves from basic engine concepts through ambience, effects, dialogue, music, and procedural techniques.",
+      "useful": "A structured first course for someone who understands audio but has not yet built an interactive sound system.",
+      "url": "https://www.routledge.com/The-Game-Audio-Tutorial-A-Practical-Guide-to-Sound-and-Music-for-Interactive-Games/Stevens-Raybould/p/book/9780240817262",
+      "image": "https://covers.openlibrary.org/b/isbn/9780240817262-L.jpg?default=false",
+      "subjects": [
+        "Audio",
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Students, composers, and sound designers taking their first steps into game-audio implementation.",
+      "learning": [
+        "Understand the structure of interactive game audio",
+        "Implement common effects, ambience, and music behaviors",
+        "Use exercises to move from theory to a working scene"
+      ],
+      "next": [
+        "game-audio-implementation",
+        "composers-guide-game-music",
+        "doom-behind-music"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "hamlet-holodeck",
+      "type": "Book",
+      "title": "Hamlet on the Holodeck",
+      "creator": "Janet H. Murray",
+      "publisher": "MIT Press",
+      "year": 2017,
+      "length": "440 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Interactive narrative",
+        "Agency",
+        "Immersion"
+      ],
+      "games": [],
+      "description": "An updated edition of Murray’s influential account of digital media as a narrative form. It examines procedurality, participation, spatial experience, encyclopedic scope, agency, immersion, and transformation.",
+      "useful": "It provides a foundational vocabulary for asking what digital stories can do differently from linear media.",
+      "url": "https://mitpress.mit.edu/9780262533485/hamlet-on-the-holodeck/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262533485-L.jpg?default=false",
+      "subjects": [
+        "Narrative",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Narrative designers, writers, students, and critics studying the distinctive properties of interactive media.",
+      "learning": [
+        "Describe procedural, participatory, spatial, and encyclopedic media",
+        "Distinguish agency from simple activity",
+        "Place current narrative design in a longer digital-media argument"
+      ],
+      "next": [
+        "game-writing",
+        "procedural-storytelling",
+        "emily-short-blog"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-writing",
+      "type": "Book",
+      "title": "Game Writing",
+      "creator": "Chris Bateman, editor",
+      "publisher": "Bloomsbury Academic",
+      "year": 2021,
+      "length": "Book",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Game writing",
+        "Nonlinear narrative",
+        "Dialogue"
+      ],
+      "games": [],
+      "description": "A revised collection on the practical craft of writing for games, including interactive structure, dialogue, characters, documentation, voice production, and collaboration with a development team.",
+      "useful": "It introduces the concrete deliverables and constraints of game writing rather than treating narrative only as plot analysis.",
+      "url": "https://www.bloomsbury.com/us/game-writing-9781501348969/",
+      "image": "https://covers.openlibrary.org/b/isbn/9781501348969-L.jpg?default=false",
+      "subjects": [
+        "Narrative",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Writers entering game development and teams that need a shared understanding of narrative work.",
+      "learning": [
+        "Plan writing for branching and interactive structures",
+        "Prepare dialogue and narrative documentation",
+        "Collaborate with design, audio, and production roles"
+      ],
+      "next": [
+        "emily-short-blog",
+        "hamlet-holodeck",
+        "narrative-legos"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "procedural-storytelling",
+      "type": "Book",
+      "title": "Procedural Storytelling in Game Design",
+      "creator": "Tanya X. Short and Tarn Adams, editors",
+      "publisher": "CRC Press / Routledge",
+      "year": 2019,
+      "length": "392 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Procedural narrative",
+        "Worldbuilding",
+        "Systems"
+      ],
+      "games": [
+        "Dwarf Fortress"
+      ],
+      "description": "A multi-author practical collection on generating characters, histories, worlds, plots, dialogue, and player stories through systems. Case studies expose both productive methods and common failures.",
+      "useful": "The variety of contributors prevents procedural narrative from being reduced to one algorithm or one kind of game.",
+      "url": "https://www.routledge.com/Procedural-Storytelling-in-Game-Design/Short-Adams/p/book/9781138595309",
+      "image": "https://covers.openlibrary.org/b/isbn/9781138595309-L.jpg?default=false",
+      "subjects": [
+        "Narrative",
+        "Game design",
+        "Programming"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Narrative designers and programmers building stories that respond to systems and player action.",
+      "learning": [
+        "Choose what parts of a story system should generate",
+        "Design data and rules that support meaningful variation",
+        "Recognize coherence and authorship problems in procedural narrative"
+      ],
+      "next": [
+        "narrative-legos",
+        "emily-short-blog",
+        "characteristics-of-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "narrative-legos",
+      "type": "Talk",
+      "title": "Narrative Legos",
+      "creator": "Ken Levine",
+      "publisher": "GDC",
+      "year": 2014,
+      "length": "30 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Procedural narrative",
+        "NPCs",
+        "Replayability"
+      ],
+      "games": [
+        "BioShock"
+      ],
+      "description": "Ken Levine proposes reusable narrative elements driven by characters’ passions, relationships, and changing states. The talk sketches an alternative to fixed branching plots for replayable story systems.",
+      "useful": "It is a clear, debatable design proposal that helps teams discuss what systemic narrative would actually require.",
+      "url": "https://www.youtube.com/watch?v=58FWUkA8y2Q",
+      "image": "https://i.ytimg.com/vi/58FWUkA8y2Q/hqdefault.jpg",
+      "subjects": [
+        "Narrative",
+        "Game design"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Theoretical",
+        "Practical"
+      ],
+      "audience": "Narrative and systems designers exploring replayable character-driven stories.",
+      "learning": [
+        "Describe a state-driven alternative to branching plots",
+        "Connect character relationships to systemic change",
+        "Identify production questions left open by a design concept"
+      ],
+      "next": [
+        "procedural-storytelling",
+        "emily-short-blog",
+        "hamlet-holodeck"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "emily-short-blog",
+      "type": "Article archive",
+      "title": "Emily Short’s Interactive Storytelling",
+      "creator": "Emily Short",
+      "publisher": "Emily Short",
+      "year": 2023,
+      "length": "Article archive",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Interactive fiction",
+        "Dialogue",
+        "Narrative systems"
+      ],
+      "games": [],
+      "description": "A large archive of analysis, reviews, design notes, tools, and talks about interactive fiction, choice design, conversation systems, procedural narrative, and the history of the form.",
+      "useful": "The archive links practical design problems to a wide range of playable work and earlier research.",
+      "url": "https://emshort.blog/",
+      "image": "",
+      "subjects": [
+        "Narrative",
+        "Criticism & theory"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Historical",
+        "Theoretical"
+      ],
+      "audience": "Writers, narrative designers, and researchers who want examples beyond mainstream cinematic games.",
+      "learning": [
+        "Find precedents for specific interactive-story problems",
+        "Compare different structures for choice and conversation",
+        "Build a broader vocabulary of interactive fiction"
+      ],
+      "next": [
+        "game-writing",
+        "procedural-storytelling",
+        "narrative-legos"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "blood-sweat-pixels",
+      "type": "Book",
+      "title": "Blood, Sweat, and Pixels",
+      "creator": "Jason Schreier",
+      "publisher": "HarperCollins",
+      "year": 2017,
+      "length": "304 pages",
+      "access": "Paid",
+      "level": "All levels",
+      "topics": [
+        "Production",
+        "Crunch",
+        "Project history"
+      ],
+      "games": [
+        "Stardew Valley",
+        "Uncharted 4",
+        "The Witcher 3"
+      ],
+      "description": "Ten reported accounts reconstruct difficult game productions, from solo development to large studios. The book covers delays, redesigns, technical problems, management, cancellation, and crunch through interviews with participants.",
+      "useful": "It makes production risk legible through concrete projects and people rather than reducing development to success stories.",
+      "url": "https://www.harpercollins.com/products/blood-sweat-and-pixels-jason-schreier",
+      "image": "https://covers.openlibrary.org/b/isbn/9780062651235-L.jpg?default=false",
+      "subjects": [
+        "Production",
+        "History"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Developers, students, and general readers seeking a reported view of how games are actually made.",
+      "learning": [
+        "Recognize recurring production risks across different teams",
+        "Separate public launch narratives from development history",
+        "Discuss the human cost of scope, delay, and crunch"
+      ],
+      "next": [
+        "press-reset",
+        "playful-production",
+        "spelunky-book"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "press-reset",
+      "type": "Book",
+      "title": "Press Reset",
+      "creator": "Jason Schreier",
+      "publisher": "Grand Central Publishing",
+      "year": 2021,
+      "length": "320 pages",
+      "access": "Paid",
+      "level": "All levels",
+      "topics": [
+        "Labor",
+        "Studio closures",
+        "Production"
+      ],
+      "games": [],
+      "description": "A reported history of studio closures, layoffs, acquisitions, and unstable careers in the game industry. Interviews follow developers through the consequences and attempts to build different kinds of workplaces.",
+      "useful": "It adds labor conditions and institutional instability to production study, subjects that postmortems often omit.",
+      "url": "https://www.grandcentralpublishing.com/titles/jason-schreier/press-reset/9781538735480/",
+      "image": "https://covers.openlibrary.org/b/isbn/9781538735480-L.jpg?default=false",
+      "subjects": [
+        "Production",
+        "History"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Historical",
+        "Theoretical"
+      ],
+      "audience": "Developers, producers, students, and readers considering games as both creative work and an industry.",
+      "learning": [
+        "Identify structural causes of studio instability",
+        "Understand how closures affect individual careers",
+        "Compare alternative approaches to organizing game work"
+      ],
+      "next": [
+        "blood-sweat-pixels",
+        "playful-production",
+        "queer-games-avant-garde"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "designing-celeste",
+      "type": "Talk",
+      "title": "Level Design Workshop: Designing Celeste",
+      "creator": "Maddy Thorson",
+      "publisher": "GDC",
+      "year": 2017,
+      "length": "50 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Level design",
+        "Teaching",
+        "Difficulty"
+      ],
+      "games": [
+        "Celeste"
+      ],
+      "description": "Maddy Thorson works through Celeste’s level-design process, including movement verbs, room construction, teaching order, difficulty, iteration, and the relationship between individual screens and the larger chapter.",
+      "useful": "A detailed first-party explanation of how a demanding game teaches through carefully ordered spatial problems.",
+      "url": "https://www.youtube.com/watch?v=4RlpMhBKNr0",
+      "image": "https://i.ytimg.com/vi/4RlpMhBKNr0/hqdefault.jpg",
+      "subjects": [
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Level designers and developers tuning challenge, teaching, and iteration in movement games.",
+      "learning": [
+        "Build rooms around a small set of movement verbs",
+        "Sequence challenges to teach without explicit instruction",
+        "Use playtesting to tune difficulty and flow"
+      ],
+      "next": [
+        "architectural-level-design",
+        "game-design-workshop",
+        "game-feel-book"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "ftl-postmortem",
+      "type": "Talk",
+      "title": "FTL Postmortem: Designing Without a Pitch",
+      "creator": "Matthew Davis and Justin Ma",
+      "publisher": "GDC",
+      "year": 2013,
+      "length": "49 min",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Production",
+        "Iteration",
+        "Crowdfunding"
+      ],
+      "games": [
+        "FTL: Faster Than Light"
+      ],
+      "description": "Subset Games’ founders explain how a small prototype made for themselves became FTL, covering influences, remote collaboration, iteration, public response, crowdfunding, and decisions made without a conventional publisher pitch.",
+      "useful": "A candid small-team production history that separates the appealing finished game from the uncertainty of finding it.",
+      "url": "https://www.youtube.com/watch?v=P4Um97AUqp4",
+      "image": "https://i.ytimg.com/vi/P4Um97AUqp4/hqdefault.jpg",
+      "subjects": [
+        "Production",
+        "Game design",
+        "History"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Independent developers studying prototypes, collaboration, crowdfunding, and emergent project direction.",
+      "learning": [
+        "Trace a personal prototype into a commercial project",
+        "See how feedback and funding changed production",
+        "Identify benefits and risks of designing without a formal pitch"
+      ],
+      "next": [
+        "into-breach-postmortem",
+        "spelunky-book",
+        "finishing-a-game"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "into-breach-postmortem",
+      "type": "Talk",
+      "title": "Into the Breach Design Postmortem",
+      "creator": "Matthew Davis",
+      "publisher": "GDC",
+      "year": 2019,
+      "length": "54 min",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Game design",
+        "Constraints",
+        "Balancing"
+      ],
+      "games": [
+        "Into the Breach"
+      ],
+      "description": "Matthew Davis reconstructs the long search for Into the Breach’s design, including discarded prototypes, perfect-information combat, board size, enemy intent, time pressure, difficulty, and extensive simplification.",
+      "useful": "It demonstrates that a coherent ruleset can emerge through years of cuts and reframing rather than from one complete initial idea.",
+      "url": "https://www.youtube.com/watch?v=s_I07Iq_2XM",
+      "image": "https://i.ytimg.com/vi/s_I07Iq_2XM/hqdefault.jpg",
+      "subjects": [
+        "Game design",
+        "Production"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Historical",
+        "Practical"
+      ],
+      "audience": "Systems designers and small teams working through prototypes that are promising but not yet coherent.",
+      "learning": [
+        "Use constraints to clarify a tactical design",
+        "Communicate enemy intent through perfect information",
+        "Recognize simplification as a major design activity"
+      ],
+      "next": [
+        "ftl-postmortem",
+        "characteristics-of-games",
+        "game-design-workshop"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "how-talk-videogames",
+      "type": "Book",
+      "title": "How to Talk about Videogames",
+      "creator": "Ian Bogost",
+      "publisher": "University of Minnesota Press",
+      "year": 2015,
+      "length": "208 pages",
+      "access": "Paid",
+      "level": "Introductory",
+      "topics": [
+        "Game criticism",
+        "Writing",
+        "Culture"
+      ],
+      "games": [
+        "Flappy Bird",
+        "Ms. Pac-Man",
+        "Mario Kart 8"
+      ],
+      "description": "A collection of short critical essays that examines particular games, mechanics, objects, and habits with close attention. The subjects range from major releases to mundane and unfashionable games.",
+      "useful": "It models criticism that begins with what a game actually does instead of using games only as examples of a preselected theory.",
+      "url": "https://www.upress.umn.edu/9780816699124/how-to-talk-about-videogames/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780816699124-L.jpg?default=false",
+      "subjects": [
+        "Criticism & theory"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Beginning critics, developers, and general readers who want to write more precisely about games.",
+      "learning": [
+        "Build an argument from close attention to a game",
+        "Write about mechanics alongside culture and material objects",
+        "Choose a critical scale appropriate to the subject"
+      ],
+      "next": [
+        "game-studies-journal",
+        "critical-play",
+        "persuasive-games"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "persuasive-games",
+      "type": "Book",
+      "title": "Persuasive Games",
+      "creator": "Ian Bogost",
+      "publisher": "MIT Press",
+      "year": 2007,
+      "length": "464 pages",
+      "access": "Paid",
+      "level": "Advanced",
+      "topics": [
+        "Procedural rhetoric",
+        "Critical design",
+        "Systems"
+      ],
+      "games": [],
+      "description": "An argument that computational rules and processes can make claims about how systems work. Case studies examine games related to politics, advertising, and education and develop the idea of procedural rhetoric.",
+      "useful": "A foundational, contestable framework for analyzing meaning produced by rules rather than only by story or imagery.",
+      "url": "https://mitpress.mit.edu/9780262261944/persuasive-games/",
+      "image": "https://covers.openlibrary.org/b/isbn/9780262514880-L.jpg?default=false",
+      "subjects": [
+        "Criticism & theory",
+        "Game design"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Advanced students, critics, and designers studying how systems make arguments.",
+      "learning": [
+        "Define procedural rhetoric in relation to game rules",
+        "Analyze how a simulation frames a real-world system",
+        "Critique the limits of persuasive-design claims"
+      ],
+      "next": [
+        "critical-play",
+        "how-talk-videogames",
+        "game-studies-journal"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "queer-games-avant-garde",
+      "type": "Book",
+      "title": "The Queer Games Avant-Garde",
+      "creator": "Bo Ruberg",
+      "publisher": "Duke University Press",
+      "year": 2020,
+      "length": "288 pages",
+      "access": "Paid",
+      "level": "Intermediate",
+      "topics": [
+        "Queer games",
+        "Independent games",
+        "Interviews"
+      ],
+      "games": [],
+      "description": "A study built around interviews with queer independent game makers. It documents their works, design practices, communities, aesthetics, and resistance to narrow ideas about both games and representation.",
+      "useful": "First-person accounts connect criticism to the conditions and intentions of making work outside dominant industry models.",
+      "url": "https://www.dukeupress.edu/the-queer-games-avant-garde",
+      "image": "https://covers.openlibrary.org/b/isbn/9781478006589-L.jpg?default=false",
+      "subjects": [
+        "Criticism & theory",
+        "History",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Historical",
+        "Theoretical"
+      ],
+      "audience": "Developers, artists, critics, and researchers interested in queer games and alternative production cultures.",
+      "learning": [
+        "Recognize a wider field of queer game-making practices",
+        "Connect aesthetics with community and production conditions",
+        "Use interviews as evidence without flattening different creators"
+      ],
+      "next": [
+        "critical-play",
+        "press-reset",
+        "game-studies-journal"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "game-studies-journal",
+      "type": "Journal",
+      "title": "Game Studies",
+      "creator": "Game Studies editorial collective",
+      "publisher": "Game Studies",
+      "year": 2001,
+      "length": "Open-access journal",
+      "access": "Free",
+      "level": "Advanced",
+      "topics": [
+        "Research",
+        "Game studies",
+        "Criticism"
+      ],
+      "games": [],
+      "description": "An open-access academic journal devoted to computer-game research, with peer-reviewed articles, book reviews, special issues, and an archive extending back to the field’s early formation.",
+      "useful": "It is a durable route into scholarly debates and bibliographies beyond commercial coverage and introductory summaries.",
+      "url": "https://gamestudies.org/",
+      "image": "",
+      "subjects": [
+        "Criticism & theory",
+        "History"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Theoretical",
+        "Historical"
+      ],
+      "audience": "Researchers, advanced students, critics, and developers investigating a specific question in depth.",
+      "learning": [
+        "Search scholarly work by topic and issue",
+        "Trace arguments through references and responses",
+        "Distinguish peer-reviewed research from general commentary"
+      ],
+      "next": [
+        "game-design-reader",
+        "how-talk-videogames",
+        "vghf-library"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "internet-archive-software",
+      "type": "Archive",
+      "title": "Internet Archive Software Library",
+      "creator": "Internet Archive",
+      "publisher": "Internet Archive",
+      "year": 2013,
+      "length": "Digital archive",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Preservation",
+        "Emulation",
+        "Game history"
+      ],
+      "games": [],
+      "description": "A large preservation collection of historical software, shareware, console material, computer games, documentation, and browser-accessible emulation. Individual items vary in completeness and rights status.",
+      "useful": "It lets researchers encounter historical software directly and locate files or documentation that may be absent from conventional publishing histories.",
+      "url": "https://archive.org/details/softwarelibrary",
+      "image": "",
+      "subjects": [
+        "History"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Historical"
+      ],
+      "audience": "Historians, preservation researchers, developers, and players exploring older software in context.",
+      "learning": [
+        "Search software collections by platform and date",
+        "Use emulation as one form of historical access",
+        "Record provenance and limitations when citing archived software"
+      ],
+      "next": [
+        "vghf-library",
+        "id-source-code",
+        "racing-the-beam"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "xbox-accessibility-guidelines",
+      "type": "Guide",
+      "title": "Xbox Accessibility Guidelines",
+      "creator": "Microsoft",
+      "publisher": "Microsoft Learn",
+      "year": 2023,
+      "length": "Guideline reference",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Accessibility",
+        "Testing",
+        "UX"
+      ],
+      "games": [],
+      "description": "A platform-neutral set of detailed guidelines covering text, color, input, difficulty, audio, communication, motion, menus, and other player needs. Each guideline includes intent, implementation ideas, and testing questions.",
+      "useful": "The testable criteria help teams turn a broad commitment to accessibility into reviewable design and QA work.",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines",
+      "image": "",
+      "subjects": [
+        "Accessibility",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical"
+      ],
+      "audience": "Designers, engineers, producers, and testers evaluating accessibility throughout development.",
+      "learning": [
+        "Find guidance for a specific feature or barrier",
+        "Translate player needs into implementation questions",
+        "Include accessibility criteria in design and test plans"
+      ],
+      "next": [
+        "gaming-accessibility-fundamentals",
+        "accessible-player-experiences",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "gaming-accessibility-fundamentals",
+      "type": "Course",
+      "title": "Gaming Accessibility Fundamentals",
+      "creator": "Microsoft",
+      "publisher": "Microsoft Learn",
+      "year": 2026,
+      "length": "Learning path",
+      "access": "Free",
+      "level": "Introductory",
+      "topics": [
+        "Accessibility",
+        "Disability",
+        "Inclusive design"
+      ],
+      "games": [],
+      "description": "A free learning path introducing disability, common barriers in games, assistive technology, accessibility principles, and the roles different team members play in inclusive development.",
+      "useful": "It establishes shared foundations before a team jumps into long checklists or isolated feature decisions.",
+      "url": "https://learn.microsoft.com/en-us/training/paths/gaming-accessibility-fundamentals/",
+      "image": "",
+      "subjects": [
+        "Accessibility",
+        "Production"
+      ],
+      "lengthClass": "Long-form",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Anyone entering game development, including non-specialists who need a common accessibility vocabulary.",
+      "learning": [
+        "Describe disability through barriers rather than stereotypes",
+        "Recognize common obstacles across game systems",
+        "Identify how each development role can improve access"
+      ],
+      "next": [
+        "accessible-player-experiences",
+        "xbox-accessibility-guidelines",
+        "accessibility-guidelines"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "accessible-player-experiences",
+      "type": "Guide",
+      "title": "Accessible Player Experiences",
+      "creator": "AbleGamers",
+      "publisher": "Accessible.Games",
+      "year": 2018,
+      "length": "Design-pattern reference",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Accessibility",
+        "Design patterns",
+        "Player research"
+      ],
+      "games": [],
+      "description": "A design-pattern framework organized around the experiences players need, such as controlling input, receiving information, understanding state, and recovering from mistakes. Patterns link barriers to possible design solutions.",
+      "useful": "Starting from player experience keeps accessibility connected to design intent instead of treating it as a list of special options.",
+      "url": "https://accessible.games/accessible-player-experiences/",
+      "image": "",
+      "subjects": [
+        "Accessibility",
+        "Game design"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Designers and user researchers shaping features before or during implementation.",
+      "learning": [
+        "Frame accessibility around desired player experiences",
+        "Match recurring barriers with design patterns",
+        "Discuss solutions without assuming one feature fits everyone"
+      ],
+      "next": [
+        "gaming-accessibility-fundamentals",
+        "xbox-accessibility-guidelines",
+        "igda-accessibility-resources"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "igda-accessibility-resources",
+      "type": "Guide",
+      "title": "Game Accessibility Resources for Developers",
+      "creator": "IGDA Game Accessibility SIG",
+      "publisher": "IGDA GASIG",
+      "year": 2026,
+      "length": "Resource archive",
+      "access": "Free",
+      "level": "All levels",
+      "topics": [
+        "Accessibility",
+        "Research",
+        "Community"
+      ],
+      "games": [],
+      "description": "A community-maintained starting page for developers and researchers, linking guidelines, methods, examples, publications, organizations, and specialist resources related to accessible games.",
+      "useful": "It provides routes into a broader accessibility community and evidence base when one guideline set is not enough.",
+      "url": "https://igda-gasig.org/how/for-developers-researchers/",
+      "image": "",
+      "subjects": [
+        "Accessibility",
+        "Production"
+      ],
+      "lengthClass": "Reference",
+      "relevance": [
+        "Practical",
+        "Historical"
+      ],
+      "audience": "Developers, researchers, educators, and advocates looking for further specialist material or collaborators.",
+      "learning": [
+        "Locate organizations and specialist guidance",
+        "Find research for an unfamiliar access need",
+        "Continue beyond introductory checklists"
+      ],
+      "next": [
+        "accessibility-guidelines",
+        "accessible-player-experiences",
+        "inclusive-game-design-paper"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    },
+    {
+      "id": "inclusive-game-design-paper",
+      "type": "Paper",
+      "title": "Inclusive Game Design and Development",
+      "creator": "IGDA and Facebook Gaming",
+      "publisher": "IGDA",
+      "year": 2021,
+      "length": "Research report",
+      "access": "Free",
+      "level": "Intermediate",
+      "topics": [
+        "Inclusion",
+        "Representation",
+        "Production"
+      ],
+      "games": [],
+      "description": "A research report and practical resource about inclusive teams, player communities, representation, research, and development decisions. It treats inclusion as a process spanning people, content, and production.",
+      "useful": "It broadens inclusive design beyond feature compliance to the composition and working habits of the teams making games.",
+      "url": "https://igda.org/resources-archive/inclusive-game-design-and-development/",
+      "embed": {
+        "provider": "pdf",
+        "url": "https://igda-website.s3.us-east-2.amazonaws.com/wp-content/uploads/2021/12/08124833/Inclusive-Game-Design-and-Development.pdf"
+      },
+      "image": "",
+      "subjects": [
+        "Accessibility",
+        "Production",
+        "Criticism & theory"
+      ],
+      "lengthClass": "30–120 min",
+      "relevance": [
+        "Practical",
+        "Theoretical"
+      ],
+      "audience": "Leads, producers, researchers, educators, and developers planning more inclusive teams and projects.",
+      "learning": [
+        "Connect team practices with design outcomes",
+        "Plan research with a wider range of players",
+        "Review representation alongside production decisions"
+      ],
+      "next": [
+        "igda-accessibility-resources",
+        "queer-games-avant-garde",
+        "accessible-player-experiences"
+      ],
+      "lastChecked": "2026-07-18",
+      "addedAt": "2026-07-18",
+      "editorial": {
+        "status": "published",
+        "reviewedAt": "2026-07-18",
+        "note": ""
+      }
+    }
+  ]
+}

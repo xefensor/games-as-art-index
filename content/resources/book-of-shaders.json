@@ -1,0 +1,48 @@
+{
+  "id": "book-of-shaders",
+  "type": "Guide",
+  "title": "The Book of Shaders",
+  "creator": "Patricio Gonzalez Vivo and Jen Lowe",
+  "publisher": "The Book of Shaders",
+  "year": 2015,
+  "length": "Interactive guide",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Shaders",
+    "GLSL",
+    "Generative art"
+  ],
+  "games": [],
+  "description": "A browser-based introduction to fragment shaders, shapes, color, noise, matrices, patterns, and simulation. Editable examples let readers change GLSL code and see the result immediately.",
+  "useful": "The live exercises make mathematical graphics concepts visible and experimentally approachable.",
+  "url": "https://thebookofshaders.com/",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Visual art"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Programmers and technical artists with basic coding knowledge who are new to shader programming.",
+  "learning": [
+    "Write basic fragment shaders in GLSL",
+    "Construct shapes, patterns, and noise",
+    "Use immediate visual feedback to explore equations"
+  ],
+  "next": [
+    "catlike-coding",
+    "real-time-rendering",
+    "pbr-book"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

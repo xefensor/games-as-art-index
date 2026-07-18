@@ -1,0 +1,50 @@
+{
+  "id": "designing-celeste",
+  "type": "Talk",
+  "title": "Level Design Workshop: Designing Celeste",
+  "creator": "Maddy Thorson",
+  "publisher": "GDC",
+  "year": 2017,
+  "length": "50 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Level design",
+    "Teaching",
+    "Difficulty"
+  ],
+  "games": [
+    "Celeste"
+  ],
+  "description": "Maddy Thorson works through Celeste’s level-design process, including movement verbs, room construction, teaching order, difficulty, iteration, and the relationship between individual screens and the larger chapter.",
+  "useful": "A detailed first-party explanation of how a demanding game teaches through carefully ordered spatial problems.",
+  "url": "https://www.youtube.com/watch?v=4RlpMhBKNr0",
+  "image": "https://i.ytimg.com/vi/4RlpMhBKNr0/hqdefault.jpg",
+  "subjects": [
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Level designers and developers tuning challenge, teaching, and iteration in movement games.",
+  "learning": [
+    "Build rooms around a small set of movement verbs",
+    "Sequence challenges to teach without explicit instruction",
+    "Use playtesting to tune difficulty and flow"
+  ],
+  "next": [
+    "architectural-level-design",
+    "game-design-workshop",
+    "game-feel-book"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

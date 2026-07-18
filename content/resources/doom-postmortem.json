@@ -1,0 +1,57 @@
+{
+  "id": "doom-postmortem",
+  "type": "Talk",
+  "title": "Classic Game Postmortem: DOOM",
+  "creator": "Tom Hall and John Romero",
+  "publisher": "Game Developer / GDC",
+  "year": 2011,
+  "length": "60 min",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Game history",
+    "Production",
+    "Level design"
+  ],
+  "games": [
+    "DOOM"
+  ],
+  "description": "Two original id Software designers reconstruct DOOM's development, showing early material and recounting the decisions that shaped the 1993 game.",
+  "useful": "Useful when studying how a small team, technical constraints, and changing scope affected a landmark project.",
+  "url": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
+  "embed": {
+    "provider": "youtube",
+    "videoId": "NnkCujnYNSo",
+    "source": "GDC Festival of Gaming"
+  },
+  "image": "",
+  "featured": true,
+  "subjects": [
+    "History",
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Historical",
+    "Practical"
+  ],
+  "audience": "Developers and historians interested in how influential games emerge from small teams and changing plans.",
+  "learning": [
+    "Trace DOOM from early plans to the released game",
+    "See how tools and technology affected level design",
+    "Recognize the effect of team structure and scope changes"
+  ],
+  "next": [
+    "id-source-code",
+    "racing-the-beam",
+    "prince-of-persia-postmortem"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

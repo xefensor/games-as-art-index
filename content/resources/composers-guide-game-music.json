@@ -1,0 +1,47 @@
+{
+  "id": "composers-guide-game-music",
+  "type": "Book",
+  "title": "A Composer’s Guide to Game Music",
+  "creator": "Winifred Phillips",
+  "publisher": "MIT Press",
+  "year": 2014,
+  "length": "288 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Music",
+    "Adaptive music",
+    "Career"
+  ],
+  "games": [],
+  "description": "A working composer’s introduction to the artistic, technical, and professional demands of game music, including interactivity, workflow, collaboration, pitching, and career development.",
+  "useful": "It explains what makes composing for games different from writing a linear score while remaining accessible to newcomers.",
+  "url": "https://mitpress.mit.edu/9780262534499/a-composers-guide-to-game-music/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262534499-L.jpg?default=false",
+  "subjects": [
+    "Audio",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Composers and audio students considering interactive music or their first game collaboration.",
+  "learning": [
+    "Plan music for interactive structures",
+    "Communicate with a game-development team",
+    "Understand common production and career expectations"
+  ],
+  "next": [
+    "game-audio-tutorial",
+    "doom-behind-music",
+    "witness-music"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

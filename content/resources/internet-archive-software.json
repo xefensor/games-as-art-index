@@ -1,0 +1,46 @@
+{
+  "id": "internet-archive-software",
+  "type": "Archive",
+  "title": "Internet Archive Software Library",
+  "creator": "Internet Archive",
+  "publisher": "Internet Archive",
+  "year": 2013,
+  "length": "Digital archive",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Preservation",
+    "Emulation",
+    "Game history"
+  ],
+  "games": [],
+  "description": "A large preservation collection of historical software, shareware, console material, computer games, documentation, and browser-accessible emulation. Individual items vary in completeness and rights status.",
+  "useful": "It lets researchers encounter historical software directly and locate files or documentation that may be absent from conventional publishing histories.",
+  "url": "https://archive.org/details/softwarelibrary",
+  "image": "",
+  "subjects": [
+    "History"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Historical"
+  ],
+  "audience": "Historians, preservation researchers, developers, and players exploring older software in context.",
+  "learning": [
+    "Search software collections by platform and date",
+    "Use emulation as one form of historical access",
+    "Record provenance and limitations when citing archived software"
+  ],
+  "next": [
+    "vghf-library",
+    "id-source-code",
+    "racing-the-beam"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

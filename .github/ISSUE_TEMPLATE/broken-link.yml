@@ -1,0 +1,30 @@
+name: Report a catalogue problem
+description: Report a broken, redirected, inaccurate, or outdated resource entry.
+title: "Catalogue problem: "
+labels: ["catalogue maintenance"]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource title or Index URL
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem type
+      options: [Broken link, Redirect, Incorrect metadata, Embed problem, Thumbnail problem, Duplicate entry, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Include the failing URL, error, or inaccurate information.
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Verified replacement or evidence
+      description: Optional. Prefer an original publisher or creator URL.

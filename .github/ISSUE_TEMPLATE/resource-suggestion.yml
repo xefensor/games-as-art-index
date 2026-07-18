@@ -1,0 +1,56 @@
+name: Suggest a resource
+description: Propose a durable game-development, historical, or critical resource for editorial review.
+title: "Resource suggestion: "
+labels: ["resource suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are starting points for research, not automatic additions. The Index favors original, durable, educational sources over news and promotion.
+  - type: input
+    id: title
+    attributes:
+      label: Resource title
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator or author
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Original source URL
+      description: Prefer the creator, publisher, conference, journal, or project page.
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: [Talk, Book, Article, Paper, Guide, Documentation, Course, Archive, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why should it be indexed?
+      description: Explain what it teaches, documents, or helps readers understand.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification notes
+      description: Include publication year, access conditions, duration or length, and any relevant rights or embed information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I checked that the URL works and points to the original source where possible.
+          required: true
+        - label: I understand that inclusion and wording are editorial decisions.
+          required: true

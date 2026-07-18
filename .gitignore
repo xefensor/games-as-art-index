@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.next/
+.wrangler/
+*.log
+rendered-home.html
+reports/link-check-report.json

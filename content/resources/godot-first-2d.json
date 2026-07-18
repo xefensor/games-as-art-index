@@ -1,0 +1,47 @@
+{
+  "id": "godot-first-2d",
+  "type": "Course",
+  "title": "Your First 2D Game",
+  "creator": "Godot Engine community",
+  "publisher": "Godot documentation",
+  "year": 2026,
+  "length": "Tutorial series",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Programming",
+    "Engine",
+    "2D"
+  ],
+  "games": [],
+  "description": "A step-by-step project covering scenes, player movement, animation, collisions, enemy spawning, scoring, sound, and exporting in Godot.",
+  "useful": "A complete small project for developers who already know basic programming and want to learn Godot's structure.",
+  "url": "https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Beginning Godot users who already understand basic programming concepts.",
+  "learning": [
+    "Build a small game from scenes and scripts",
+    "Add movement, collisions, enemies, score, and sound",
+    "Export a finished Godot project"
+  ],
+  "next": [
+    "game-programming-patterns",
+    "finishing-a-game",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

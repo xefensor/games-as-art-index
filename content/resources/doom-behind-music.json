@@ -1,0 +1,50 @@
+{
+  "id": "doom-behind-music",
+  "type": "Talk",
+  "title": "DOOM: Behind the Music",
+  "creator": "Mick Gordon",
+  "publisher": "GDC",
+  "year": 2017,
+  "length": "60 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Audio",
+    "Music",
+    "Production"
+  ],
+  "games": [
+    "DOOM (2016)"
+  ],
+  "description": "Composer Mick Gordon presents the instruments, signal chains, experiments, and constraints behind DOOM's reactive score.",
+  "useful": "Shows how a strong musical identity can emerge from technical process rather than genre references alone.",
+  "url": "https://www.youtube.com/watch?v=U4FNBMZsqrY",
+  "image": "https://i.ytimg.com/vi/U4FNBMZsqrY/hqdefault.jpg",
+  "featured": true,
+  "subjects": [
+    "Audio",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Composers, sound designers, and creative directors developing a distinctive audio identity.",
+  "learning": [
+    "Turn creative constraints into an audio process",
+    "Build timbres through recording and signal processing",
+    "Connect an adaptive score to the pace of play"
+  ],
+  "next": [
+    "witness-audio",
+    "witness-music",
+    "designing-journey"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

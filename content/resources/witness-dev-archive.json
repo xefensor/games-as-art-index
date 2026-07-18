@@ -1,0 +1,58 @@
+{
+  "id": "witness-dev-archive",
+  "type": "Archive",
+  "title": "The Witness Development Archive",
+  "creator": "Thekla",
+  "publisher": "The Witness development blog",
+  "year": 2016,
+  "length": "Article archive",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Puzzle design",
+    "Environment art",
+    "Production",
+    "Audio"
+  ],
+  "games": [
+    "The Witness"
+  ],
+  "description": "Development posts published during production, covering architecture, graphics, tools, audio, playtesting, puzzle work, and release preparation.",
+  "useful": "A rare chronological record that lets readers compare individual production problems across one long project.",
+  "url": "https://the-witness.net/news/category/development/",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Official archive opened successfully in a browser; the site rejects some automated checks."
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Visual art",
+    "Audio",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Developers and researchers studying one game's design across several disciplines and years.",
+  "learning": [
+    "Follow production problems in chronological context",
+    "Compare architecture, graphics, tools, audio, and puzzles",
+    "Connect individual decisions to a finished creative direction"
+  ],
+  "next": [
+    "witness-architecture",
+    "witness-audio",
+    "witness-music"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

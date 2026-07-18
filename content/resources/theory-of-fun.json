@@ -1,0 +1,47 @@
+{
+  "id": "theory-of-fun",
+  "type": "Book",
+  "title": "A Theory of Fun for Game Design",
+  "creator": "Raph Koster",
+  "publisher": "O’Reilly Media",
+  "year": 2013,
+  "length": "300 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Game design",
+    "Learning",
+    "Player psychology"
+  ],
+  "games": [],
+  "description": "An illustrated argument that much of the pleasure of games comes from recognizing and mastering patterns. The second edition adds material while preserving the short, approachable structure of the original.",
+  "useful": "A readable starting point for questioning what players learn from rules, although its central theory is best compared with other perspectives.",
+  "url": "https://www.oreilly.com/library/view/theory-of-fun/9781449363208/",
+  "image": "https://covers.openlibrary.org/b/isbn/9781449363215-L.jpg?default=false",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical"
+  ],
+  "audience": "New designers and general readers looking for an accessible argument about why play can be pleasurable.",
+  "learning": [
+    "Relate play to pattern recognition and learning",
+    "Distinguish surface fiction from underlying challenge",
+    "Critique a broad theory using examples of your own"
+  ],
+  "next": [
+    "elements-game-design",
+    "rules-of-play",
+    "designing-games"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "mda-framework",
+  "type": "Paper",
+  "title": "MDA: A Formal Approach to Game Design and Game Research",
+  "creator": "Robin Hunicke, Marc LeBlanc, and Robert Zubek",
+  "publisher": "Northwestern University",
+  "year": 2004,
+  "length": "5 pages",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Game design",
+    "Systems",
+    "Research"
+  ],
+  "games": [],
+  "description": "A short paper proposing mechanics, dynamics, and aesthetics as connected perspectives for designers, researchers, and critics.",
+  "useful": "A compact shared vocabulary; most useful when treated as one analytical model rather than a universal law.",
+  "url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
+  "embed": {
+    "provider": "pdf",
+    "url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf"
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Theoretical",
+    "Practical"
+  ],
+  "audience": "Designers, students, and researchers who need a compact shared analytical model.",
+  "learning": [
+    "Distinguish mechanics, dynamics, and aesthetics",
+    "Compare designer and player perspectives",
+    "Use MDA as a lens without treating it as a law"
+  ],
+  "next": [
+    "elements-game-design",
+    "rules-of-play",
+    "characteristics-of-games"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "start-game-design",
+  "title": "Start studying game design",
+  "description": "A practical route from basic vocabulary to playtesting, analysis, and a first design process.",
+  "color": "red",
+  "resources": [
+    "elements-game-design",
+    "game-design-workshop",
+    "mda-framework",
+    "juice-it-or-lose-it",
+    "designing-games"
+  ]
+}

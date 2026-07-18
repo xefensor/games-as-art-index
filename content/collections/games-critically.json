@@ -1,0 +1,13 @@
+{
+  "id": "games-critically",
+  "title": "Write and think about games",
+  "description": "A reading path for criticism that connects close attention, history, culture, and procedural argument.",
+  "color": "red",
+  "resources": [
+    "how-talk-videogames",
+    "game-studies-journal",
+    "critical-play",
+    "persuasive-games",
+    "queer-games-avant-garde"
+  ]
+}

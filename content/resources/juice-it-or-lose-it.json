@@ -1,0 +1,49 @@
+{
+  "id": "juice-it-or-lose-it",
+  "type": "Talk",
+  "title": "Juice It or Lose It",
+  "creator": "Martin Jonasson and Petri Purho",
+  "publisher": "Nordic Game",
+  "year": 2012,
+  "length": "14 min",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Game feel",
+    "Visual effects",
+    "Prototyping"
+  ],
+  "games": [
+    "Breakout"
+  ],
+  "description": "A plain Breakout clone is transformed step by step with animation, particles, sound, camera effects, and physical exaggeration.",
+  "useful": "The short format makes it easy to connect each polish technique to the change it produces on screen.",
+  "url": "https://www.youtube.com/watch?v=Fy0aCDmgnxg",
+  "image": "https://i.ytimg.com/vi/Fy0aCDmgnxg/hqdefault.jpg",
+  "subjects": [
+    "Game design",
+    "Visual art"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Students and prototype developers who want a fast introduction to game feel.",
+  "learning": [
+    "Identify small effects that strengthen an action",
+    "Layer sound, animation, particles, and camera feedback",
+    "Evaluate polish without changing a game's core rules"
+  ],
+  "next": [
+    "art-of-screenshake",
+    "elements-game-design",
+    "finishing-a-game"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

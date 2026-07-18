@@ -1,0 +1,52 @@
+{
+  "id": "valve-level-design",
+  "type": "Documentation",
+  "title": "Valve Level Design Documentation",
+  "creator": "Valve Developer Community",
+  "publisher": "Valve",
+  "year": 2026,
+  "length": "Reference collection",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Level design",
+    "Tools",
+    "Engine"
+  ],
+  "games": [
+    "Half-Life",
+    "Portal",
+    "Source games"
+  ],
+  "description": "A community-maintained index of Valve mapping concepts, Hammer workflows, entities, optimization, compile tools, and game-specific techniques.",
+  "useful": "Combines production terminology with technical implementation details for GoldSrc and Source projects.",
+  "url": "https://developer.valvesoftware.com/wiki/Category:Level_Design",
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Programming"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Mappers and technical level designers working with GoldSrc, Source, Half-Life, or Portal.",
+  "learning": [
+    "Find Hammer tools and mapping terminology",
+    "Connect entities and compile tools to level behavior",
+    "Locate game-specific optimization and workflow guidance"
+  ],
+  "next": [
+    "witness-architecture",
+    "doom-postmortem",
+    "id-source-code"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

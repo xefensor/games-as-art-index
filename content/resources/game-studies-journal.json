@@ -1,0 +1,48 @@
+{
+  "id": "game-studies-journal",
+  "type": "Journal",
+  "title": "Game Studies",
+  "creator": "Game Studies editorial collective",
+  "publisher": "Game Studies",
+  "year": 2001,
+  "length": "Open-access journal",
+  "access": "Free",
+  "level": "Advanced",
+  "topics": [
+    "Research",
+    "Game studies",
+    "Criticism"
+  ],
+  "games": [],
+  "description": "An open-access academic journal devoted to computer-game research, with peer-reviewed articles, book reviews, special issues, and an archive extending back to the field’s early formation.",
+  "useful": "It is a durable route into scholarly debates and bibliographies beyond commercial coverage and introductory summaries.",
+  "url": "https://gamestudies.org/",
+  "image": "",
+  "subjects": [
+    "Criticism & theory",
+    "History"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Researchers, advanced students, critics, and developers investigating a specific question in depth.",
+  "learning": [
+    "Search scholarly work by topic and issue",
+    "Trace arguments through references and responses",
+    "Distinguish peer-reviewed research from general commentary"
+  ],
+  "next": [
+    "game-design-reader",
+    "how-talk-videogames",
+    "vghf-library"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

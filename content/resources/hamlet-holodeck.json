@@ -1,0 +1,48 @@
+{
+  "id": "hamlet-holodeck",
+  "type": "Book",
+  "title": "Hamlet on the Holodeck",
+  "creator": "Janet H. Murray",
+  "publisher": "MIT Press",
+  "year": 2017,
+  "length": "440 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Interactive narrative",
+    "Agency",
+    "Immersion"
+  ],
+  "games": [],
+  "description": "An updated edition of Murray’s influential account of digital media as a narrative form. It examines procedurality, participation, spatial experience, encyclopedic scope, agency, immersion, and transformation.",
+  "useful": "It provides a foundational vocabulary for asking what digital stories can do differently from linear media.",
+  "url": "https://mitpress.mit.edu/9780262533485/hamlet-on-the-holodeck/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262533485-L.jpg?default=false",
+  "subjects": [
+    "Narrative",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Narrative designers, writers, students, and critics studying the distinctive properties of interactive media.",
+  "learning": [
+    "Describe procedural, participatory, spatial, and encyclopedic media",
+    "Distinguish agency from simple activity",
+    "Place current narrative design in a longer digital-media argument"
+  ],
+  "next": [
+    "game-writing",
+    "procedural-storytelling",
+    "emily-short-blog"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "game-programming-patterns",
+  "type": "Book",
+  "title": "Game Programming Patterns",
+  "creator": "Robert Nystrom",
+  "publisher": "Genever Benning",
+  "year": 2014,
+  "length": "354 pages",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Programming",
+    "Architecture",
+    "Tools"
+  ],
+  "games": [],
+  "description": "A freely readable book explaining reusable software patterns through game-oriented examples, including loops, components, events, data locality, and object pools.",
+  "useful": "A bridge between general software-pattern vocabulary and the particular constraints of real-time games.",
+  "url": "https://gameprogrammingpatterns.com/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780990582908-L.jpg?default=false",
+  "subjects": [
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Intermediate programmers who know basic code and want stronger game architecture vocabulary.",
+  "learning": [
+    "Recognize recurring structures in game code",
+    "Compare patterns by cost and appropriate use",
+    "Apply events, components, loops, and data locality"
+  ],
+  "next": [
+    "red-blob-pathfinding",
+    "id-source-code",
+    "unreal-get-started"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "inclusive-design",
+  "title": "Make games more accessible",
+  "description": "A production-ready sequence of foundations, design patterns, platform guidance, and team resources.",
+  "color": "green",
+  "resources": [
+    "gaming-accessibility-fundamentals",
+    "accessible-player-experiences",
+    "accessibility-guidelines",
+    "xbox-accessibility-guidelines",
+    "inclusive-game-design-paper"
+  ]
+}

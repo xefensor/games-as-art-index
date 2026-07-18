@@ -1,0 +1,37 @@
+name: Validate catalogue and site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Verify generated catalogue
+        run: npm run catalogue:check
+      - name: Validate catalogue and thumbnails
+        run: npm run validate:catalogue && npm run validate:thumbnails
+      - name: Check browser interactions
+        run: npm run check:browse
+      - name: Build production site
+        run: npm run build
+      - name: Ensure the build did not change committed files
+        run: git diff --exit-code

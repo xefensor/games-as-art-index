@@ -1,0 +1,48 @@
+{
+  "id": "press-reset",
+  "type": "Book",
+  "title": "Press Reset",
+  "creator": "Jason Schreier",
+  "publisher": "Grand Central Publishing",
+  "year": 2021,
+  "length": "320 pages",
+  "access": "Paid",
+  "level": "All levels",
+  "topics": [
+    "Labor",
+    "Studio closures",
+    "Production"
+  ],
+  "games": [],
+  "description": "A reported history of studio closures, layoffs, acquisitions, and unstable careers in the game industry. Interviews follow developers through the consequences and attempts to build different kinds of workplaces.",
+  "useful": "It adds labor conditions and institutional instability to production study, subjects that postmortems often omit.",
+  "url": "https://www.grandcentralpublishing.com/titles/jason-schreier/press-reset/9781538735480/",
+  "image": "https://covers.openlibrary.org/b/isbn/9781538735480-L.jpg?default=false",
+  "subjects": [
+    "Production",
+    "History"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Historical",
+    "Theoretical"
+  ],
+  "audience": "Developers, producers, students, and readers considering games as both creative work and an industry.",
+  "learning": [
+    "Identify structural causes of studio instability",
+    "Understand how closures affect individual careers",
+    "Compare alternative approaches to organizing game work"
+  ],
+  "next": [
+    "blood-sweat-pixels",
+    "playful-production",
+    "queer-games-avant-garde"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

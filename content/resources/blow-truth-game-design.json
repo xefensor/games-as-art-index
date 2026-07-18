@@ -1,0 +1,56 @@
+{
+  "id": "blow-truth-game-design",
+  "type": "Talk",
+  "title": "Truth in Game Design",
+  "creator": "Jonathan Blow",
+  "publisher": "GDC Vault",
+  "year": 2011,
+  "length": "80 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Systems",
+    "Design philosophy",
+    "Emergence"
+  ],
+  "games": [
+    "Braid",
+    "The Witness"
+  ],
+  "description": "A GDC Europe lecture arguing that designers can study the consequences of a coherent rule system instead of forcing every result to conform to a predetermined message or scenario.",
+  "useful": "This is a central statement of Blow's design philosophy and gives readers a precise argument they can compare with the mechanics and structure of his games.",
+  "url": "https://gdcvault.com/play/1014982/Truth-in-Game",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "GDC Vault session page opened successfully during editorial review."
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Designers and critics interested in systemic meaning, emergence, and the relationship between authored intention and discoveries made during development.",
+  "learning": [
+    "Distinguish investigating a system from imposing a conclusion",
+    "Explain how simple rules can produce unplanned consequences",
+    "Evaluate the claim that games can model discoverable truths"
+  ],
+  "next": [
+    "blow-medium-is-message",
+    "blow-design-deep-games",
+    "witness-science-language-reality"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": "Verified against the GDC Vault session record."
+  }
+}

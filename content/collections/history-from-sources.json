@@ -1,0 +1,14 @@
+{
+  "id": "history-from-sources",
+  "title": "Game history from primary sources",
+  "description": "Postmortems, code, archives, and platform studies for evidence-led historical work.",
+  "color": "green",
+  "resources": [
+    "doom-postmortem",
+    "prince-of-persia-postmortem",
+    "id-source-code",
+    "vghf-library",
+    "racing-the-beam",
+    "i-am-error"
+  ]
+}

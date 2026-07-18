@@ -1,0 +1,53 @@
+{
+  "id": "inclusive-game-design-paper",
+  "type": "Paper",
+  "title": "Inclusive Game Design and Development",
+  "creator": "IGDA and Facebook Gaming",
+  "publisher": "IGDA",
+  "year": 2021,
+  "length": "Research report",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Inclusion",
+    "Representation",
+    "Production"
+  ],
+  "games": [],
+  "description": "A research report and practical resource about inclusive teams, player communities, representation, research, and development decisions. It treats inclusion as a process spanning people, content, and production.",
+  "useful": "It broadens inclusive design beyond feature compliance to the composition and working habits of the teams making games.",
+  "url": "https://igda.org/resources-archive/inclusive-game-design-and-development/",
+  "embed": {
+    "provider": "pdf",
+    "url": "https://igda-website.s3.us-east-2.amazonaws.com/wp-content/uploads/2021/12/08124833/Inclusive-Game-Design-and-Development.pdf"
+  },
+  "image": "",
+  "subjects": [
+    "Accessibility",
+    "Production",
+    "Criticism & theory"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Leads, producers, researchers, educators, and developers planning more inclusive teams and projects.",
+  "learning": [
+    "Connect team practices with design outcomes",
+    "Plan research with a wider range of players",
+    "Review representation alongside production decisions"
+  ],
+  "next": [
+    "igda-accessibility-resources",
+    "queer-games-avant-garde",
+    "accessible-player-experiences"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "game-design-workshop",
+  "type": "Book",
+  "title": "Game Design Workshop",
+  "creator": "Tracy Fullerton",
+  "publisher": "CRC Press / Routledge",
+  "year": 2023,
+  "length": "Textbook",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Game design",
+    "Playtesting",
+    "Prototyping"
+  ],
+  "games": [],
+  "description": "A playcentric textbook that takes a game from initial idea through formal systems, prototyping, playtesting, iteration, and presentation. Exercises and examples make it usable as either a course or a self-directed process.",
+  "useful": "One of the clearest complete introductions to designing around the experience of players rather than around features alone.",
+  "url": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
+  "image": "https://covers.openlibrary.org/b/isbn/9781032607009-L.jpg?default=false",
+  "subjects": [
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Students, beginning designers, and teams looking for a repeatable playtesting-led process.",
+  "learning": [
+    "Turn an experience goal into a playable prototype",
+    "Plan and run useful playtests",
+    "Iterate formal and dramatic elements from evidence"
+  ],
+  "next": [
+    "elements-game-design",
+    "designing-games",
+    "playful-production"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

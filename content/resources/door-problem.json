@@ -1,0 +1,46 @@
+{
+  "id": "door-problem",
+  "type": "Article",
+  "title": "The Door Problem",
+  "creator": "Liz England",
+  "publisher": "Liz England",
+  "year": 2014,
+  "length": "8 min read",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Production",
+    "Teamwork",
+    "Game design"
+  ],
+  "games": [],
+  "description": "A single fictional door is used to explain how designers, artists, programmers, writers, audio staff, testers, and producers contribute to a game.",
+  "useful": "A concise explanation of why apparently small features cross many disciplines and dependencies.",
+  "url": "https://lizengland.com/blog/2014/04/the-door-problem/",
+  "image": "",
+  "subjects": [
+    "Production"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "New developers and collaborators trying to understand who does what on a game team.",
+  "learning": [
+    "See how one feature crosses many disciplines",
+    "Identify dependencies hidden inside simple design requests",
+    "Understand common responsibilities across a development team"
+  ],
+  "next": [
+    "playful-production",
+    "finishing-a-game",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

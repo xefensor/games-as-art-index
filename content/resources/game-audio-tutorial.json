@@ -1,0 +1,47 @@
+{
+  "id": "game-audio-tutorial",
+  "type": "Book",
+  "title": "The Game Audio Tutorial",
+  "creator": "Richard Stevens and Dave Raybould",
+  "publisher": "Focal Press / Routledge",
+  "year": 2011,
+  "length": "446 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Audio",
+    "Implementation",
+    "Interactive music"
+  ],
+  "games": [],
+  "description": "A practical introduction to sound and music for interactive games, supported by exercises and example material. It moves from basic engine concepts through ambience, effects, dialogue, music, and procedural techniques.",
+  "useful": "A structured first course for someone who understands audio but has not yet built an interactive sound system.",
+  "url": "https://www.routledge.com/The-Game-Audio-Tutorial-A-Practical-Guide-to-Sound-and-Music-for-Interactive-Games/Stevens-Raybould/p/book/9780240817262",
+  "image": "https://covers.openlibrary.org/b/isbn/9780240817262-L.jpg?default=false",
+  "subjects": [
+    "Audio",
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Students, composers, and sound designers taking their first steps into game-audio implementation.",
+  "learning": [
+    "Understand the structure of interactive game audio",
+    "Implement common effects, ambience, and music behaviors",
+    "Use exercises to move from theory to a working scene"
+  ],
+  "next": [
+    "game-audio-implementation",
+    "composers-guide-game-music",
+    "doom-behind-music"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

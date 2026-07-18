@@ -1,0 +1,48 @@
+{
+  "id": "accessibility-guidelines",
+  "type": "Guide",
+  "title": "Game Accessibility Guidelines",
+  "creator": "Independent developer and accessibility group",
+  "publisher": "Game Accessibility Guidelines",
+  "year": 2021,
+  "length": "Reference",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Accessibility",
+    "UX",
+    "Production"
+  ],
+  "games": [],
+  "description": "A categorized reference of basic, intermediate, and advanced accessibility considerations for controls, visuals, audio, language, and cognition.",
+  "useful": "Useful during planning and review because each guideline includes intent, examples, and implementation notes.",
+  "url": "https://gameaccessibilityguidelines.com/full-list/",
+  "image": "",
+  "featured": true,
+  "subjects": [
+    "Accessibility",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Designers, developers, producers, and testers reviewing accessibility throughout production.",
+  "learning": [
+    "Find guidance by impairment and feature area",
+    "Separate basic, intermediate, and advanced measures",
+    "Use examples and implementation notes during reviews"
+  ],
+  "next": [
+    "playful-production",
+    "door-problem",
+    "godot-first-2d"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

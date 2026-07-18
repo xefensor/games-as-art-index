@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated index of game development, history, and criticism.">
+    <title>Games as Art Index — Game development, history, and criticism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+      (() => {
+        let saved = "auto";
+        try { saved = localStorage.getItem("gaa-theme") || "auto"; } catch {}
+        const systemDark = typeof matchMedia === "function" && matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = saved === "dark" || (saved === "auto" && systemDark) ? "dark" : "light";
+        document.documentElement.dataset.themeMode = saved;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#/" aria-label="Games as Art Index — home">
+        <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Games <em>as</em> Art <small>Index</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#/browse">Browse</a>
+        <a href="#/collections">Collections</a>
+        <a href="#/saved">Saved</a>
+        <a href="#/suggest">Suggest</a>
+        <a href="#/about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-search" id="openSearch" type="button"><span>Search index</span><kbd>/</kbd></button>
+        <button class="icon-button theme-button" id="themeButton" type="button" aria-label="Theme: Automatic. Click to change theme" title="Theme: Automatic. Click to change theme"><span aria-hidden="true">◐</span><small>Auto</small></button>
+        <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav"><i></i><i></i></button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#/browse">Browse</a>
+        <a href="#/collections">Collections</a>
+        <a href="#/saved">Saved</a>
+        <a href="#/suggest">Suggest</a>
+        <a href="#/about">About</a>
+        <button id="mobileTheme" type="button">Theme: <span>Auto</span></button>
+      </nav>
+    </header>
+
+    <main id="content" tabindex="-1" aria-live="polite">
+      <section class="fallback-hero shell">
+        <span class="eyebrow">Curated game-development resources</span>
+        <h1>Find the useful thing<br>someone already made.</h1>
+        <p>Talks, books, articles, documentation, courses, papers, and archives—organized by subject, format, level, and access.</p>
+        <div class="fallback-loading" role="status"><span></span> Loading the catalogue…</div>
+      </section>
+    </main>
+
+    <dialog class="search-dialog" id="searchDialog">
+      <form method="dialog" class="search-shell">
+        <header><span class="eyebrow">Search all resources</span><button value="cancel" aria-label="Close search">Close ×</button></header>
+        <label class="search-input"><span aria-hidden="true">⌕</span><input id="globalSearch" type="search" placeholder="Title, creator, game, or topic…" autocomplete="off"></label>
+        <div class="search-suggestions"><span>Try</span><button type="button" data-search="level design">level design</button><button type="button" data-search="audio">audio</button><button type="button" data-search="beginner">beginner</button></div>
+        <div class="search-results" id="searchResults"></div>
+      </form>
+    </dialog>
+
+    <dialog class="report-dialog" id="reportDialog">
+      <form class="report-form" id="resourceReportForm" method="dialog">
+        <header><div><span class="eyebrow">Local problem report</span><strong id="reportResourceTitle">Report a resource</strong></div><button type="button" data-close-report aria-label="Close report">Close ×</button></header>
+        <input id="reportResourceId" name="resourceId" type="hidden">
+        <label><span>What is wrong?</span><select id="reportIssueType" name="type" required><option value="broken">The link is broken</option><option value="redirected">The link goes somewhere unexpected</option><option value="outdated">The information appears outdated</option><option value="metadata">The catalogue description or metadata is wrong</option><option value="other">Another problem</option></select></label>
+        <label><span>Optional note</span><textarea id="reportIssueNote" name="note" rows="4" placeholder="What did you encounter?"></textarea></label>
+        <p>This report remains in this browser until it is exported from the curator workbench.</p>
+        <footer><button type="button" data-close-report>Cancel</button><button class="primary-action" type="submit">Save local report</button></footer>
+      </form>
+    </dialog>
+
+    <div class="theme-popover" id="themePopover" hidden>
+      <span class="eyebrow">Appearance</span>
+      <button type="button" data-theme-mode="auto">Auto <i>System</i></button>
+      <button type="button" data-theme-mode="light">Light <i>Paper</i></button>
+      <button type="button" data-theme-mode="dark">Dark <i>Archive</i></button>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/data.js?v=index-7"></script>
+    <script src="/app.js?v=index-7"></script>
+  </body>
+</html>

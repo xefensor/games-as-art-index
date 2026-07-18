@@ -1,0 +1,48 @@
+{
+  "id": "accessible-player-experiences",
+  "type": "Guide",
+  "title": "Accessible Player Experiences",
+  "creator": "AbleGamers",
+  "publisher": "Accessible.Games",
+  "year": 2018,
+  "length": "Design-pattern reference",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Accessibility",
+    "Design patterns",
+    "Player research"
+  ],
+  "games": [],
+  "description": "A design-pattern framework organized around the experiences players need, such as controlling input, receiving information, understanding state, and recovering from mistakes. Patterns link barriers to possible design solutions.",
+  "useful": "Starting from player experience keeps accessibility connected to design intent instead of treating it as a list of special options.",
+  "url": "https://accessible.games/accessible-player-experiences/",
+  "image": "",
+  "subjects": [
+    "Accessibility",
+    "Game design"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Designers and user researchers shaping features before or during implementation.",
+  "learning": [
+    "Frame accessibility around desired player experiences",
+    "Match recurring barriers with design patterns",
+    "Discuss solutions without assuming one feature fits everyone"
+  ],
+  "next": [
+    "gaming-accessibility-fundamentals",
+    "xbox-accessibility-guidelines",
+    "igda-accessibility-resources"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

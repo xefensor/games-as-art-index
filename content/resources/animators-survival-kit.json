@@ -1,0 +1,47 @@
+{
+  "id": "animators-survival-kit",
+  "type": "Book",
+  "title": "The Animator’s Survival Kit",
+  "creator": "Richard Williams",
+  "publisher": "Faber and Faber",
+  "year": 2012,
+  "length": "392 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Animation",
+    "Timing",
+    "Movement"
+  ],
+  "games": [],
+  "description": "A heavily illustrated manual on timing, spacing, walks, runs, weight, dialogue, acting, and the working methods of hand-drawn animation. Its principles transfer readily to 2D and 3D game animation.",
+  "useful": "The drawings make subtle differences in weight and rhythm easier to see than an abstract list of animation principles.",
+  "url": "https://us.macmillan.com/books/9780865478978/theanimatorssurvivalkit/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780865478978-L.jpg?default=false",
+  "subjects": [
+    "Visual art"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Beginning animators, gameplay animators, and designers who need to communicate clearly about motion.",
+  "learning": [
+    "Control motion through timing and spacing",
+    "Construct convincing walks and changes of weight",
+    "Analyze animation frame by frame"
+  ],
+  "next": [
+    "prince-of-persia-postmortem",
+    "art-of-screenshake",
+    "game-feel-book"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

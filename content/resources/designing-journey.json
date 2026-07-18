@@ -1,0 +1,56 @@
+{
+  "id": "designing-journey",
+  "type": "Talk",
+  "title": "Designing Journey",
+  "creator": "Jenova Chen",
+  "publisher": "GDC Vault",
+  "year": 2013,
+  "length": "60 min",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Game design",
+    "Social design",
+    "Production"
+  ],
+  "games": [
+    "Journey"
+  ],
+  "description": "Journey's creative director explains the game's original idea, emotional structure, anonymous multiplayer, iteration, and production difficulties.",
+  "useful": "A clear example of tracing an artistic intention through concrete design and production choices.",
+  "url": "https://gdcvault.com/play/1017700/Designing",
+  "embed": {
+    "provider": "youtube",
+    "videoId": "UGCkVHSvjzM",
+    "source": "GDC Festival of Gaming"
+  },
+  "image": "",
+  "featured": true,
+  "subjects": [
+    "Game design",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Designers and small teams trying to connect mechanics, emotion, and production decisions.",
+  "learning": [
+    "Shape an experience around an emotional arc",
+    "Design anonymous cooperation without conventional communication",
+    "Protect a creative goal through iteration and production problems"
+  ],
+  "next": [
+    "mda-framework",
+    "spelunky-book",
+    "playful-production"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

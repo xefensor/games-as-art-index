@@ -1,0 +1,47 @@
+{
+  "id": "unreal-get-started",
+  "type": "Documentation",
+  "title": "Get Started with Unreal Engine",
+  "creator": "Epic Games",
+  "publisher": "Unreal Engine documentation",
+  "year": 2026,
+  "length": "Documentation path",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Engine",
+    "Programming",
+    "3D"
+  ],
+  "games": [],
+  "description": "Epic's official entry point for installing Unreal Engine and learning projects, actors, levels, Blueprints, C++, packaging, and editor workflows.",
+  "useful": "The safest starting map for a large documentation set that can otherwise be difficult to navigate.",
+  "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/get-started",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "New Unreal Engine users who need an official map of the editor, Blueprints, C++, and packaging.",
+  "learning": [
+    "Understand projects, actors, levels, and assets",
+    "Locate Blueprint and C++ learning paths",
+    "Move from installation to a packaged project"
+  ],
+  "next": [
+    "game-programming-patterns",
+    "finishing-a-game",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

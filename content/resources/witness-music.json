@@ -1,0 +1,55 @@
+{
+  "id": "witness-music",
+  "type": "Article",
+  "title": "On Music, Sound Effects and Story",
+  "creator": "Jonathan Blow",
+  "publisher": "The Witness development blog",
+  "year": 2015,
+  "length": "10 min read",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Audio",
+    "Game studies",
+    "Creative direction"
+  ],
+  "games": [
+    "The Witness"
+  ],
+  "description": "A direct explanation of why The Witness avoids a conventional musical score and minimizes explicit story delivery.",
+  "useful": "A first-party design argument that can be compared against the finished game's priorities.",
+  "url": "https://the-witness.net/news/2015/11/on-music-sound-effects-story/",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+  },
+  "image": "",
+  "subjects": [
+    "Audio",
+    "Narrative",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Theoretical"
+  ],
+  "audience": "Creative directors, audio designers, and critics examining deliberate omission as a design choice.",
+  "learning": [
+    "Understand the argument for omitting a musical score",
+    "Relate sound strategy to attention and perception",
+    "Evaluate story delivery against a game's larger purpose"
+  ],
+  "next": [
+    "witness-audio",
+    "witness-dev-archive",
+    "critical-play"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

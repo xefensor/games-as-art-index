@@ -1,0 +1,54 @@
+{
+  "id": "witness-architecture",
+  "type": "Article",
+  "title": "Architecture in The Witness",
+  "creator": "Luis Antonio and Jonathan Blow",
+  "publisher": "The Witness development blog",
+  "year": 2011,
+  "length": "8 min read",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Level design",
+    "Environment art",
+    "Puzzle design"
+  ],
+  "games": [
+    "The Witness"
+  ],
+  "description": "A development note about making architecture and puzzle scenarios together rather than treating buildings as neutral decoration.",
+  "useful": "A concrete case where level design, puzzle design, and visual development cannot be separated into clean stages.",
+  "url": "https://the-witness.net/news/2011/12/architecture-in-the-witness/",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Official article opened successfully in a browser; the site rejects some automated checks."
+  },
+  "image": "",
+  "subjects": [
+    "Game design",
+    "Visual art"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Level designers, environment artists, and puzzle designers working on spatial problems together.",
+  "learning": [
+    "Develop architecture and puzzles as one system",
+    "Use spaces to frame player attention",
+    "Avoid treating environment art as late decoration"
+  ],
+  "next": [
+    "valve-level-design",
+    "witness-dev-archive",
+    "designing-journey"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

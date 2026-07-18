@@ -1,0 +1,47 @@
+{
+  "id": "catlike-coding",
+  "type": "Guide",
+  "title": "Unity C# and Shader Tutorials",
+  "creator": "Jasper Flick",
+  "publisher": "Catlike Coding",
+  "year": 2026,
+  "length": "Tutorial archive",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Unity",
+    "C#",
+    "Shaders"
+  ],
+  "games": [],
+  "description": "A long-running set of carefully sequenced Unity tutorials covering procedural meshes, rendering, movement, physics, data, and editor tooling. Older series target older Unity releases and are clearly labeled.",
+  "useful": "Projects explain the code and mathematics in depth instead of asking readers to copy an unexplained final result.",
+  "url": "https://catlikecoding.com/unity/tutorials/",
+  "image": "",
+  "subjects": [
+    "Programming",
+    "Visual art"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Unity developers who know basic C# and want deeper graphics, mathematics, and systems practice.",
+  "learning": [
+    "Build procedural and graphical systems step by step",
+    "Translate mathematics into Unity C# and shaders",
+    "Judge whether a tutorial matches the installed Unity version"
+  ],
+  "next": [
+    "book-of-shaders",
+    "game-programming-patterns",
+    "real-time-rendering"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

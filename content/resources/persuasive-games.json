@@ -1,0 +1,48 @@
+{
+  "id": "persuasive-games",
+  "type": "Book",
+  "title": "Persuasive Games",
+  "creator": "Ian Bogost",
+  "publisher": "MIT Press",
+  "year": 2007,
+  "length": "464 pages",
+  "access": "Paid",
+  "level": "Advanced",
+  "topics": [
+    "Procedural rhetoric",
+    "Critical design",
+    "Systems"
+  ],
+  "games": [],
+  "description": "An argument that computational rules and processes can make claims about how systems work. Case studies examine games related to politics, advertising, and education and develop the idea of procedural rhetoric.",
+  "useful": "A foundational, contestable framework for analyzing meaning produced by rules rather than only by story or imagery.",
+  "url": "https://mitpress.mit.edu/9780262261944/persuasive-games/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262514880-L.jpg?default=false",
+  "subjects": [
+    "Criticism & theory",
+    "Game design"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Theoretical",
+    "Historical"
+  ],
+  "audience": "Advanced students, critics, and designers studying how systems make arguments.",
+  "learning": [
+    "Define procedural rhetoric in relation to game rules",
+    "Analyze how a simulation frames a real-world system",
+    "Critique the limits of persuasive-design claims"
+  ],
+  "next": [
+    "critical-play",
+    "how-talk-videogames",
+    "game-studies-journal"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

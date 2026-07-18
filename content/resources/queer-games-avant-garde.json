@@ -1,0 +1,49 @@
+{
+  "id": "queer-games-avant-garde",
+  "type": "Book",
+  "title": "The Queer Games Avant-Garde",
+  "creator": "Bo Ruberg",
+  "publisher": "Duke University Press",
+  "year": 2020,
+  "length": "288 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Queer games",
+    "Independent games",
+    "Interviews"
+  ],
+  "games": [],
+  "description": "A study built around interviews with queer independent game makers. It documents their works, design practices, communities, aesthetics, and resistance to narrow ideas about both games and representation.",
+  "useful": "First-person accounts connect criticism to the conditions and intentions of making work outside dominant industry models.",
+  "url": "https://www.dukeupress.edu/the-queer-games-avant-garde",
+  "image": "https://covers.openlibrary.org/b/isbn/9781478006589-L.jpg?default=false",
+  "subjects": [
+    "Criticism & theory",
+    "History",
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Historical",
+    "Theoretical"
+  ],
+  "audience": "Developers, artists, critics, and researchers interested in queer games and alternative production cultures.",
+  "learning": [
+    "Recognize a wider field of queer game-making practices",
+    "Connect aesthetics with community and production conditions",
+    "Use interviews as evidence without flattening different creators"
+  ],
+  "next": [
+    "critical-play",
+    "press-reset",
+    "game-studies-journal"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

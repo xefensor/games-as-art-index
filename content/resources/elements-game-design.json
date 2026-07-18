@@ -1,0 +1,47 @@
+{
+  "id": "elements-game-design",
+  "type": "Book",
+  "title": "Elements of Game Design",
+  "creator": "Robert Zubek",
+  "publisher": "MIT Press",
+  "year": 2020,
+  "length": "256 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Game design",
+    "Systems",
+    "Prototyping"
+  ],
+  "games": [],
+  "description": "An introductory textbook organized around mechanics and systems, gameplay, and player experience, with tools for analyzing and constructing designs.",
+  "useful": "A more compact starting point for readers who find larger game-design textbooks difficult to enter.",
+  "url": "https://mitpress.mit.edu/9780262362870/elements-of-game-design/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262043915-L.jpg?default=false",
+  "subjects": [
+    "Game design"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Beginning designers looking for a structured introduction to mechanics, systems, and experience.",
+  "learning": [
+    "Separate mechanics, gameplay, and player experience",
+    "Analyze how systems produce patterns of play",
+    "Turn design ideas into testable prototypes"
+  ],
+  "next": [
+    "mda-framework",
+    "juice-it-or-lose-it",
+    "rules-of-play"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

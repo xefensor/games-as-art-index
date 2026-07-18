@@ -1,0 +1,50 @@
+{
+  "id": "i-am-error",
+  "type": "Book",
+  "title": "I Am Error",
+  "creator": "Nathan Altice",
+  "publisher": "MIT Press",
+  "year": 2015,
+  "length": "440 pages",
+  "access": "Paid",
+  "level": "Advanced",
+  "topics": [
+    "Game history",
+    "Hardware",
+    "Programming"
+  ],
+  "games": [
+    "Nintendo Entertainment System"
+  ],
+  "description": "A detailed platform study of the Famicom and NES, including hardware, controllers, cartridges, development practices, and design conventions.",
+  "useful": "For readers who want technical history to remain connected to software design and culture.",
+  "url": "https://mitpress.mit.edu/9780262534543/i-am-error/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262534543-L.jpg?default=false",
+  "subjects": [
+    "History",
+    "Programming"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Historical",
+    "Theoretical"
+  ],
+  "audience": "Advanced readers researching the NES, platform studies, or the material history of game design.",
+  "learning": [
+    "Map NES hardware to software conventions",
+    "Understand cartridges, controllers, and development practices",
+    "Connect platform architecture with game aesthetics and culture"
+  ],
+  "next": [
+    "racing-the-beam",
+    "id-source-code",
+    "vghf-library"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "art-of-firewatch",
+  "type": "Talk",
+  "title": "The Art of Firewatch",
+  "creator": "Jane Ng",
+  "publisher": "GDC",
+  "year": 2015,
+  "length": "57 min",
+  "access": "Free",
+  "level": "Intermediate",
+  "topics": [
+    "Art direction",
+    "Environment art",
+    "Production"
+  ],
+  "games": [
+    "Firewatch"
+  ],
+  "description": "Environment artist Jane Ng explains how a very small team built Firewatch’s stylized Wyoming wilderness, from visual goals and terrain tools to trees, props, lighting, and production tradeoffs.",
+  "useful": "It shows how art direction becomes a feasible production plan when a small team cannot solve every asset by hand.",
+  "url": "https://www.youtube.com/watch?v=SdxQ3HlhTE8",
+  "image": "https://i.ytimg.com/vi/SdxQ3HlhTE8/hqdefault.jpg",
+  "subjects": [
+    "Visual art",
+    "Production"
+  ],
+  "lengthClass": "30–120 min",
+  "relevance": [
+    "Practical",
+    "Historical"
+  ],
+  "audience": "Environment artists, art directors, and small teams planning a cohesive 3D world.",
+  "learning": [
+    "Turn a visual target into production constraints",
+    "Combine procedural terrain with authored detail",
+    "Prioritize tools and assets for a small art team"
+  ],
+  "next": [
+    "color-and-light",
+    "witness-architecture",
+    "tf2-illustrative-rendering"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

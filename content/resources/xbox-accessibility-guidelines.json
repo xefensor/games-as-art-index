@@ -1,0 +1,47 @@
+{
+  "id": "xbox-accessibility-guidelines",
+  "type": "Guide",
+  "title": "Xbox Accessibility Guidelines",
+  "creator": "Microsoft",
+  "publisher": "Microsoft Learn",
+  "year": 2023,
+  "length": "Guideline reference",
+  "access": "Free",
+  "level": "All levels",
+  "topics": [
+    "Accessibility",
+    "Testing",
+    "UX"
+  ],
+  "games": [],
+  "description": "A platform-neutral set of detailed guidelines covering text, color, input, difficulty, audio, communication, motion, menus, and other player needs. Each guideline includes intent, implementation ideas, and testing questions.",
+  "useful": "The testable criteria help teams turn a broad commitment to accessibility into reviewable design and QA work.",
+  "url": "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines",
+  "image": "",
+  "subjects": [
+    "Accessibility",
+    "Production"
+  ],
+  "lengthClass": "Reference",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Designers, engineers, producers, and testers evaluating accessibility throughout development.",
+  "learning": [
+    "Find guidance for a specific feature or barrier",
+    "Translate player needs into implementation questions",
+    "Include accessibility criteria in design and test plans"
+  ],
+  "next": [
+    "gaming-accessibility-fundamentals",
+    "accessible-player-experiences",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

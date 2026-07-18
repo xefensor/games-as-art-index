@@ -1,0 +1,46 @@
+{
+  "id": "playful-production",
+  "type": "Book",
+  "title": "A Playful Production Process",
+  "creator": "Richard Lemarchand",
+  "publisher": "MIT Press",
+  "year": 2021,
+  "length": "408 pages",
+  "access": "Paid",
+  "level": "Introductory",
+  "topics": [
+    "Production",
+    "Prototyping",
+    "Teamwork"
+  ],
+  "games": [],
+  "description": "A start-to-finish production framework connecting concept development, prototypes, playtesting, iteration, teamwork, and sustainable scheduling.",
+  "useful": "A practical overview for students and small teams that explicitly argues against uncontrolled crunch.",
+  "url": "https://mitpress.mit.edu/9780262045513/a-playful-production-process/",
+  "image": "https://covers.openlibrary.org/b/isbn/9780262045513-L.jpg?default=false",
+  "subjects": [
+    "Production"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Students, new producers, and small teams planning a complete project without relying on crunch.",
+  "learning": [
+    "Move from concept to prototype and production",
+    "Plan playtesting and iteration throughout a project",
+    "Build healthier schedules and team practices"
+  ],
+  "next": [
+    "finishing-a-game",
+    "door-problem",
+    "accessibility-guidelines"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "color-and-light",
+  "type": "Book",
+  "title": "Color and Light",
+  "creator": "James Gurney",
+  "publisher": "Andrews McMeel Publishing",
+  "year": 2010,
+  "length": "224 pages",
+  "access": "Paid",
+  "level": "All levels",
+  "topics": [
+    "Color",
+    "Lighting",
+    "Painting"
+  ],
+  "games": [],
+  "description": "An illustrated guide to light sources, color relationships, surfaces, atmosphere, visual perception, and practical observation. Although written for painters, it directly supports concept, environment, and lighting work.",
+  "useful": "It connects color theory to observed physical situations, making it more practical than choosing palettes by mood alone.",
+  "url": "https://jamesgurney.com/products/color-and-light-a-guide-for-the-realist-painter-signed-by-james-gurney",
+  "image": "https://covers.openlibrary.org/b/isbn/9780740797712-L.jpg?default=false",
+  "subjects": [
+    "Visual art"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Concept artists, environment artists, lighting artists, and visually curious developers.",
+  "learning": [
+    "Identify how light sources affect color",
+    "Describe material and atmospheric effects",
+    "Use observation to make invented scenes more coherent"
+  ],
+  "next": [
+    "art-of-firewatch",
+    "tf2-illustrative-rendering",
+    "book-of-shaders"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

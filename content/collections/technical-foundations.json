@@ -1,0 +1,14 @@
+{
+  "id": "technical-foundations",
+  "title": "Strengthen technical foundations",
+  "description": "A progressive route through game architecture, simulation, shaders, and real-time rendering.",
+  "color": "blue",
+  "resources": [
+    "game-programming-patterns",
+    "gaffer-on-games",
+    "book-of-shaders",
+    "catlike-coding",
+    "real-time-rendering",
+    "pbr-book"
+  ]
+}

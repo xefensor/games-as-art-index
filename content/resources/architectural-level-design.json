@@ -1,0 +1,48 @@
+{
+  "id": "architectural-level-design",
+  "type": "Book",
+  "title": "Architectural Approach to Level Design",
+  "creator": "Christopher W. Totten",
+  "publisher": "CRC Press / Routledge",
+  "year": 2019,
+  "length": "626 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Level design",
+    "Architecture",
+    "Spatial design"
+  ],
+  "games": [],
+  "description": "A second-edition guide that brings architectural history, spatial experience, circulation, landmarks, emotion, tutorials, and procedural methods into level-design practice.",
+  "useful": "It treats a level as an inhabited space with perceptual and emotional structure, not merely a route between encounters.",
+  "url": "https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367",
+  "image": "https://covers.openlibrary.org/b/isbn/9780815361367-L.jpg?default=false",
+  "subjects": [
+    "Game design",
+    "Visual art"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Level designers and environment artists who want a deeper spatial vocabulary.",
+  "learning": [
+    "Apply circulation, landmarks, and spatial rhythm",
+    "Use architecture to shape emotion and navigation",
+    "Design tutorial spaces around player perception"
+  ],
+  "next": [
+    "valve-level-design",
+    "witness-architecture",
+    "designing-celeste"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

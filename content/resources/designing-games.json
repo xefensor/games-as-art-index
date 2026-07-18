@@ -1,0 +1,50 @@
+{
+  "id": "designing-games",
+  "type": "Book",
+  "title": "Designing Games",
+  "creator": "Tynan Sylvester",
+  "publisher": "O’Reilly Media",
+  "year": 2013,
+  "length": "416 pages",
+  "access": "Paid",
+  "level": "Intermediate",
+  "topics": [
+    "Game design",
+    "Player experience",
+    "Decision making"
+  ],
+  "games": [
+    "RimWorld"
+  ],
+  "description": "A designer-led account of how rules, uncertainty, rewards, fiction, and social context combine into experiences. It moves between general principles and detailed examples rather than prescribing one universal design formula.",
+  "useful": "Strong for readers who understand basic mechanics but want to reason more precisely about emotions, choices, and player stories.",
+  "url": "https://tynansylvester.com/book/",
+  "image": "https://covers.openlibrary.org/b/isbn/9781449337933-L.jpg?default=false",
+  "subjects": [
+    "Game design",
+    "Criticism & theory"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical",
+    "Theoretical"
+  ],
+  "audience": "Intermediate designers trying to connect system design with emotion and player interpretation.",
+  "learning": [
+    "Design choices around emotional effects",
+    "Reason about uncertainty and rewards",
+    "Use fiction and rules as mutually supporting tools"
+  ],
+  "next": [
+    "game-design-workshop",
+    "characteristics-of-games",
+    "theory-of-fun"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

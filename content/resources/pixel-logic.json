@@ -1,0 +1,46 @@
+{
+  "id": "pixel-logic",
+  "type": "Book",
+  "title": "Pixel Logic",
+  "creator": "Michael Azzi",
+  "publisher": "Pixel Logic",
+  "year": 2019,
+  "length": "242 pages",
+  "access": "Mixed",
+  "level": "Introductory",
+  "topics": [
+    "Pixel art",
+    "Sprites",
+    "Animation"
+  ],
+  "games": [],
+  "description": "A visual guide to pixel clusters, lines, curves, anti-aliasing, color, light, texture, sprites, tiles, and animation. A free preview explains the approach before purchase.",
+  "useful": "Examples are built around pixel-level decisions rather than treating pixel art as merely low-resolution illustration.",
+  "url": "https://pixellogicbook.com/",
+  "image": "",
+  "subjects": [
+    "Visual art"
+  ],
+  "lengthClass": "Long-form",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Beginning pixel artists and small teams producing readable 2D game assets.",
+  "learning": [
+    "Build clean forms from intentional pixel clusters",
+    "Control color and contrast at small scales",
+    "Prepare sprites and tiles for animation"
+  ],
+  "next": [
+    "animators-survival-kit",
+    "color-and-light",
+    "art-of-screenshake"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}

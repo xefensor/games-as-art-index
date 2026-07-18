@@ -1,0 +1,46 @@
+{
+  "id": "finishing-a-game",
+  "type": "Article",
+  "title": "Finishing a Game",
+  "creator": "Derek Yu",
+  "publisher": "Make Games",
+  "year": 2010,
+  "length": "12 min read",
+  "access": "Free",
+  "level": "Introductory",
+  "topics": [
+    "Production",
+    "Independent games",
+    "Scope"
+  ],
+  "games": [],
+  "description": "Practical advice on choosing an idea, planning, protecting the core experience, handling unfinished work, testing, and releasing.",
+  "useful": "A grounded checklist for developers who repeatedly begin projects but struggle to complete them.",
+  "url": "https://makegames.tumblr.com/post/1136623767/finishing-a-game",
+  "image": "",
+  "subjects": [
+    "Production"
+  ],
+  "lengthClass": "Under 30 min",
+  "relevance": [
+    "Practical"
+  ],
+  "audience": "Solo and small-team developers who start projects more easily than they finish them.",
+  "learning": [
+    "Choose a project small enough to complete",
+    "Protect the core while cutting secondary work",
+    "Move through testing, polish, and release"
+  ],
+  "next": [
+    "playful-production",
+    "spelunky-book",
+    "door-problem"
+  ],
+  "lastChecked": "2026-07-18",
+  "addedAt": "2026-07-18",
+  "editorial": {
+    "status": "published",
+    "reviewedAt": "2026-07-18",
+    "note": ""
+  }
+}
