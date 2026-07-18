@@ -16,7 +16,7 @@
   "games": [],
   "description": "A reported history of studio closures, layoffs, acquisitions, and unstable careers in the game industry. Interviews follow developers through the consequences and attempts to build different kinds of workplaces.",
   "useful": "It adds labor conditions and institutional instability to production study, subjects that postmortems often omit.",
-  "url": "https://www.grandcentralpublishing.com/titles/jason-schreier/press-reset/9781538735480/",
+  "url": "https://www.hachettebookgroup.com/titles/jason-schreier/press-reset/9781538735480/",
   "image": "https://covers.openlibrary.org/b/isbn/9781538735480-L.jpg?default=false",
   "subjects": [
     "Production",
@@ -39,10 +39,15 @@
     "queer-games-avant-garde"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The publisher's canonical Hachette Book Group page opened successfully and matched the title, author, and ISBN."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Updated to the publisher's canonical Hachette Book Group URL and verified the book metadata."
   }
 }

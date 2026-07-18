@@ -38,10 +38,15 @@
     "doom-behind-music"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Routledge page opened in a browser and matched the title, authors, publication details, and ISBN; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official publisher record, authors, publication details, and ISBN manually verified."
   }
 }

@@ -16,8 +16,8 @@
   "games": [],
   "description": "A research library for digitized game magazines, development material, ephemera, and catalogued archival collections.",
   "useful": "A starting point for historical research that depends on primary documents rather than retrospective summaries.",
-  "url": "https://gamehistory.org/library/",
-  "image": "",
+  "url": "https://library.gamehistory.org/",
+  "image": "https://gamehistory.org/wp-content/uploads/2024/09/splash-scaled.jpg",
   "featured": true,
   "subjects": [
     "History"
@@ -38,10 +38,15 @@
     "id-source-code"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official VGHF Library catalogue opened successfully and identifies the Video Game History Foundation as its operator."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Replaced an obsolete organization-page redirect with the official searchable library catalogue."
   }
 }

@@ -38,10 +38,15 @@
     "witness-audio"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Sonniss GameAudioGDC archive opened in a browser and states its access and media-production licensing terms; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official archive, free access, and current sound-effects licensing statement manually verified."
   }
 }

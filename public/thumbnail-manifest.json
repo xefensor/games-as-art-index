@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T20:26:38.521Z",
+  "generatedAt": "2026-07-18T23:17:43.020Z",
   "resourceCount": 78,
   "summary": {
-    "catalogue": 2,
+    "catalogue": 7,
     "youtube": 0,
     "open-graph": 6,
-    "generated": 70
+    "generated": 65
   },
   "resources": {
     "designing-journey": {
@@ -22,14 +22,15 @@
     },
     "doom-postmortem": {
       "path": "/thumbnails/doom-postmortem.webp",
-      "method": "generated",
-      "sourceUrl": "",
+      "method": "catalogue",
+      "sourceUrl": "https://img.youtube.com/vi/NnkCujnYNSo/hqdefault.jpg",
       "originUrl": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
       "checkedAt": "2026-07-18",
-      "note": "No representative source image was published.",
       "width": 960,
       "height": 540,
-      "bytes": 18990
+      "bytes": 51930,
+      "sourceWidth": 480,
+      "sourceHeight": 360
     },
     "prince-of-persia-postmortem": {
       "path": "/thumbnails/prince-of-persia-postmortem.webp",
@@ -44,14 +45,15 @@
     },
     "doom-behind-music": {
       "path": "/thumbnails/doom-behind-music.webp",
-      "method": "generated",
-      "sourceUrl": "",
+      "method": "catalogue",
+      "sourceUrl": "https://img.youtube.com/vi/U4FNBMZsqrY/hqdefault.jpg",
       "originUrl": "https://www.youtube.com/watch?v=U4FNBMZsqrY",
       "checkedAt": "2026-07-18",
-      "note": "Input buffer contains unsupported image format",
       "width": 960,
       "height": 540,
-      "bytes": 16636
+      "bytes": 42012,
+      "sourceWidth": 480,
+      "sourceHeight": 360
     },
     "art-of-screenshake": {
       "path": "/thumbnails/art-of-screenshake.webp",
@@ -77,14 +79,15 @@
     },
     "rules-of-play": {
       "path": "/thumbnails/rules-of-play.webp",
-      "method": "generated",
-      "sourceUrl": "",
+      "method": "catalogue",
+      "sourceUrl": "https://mit-press-new-us.imgix.net/covers/9780262240451.jpg?auto=format&w=900",
       "originUrl": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
       "checkedAt": "2026-07-18",
-      "note": "Source image request timed out.",
       "width": 720,
       "height": 960,
-      "bytes": 16942
+      "bytes": 17498,
+      "sourceWidth": 900,
+      "sourceHeight": 1115
     },
     "characteristics-of-games": {
       "path": "/thumbnails/characteristics-of-games.webp",
@@ -132,14 +135,15 @@
     },
     "spelunky-book": {
       "path": "/thumbnails/spelunky-book.webp",
-      "method": "generated",
-      "sourceUrl": "",
+      "method": "catalogue",
+      "sourceUrl": "https://bossfightbooks.com/cdn/shop/files/BFB_Covers_with_Color_Background_28.png?v=1721357791",
       "originUrl": "https://bossfightbooks.com/products/spelunky-by-derek-yu",
       "checkedAt": "2026-07-18",
-      "note": "Source image request timed out.",
       "width": 720,
       "height": 960,
-      "bytes": 14010
+      "bytes": 7966,
+      "sourceWidth": 3620,
+      "sourceHeight": 3773
     },
     "playful-production": {
       "path": "/thumbnails/playful-production.webp",
@@ -398,14 +402,15 @@
     },
     "vghf-library": {
       "path": "/thumbnails/vghf-library.webp",
-      "method": "generated",
-      "sourceUrl": "",
-      "originUrl": "https://gamehistory.org/library/",
+      "method": "catalogue",
+      "sourceUrl": "https://gamehistory.org/wp-content/uploads/2024/09/splash-scaled.jpg",
+      "originUrl": "https://library.gamehistory.org/",
       "checkedAt": "2026-07-18",
-      "note": "Source image request timed out.",
       "width": 960,
       "height": 540,
-      "bytes": 22202
+      "bytes": 105910,
+      "sourceWidth": 2560,
+      "sourceHeight": 1677
     },
     "gdc-vault": {
       "path": "/thumbnails/gdc-vault.webp",

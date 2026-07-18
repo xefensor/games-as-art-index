@@ -35,13 +35,14 @@ New entries usually begin with a suggestion issue because they also need catalog
 ```bash
 npm install
 npm run catalogue:build
+npm run editorial:audit
 npm run validate:catalogue
 npm run validate:thumbnails
 npm run check:browse
 npm run build
 ```
 
-CI verifies that generated output is synchronized, IDs and relationships are valid, thumbnails exist, browser interactions pass, and the production site builds.
+CI verifies that generated output and the editorial audit are synchronized, contribution forms reference managed GitHub labels, IDs and relationships are valid, thumbnails exist, browser interactions pass, and the production site builds.
 
 ## Editorial rules
 

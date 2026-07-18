@@ -105,8 +105,8 @@ async function discoverPageImage(resource) {
 async function sourceCandidate(resource, previous) {
   if (previous?.sourceUrl && previous.method !== "generated" && !isGenericSourceImage(previous.sourceUrl)) return { url: previous.sourceUrl, method: previous.method };
   if (resource.image && !isLocalImage(resource.image)) return { url: resource.image, method: "catalogue" };
-  const videoId = youtubeId(resource.url);
-  if (videoId) return { url: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`, method: "youtube" };
+  const videoId = resource.embed?.provider === "youtube" ? resource.embed.videoId : youtubeId(resource.url);
+  if (videoId) return { url: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`, method: "youtube" };
   const pageImage = await discoverPageImage(resource);
   return pageImage ? { url: pageImage, method: "open-graph" } : null;
 }
@@ -114,6 +114,8 @@ async function sourceCandidate(resource, previous) {
 async function writeSourceImage(resource, candidate, destination) {
   const response = await fetchWithTimeout(candidate.url, { headers: { Accept: "image/avif,image/webp,image/png,image/jpeg,image/*" } });
   if (!response.ok) throw new Error(`image returned ${response.status}`);
+  const contentType = response.headers.get("content-type") || "";
+  if (!contentType.startsWith("image/")) throw new Error(`image source returned ${contentType || "an unknown content type"}`);
   const declaredSize = Number(response.headers.get("content-length") || 0);
   if (declaredSize > 12_000_000) throw new Error("image exceeds 12 MB");
   const input = Buffer.from(await response.arrayBuffer());

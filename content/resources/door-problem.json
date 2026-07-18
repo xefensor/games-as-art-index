@@ -16,7 +16,7 @@
   "games": [],
   "description": "A single fictional door is used to explain how designers, artists, programmers, writers, audio staff, testers, and producers contribute to a game.",
   "useful": "A concise explanation of why apparently small features cross many disciplines and dependencies.",
-  "url": "https://lizengland.com/blog/2014/04/the-door-problem/",
+  "url": "https://lizengland.com/blog/the-door-problem/",
   "image": "",
   "subjects": [
     "Production"
@@ -37,10 +37,15 @@
     "accessibility-guidelines"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "Liz England's canonical article opened successfully and its title and publication date matched the catalogue record."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Canonical creator-hosted article and publication details manually verified."
   }
 }

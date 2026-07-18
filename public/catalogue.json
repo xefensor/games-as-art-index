@@ -264,7 +264,7 @@
         "videoId": "NnkCujnYNSo",
         "source": "GDC Festival of Gaming"
       },
-      "image": "",
+      "image": "https://img.youtube.com/vi/NnkCujnYNSo/hqdefault.jpg",
       "featured": true,
       "subjects": [
         "History",
@@ -367,7 +367,7 @@
       "description": "Composer Mick Gordon presents the instruments, signal chains, experiments, and constraints behind DOOM's reactive score.",
       "useful": "Shows how a strong musical identity can emerge from technical process rather than genre references alone.",
       "url": "https://www.youtube.com/watch?v=U4FNBMZsqrY",
-      "image": "https://i.ytimg.com/vi/U4FNBMZsqrY/hqdefault.jpg",
+      "image": "https://img.youtube.com/vi/U4FNBMZsqrY/hqdefault.jpg",
       "featured": true,
       "subjects": [
         "Audio",
@@ -513,7 +513,7 @@
       "description": "A large textbook and reference work that develops a vocabulary for rules, play, culture, systems, interaction, and meaningful play.",
       "useful": "Best used as a reference or structured course text rather than a quick practical manual.",
       "url": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
-      "image": "https://covers.openlibrary.org/b/isbn/9780262240451-L.jpg?default=false",
+      "image": "https://mit-press-new-us.imgix.net/covers/9780262240451.jpg?auto=format&w=900",
       "featured": true,
       "subjects": [
         "Game design",
@@ -759,7 +759,7 @@
       "description": "The game's creator recounts its development while discussing randomization, difficulty, feedback, team dynamics, and finishing a project.",
       "useful": "Unusually direct access to the reasoning and compromises behind one independent game.",
       "url": "https://bossfightbooks.com/products/spelunky-by-derek-yu",
-      "image": "",
+      "image": "https://bossfightbooks.com/cdn/shop/files/BFB_Covers_with_Color_Background_28.png?v=1721357791",
       "featured": true,
       "subjects": [
         "Production",
@@ -1001,7 +1001,7 @@
       "games": [],
       "description": "A single fictional door is used to explain how designers, artists, programmers, writers, audio staff, testers, and producers contribute to a game.",
       "useful": "A concise explanation of why apparently small features cross many disciplines and dependencies.",
-      "url": "https://lizengland.com/blog/2014/04/the-door-problem/",
+      "url": "https://lizengland.com/blog/the-door-problem/",
       "image": "",
       "subjects": [
         "Production"
@@ -1022,11 +1022,16 @@
         "accessibility-guidelines"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "Liz England's canonical article opened successfully and its title and publication date matched the catalogue record."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Canonical creator-hosted article and publication details manually verified."
       }
     },
     {
@@ -1904,11 +1909,16 @@
         "id-source-code"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The Valve Developer Community level-design category opened successfully; its anti-bot redirect can confuse automated checks."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official Valve documentation category and access manually verified."
       }
     },
     {
@@ -1981,8 +1991,8 @@
       "games": [],
       "description": "A research library for digitized game magazines, development material, ephemera, and catalogued archival collections.",
       "useful": "A starting point for historical research that depends on primary documents rather than retrospective summaries.",
-      "url": "https://gamehistory.org/library/",
-      "image": "",
+      "url": "https://library.gamehistory.org/",
+      "image": "https://gamehistory.org/wp-content/uploads/2024/09/splash-scaled.jpg",
       "featured": true,
       "subjects": [
         "History"
@@ -2003,11 +2013,16 @@
         "id-source-code"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official VGHF Library catalogue opened successfully and identifies the Video Game History Foundation as its operator."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Replaced an obsolete organization-page redirect with the official searchable library catalogue."
       }
     },
     {
@@ -2159,11 +2174,16 @@
         "playful-production"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Routledge product page opened in a browser and matched the title, author, edition, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record and current edition metadata manually verified."
       }
     },
     {
@@ -2352,11 +2372,16 @@
         "designing-celeste"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Routledge page opened in a browser and matched Christopher W. Totten, the second edition, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, edition, author, and subject coverage manually verified."
       }
     },
     {
@@ -2448,11 +2473,16 @@
         "tf2-illustrative-rendering"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Routledge page opened in a browser and matched the fourth edition, authors, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, edition, authors, and ISBN manually verified."
       }
     },
     {
@@ -2637,11 +2667,16 @@
         "game-feel-book"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Macmillan page opened in a browser and matched Richard Williams, the edition, page count, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, author, edition details, and ISBN manually verified."
       }
     },
     {
@@ -3023,11 +3058,16 @@
         "witness-audio"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Sonniss GameAudioGDC archive opened in a browser and states its access and media-production licensing terms; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official archive, free access, and current sound-effects licensing statement manually verified."
       }
     },
     {
@@ -3070,11 +3110,16 @@
         "doom-behind-music"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Routledge page opened in a browser and matched the title, authors, publication details, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, authors, publication details, and ISBN manually verified."
       }
     },
     {
@@ -3165,11 +3210,16 @@
         "narrative-legos"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Bloomsbury page opened in a browser and matched the title, editor, second edition, publication date, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, edition, contributors, and ISBN manually verified."
       }
     },
     {
@@ -3216,11 +3266,16 @@
         "characteristics-of-games"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The official Routledge page opened in a browser and matched the title, editors, edition, and ISBN; automated requests receive 403."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Official publisher record, editors, edition, and ISBN manually verified."
       }
     },
     {
@@ -3392,7 +3447,7 @@
       "games": [],
       "description": "A reported history of studio closures, layoffs, acquisitions, and unstable careers in the game industry. Interviews follow developers through the consequences and attempts to build different kinds of workplaces.",
       "useful": "It adds labor conditions and institutional instability to production study, subjects that postmortems often omit.",
-      "url": "https://www.grandcentralpublishing.com/titles/jason-schreier/press-reset/9781538735480/",
+      "url": "https://www.hachettebookgroup.com/titles/jason-schreier/press-reset/9781538735480/",
       "image": "https://covers.openlibrary.org/b/isbn/9781538735480-L.jpg?default=false",
       "subjects": [
         "Production",
@@ -3415,11 +3470,16 @@
         "queer-games-avant-garde"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The publisher's canonical Hachette Book Group page opened successfully and matched the title, author, and ISBN."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Updated to the publisher's canonical Hachette Book Group URL and verified the book metadata."
       }
     },
     {
@@ -3762,11 +3822,16 @@
         "vghf-library"
       ],
       "lastChecked": "2026-07-18",
+      "manualLinkStatus": {
+        "status": "ok",
+        "checkedAt": "2026-07-18",
+        "note": "The journal root opened successfully and intentionally resolves to the current Game Studies issue."
+      },
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
         "reviewedAt": "2026-07-18",
-        "note": ""
+        "note": "Journal identity, current-issue behavior, and free access manually verified."
       }
     },
     {

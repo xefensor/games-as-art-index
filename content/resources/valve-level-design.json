@@ -43,10 +43,15 @@
     "id-source-code"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The Valve Developer Community level-design category opened successfully; its anti-bot redirect can confuse automated checks."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official Valve documentation category and access manually verified."
   }
 }

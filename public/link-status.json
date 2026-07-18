@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T20:01:59.920Z",
+  "generatedAt": "2026-07-18T23:15:29.144Z",
   "resourceCount": 78,
   "complete": true,
   "summary": {
-    "ok": 65,
-    "redirected": 4,
-    "restricted": 8,
+    "ok": 78,
+    "redirected": 0,
+    "restricted": 0,
     "broken": 0,
-    "timeout": 1,
+    "timeout": 0,
     "network-error": 0
   },
   "audit": {
@@ -24,8 +24,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.022Z",
-      "durationMs": 7443
+      "checkedAt": "2026-07-18T23:14:53.182Z",
+      "durationMs": 4598
     },
     {
       "id": "doom-postmortem",
@@ -35,8 +35,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:06.224Z",
-      "durationMs": 4638
+      "checkedAt": "2026-07-18T23:14:52.994Z",
+      "durationMs": 4403
     },
     {
       "id": "prince-of-persia-postmortem",
@@ -46,8 +46,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:06.226Z",
-      "durationMs": 4638
+      "checkedAt": "2026-07-18T23:14:52.998Z",
+      "durationMs": 4405
     },
     {
       "id": "doom-behind-music",
@@ -57,8 +57,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:06.506Z",
-      "durationMs": 4918
+      "checkedAt": "2026-07-18T23:14:56.020Z",
+      "durationMs": 7427
     },
     {
       "id": "art-of-screenshake",
@@ -68,8 +68,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:06.596Z",
-      "durationMs": 5007
+      "checkedAt": "2026-07-18T23:14:55.943Z",
+      "durationMs": 7349
     },
     {
       "id": "juice-it-or-lose-it",
@@ -79,8 +79,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:06.677Z",
-      "durationMs": 5088
+      "checkedAt": "2026-07-18T23:14:56.204Z",
+      "durationMs": 7610
     },
     {
       "id": "rules-of-play",
@@ -90,8 +90,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.543Z",
-      "durationMs": 3319
+      "checkedAt": "2026-07-18T23:14:57.866Z",
+      "durationMs": 4872
     },
     {
       "id": "characteristics-of-games",
@@ -101,8 +101,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.503Z",
-      "durationMs": 3277
+      "checkedAt": "2026-07-18T23:14:57.844Z",
+      "durationMs": 4846
     },
     {
       "id": "racing-the-beam",
@@ -112,8 +112,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.720Z",
-      "durationMs": 3214
+      "checkedAt": "2026-07-18T23:14:57.871Z",
+      "durationMs": 4689
     },
     {
       "id": "i-am-error",
@@ -123,8 +123,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.665Z",
-      "durationMs": 3068
+      "checkedAt": "2026-07-18T23:14:57.884Z",
+      "durationMs": 1941
     },
     {
       "id": "critical-play",
@@ -134,8 +134,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:09.679Z",
-      "durationMs": 3002
+      "checkedAt": "2026-07-18T23:14:57.868Z",
+      "durationMs": 1848
     },
     {
       "id": "spelunky-book",
@@ -145,8 +145,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:12.646Z",
-      "durationMs": 3624
+      "checkedAt": "2026-07-18T23:14:59.647Z",
+      "durationMs": 3442
     },
     {
       "id": "playful-production",
@@ -156,8 +156,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:13.463Z",
-      "durationMs": 3960
+      "checkedAt": "2026-07-18T23:15:01.924Z",
+      "durationMs": 4080
     },
     {
       "id": "game-design-reader",
@@ -167,8 +167,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:13.442Z",
-      "durationMs": 3899
+      "checkedAt": "2026-07-18T23:15:01.696Z",
+      "durationMs": 3829
     },
     {
       "id": "elements-game-design",
@@ -178,8 +178,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:13.432Z",
-      "durationMs": 3767
+      "checkedAt": "2026-07-18T23:15:01.896Z",
+      "durationMs": 4027
     },
     {
       "id": "mda-framework",
@@ -189,19 +189,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:13.978Z",
-      "durationMs": 4299
+      "checkedAt": "2026-07-18T23:15:02.286Z",
+      "durationMs": 4415
     },
     {
       "id": "door-problem",
       "title": "The Door Problem",
-      "url": "https://lizengland.com/blog/2014/04/the-door-problem/",
+      "url": "https://lizengland.com/blog/the-door-problem/",
       "finalUrl": "https://lizengland.com/blog/the-door-problem/",
-      "status": "redirected",
-      "httpStatus": 200,
-      "redirected": true,
-      "checkedAt": "2026-07-18T20:01:18.710Z",
-      "durationMs": 8990
+      "status": "ok",
+      "httpStatus": null,
+      "redirected": false,
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "Liz England's canonical article opened successfully and its title and publication date matched the catalogue record."
     },
     {
       "id": "finishing-a-game",
@@ -211,8 +213,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:16.491Z",
-      "durationMs": 3845
+      "checkedAt": "2026-07-18T23:15:03.124Z",
+      "durationMs": 5240
     },
     {
       "id": "blow-indie-prototyping",
@@ -339,8 +341,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:17.126Z",
-      "durationMs": 3694
+      "checkedAt": "2026-07-18T23:15:04.750Z",
+      "durationMs": 5103
     },
     {
       "id": "game-programming-patterns",
@@ -350,8 +352,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:22.252Z",
-      "durationMs": 8810
+      "checkedAt": "2026-07-18T23:15:05.419Z",
+      "durationMs": 3723
     },
     {
       "id": "red-blob-pathfinding",
@@ -361,8 +363,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:20.384Z",
-      "durationMs": 6921
+      "checkedAt": "2026-07-18T23:15:06.597Z",
+      "durationMs": 4701
     },
     {
       "id": "godot-first-2d",
@@ -372,8 +374,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:17.416Z",
-      "durationMs": 3438
+      "checkedAt": "2026-07-18T23:15:05.027Z",
+      "durationMs": 3103
     },
     {
       "id": "unity-create-code",
@@ -383,8 +385,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:20.532Z",
-      "durationMs": 4041
+      "checkedAt": "2026-07-18T23:15:08.884Z",
+      "durationMs": 6598
     },
     {
       "id": "unreal-get-started",
@@ -394,19 +396,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:20.510Z",
-      "durationMs": 3384
+      "checkedAt": "2026-07-18T23:15:08.298Z",
+      "durationMs": 5174
     },
     {
       "id": "valve-level-design",
       "title": "Valve Level Design Documentation",
       "url": "https://developer.valvesoftware.com/wiki/Category:Level_Design",
-      "finalUrl": "https://developer.valvesoftware.com/.within.website/?redir=https://developer.valvesoftware.com/wiki/Category:Level_Design",
-      "status": "redirected",
-      "httpStatus": 200,
-      "redirected": true,
-      "checkedAt": "2026-07-18T20:01:24.117Z",
-      "durationMs": 6701
+      "finalUrl": "https://developer.valvesoftware.com/wiki/Category:Level_Design",
+      "status": "ok",
+      "httpStatus": null,
+      "redirected": false,
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The Valve Developer Community level-design category opened successfully; its anti-bot redirect can confuse automated checks."
     },
     {
       "id": "id-source-code",
@@ -416,19 +420,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:23.885Z",
-      "durationMs": 5175
+      "checkedAt": "2026-07-18T23:15:10.993Z",
+      "durationMs": 6243
     },
     {
       "id": "vghf-library",
       "title": "Video Game History Foundation Library",
-      "url": "https://gamehistory.org/library/",
-      "finalUrl": "https://gamehistory.org/library-director-phil-salvador/",
-      "status": "redirected",
-      "httpStatus": 200,
-      "redirected": true,
-      "checkedAt": "2026-07-18T20:01:32.274Z",
-      "durationMs": 11890
+      "url": "https://library.gamehistory.org/",
+      "finalUrl": "https://library.gamehistory.org/",
+      "status": "ok",
+      "httpStatus": null,
+      "redirected": false,
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official VGHF Library catalogue opened successfully and identifies the Video Game History Foundation as its operator."
     },
     {
       "id": "gdc-vault",
@@ -438,8 +444,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:27.263Z",
-      "durationMs": 6753
+      "checkedAt": "2026-07-18T23:15:10.792Z",
+      "durationMs": 5765
     },
     {
       "id": "witness-dev-archive",
@@ -459,11 +465,13 @@
       "title": "Game Design Workshop",
       "url": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
       "finalUrl": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:24.043Z",
-      "durationMs": 3511
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Routledge product page opened in a browser and matched the title, author, edition, and ISBN; automated requests receive 403."
     },
     {
       "id": "game-feel-book",
@@ -473,8 +481,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:26.880Z",
-      "durationMs": 4628
+      "checkedAt": "2026-07-18T23:15:09.546Z",
+      "durationMs": 4127
     },
     {
       "id": "designing-games",
@@ -484,8 +492,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:26.828Z",
-      "durationMs": 2943
+      "checkedAt": "2026-07-18T23:15:10.213Z",
+      "durationMs": 3616
     },
     {
       "id": "theory-of-fun",
@@ -495,19 +503,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:30.173Z",
-      "durationMs": 6130
+      "checkedAt": "2026-07-18T23:15:12.149Z",
+      "durationMs": 3851
     },
     {
       "id": "architectural-level-design",
       "title": "Architectural Approach to Level Design",
       "url": "https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367",
       "finalUrl": "https://www.routledge.com/Architectural-Approach-to-Level-Design-Second-edition/Totten/p/book/9780815361367",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:27.292Z",
-      "durationMs": 3175
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Routledge page opened in a browser and matched Christopher W. Totten, the second edition, and ISBN; automated requests receive 403."
     },
     {
       "id": "book-of-shaders",
@@ -517,19 +527,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:31.210Z",
-      "durationMs": 4382
+      "checkedAt": "2026-07-18T23:15:13.120Z",
+      "durationMs": 4235
     },
     {
       "id": "real-time-rendering",
       "title": "Real-Time Rendering, Fourth Edition",
       "url": "https://www.routledge.com/Real-Time-Rendering-Fourth-Edition/Akenine-Moller-Haines-Hoffman/p/book/9781138627000",
       "finalUrl": "https://www.routledge.com/Real-Time-Rendering-Fourth-Edition/Akenine-Moller-Haines-Hoffman/p/book/9781138627000",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:27.279Z",
-      "durationMs": 399
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Routledge page opened in a browser and matched the fourth edition, authors, and ISBN; automated requests receive 403."
     },
     {
       "id": "pbr-book",
@@ -539,8 +551,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:32.484Z",
-      "durationMs": 5221
+      "checkedAt": "2026-07-18T23:15:12.908Z",
+      "durationMs": 3362
     },
     {
       "id": "gaffer-on-games",
@@ -550,8 +562,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:31.042Z",
-      "durationMs": 3763
+      "checkedAt": "2026-07-18T23:15:12.675Z",
+      "durationMs": 2462
     },
     {
       "id": "catlike-coding",
@@ -561,19 +573,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:32.661Z",
-      "durationMs": 5369
+      "checkedAt": "2026-07-18T23:15:14.397Z",
+      "durationMs": 3605
     },
     {
       "id": "animators-survival-kit",
       "title": "The Animator’s Survival Kit",
       "url": "https://us.macmillan.com/books/9780865478978/theanimatorssurvivalkit/",
       "finalUrl": "https://us.macmillan.com/books/9780865478978/theanimatorssurvivalkit/",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:33.801Z",
-      "durationMs": 3628
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Macmillan page opened in a browser and matched Richard Williams, the edition, page count, and ISBN; automated requests receive 403."
     },
     {
       "id": "color-and-light",
@@ -583,8 +597,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:34.765Z",
-      "durationMs": 3723
+      "checkedAt": "2026-07-18T23:15:14.454Z",
+      "durationMs": 3461
     },
     {
       "id": "pixel-logic",
@@ -594,8 +608,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:38.534Z",
-      "durationMs": 7325
+      "checkedAt": "2026-07-18T23:15:15.837Z",
+      "durationMs": 3688
     },
     {
       "id": "tf2-illustrative-rendering",
@@ -605,8 +619,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:35.871Z",
-      "durationMs": 3597
+      "checkedAt": "2026-07-18T23:15:15.952Z",
+      "durationMs": 3277
     },
     {
       "id": "art-of-firewatch",
@@ -616,8 +630,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:36.505Z",
-      "durationMs": 4021
+      "checkedAt": "2026-07-18T23:15:16.954Z",
+      "durationMs": 4045
     },
     {
       "id": "designing-sound",
@@ -627,8 +641,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:36.185Z",
-      "durationMs": 3524
+      "checkedAt": "2026-07-18T23:15:17.059Z",
+      "durationMs": 3939
     },
     {
       "id": "composers-guide-game-music",
@@ -638,8 +652,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:36.065Z",
-      "durationMs": 2264
+      "checkedAt": "2026-07-18T23:15:16.943Z",
+      "durationMs": 2546
     },
     {
       "id": "game-audio-implementation",
@@ -649,30 +663,34 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:38.655Z",
-      "durationMs": 3890
+      "checkedAt": "2026-07-18T23:15:18.623Z",
+      "durationMs": 4169
     },
     {
       "id": "sonniss-gdc-audio",
       "title": "GameAudioGDC Sound Effects Archive",
       "url": "https://sonniss.com/gameaudiogdc/",
       "finalUrl": "https://sonniss.com/gameaudiogdc/",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:42.409Z",
-      "durationMs": 6538
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Sonniss GameAudioGDC archive opened in a browser and states its access and media-production licensing terms; automated requests receive 403."
     },
     {
       "id": "game-audio-tutorial",
       "title": "The Game Audio Tutorial",
       "url": "https://www.routledge.com/The-Game-Audio-Tutorial-A-Practical-Guide-to-Sound-and-Music-for-Interactive-Games/Stevens-Raybould/p/book/9780240817262",
       "finalUrl": "https://www.routledge.com/The-Game-Audio-Tutorial-A-Practical-Guide-to-Sound-and-Music-for-Interactive-Games/Stevens-Raybould/p/book/9780240817262",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:44.432Z",
-      "durationMs": 8367
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Routledge page opened in a browser and matched the title, authors, publication details, and ISBN; automated requests receive 403."
     },
     {
       "id": "hamlet-holodeck",
@@ -682,30 +700,34 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:41.155Z",
-      "durationMs": 4970
+      "checkedAt": "2026-07-18T23:15:16.994Z",
+      "durationMs": 1157
     },
     {
       "id": "game-writing",
       "title": "Game Writing",
       "url": "https://www.bloomsbury.com/us/game-writing-9781501348969/",
       "finalUrl": "https://www.bloomsbury.com/us/game-writing-9781501348969/",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:39.763Z",
-      "durationMs": 3258
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Bloomsbury page opened in a browser and matched the title, editor, second edition, publication date, and ISBN; automated requests receive 403."
     },
     {
       "id": "procedural-storytelling",
       "title": "Procedural Storytelling in Game Design",
       "url": "https://www.routledge.com/Procedural-Storytelling-in-Game-Design/Short-Adams/p/book/9781138595309",
       "finalUrl": "https://www.routledge.com/Procedural-Storytelling-in-Game-Design/Short-Adams/p/book/9781138595309",
-      "status": "restricted",
-      "httpStatus": 403,
+      "status": "ok",
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:44.439Z",
-      "durationMs": 5904
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official Routledge page opened in a browser and matched the title, editors, edition, and ISBN; automated requests receive 403."
     },
     {
       "id": "narrative-legos",
@@ -715,8 +737,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:42.463Z",
-      "durationMs": 3808
+      "checkedAt": "2026-07-18T23:15:16.862Z",
+      "durationMs": 910
     },
     {
       "id": "emily-short-blog",
@@ -726,8 +748,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:43.443Z",
-      "durationMs": 3680
+      "checkedAt": "2026-07-18T23:15:19.708Z",
+      "durationMs": 2846
     },
     {
       "id": "blood-sweat-pixels",
@@ -737,20 +759,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:44.996Z",
-      "durationMs": 3842
+      "checkedAt": "2026-07-18T23:15:20.690Z",
+      "durationMs": 3747
     },
     {
       "id": "press-reset",
       "title": "Press Reset",
-      "url": "https://www.grandcentralpublishing.com/titles/jason-schreier/press-reset/9781538735480/",
-      "finalUrl": null,
-      "status": "timeout",
+      "url": "https://www.hachettebookgroup.com/titles/jason-schreier/press-reset/9781538735480/",
+      "finalUrl": "https://www.hachettebookgroup.com/titles/jason-schreier/press-reset/9781538735480/",
+      "status": "ok",
       "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:54.411Z",
-      "durationMs": 12002,
-      "error": "This operation was aborted"
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The publisher's canonical Hachette Book Group page opened successfully and matched the title, author, and ISBN."
     },
     {
       "id": "designing-celeste",
@@ -760,8 +783,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:46.124Z",
-      "durationMs": 3661
+      "checkedAt": "2026-07-18T23:15:20.858Z",
+      "durationMs": 3904
     },
     {
       "id": "ftl-postmortem",
@@ -771,8 +794,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:45.999Z",
-      "durationMs": 2556
+      "checkedAt": "2026-07-18T23:15:20.892Z",
+      "durationMs": 3897
     },
     {
       "id": "into-breach-postmortem",
@@ -782,8 +805,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:46.003Z",
-      "durationMs": 1571
+      "checkedAt": "2026-07-18T23:15:20.895Z",
+      "durationMs": 3836
     },
     {
       "id": "how-talk-videogames",
@@ -793,8 +816,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:48.295Z",
-      "durationMs": 3856
+      "checkedAt": "2026-07-18T23:15:22.174Z",
+      "durationMs": 3551
     },
     {
       "id": "persuasive-games",
@@ -804,8 +827,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:49.665Z",
-      "durationMs": 4668
+      "checkedAt": "2026-07-18T23:15:23.242Z",
+      "durationMs": 3534
     },
     {
       "id": "queer-games-avant-garde",
@@ -815,19 +838,21 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:52.497Z",
-      "durationMs": 6498
+      "checkedAt": "2026-07-18T23:15:25.262Z",
+      "durationMs": 4572
     },
     {
       "id": "game-studies-journal",
       "title": "Game Studies",
       "url": "https://gamestudies.org/",
-      "finalUrl": "https://gamestudies.org/2602",
-      "status": "redirected",
-      "httpStatus": 200,
-      "redirected": true,
-      "checkedAt": "2026-07-18T20:01:55.345Z",
-      "durationMs": 9342
+      "finalUrl": "https://gamestudies.org/",
+      "status": "ok",
+      "httpStatus": null,
+      "redirected": false,
+      "checkedAt": "2026-07-18T12:00:00.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The journal root opened successfully and intentionally resolves to the current Game Studies issue."
     },
     {
       "id": "internet-archive-software",
@@ -837,8 +862,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:50.156Z",
-      "durationMs": 4032
+      "checkedAt": "2026-07-18T23:15:25.342Z",
+      "durationMs": 4484
     },
     {
       "id": "xbox-accessibility-guidelines",
@@ -848,8 +873,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:51.738Z",
-      "durationMs": 3443
+      "checkedAt": "2026-07-18T23:15:24.727Z",
+      "durationMs": 3835
     },
     {
       "id": "gaming-accessibility-fundamentals",
@@ -859,8 +884,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:51.784Z",
-      "durationMs": 2119
+      "checkedAt": "2026-07-18T23:15:24.826Z",
+      "durationMs": 3931
     },
     {
       "id": "accessible-player-experiences",
@@ -870,8 +895,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:53.682Z",
-      "durationMs": 3526
+      "checkedAt": "2026-07-18T23:15:26.599Z",
+      "durationMs": 4425
     },
     {
       "id": "igda-accessibility-resources",
@@ -881,8 +906,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:55.693Z",
-      "durationMs": 3955
+      "checkedAt": "2026-07-18T23:15:27.475Z",
+      "durationMs": 4233
     },
     {
       "id": "inclusive-game-design-paper",
@@ -892,8 +917,8 @@
       "status": "ok",
       "httpStatus": 200,
       "redirected": false,
-      "checkedAt": "2026-07-18T20:01:59.919Z",
-      "durationMs": 8135
+      "checkedAt": "2026-07-18T23:15:29.143Z",
+      "durationMs": 4416
     }
   ]
 }

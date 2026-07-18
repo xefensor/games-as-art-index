@@ -1,0 +1,22 @@
+[
+  {
+    "name": "resource suggestion",
+    "color": "d95a45",
+    "description": "A proposed resource awaiting editorial review"
+  },
+  {
+    "name": "catalogue maintenance",
+    "color": "b58a45",
+    "description": "A correction or reliability problem in a published entry"
+  },
+  {
+    "name": "editorial review",
+    "color": "5d7199",
+    "description": "Requires source, metadata, relevance, or wording review"
+  },
+  {
+    "name": "automated maintenance",
+    "color": "6f7f69",
+    "description": "Created or updated by a catalogue maintenance workflow"
+  }
+]

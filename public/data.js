@@ -2,13 +2,13 @@
   if (window.__GAA_CATALOGUE_LOADING__) return;
   window.__GAA_CATALOGUE_LOADING__ = true;
 
-  const catalogueRequest = fetch("/catalogue.json?v=catalogue-2", { cache: "no-store" })
+  const catalogueRequest = fetch("/catalogue.json?v=catalogue-3", { cache: "no-store" })
     .then(response => {
       if (!response.ok) throw new Error(`Catalogue request failed with ${response.status}`);
       return response.json();
     });
-  const linkStatusRequest = fetch("/link-status.json?v=trust-2", { cache: "no-store" }).then(response => response.ok ? response.json() : null).catch(() => null);
-  const thumbnailRequest = fetch("/thumbnail-manifest.json?v=thumbnails-2", { cache: "no-store" }).then(response => response.ok ? response.json() : null).catch(() => null);
+  const linkStatusRequest = fetch("/link-status.json?v=trust-3", { cache: "no-store" }).then(response => response.ok ? response.json() : null).catch(() => null);
+  const thumbnailRequest = fetch("/thumbnail-manifest.json?v=thumbnails-3", { cache: "no-store" }).then(response => response.ok ? response.json() : null).catch(() => null);
 
   Promise.all([catalogueRequest, linkStatusRequest, thumbnailRequest])
     .then(([catalogue, linkStatus, thumbnails]) => {

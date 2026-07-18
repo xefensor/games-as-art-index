@@ -38,10 +38,15 @@
     "narrative-legos"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Bloomsbury page opened in a browser and matched the title, editor, second edition, publication date, and ISBN; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official publisher record, edition, contributors, and ISBN manually verified."
   }
 }

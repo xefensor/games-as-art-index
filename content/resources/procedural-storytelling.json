@@ -42,10 +42,15 @@
     "characteristics-of-games"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Routledge page opened in a browser and matched the title, editors, edition, and ISBN; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official publisher record, editors, edition, and ISBN manually verified."
   }
 }

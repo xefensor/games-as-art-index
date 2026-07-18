@@ -38,10 +38,15 @@
     "game-feel-book"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Macmillan page opened in a browser and matched Richard Williams, the edition, page count, and ISBN; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official publisher record, author, edition details, and ISBN manually verified."
   }
 }

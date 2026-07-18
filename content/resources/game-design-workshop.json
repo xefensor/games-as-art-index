@@ -38,10 +38,15 @@
     "playful-production"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The official Routledge product page opened in a browser and matched the title, author, edition, and ISBN; automated requests receive 403."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Official publisher record and current edition metadata manually verified."
   }
 }

@@ -15,5 +15,6 @@ Describe the resource, collection, correction, or product change.
 - [ ] Existing published resource IDs remain unchanged.
 - [ ] Descriptions are factual and written in the Index's own words.
 - [ ] I ran `npm run catalogue:build` after content changes.
+- [ ] I ran `npm run editorial:audit` after catalogue, link-status, or thumbnail changes.
 - [ ] I ran `npm run validate:catalogue`, `npm run validate:thumbnails`, and `npm run check:browse`.
 - [ ] Related-resource and collection IDs resolve correctly.

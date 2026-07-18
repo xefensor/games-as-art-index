@@ -22,6 +22,7 @@ The public website is deployed to GitHub Pages from `main`. The Pages workflow v
 - Complete thumbnail coverage with source-aware discovery and generated editorial fallbacks
 - Click-to-load YouTube players (including verified official videos attached to publisher records), publisher-hosted PDF readers, and Google Books previews on supported resource pages, with original source links preserved
 - Resource pages with metadata, audience, learning outcomes, related records, and link-check dates
+- A committed editorial audit that distinguishes automated source checks, manual verification, and source-backed versus generated thumbnails
 - Automatic system theme plus explicit Auto, Light, and Dark controls
 - Locally saved resources and recently viewed history, with no account
 - Public GitHub issue forms for suggestions and catalogue problems, plus an in-browser JSON record-preparation tool for pull requests
@@ -69,6 +70,14 @@ npm run check:links
 ```
 
 The link checker classifies successful, restricted, redirected, broken, timed-out, and network-error results separately. Use `npm run check:links -- --help` for limits and timeout options. Validation runs automatically before every production build.
+
+Rebuild the committed reliability snapshot after catalogue, link-status, or thumbnail changes:
+
+```bash
+npm run editorial:audit
+```
+
+`reports/editorial-audit.json` records the source-check method, thumbnail evidence, and review priority for every resource. CI rejects stale audit data.
 
 ## Editorial model
 

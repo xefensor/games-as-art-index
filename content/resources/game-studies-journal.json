@@ -39,10 +39,15 @@
     "vghf-library"
   ],
   "lastChecked": "2026-07-18",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-18",
+    "note": "The journal root opened successfully and intentionally resolves to the current Game Studies issue."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
     "reviewedAt": "2026-07-18",
-    "note": ""
+    "note": "Journal identity, current-issue behavior, and free access manually verified."
   }
 }
