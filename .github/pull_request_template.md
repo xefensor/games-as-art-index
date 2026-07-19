@@ -18,3 +18,4 @@ Describe the resource, collection, correction, or product change.
 - [ ] I ran `npm run editorial:audit` after catalogue, link-status, or thumbnail changes.
 - [ ] I ran `npm run validate:catalogue`, `npm run validate:thumbnails`, and `npm run check:browse`.
 - [ ] Related-resource and collection IDs resolve correctly.
+- [ ] I did not hand-edit `public/link-status.json`; external-link snapshots are maintained separately.

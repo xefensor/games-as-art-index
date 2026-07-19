@@ -30,7 +30,7 @@ body:
     id: format
     attributes:
       label: Format
-      options: [Talk, Book, Article, Paper, Guide, Documentation, Course, Archive, Other]
+      options: [Talk, Book, Article, Article archive, Paper, Guide, Documentation, Course, Interview, Journal, Archive, Other]
     validations:
       required: true
   - type: textarea

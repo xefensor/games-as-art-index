@@ -5,6 +5,9 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const labels = JSON.parse(fs.readFileSync(path.join(root, ".github", "labels.json"), "utf8"));
 const names = new Set(labels.map(label => label.name));
+const catalogueTypes = new Set(fs.readdirSync(path.join(root, "content", "resources"))
+  .filter(name => name.endsWith(".json"))
+  .map(name => JSON.parse(fs.readFileSync(path.join(root, "content", "resources", name), "utf8")).type));
 const errors = [];
 
 if (names.size !== labels.length) errors.push(".github/labels.json contains duplicate names");
@@ -24,6 +27,13 @@ for (const template of templates) {
   if (!declared.length) errors.push(`${template}: no managed label is declared`);
   for (const label of declared) if (!names.has(label)) errors.push(`${template}: label ${label} is not declared in .github/labels.json`);
   if (!/validations:\s*\n\s+required:\s*true/m.test(source)) errors.push(`${template}: no required fields were found`);
+  if (template === "resource-suggestion.yml") {
+    const formatOptions = source.match(/id:\s*format[\s\S]*?options:\s*\[([^\]]+)\]/)?.[1]
+      ?.split(",")
+      .map(value => value.trim().replace(/^['"]|['"]$/g, ""))
+      .filter(Boolean) || [];
+    for (const type of catalogueTypes) if (!formatOptions.includes(type)) errors.push(`${template}: catalogue format ${type} is missing from the suggestion form`);
+  }
 }
 
 if (errors.length) {

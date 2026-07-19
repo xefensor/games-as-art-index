@@ -86,7 +86,7 @@ if (fs.existsSync(linkStatusUrl)) {
     if (!allowedLinkStates.has(result.status)) fail(`link-status.json has unknown state ${result.status} for ${result.id}`);
     if (!result.checkedAt || Number.isNaN(Date.parse(result.checkedAt))) fail(`link-status.json has an invalid checkedAt for ${result.id}`);
   }
-  if (linkStatus.complete && resultIds.size !== resources.length) fail(`complete link-status.json covers ${resultIds.size} of ${resources.length} resources`);
+  if (linkStatus.complete && resultIds.size !== resources.length) warn(`link-status.json covers ${resultIds.size} of ${resources.length} resources; missing records will appear as needs rechecking`);
 }
 
 for (const warning of warnings) console.warn(`Warning: ${warning}`);

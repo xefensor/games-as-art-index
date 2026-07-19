@@ -21,16 +21,17 @@ For a small, exact correction, you do not need to clone the repository:
 4. Select **Propose changes**. GitHub creates a branch or fork and starts a pull request.
 5. Complete the pull-request checklist and wait for the automated checks and editorial review.
 
-New entries usually begin with a suggestion issue because they also need catalogue ordering and a verified thumbnail. Experienced contributors may submit the complete record, catalogue update, and thumbnail in one pull request.
+New entries usually begin with a suggestion issue because they also need catalogue ordering, a thumbnail record, and editorial review. A small, exact correction does not need a separate issue. Experienced contributors may submit a complete new entry in one pull request by following the steps below.
 
 ## Submit a catalogue change from a local clone
 
 1. Create a branch from `main`.
 2. Add or edit one file in `content/resources/` or `content/collections/`.
 3. Update the appropriate order array in `content/catalogue.json` when adding a record.
-4. Add or refresh the local thumbnail and `public/thumbnail-manifest.json` entry when necessary.
-5. Run the catalogue build and validation commands.
-6. Open a pull request and include the editorial evidence requested by the template.
+4. Add or refresh the local thumbnail and its `public/thumbnail-manifest.json` entry when necessary.
+5. Run `npm run catalogue:build` and `npm run editorial:audit` to synchronize generated catalogue and audit data.
+6. Run the validation commands below.
+7. Open a pull request and include the editorial evidence requested by the template.
 
 ```bash
 npm install
@@ -42,7 +43,9 @@ npm run check:browse
 npm run build
 ```
 
-CI verifies that generated output and the editorial audit are synchronized, contribution forms reference managed GitHub labels, IDs and relationships are valid, thumbnails exist, browser interactions pass, and the production site builds.
+CI verifies that generated output and the editorial audit are synchronized, contribution forms reference managed GitHub labels and catalogue formats, IDs and relationships are valid, thumbnails exist, browser interactions pass, and both site builds complete.
+
+External-link verification is maintained separately from pull-request CI because publisher sites frequently block automated requests. Do not hand-edit `public/link-status.json`. A new resource that is not yet present in the latest snapshot is published as **Needs rechecking** until a maintainer or the scheduled link-health workflow verifies it.
 
 ## Editorial rules
 

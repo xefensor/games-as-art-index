@@ -298,6 +298,7 @@ assert.match(contribution.document.querySelector('.contribution-options a[href*=
 assert.match(contribution.document.querySelector('.contribution-options a[href$="CONTRIBUTING.md"]').getAttribute("href"), /^https:\/\/github\.com\//, "exact edits point to the pull-request guide");
 assert.equal(contribution.document.querySelectorAll(".contribution-decision article").length, 4, "the page explains review, checks, and deployment");
 assert.equal(contribution.document.querySelector("#suggestionForm"), null, "the site no longer implies that browser-local suggestions reach maintainers");
+assert.match(contribution.document.querySelector(".contribution-options article:nth-child(3)").textContent, /issue optional/i, "small exact edits do not require a preliminary issue");
 
 const curator = createLibrary("#/curator", {}, trustCatalogue);
 assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"]`), "the maintenance dashboard prioritizes broken resources from the deployed snapshot");
@@ -319,6 +320,8 @@ assert.equal(curator.document.querySelector('#curator-panel-catalogue').hasAttri
 assert.equal(curator.document.querySelector('#curator-panel-health').hasAttribute("hidden"), true, "the previous curator panel is hidden");
 assert.equal(curator.values.get("gaa-curator-tab"), '"catalogue"', "curator tab selection is remembered locally");
 assert.ok(curator.document.querySelector(".catalogue-builder"), "the curator workbench includes the catalogue builder");
+assert.match(curator.document.querySelector(".catalogue-builder-export").textContent, /catalogue ordering.*thumbnail record.*editorial audit/i, "the JSON helper explains the additional files needed for a new resource");
+assert.match(curator.document.querySelector(".catalogue-builder-export").textContent, /link verification is maintained separately/i, "the JSON helper does not imply that a local draft updates link health");
 assert.equal(curator.document.querySelector("#importCatalogueRecords").getAttribute("accept").includes(".csv"), true, "the catalogue builder accepts CSV batches");
 assert.ok(curator.document.querySelector("#downloadCatalogueTemplate"), "curators can download the CSV template");
 const publishedSource = curator.document.querySelector("#catalogueRecordSource");
@@ -365,6 +368,14 @@ const rememberedCuratorTab = createLibrary("#/curator", { "gaa-curator-tab": '"s
 assert.equal(rememberedCuratorTab.document.querySelector('#curator-tab-suggestions').getAttribute("aria-selected"), "true", "the last curator tab is restored on a later visit");
 assert.equal(rememberedCuratorTab.document.querySelector('#curator-panel-suggestions').hasAttribute("hidden"), false, "the remembered curator panel opens directly");
 assert.equal(rememberedCuratorTab.document.querySelectorAll(".github-workflow li").length, 4, "the GitHub workflow explains the complete issue-to-deployment path");
+assert.match(rememberedCuratorTab.document.querySelector(".github-workflow li:first-child").textContent, /issue or direct edit/i, "the workflow distinguishes discussion from exact corrections");
+assert.match(rememberedCuratorTab.document.querySelector(".github-workflow li:nth-child(3)").textContent, /external links are checked separately/i, "pull-request validation is not described as a live external-link check");
+
+const pendingVerificationCatalogue = structuredClone(catalogue);
+pendingVerificationCatalogue.linkStatus = { ...linkSnapshot, results: linkSnapshot.results.filter(item => item.id !== firstId) };
+const pendingVerification = createLibrary(`#/resource/${firstId}`, {}, pendingVerificationCatalogue);
+assert.equal(pendingVerification.document.querySelector(".trust-badge").dataset.trust, "needs-rechecking", "a new resource missing from the deployed link snapshot is never presented as verified");
+assert.match(pendingVerification.document.querySelector(".resource-trust p").textContent, /not yet included in the latest published link-health snapshot/i, "new resources explain why verification is pending");
 
 const currentTrustCatalogue = structuredClone(catalogue);
 currentTrustCatalogue.linkStatus = linkSnapshot;
