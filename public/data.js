@@ -5,7 +5,7 @@
   const locationHref = location.href || `${location.origin}${location.pathname}${location.search || ""}${location.hash || ""}`;
   const siteRoot = new URL(document.querySelector('meta[name="gaa-site-root"]')?.content || "/", locationHref);
   const asset = name => new URL(name, siteRoot).href;
-  const catalogueRequest = fetch(asset("catalogue.json?v=catalogue-4"), { cache: "no-store" })
+  const catalogueRequest = fetch(asset("catalogue.json?v=catalogue-5"), { cache: "no-store" })
     .then(response => {
       if (!response.ok) throw new Error(`Catalogue request failed with ${response.status}`);
       return response.json();

@@ -1,13 +1,15 @@
 {
   "id": "games-critically",
-  "title": "Writing game criticism",
-  "description": "Move from writing closely about individual games to academic research, critical play, procedural rhetoric, and culturally situated design.",
+  "title": "Game criticism and research",
+  "description": "Begin with close writing about individual games, broaden into foundational theory and critical design, compare procedural and culturally situated approaches, then use the anthology and journal as research routes.",
   "color": "red",
   "resources": [
     "how-talk-videogames",
-    "game-studies-journal",
+    "rules-of-play",
     "critical-play",
     "persuasive-games",
-    "queer-games-avant-garde"
+    "queer-games-avant-garde",
+    "game-design-reader",
+    "game-studies-journal"
   ]
 }

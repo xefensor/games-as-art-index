@@ -14,6 +14,7 @@ const allowedManualLinkStates = new Set(["ok"]);
 
 if (catalogue.schemaVersion !== 1) fail("schemaVersion must be 1");
 if (!isDate(catalogue.updatedAt)) fail("updatedAt must be an ISO date");
+if (!isDate(catalogue.editorialAuditAt)) fail("editorialAuditAt must be an ISO date");
 if (!Array.isArray(catalogue.resources)) fail("resources must be an array");
 if (!Array.isArray(catalogue.collections)) fail("collections must be an array");
 if (!catalogue.taxonomy || typeof catalogue.taxonomy !== "object") fail("taxonomy is missing");

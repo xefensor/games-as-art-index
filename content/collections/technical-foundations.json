@@ -1,14 +1,13 @@
 {
   "id": "technical-foundations",
-  "title": "Game programming foundations",
-  "description": "Progress from reusable code structure and deterministic simulation to shaders, engine rendering, real-time graphics, and physically based light transport.",
+  "title": "Gameplay programming and simulation",
+  "description": "Move from reusable game-code architecture into pathfinding, fixed-step simulation, networking, historical state, and primary-source engine code.",
   "color": "blue",
   "resources": [
     "game-programming-patterns",
+    "red-blob-pathfinding",
     "gaffer-on-games",
-    "book-of-shaders",
-    "catlike-coding",
-    "real-time-rendering",
-    "pbr-book"
+    "braid-rewind-implementation",
+    "id-source-code"
   ]
 }

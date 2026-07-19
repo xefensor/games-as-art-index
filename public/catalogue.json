@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-07-19",
+  "editorialAuditAt": "2026-07-19",
   "editorialStatuses": [
     "draft",
     "reviewed",
@@ -45,47 +46,51 @@
   "collections": [
     {
       "id": "start-game-design",
-      "title": "Game design fundamentals",
-      "description": "Build a working vocabulary for mechanics and player experience, then move through prototyping, playtesting, feedback, and reflective design practice.",
+      "title": "Game design: systems, play, and experience",
+      "description": "Build a practical vocabulary for mechanics and player experience, test ideas through play, study moment-to-moment feel, and compare several theories of why games engage people.",
       "color": "red",
       "resources": [
+        "theory-of-fun",
         "elements-game-design",
         "game-design-workshop",
         "mda-framework",
-        "juice-it-or-lose-it",
+        "characteristics-of-games",
+        "game-feel-book",
         "designing-games"
       ]
     },
     {
       "id": "first-project",
       "title": "Build and finish your first game",
-      "description": "Start with either the Godot or Unity starter course, then use the scope, production, accessibility, and release guidance to finish a small playable project.",
+      "description": "Choose one of the first three engine introductions—Godot, Unity, or Unreal—then continue with practical guidance on scope, accessibility, production, and actually finishing a small playable project.",
       "color": "violet",
       "resources": [
-        "finishing-a-game",
         "godot-first-2d",
         "unity-create-code",
+        "unreal-get-started",
+        "finishing-a-game",
         "gaming-accessibility-fundamentals",
         "playful-production"
       ]
     },
     {
       "id": "level-and-space",
-      "title": "Teaching through level design",
-      "description": "Study how movement verbs, routes, landmarks, architecture, difficulty, and environmental pacing teach players without constant explanation.",
+      "title": "Level design: teaching, pacing, and place",
+      "description": "Move from architectural principles to concrete studies of movement, puzzle spaces, emotional pacing, environmental art, and the tools used to build playable places.",
       "color": "gold",
       "resources": [
+        "architectural-level-design",
         "designing-celeste",
         "witness-architecture",
-        "architectural-level-design",
-        "valve-level-design",
-        "designing-journey"
+        "designing-journey",
+        "art-of-firewatch",
+        "valve-level-design"
       ]
     },
     {
       "id": "narrative-design",
-      "title": "Writing and procedural narrative",
-      "description": "Start with the affordances of digital narrative, then study collaborative writing, interactive-fiction practice, systemic story structures, and procedural generation.",
+      "title": "Narrative design beyond branching",
+      "description": "Start with what digital media can do differently, then move through collaborative game writing, interactive-fiction practice, character systems, and procedural approaches to story.",
       "color": "violet",
       "resources": [
         "hamlet-holodeck",
@@ -97,70 +102,116 @@
     },
     {
       "id": "sound-and-music",
-      "title": "Game audio in practice",
-      "description": "Move from interactive-audio fundamentals into engine implementation, adaptive music, sound synthesis, and production-ready source material.",
+      "title": "Game audio: intention to implementation",
+      "description": "Learn the structure of interactive audio, implement it in game tools, plan adaptive music, and compare two detailed production cases before exploring procedural sound.",
       "color": "blue",
       "resources": [
         "game-audio-tutorial",
         "game-audio-implementation",
         "composers-guide-game-music",
+        "witness-audio",
         "doom-behind-music",
-        "designing-sound",
-        "sonniss-gdc-audio"
+        "designing-sound"
       ]
     },
     {
       "id": "inclusive-design",
-      "title": "Designing accessible games",
-      "description": "Learn how disabled players encounter games, translate barriers into design patterns, apply detailed guidelines, test decisions, and build inclusion into production.",
+      "title": "Accessibility as a design practice",
+      "description": "Learn how disabled players encounter barriers, turn player needs into design patterns and testable criteria, and connect accessible features with inclusive research and production.",
       "color": "green",
       "resources": [
         "gaming-accessibility-fundamentals",
         "accessible-player-experiences",
         "accessibility-guidelines",
         "xbox-accessibility-guidelines",
-        "inclusive-game-design-paper"
+        "inclusive-game-design-paper",
+        "igda-accessibility-resources"
       ]
     },
     {
       "id": "technical-foundations",
-      "title": "Game programming foundations",
-      "description": "Progress from reusable code structure and deterministic simulation to shaders, engine rendering, real-time graphics, and physically based light transport.",
+      "title": "Gameplay programming and simulation",
+      "description": "Move from reusable game-code architecture into pathfinding, fixed-step simulation, networking, historical state, and primary-source engine code.",
       "color": "blue",
       "resources": [
         "game-programming-patterns",
+        "red-blob-pathfinding",
         "gaffer-on-games",
+        "braid-rewind-implementation",
+        "id-source-code"
+      ]
+    },
+    {
+      "id": "graphics-and-technical-art",
+      "title": "Real-time graphics and technical art",
+      "description": "Progress from editable shader exercises to engine-specific rendering, a shipped game's art-direction pipeline, broad real-time graphics, and a complete physically based renderer.",
+      "color": "blue",
+      "resources": [
         "book-of-shaders",
         "catlike-coding",
+        "tf2-illustrative-rendering",
         "real-time-rendering",
         "pbr-book"
       ]
     },
     {
+      "id": "visual-direction",
+      "title": "Visual direction for games",
+      "description": "Study motion, light, pixel-level construction, audiovisual feedback, environment production, and the translation of an illustrative target into a working rendering system.",
+      "color": "gold",
+      "resources": [
+        "animators-survival-kit",
+        "color-and-light",
+        "pixel-logic",
+        "art-of-screenshake",
+        "art-of-firewatch",
+        "tf2-illustrative-rendering"
+      ]
+    },
+    {
+      "id": "production-and-labor",
+      "title": "How games get made: production and labor",
+      "description": "Follow a project from cross-disciplinary dependencies and scope through iteration and release, then examine reported histories of crunch, layoffs, closures, and unstable game-industry work.",
+      "color": "violet",
+      "resources": [
+        "door-problem",
+        "finishing-a-game",
+        "playful-production",
+        "spelunky-book",
+        "ftl-postmortem",
+        "into-breach-postmortem",
+        "blood-sweat-pixels",
+        "press-reset"
+      ]
+    },
+    {
       "id": "history-from-sources",
-      "title": "Studying game history from evidence",
-      "description": "Build historical arguments from first-hand postmortems, source code, archives, hardware constraints, and carefully researched platform studies.",
+      "title": "Researching game history from evidence",
+      "description": "Learn to combine first-hand postmortems, platform studies, source code, preserved software, and archival documents instead of relying on retrospective summaries alone.",
       "color": "green",
       "resources": [
         "doom-postmortem",
         "prince-of-persia-postmortem",
-        "id-source-code",
-        "vghf-library",
         "racing-the-beam",
-        "i-am-error"
+        "i-am-error",
+        "id-source-code",
+        "internet-archive-software",
+        "vghf-library"
       ]
     },
     {
       "id": "games-critically",
-      "title": "Writing game criticism",
-      "description": "Move from writing closely about individual games to academic research, critical play, procedural rhetoric, and culturally situated design.",
+      "title": "Game criticism and research",
+      "description": "Begin with close writing about individual games, broaden into foundational theory and critical design, compare procedural and culturally situated approaches, then use the anthology and journal as research routes.",
       "color": "red",
       "resources": [
         "how-talk-videogames",
-        "game-studies-journal",
+        "rules-of-play",
         "critical-play",
         "persuasive-games",
-        "queer-games-avant-garde"
+        "queer-games-avant-garde",
+        "game-design-reader",
+        "game-studies-journal"
       ]
     },
     {
@@ -200,7 +251,7 @@
       "games": [
         "Journey"
       ],
-      "description": "Journey's creative director explains the game's original idea, emotional structure, anonymous multiplayer, iteration, and production difficulties.",
+      "description": "Journey is a short, largely wordless adventure about crossing a desert toward a distant mountain. Its creative director explains the emotional arc, anonymous multiplayer, spatial pacing, iteration, and production difficulties behind it.",
       "useful": "A clear example of tracing an artistic intention through concrete design and production choices.",
       "url": "https://gdcvault.com/play/1017700/Designing",
       "embed": {
@@ -226,15 +277,15 @@
         "Protect a creative goal through iteration and production problems"
       ],
       "next": [
-        "mda-framework",
-        "spelunky-book",
+        "designing-celeste",
+        "witness-architecture",
         "playful-production"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -394,15 +445,15 @@
         "Connect an adaptive score to the pace of play"
       ],
       "next": [
-        "witness-audio",
-        "witness-music",
-        "designing-journey"
+        "game-audio-tutorial",
+        "game-audio-implementation",
+        "witness-audio"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -500,8 +551,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Kept as a concise standalone companion to The Art of Screenshake; the visual-direction path uses the latter to avoid two near-duplicate demonstrations in sequence."
       }
     },
     {
@@ -736,15 +787,15 @@
         "Broaden design goals beyond usability and entertainment"
       ],
       "next": [
-        "game-design-reader",
-        "rules-of-play",
-        "witness-music"
+        "persuasive-games",
+        "queer-games-avant-garde",
+        "game-studies-journal"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -884,13 +935,13 @@
       "next": [
         "rules-of-play",
         "critical-play",
-        "characteristics-of-games"
+        "game-studies-journal"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -1549,8 +1600,8 @@
       "level": "All levels",
       "topics": [
         "Audio",
-        "Game studies",
-        "Creative direction"
+        "Creative direction",
+        "Design philosophy"
       ],
       "games": [
         "The Witness"
@@ -1567,6 +1618,7 @@
       "subjects": [
         "Audio",
         "Narrative",
+        "Game design",
         "Criticism & theory"
       ],
       "lengthClass": "Under 30 min",
@@ -1581,14 +1633,14 @@
       ],
       "next": [
         "witness-audio",
-        "witness-dev-archive",
-        "critical-play"
+        "blow-medium-is-message",
+        "witness-dev-archive"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -1596,7 +1648,7 @@
       "id": "accessibility-guidelines",
       "type": "Guide",
       "title": "Game Accessibility Guidelines",
-      "creator": "Independent developer and accessibility group",
+      "creator": "Barrie Ellis, Dimitris Grammenos, Ian Hamilton, and collaborators",
       "publisher": "Game Accessibility Guidelines",
       "year": 2021,
       "length": "Reference",
@@ -1628,15 +1680,15 @@
         "Use examples and implementation notes during reviews"
       ],
       "next": [
-        "playful-production",
-        "door-problem",
-        "godot-first-2d"
+        "gaming-accessibility-fundamentals",
+        "accessible-player-experiences",
+        "xbox-accessibility-guidelines"
       ],
       "lastChecked": "2026-07-18",
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": ""
       }
     },
@@ -2018,9 +2070,9 @@
         "Build evidence for historical research questions"
       ],
       "next": [
-        "gdc-vault",
-        "game-design-reader",
-        "id-source-code"
+        "internet-archive-software",
+        "id-source-code",
+        "racing-the-beam"
       ],
       "lastChecked": "2026-07-18",
       "manualLinkStatus": {
@@ -2031,7 +2083,7 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
+        "reviewedAt": "2026-07-19",
         "note": "Replaced an obsolete organization-page redirect with the official searchable library catalogue."
       }
     },
@@ -2049,7 +2101,10 @@
         "Production",
         "Game design",
         "Programming",
-        "Audio"
+        "Audio",
+        "Visual art",
+        "Narrative",
+        "History"
       ],
       "games": [],
       "description": "The official archive of GDC session videos, audio, and presentation material, combining free records with subscriber-only sessions.",
@@ -2060,7 +2115,10 @@
         "Game design",
         "Programming",
         "Production",
-        "Audio"
+        "Audio",
+        "Visual art",
+        "Narrative",
+        "History"
       ],
       "lengthClass": "Reference",
       "relevance": [
@@ -2082,8 +2140,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Kept as a catalogue-only source directory rather than a learning-path step because it spans thousands of sessions and multiple disciplines."
       }
     },
     {
@@ -2539,8 +2597,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Included as an advanced implementation reference for game graphics and technical art rather than as a general rendering recommendation."
       }
     },
     {
@@ -2685,8 +2743,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": "Official publisher record, author, edition details, and ISBN manually verified."
+        "reviewedAt": "2026-07-19",
+        "note": "Official edition details verified. Included as adjacent craft knowledge because timing, spacing, weight, and acting directly support gameplay and character animation."
       }
     },
     {
@@ -2732,8 +2790,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Included as adjacent craft knowledge for concept art, environment art, lighting, and coherent invented game spaces."
       }
     },
     {
@@ -2930,8 +2988,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Included as advanced adjacent craft knowledge for procedural game audio and sound behavior, despite not being exclusively about games."
       }
     },
     {
@@ -3076,8 +3134,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": "Official archive, free access, and current sound-effects licensing statement manually verified."
+        "reviewedAt": "2026-07-19",
+        "note": "Official archive and licensing verified. Kept as legal production source material, but removed from the guided audio curriculum because it is an asset archive rather than instruction."
       }
     },
     {
@@ -3176,8 +3234,8 @@
       "addedAt": "2026-07-18",
       "editorial": {
         "status": "published",
-        "reviewedAt": "2026-07-18",
-        "note": ""
+        "reviewedAt": "2026-07-19",
+        "note": "Included as foundational digital-media theory because its account of agency, immersion, space, and procedurality remains directly useful to narrative designers."
       }
     },
     {

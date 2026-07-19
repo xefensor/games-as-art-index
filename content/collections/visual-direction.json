@@ -1,0 +1,14 @@
+{
+  "id": "visual-direction",
+  "title": "Visual direction for games",
+  "description": "Study motion, light, pixel-level construction, audiovisual feedback, environment production, and the translation of an illustrative target into a working rendering system.",
+  "color": "gold",
+  "resources": [
+    "animators-survival-kit",
+    "color-and-light",
+    "pixel-logic",
+    "art-of-screenshake",
+    "art-of-firewatch",
+    "tf2-illustrative-rendering"
+  ]
+}

@@ -1,13 +1,15 @@
 {
   "id": "start-game-design",
-  "title": "Game design fundamentals",
-  "description": "Build a working vocabulary for mechanics and player experience, then move through prototyping, playtesting, feedback, and reflective design practice.",
+  "title": "Game design: systems, play, and experience",
+  "description": "Build a practical vocabulary for mechanics and player experience, test ideas through play, study moment-to-moment feel, and compare several theories of why games engage people.",
   "color": "red",
   "resources": [
+    "theory-of-fun",
     "elements-game-design",
     "game-design-workshop",
     "mda-framework",
-    "juice-it-or-lose-it",
+    "characteristics-of-games",
+    "game-feel-book",
     "designing-games"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "narrative-design",
-  "title": "Writing and procedural narrative",
-  "description": "Start with the affordances of digital narrative, then study collaborative writing, interactive-fiction practice, systemic story structures, and procedural generation.",
+  "title": "Narrative design beyond branching",
+  "description": "Start with what digital media can do differently, then move through collaborative game writing, interactive-fiction practice, character systems, and procedural approaches to story.",
   "color": "violet",
   "resources": [
     "hamlet-holodeck",

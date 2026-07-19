@@ -1,14 +1,15 @@
 {
   "id": "history-from-sources",
-  "title": "Studying game history from evidence",
-  "description": "Build historical arguments from first-hand postmortems, source code, archives, hardware constraints, and carefully researched platform studies.",
+  "title": "Researching game history from evidence",
+  "description": "Learn to combine first-hand postmortems, platform studies, source code, preserved software, and archival documents instead of relying on retrospective summaries alone.",
   "color": "green",
   "resources": [
     "doom-postmortem",
     "prince-of-persia-postmortem",
-    "id-source-code",
-    "vghf-library",
     "racing-the-beam",
-    "i-am-error"
+    "i-am-error",
+    "id-source-code",
+    "internet-archive-software",
+    "vghf-library"
   ]
 }

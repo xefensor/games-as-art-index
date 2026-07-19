@@ -12,7 +12,10 @@
     "Production",
     "Game design",
     "Programming",
-    "Audio"
+    "Audio",
+    "Visual art",
+    "Narrative",
+    "History"
   ],
   "games": [],
   "description": "The official archive of GDC session videos, audio, and presentation material, combining free records with subscriber-only sessions.",
@@ -23,7 +26,10 @@
     "Game design",
     "Programming",
     "Production",
-    "Audio"
+    "Audio",
+    "Visual art",
+    "Narrative",
+    "History"
   ],
   "lengthClass": "Reference",
   "relevance": [
@@ -45,7 +51,7 @@
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
-    "note": ""
+    "reviewedAt": "2026-07-19",
+    "note": "Kept as a catalogue-only source directory rather than a learning-path step because it spans thousands of sessions and multiple disciplines."
   }
 }

@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-07-19",
+  "editorialAuditAt": "2026-07-19",
   "editorialStatuses": [
     "draft",
     "reviewed",
@@ -50,6 +51,9 @@
     "sound-and-music",
     "inclusive-design",
     "technical-foundations",
+    "graphics-and-technical-art",
+    "visual-direction",
+    "production-and-labor",
     "history-from-sources",
     "games-critically",
     "jonathan-blow"

@@ -2,7 +2,7 @@
   "id": "accessibility-guidelines",
   "type": "Guide",
   "title": "Game Accessibility Guidelines",
-  "creator": "Independent developer and accessibility group",
+  "creator": "Barrie Ellis, Dimitris Grammenos, Ian Hamilton, and collaborators",
   "publisher": "Game Accessibility Guidelines",
   "year": 2021,
   "length": "Reference",
@@ -34,15 +34,15 @@
     "Use examples and implementation notes during reviews"
   ],
   "next": [
-    "playful-production",
-    "door-problem",
-    "godot-first-2d"
+    "gaming-accessibility-fundamentals",
+    "accessible-player-experiences",
+    "xbox-accessibility-guidelines"
   ],
   "lastChecked": "2026-07-18",
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
+    "reviewedAt": "2026-07-19",
     "note": ""
   }
 }

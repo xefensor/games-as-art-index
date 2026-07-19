@@ -36,15 +36,15 @@
     "Connect an adaptive score to the pace of play"
   ],
   "next": [
-    "witness-audio",
-    "witness-music",
-    "designing-journey"
+    "game-audio-tutorial",
+    "game-audio-implementation",
+    "witness-audio"
   ],
   "lastChecked": "2026-07-18",
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
+    "reviewedAt": "2026-07-19",
     "note": ""
   }
 }

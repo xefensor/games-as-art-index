@@ -11,6 +11,14 @@ const thumbnails = read("public/thumbnail-manifest.json");
 const outputPath = path.join(root, "reports", "editorial-audit.json");
 const checkOnly = process.argv.includes("--check");
 const linkById = new Map(links.results.map(result => [result.id, result]));
+const collectionsByResource = new Map();
+for (const collection of catalogue.collections) {
+  for (const id of collection.resources) {
+    const memberships = collectionsByResource.get(id) || [];
+    memberships.push(collection.id);
+    collectionsByResource.set(id, memberships);
+  }
+}
 
 const resources = catalogue.resources.map(resource => {
   const link = linkById.get(resource.id);
@@ -19,6 +27,7 @@ const resources = catalogue.resources.map(resource => {
   const sourceConfirmed = link?.status === "ok";
   const sourceImage = thumbnail?.method !== "generated";
   const priority = !sourceConfirmed ? "high" : resource.featured && !sourceImage ? "high" : !sourceImage ? "medium" : "low";
+  const collectionIds = collectionsByResource.get(resource.id) || [];
   return {
     id: resource.id,
     title: resource.title,
@@ -28,6 +37,9 @@ const resources = catalogue.resources.map(resource => {
     sourceStatus: link?.status || "missing",
     thumbnailEvidence: sourceImage ? thumbnail.method : "generated",
     featured: Boolean(resource.featured),
+    curation: collectionIds.length ? "guided-path" : "catalogue-only",
+    collectionIds,
+    editorialNote: resource.editorial.note,
     priority
   };
 });
@@ -36,6 +48,7 @@ const count = predicate => resources.filter(predicate).length;
 const audit = {
   schemaVersion: 1,
   catalogueUpdatedAt: catalogue.updatedAt,
+  editorialAuditAt: catalogue.editorialAuditAt,
   linkSnapshotAt: links.generatedAt,
   thumbnailSnapshotAt: thumbnails.generatedAt,
   resourceCount: resources.length,
@@ -46,6 +59,9 @@ const audit = {
     sourceThumbnails: count(item => item.thumbnailEvidence !== "generated"),
     generatedThumbnails: count(item => item.thumbnailEvidence === "generated"),
     featuredNeedingSourceThumbnail: count(item => item.featured && item.thumbnailEvidence === "generated"),
+    guidedResources: count(item => item.curation === "guided-path"),
+    catalogueOnlyResources: count(item => item.curation === "catalogue-only"),
+    multiPathResources: count(item => item.collectionIds.length > 1),
     highPriority: count(item => item.priority === "high")
   },
   resources

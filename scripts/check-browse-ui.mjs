@@ -180,10 +180,22 @@ assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence 
 assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .direct-control").length, 9, "every path entry can open its original source directly");
 const audioCollection = catalogue.collections.find(item => item.id === "sound-and-music");
 assert.ok(audioCollection.resources.includes("game-audio-implementation"), "the game-audio path includes a dedicated implementation resource");
+assert.ok(audioCollection.resources.includes("witness-audio"), "the game-audio path includes a detailed production case study");
+assert.ok(!audioCollection.resources.includes("sonniss-gdc-audio"), "the guided audio curriculum does not treat an asset archive as instruction");
+const programmingCollection = catalogue.collections.find(item => item.id === "technical-foundations");
+assert.ok(programmingCollection.resources.includes("red-blob-pathfinding") && programmingCollection.resources.includes("gaffer-on-games"), "the gameplay-programming path covers algorithms and simulation");
+assert.ok(!programmingCollection.resources.includes("pbr-book"), "gameplay programming is separated from the advanced graphics curriculum");
+const graphicsCollection = catalogue.collections.find(item => item.id === "graphics-and-technical-art");
+assert.ok(graphicsCollection.resources.includes("book-of-shaders") && graphicsCollection.resources.includes("pbr-book"), "the graphics path progresses from shaders to a full renderer");
+const visualCollection = catalogue.collections.find(item => item.id === "visual-direction");
+assert.ok(visualCollection.resources.includes("animators-survival-kit") && visualCollection.resources.includes("art-of-firewatch"), "the visual-direction path connects transferable craft with a shipped-game case study");
+const productionCollection = catalogue.collections.find(item => item.id === "production-and-labor");
+assert.ok(productionCollection.resources.includes("door-problem") && productionCollection.resources.includes("press-reset"), "the production path connects everyday dependencies with labor conditions");
 const historyCollection = catalogue.collections.find(item => item.id === "history-from-sources");
 assert.match(historyCollection.title, /history from evidence/i, "the history path accurately describes its mix of primary and secondary evidence");
+assert.ok(historyCollection.resources.includes("internet-archive-software") && historyCollection.resources.includes("vghf-library"), "the history path includes preserved software and archival documents");
 const firstProjectCollection = catalogue.collections.find(item => item.id === "first-project");
-assert.match(firstProjectCollection.description, /either the Godot or Unity starter course/i, "the first-game path makes its engine alternatives explicit");
+assert.match(firstProjectCollection.description, /Godot, Unity, or Unreal/i, "the first-game path makes its engine alternatives explicit");
 
 const generalHome = createLibrary("#/");
 assert.equal(generalHome.document.querySelector(".personal-home"), null, "the first-visit homepage remains general without local signals");

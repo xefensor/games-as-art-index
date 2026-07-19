@@ -1,12 +1,13 @@
 {
   "id": "first-project",
   "title": "Build and finish your first game",
-  "description": "Start with either the Godot or Unity starter course, then use the scope, production, accessibility, and release guidance to finish a small playable project.",
+  "description": "Choose one of the first three engine introductions—Godot, Unity, or Unreal—then continue with practical guidance on scope, accessibility, production, and actually finishing a small playable project.",
   "color": "violet",
   "resources": [
-    "finishing-a-game",
     "godot-first-2d",
     "unity-create-code",
+    "unreal-get-started",
+    "finishing-a-game",
     "gaming-accessibility-fundamentals",
     "playful-production"
   ]

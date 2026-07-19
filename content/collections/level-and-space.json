@@ -1,13 +1,14 @@
 {
   "id": "level-and-space",
-  "title": "Teaching through level design",
-  "description": "Study how movement verbs, routes, landmarks, architecture, difficulty, and environmental pacing teach players without constant explanation.",
+  "title": "Level design: teaching, pacing, and place",
+  "description": "Move from architectural principles to concrete studies of movement, puzzle spaces, emotional pacing, environmental art, and the tools used to build playable places.",
   "color": "gold",
   "resources": [
+    "architectural-level-design",
     "designing-celeste",
     "witness-architecture",
-    "architectural-level-design",
-    "valve-level-design",
-    "designing-journey"
+    "designing-journey",
+    "art-of-firewatch",
+    "valve-level-design"
   ]
 }

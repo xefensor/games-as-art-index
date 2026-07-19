@@ -16,7 +16,7 @@
   "games": [
     "Journey"
   ],
-  "description": "Journey's creative director explains the game's original idea, emotional structure, anonymous multiplayer, iteration, and production difficulties.",
+  "description": "Journey is a short, largely wordless adventure about crossing a desert toward a distant mountain. Its creative director explains the emotional arc, anonymous multiplayer, spatial pacing, iteration, and production difficulties behind it.",
   "useful": "A clear example of tracing an artistic intention through concrete design and production choices.",
   "url": "https://gdcvault.com/play/1017700/Designing",
   "embed": {
@@ -42,15 +42,15 @@
     "Protect a creative goal through iteration and production problems"
   ],
   "next": [
-    "mda-framework",
-    "spelunky-book",
+    "designing-celeste",
+    "witness-architecture",
     "playful-production"
   ],
   "lastChecked": "2026-07-18",
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
+    "reviewedAt": "2026-07-19",
     "note": ""
   }
 }

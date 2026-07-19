@@ -33,9 +33,9 @@
     "Build evidence for historical research questions"
   ],
   "next": [
-    "gdc-vault",
-    "game-design-reader",
-    "id-source-code"
+    "internet-archive-software",
+    "id-source-code",
+    "racing-the-beam"
   ],
   "lastChecked": "2026-07-18",
   "manualLinkStatus": {
@@ -46,7 +46,7 @@
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
+    "reviewedAt": "2026-07-19",
     "note": "Replaced an obsolete organization-page redirect with the official searchable library catalogue."
   }
 }

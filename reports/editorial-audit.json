@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogueUpdatedAt": "2026-07-19",
+  "editorialAuditAt": "2026-07-19",
   "linkSnapshotAt": "2026-07-19T00:15:08.000Z",
   "thumbnailSnapshotAt": "2026-07-19T00:15:08.000Z",
   "resourceCount": 78,
@@ -11,6 +12,9 @@
     "sourceThumbnails": 13,
     "generatedThumbnails": 65,
     "featuredNeedingSourceThumbnail": 2,
+    "guidedResources": 75,
+    "catalogueOnlyResources": 3,
+    "multiPathResources": 8,
     "highPriority": 2
   },
   "resources": [
@@ -18,11 +22,16 @@
       "id": "designing-journey",
       "title": "Designing Journey",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space"
+      ],
+      "editorialNote": "",
       "priority": "high"
     },
     {
@@ -34,6 +43,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "Updated to the official GDC Vault session page and verified the title, speakers, event year, track, and free access.",
       "priority": "low"
     },
     {
@@ -45,17 +59,27 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "Updated to the official GDC Vault session page and verified the title, speaker, event year, track, and free access.",
       "priority": "medium"
     },
     {
       "id": "doom-behind-music",
       "title": "DOOM: Behind the Music",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -67,17 +91,25 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "visual-direction"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "juice-it-or-lose-it",
       "title": "Juice It or Lose It",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "catalogue-only",
+      "collectionIds": [],
+      "editorialNote": "Kept as a concise standalone companion to The Art of Screenshake; the visual-direction path uses the latter to avoid two near-duplicate demonstrations in sequence.",
       "priority": "medium"
     },
     {
@@ -89,6 +121,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -100,6 +137,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -111,6 +153,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -122,17 +169,27 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "critical-play",
       "title": "Critical Play",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -144,6 +201,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -155,17 +217,28 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project",
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
       "id": "game-design-reader",
       "title": "The Game Design Reader",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -177,6 +250,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -188,6 +266,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -199,6 +282,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "Canonical creator-hosted article and publication details manually verified.",
       "priority": "medium"
     },
     {
@@ -210,6 +298,12 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project",
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -221,6 +315,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the GDC Vault session record.",
       "priority": "medium"
     },
     {
@@ -232,6 +331,12 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "technical-foundations",
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the GDC Vault session record.",
       "priority": "medium"
     },
     {
@@ -243,6 +348,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the GDC Vault session record.",
       "priority": "medium"
     },
     {
@@ -254,6 +364,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the CreativeMornings recording.",
       "priority": "medium"
     },
     {
@@ -265,6 +380,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the published conference recording.",
       "priority": "medium"
     },
     {
@@ -276,6 +396,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "Verified against the TIME interview page.",
       "priority": "medium"
     },
     {
@@ -287,6 +412,12 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space",
+        "jonathan-blow"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -298,28 +429,43 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "witness-music",
       "title": "On Music, Sound Effects and Story",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "manual",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "accessibility-guidelines",
       "title": "Game Accessibility Guidelines",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "high"
     },
     {
@@ -331,6 +477,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "technical-foundations"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -342,6 +493,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "technical-foundations"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -353,6 +509,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -364,6 +525,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -375,6 +541,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -386,6 +557,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space"
+      ],
+      "editorialNote": "Official Valve documentation category and access manually verified.",
       "priority": "medium"
     },
     {
@@ -397,28 +573,42 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "technical-foundations",
+        "history-from-sources"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
       "id": "vghf-library",
       "title": "Video Game History Foundation Library",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "manual",
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": true,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "Replaced an obsolete organization-page redirect with the official searchable library catalogue.",
       "priority": "low"
     },
     {
       "id": "gdc-vault",
       "title": "GDC Vault",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "catalogue-only",
+      "collectionIds": [],
+      "editorialNote": "Kept as a catalogue-only source directory rather than a learning-path step because it spans thousands of sessions and multiple disciplines.",
       "priority": "medium"
     },
     {
@@ -430,6 +620,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "jonathan-blow"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -441,6 +636,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "Official publisher record and current edition metadata manually verified.",
       "priority": "medium"
     },
     {
@@ -452,6 +652,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -463,6 +668,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -474,6 +684,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "start-game-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -485,6 +700,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space"
+      ],
+      "editorialNote": "Official publisher record, edition, author, and subject coverage manually verified.",
       "priority": "medium"
     },
     {
@@ -496,6 +716,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "graphics-and-technical-art"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -507,17 +732,27 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "graphics-and-technical-art"
+      ],
+      "editorialNote": "Official publisher record, edition, authors, and ISBN manually verified.",
       "priority": "medium"
     },
     {
       "id": "pbr-book",
       "title": "Physically Based Rendering",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "graphics-and-technical-art"
+      ],
+      "editorialNote": "Included as an advanced implementation reference for game graphics and technical art rather than as a general rendering recommendation.",
       "priority": "medium"
     },
     {
@@ -529,6 +764,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "technical-foundations"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -540,28 +780,43 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "graphics-and-technical-art"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
       "id": "animators-survival-kit",
       "title": "The Animator’s Survival Kit",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "manual",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "visual-direction"
+      ],
+      "editorialNote": "Official edition details verified. Included as adjacent craft knowledge because timing, spacing, weight, and acting directly support gameplay and character animation.",
       "priority": "medium"
     },
     {
       "id": "color-and-light",
       "title": "Color and Light",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "visual-direction"
+      ],
+      "editorialNote": "Included as adjacent craft knowledge for concept art, environment art, lighting, and coherent invented game spaces.",
       "priority": "medium"
     },
     {
@@ -573,6 +828,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "visual-direction"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -584,6 +844,12 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "graphics-and-technical-art",
+        "visual-direction"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -595,17 +861,28 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space",
+        "visual-direction"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "designing-sound",
       "title": "Designing Sound",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "Included as advanced adjacent craft knowledge for procedural game audio and sound behavior, despite not being exclusively about games.",
       "priority": "medium"
     },
     {
@@ -617,6 +894,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -628,17 +910,25 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
       "id": "sonniss-gdc-audio",
       "title": "GameAudioGDC Sound Effects Archive",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "manual",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "catalogue-only",
+      "collectionIds": [],
+      "editorialNote": "Official archive and licensing verified. Kept as legal production source material, but removed from the guided audio curriculum because it is an asset archive rather than instruction.",
       "priority": "medium"
     },
     {
@@ -650,17 +940,27 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "sound-and-music"
+      ],
+      "editorialNote": "Official publisher record, authors, publication details, and ISBN manually verified.",
       "priority": "medium"
     },
     {
       "id": "hamlet-holodeck",
       "title": "Hamlet on the Holodeck",
       "editorialStatus": "published",
-      "reviewedAt": "2026-07-18",
+      "reviewedAt": "2026-07-19",
       "sourceCheck": "automated",
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "narrative-design"
+      ],
+      "editorialNote": "Included as foundational digital-media theory because its account of agency, immersion, space, and procedurality remains directly useful to narrative designers.",
       "priority": "medium"
     },
     {
@@ -672,6 +972,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "catalogue",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "narrative-design"
+      ],
+      "editorialNote": "Official publisher record, edition, contributors, and ISBN manually verified.",
       "priority": "low"
     },
     {
@@ -683,6 +988,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "narrative-design"
+      ],
+      "editorialNote": "Official publisher record, editors, edition, and ISBN manually verified.",
       "priority": "medium"
     },
     {
@@ -694,6 +1004,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "narrative-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -705,6 +1020,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "narrative-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -716,6 +1036,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -727,6 +1052,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "Updated to the publisher's canonical Hachette Book Group URL and verified the book metadata.",
       "priority": "medium"
     },
     {
@@ -738,6 +1068,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "level-and-space"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -749,6 +1084,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -760,6 +1100,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "production-and-labor"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -771,6 +1116,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -782,6 +1132,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -793,6 +1148,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -804,6 +1164,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "games-critically"
+      ],
+      "editorialNote": "Journal identity, current-issue behavior, and free access manually verified.",
       "priority": "medium"
     },
     {
@@ -815,6 +1180,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "history-from-sources"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -826,6 +1196,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -837,6 +1212,12 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "first-project",
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -848,6 +1229,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     },
     {
@@ -859,6 +1245,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "open-graph",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "low"
     },
     {
@@ -870,6 +1261,11 @@
       "sourceStatus": "ok",
       "thumbnailEvidence": "generated",
       "featured": false,
+      "curation": "guided-path",
+      "collectionIds": [
+        "inclusive-design"
+      ],
+      "editorialNote": "",
       "priority": "medium"
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "id": "production-and-labor",
+  "title": "How games get made: production and labor",
+  "description": "Follow a project from cross-disciplinary dependencies and scope through iteration and release, then examine reported histories of crunch, layoffs, closures, and unstable game-industry work.",
+  "color": "violet",
+  "resources": [
+    "door-problem",
+    "finishing-a-game",
+    "playful-production",
+    "spelunky-book",
+    "ftl-postmortem",
+    "into-breach-postmortem",
+    "blood-sweat-pixels",
+    "press-reset"
+  ]
+}

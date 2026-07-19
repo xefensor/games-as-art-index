@@ -10,8 +10,8 @@
   "level": "All levels",
   "topics": [
     "Audio",
-    "Game studies",
-    "Creative direction"
+    "Creative direction",
+    "Design philosophy"
   ],
   "games": [
     "The Witness"
@@ -28,6 +28,7 @@
   "subjects": [
     "Audio",
     "Narrative",
+    "Game design",
     "Criticism & theory"
   ],
   "lengthClass": "Under 30 min",
@@ -42,14 +43,14 @@
   ],
   "next": [
     "witness-audio",
-    "witness-dev-archive",
-    "critical-play"
+    "blow-medium-is-message",
+    "witness-dev-archive"
   ],
   "lastChecked": "2026-07-18",
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
+    "reviewedAt": "2026-07-19",
     "note": ""
   }
 }

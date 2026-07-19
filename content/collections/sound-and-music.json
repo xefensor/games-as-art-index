@@ -1,14 +1,14 @@
 {
   "id": "sound-and-music",
-  "title": "Game audio in practice",
-  "description": "Move from interactive-audio fundamentals into engine implementation, adaptive music, sound synthesis, and production-ready source material.",
+  "title": "Game audio: intention to implementation",
+  "description": "Learn the structure of interactive audio, implement it in game tools, plan adaptive music, and compare two detailed production cases before exploring procedural sound.",
   "color": "blue",
   "resources": [
     "game-audio-tutorial",
     "game-audio-implementation",
     "composers-guide-game-music",
+    "witness-audio",
     "doom-behind-music",
-    "designing-sound",
-    "sonniss-gdc-audio"
+    "designing-sound"
   ]
 }

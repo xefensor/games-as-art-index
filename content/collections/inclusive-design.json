@@ -1,13 +1,14 @@
 {
   "id": "inclusive-design",
-  "title": "Designing accessible games",
-  "description": "Learn how disabled players encounter games, translate barriers into design patterns, apply detailed guidelines, test decisions, and build inclusion into production.",
+  "title": "Accessibility as a design practice",
+  "description": "Learn how disabled players encounter barriers, turn player needs into design patterns and testable criteria, and connect accessible features with inclusive research and production.",
   "color": "green",
   "resources": [
     "gaming-accessibility-fundamentals",
     "accessible-player-experiences",
     "accessibility-guidelines",
     "xbox-accessibility-guidelines",
-    "inclusive-game-design-paper"
+    "inclusive-game-design-paper",
+    "igda-accessibility-resources"
   ]
 }

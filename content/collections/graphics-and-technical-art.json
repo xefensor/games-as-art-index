@@ -1,0 +1,13 @@
+{
+  "id": "graphics-and-technical-art",
+  "title": "Real-time graphics and technical art",
+  "description": "Progress from editable shader exercises to engine-specific rendering, a shipped game's art-direction pipeline, broad real-time graphics, and a complete physically based renderer.",
+  "color": "blue",
+  "resources": [
+    "book-of-shaders",
+    "catlike-coding",
+    "tf2-illustrative-rendering",
+    "real-time-rendering",
+    "pbr-book"
+  ]
+}
