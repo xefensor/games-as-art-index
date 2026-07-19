@@ -18,7 +18,7 @@ The public website is deployed to GitHub Pages from `main`. The Pages workflow v
 - 78 factual resource records with original external links
 - Typo-tolerant search across title, creator, publisher, game, format, level, and topic
 - Shareable URL filters for subject, format, access, experience, length, purpose, and sort order
-- Ten curated starting collections
+- Thirteen curated learning paths
 - Complete thumbnail coverage with source-aware discovery and generated editorial fallbacks
 - Click-to-load YouTube players (including verified official videos attached to publisher records), publisher-hosted PDF readers, and Google Books previews on supported resource pages, with original source links preserved
 - Resource pages with metadata, audience, learning outcomes, related records, and link-check dates
@@ -88,3 +88,12 @@ The catalogue points to existing knowledge rather than reproducing it. Each reco
 Future additions should favor durable educational, technical, historical, or critical material over news and product promotion. Records move through `draft`, `reviewed`, `published`, and `needs-rechecking` editorial states. Links and metadata should be checked before publication.
 
 The in-site editorial workspace reads the deployed link-health snapshot and can prepare record JSON locally. It does not publish or override catalogue data: accepted edits are reviewed in GitHub and merged through pull requests.
+
+## License
+
+The project uses two licenses because it contains both software and an editorial knowledge catalogue:
+
+- Application code and project infrastructure are available under the [MIT License](LICENSE).
+- Original catalogue writing, structured data, documentation, and project-generated thumbnails are available under [CC BY 4.0](CONTENT-LICENSE.md).
+
+Third-party covers, screenshots, video thumbnails, source-site images, trademarks, embedded media, linked resources, and dependencies are not relicensed. See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for the exact boundary and attribution guidance.

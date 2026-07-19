@@ -620,6 +620,7 @@ kbd { color: var(--muted); border: 0; background: transparent; font: 400 11px va
 .site-footer nav { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 25px; font-size: 11px; }
 .site-footer nav a:hover { color: var(--accent); }
 .site-footer > small { color: var(--muted); font: 500 8px/1.7 var(--mono); text-transform: uppercase; }
+.site-footer > small a { text-decoration: underline; text-underline-offset: 2px; }
 
 .search-dialog { width: min(820px, calc(100% - 30px)); max-height: 86vh; margin: auto; padding: 0; border: 1px solid var(--rule); background: var(--page); color: var(--text); }
 .search-dialog::backdrop { background: #0009; backdrop-filter: blur(5px); }

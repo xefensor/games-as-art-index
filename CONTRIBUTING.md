@@ -58,3 +58,7 @@ External-link verification is maintained separately from pull-request CI because
 - Preserve source and verification notes for thumbnails and embeds.
 
 Pull requests require human editorial review. Passing automation is necessary but does not guarantee inclusion.
+
+## Licensing contributions
+
+By submitting a contribution, you certify that you have the right to provide it and agree that original software contributions are licensed under the repository’s MIT License, while original catalogue data, annotations, documentation, and other editorial content are licensed under CC BY 4.0. Do not submit third-party media unless its source and reuse basis are clearly identified; external material is not relicensed merely because it appears in the Index.

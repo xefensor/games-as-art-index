@@ -2,6 +2,7 @@
   "name": "games-as-art-index",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "engines": {
     "node": ">=22.13.0"
@@ -13,8 +14,9 @@
     "editorial:audit": "node scripts/build-editorial-audit.mjs",
     "editorial:audit:check": "node scripts/build-editorial-audit.mjs --check",
     "pages:build": "npm run catalogue:build && node scripts/build-pages.mjs",
-    "validate:catalogue": "npm run catalogue:check && node scripts/validate-catalogue.mjs && npm run editorial:audit:check && npm run validate:contributions",
+    "validate:catalogue": "npm run catalogue:check && node scripts/validate-catalogue.mjs && npm run editorial:audit:check && npm run validate:contributions && npm run validate:license",
     "validate:contributions": "node scripts/validate-contributions.mjs",
+    "validate:license": "node scripts/validate-licensing.mjs",
     "validate:thumbnails": "node scripts/validate-thumbnails.mjs",
     "thumbnails:sync": "node scripts/sync-thumbnails.mjs",
     "check:browse": "node scripts/check-browse-ui.mjs",

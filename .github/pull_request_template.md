@@ -19,3 +19,4 @@ Describe the resource, collection, correction, or product change.
 - [ ] I ran `npm run validate:catalogue`, `npm run validate:thumbnails`, and `npm run check:browse`.
 - [ ] Related-resource and collection IDs resolve correctly.
 - [ ] I did not hand-edit `public/link-status.json`; external-link snapshots are maintained separately.
+- [ ] I have the right to contribute this material and understand that it will use the repository’s MIT or CC BY 4.0 license according to its type.

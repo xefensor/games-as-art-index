@@ -299,6 +299,12 @@ assert.match(contribution.document.querySelector('.contribution-options a[href$=
 assert.equal(contribution.document.querySelectorAll(".contribution-decision article").length, 4, "the page explains review, checks, and deployment");
 assert.equal(contribution.document.querySelector("#suggestionForm"), null, "the site no longer implies that browser-local suggestions reach maintainers");
 assert.match(contribution.document.querySelector(".contribution-options article:nth-child(3)").textContent, /issue optional/i, "small exact edits do not require a preliminary issue");
+assert.match(contribution.document.querySelector('.site-footer a[href$="/LICENSE"]').textContent, /MIT code/i, "the public footer identifies the software license");
+assert.match(contribution.document.querySelector('.site-footer a[href$="/CONTENT-LICENSE.md"]').textContent, /CC BY 4\.0 content/i, "the public footer identifies the editorial content license");
+
+const aboutLicensing = createLibrary("#/about");
+assert.match(aboutLicensing.document.querySelector(".editorial-note").textContent, /MIT License.*CC BY 4\.0/i, "the About page explains the dual-license model");
+assert.match(aboutLicensing.document.querySelector(".editorial-note").textContent, /publisher covers.*not relicensed/i, "the About page excludes third-party media from the project license");
 
 const curator = createLibrary("#/curator", {}, trustCatalogue);
 assert.ok(curator.document.querySelector(`[data-maintenance-resource="${thirdId}"]`), "the maintenance dashboard prioritizes broken resources from the deployed snapshot");
