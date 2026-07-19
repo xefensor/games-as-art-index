@@ -237,7 +237,7 @@ const youtubePlayer = youtubeDetail.document.querySelector(".resource-embed ifra
 assert.match(youtubePlayer.getAttribute("src"), /^https:\/\/www\.youtube-nocookie\.com\/embed\/U4FNBMZsqrY/, "the click-to-load player uses YouTube's privacy-enhanced embed domain");
 assert.equal(youtubePlayer.hasAttribute("allowfullscreen"), true, "embedded videos allow fullscreen playback");
 const attachedYoutubeDetail = createLibrary("#/resource/doom-postmortem");
-assert.equal(attachedYoutubeDetail.document.querySelector(".resource-actions .primary-action").getAttribute("href"), "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem", "the main resource action preserves the original publisher page");
+assert.equal(attachedYoutubeDetail.document.querySelector(".resource-actions .primary-action").getAttribute("href"), "https://www.gdcvault.com/play/1014627/Classic-Game-Postmortem", "the main resource action opens the official GDC Vault session page");
 assert.equal(attachedYoutubeDetail.document.querySelector(".resource-embed header a").getAttribute("href"), "https://www.youtube.com/watch?v=NnkCujnYNSo", "the embedded section links to the verified official video");
 attachedYoutubeDetail.document.querySelector("[data-load-youtube]").click();
 assert.match(attachedYoutubeDetail.document.querySelector(".resource-embed iframe").getAttribute("src"), /^https:\/\/www\.youtube-nocookie\.com\/embed\/NnkCujnYNSo/, "an attached official video uses the same privacy-enhanced player");

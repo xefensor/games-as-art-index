@@ -138,7 +138,7 @@ for (const collection of catalogue.collections) if (!fs.existsSync(path.join(out
 const resourceSample = read("pages-dist/resource/doom-postmortem/index.html");
 if (!resourceSample.includes("../../styles.css") || !resourceSample.includes('<meta name="gaa-site-root" content="../../">')) throw new Error("Nested resource assets are not relative to the Pages root");
 if (!resourceSample.includes('src="../../thumbnails/doom-postmortem.webp"') || !resourceSample.includes('href="../../browse/" data-index-route="/browse"')) throw new Error("Nested resource fallback content is not relative to the Pages root");
-if (!resourceSample.includes("Source: Game Developer / GDC · gamedeveloper.com")) throw new Error("Resource fallback source attribution is incomplete");
+if (!resourceSample.includes("Source: GDC Vault · gdcvault.com")) throw new Error("Resource fallback source attribution is incomplete");
 if (!resourceSample.includes(`${canonicalBase}resource/doom-postmortem/`) || !resourceSample.includes('type="application/ld+json"')) throw new Error("Resource route metadata is incomplete");
 const thumbnails = fs.readdirSync(path.join(output, "thumbnails")).filter(name => name.endsWith(".webp"));
 if (thumbnails.length !== Object.keys(thumbnailManifest.resources || {}).length) throw new Error("GitHub Pages thumbnail output is incomplete");

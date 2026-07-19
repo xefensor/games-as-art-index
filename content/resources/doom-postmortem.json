@@ -3,7 +3,7 @@
   "type": "Talk",
   "title": "Classic Game Postmortem: DOOM",
   "creator": "Tom Hall and John Romero",
-  "publisher": "Game Developer / GDC",
+  "publisher": "GDC Vault",
   "year": 2011,
   "length": "60 min",
   "access": "Free",
@@ -18,7 +18,7 @@
   ],
   "description": "Two original id Software designers reconstruct DOOM's development, showing early material and recounting the decisions that shaped the 1993 game.",
   "useful": "Useful when studying how a small team, technical constraints, and changing scope affected a landmark project.",
-  "url": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
+  "url": "https://www.gdcvault.com/play/1014627/Classic-Game-Postmortem",
   "embed": {
     "provider": "youtube",
     "videoId": "NnkCujnYNSo",
@@ -47,11 +47,16 @@
     "racing-the-beam",
     "prince-of-persia-postmortem"
   ],
-  "lastChecked": "2026-07-18",
+  "lastChecked": "2026-07-19",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-19",
+    "note": "The official GDC Vault page identifies the session as Classic Game Postmortem - DOOM, lists Tom Hall and John Romero as speakers, and marks it as free GDC 2011 content."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
-    "note": ""
+    "reviewedAt": "2026-07-19",
+    "note": "Updated to the official GDC Vault session page and verified the title, speakers, event year, track, and free access."
   }
 }

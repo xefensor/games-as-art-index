@@ -3,7 +3,7 @@
   "type": "Talk",
   "title": "Classic Game Postmortem: Prince of Persia",
   "creator": "Jordan Mechner",
-  "publisher": "Game Developer / GDC",
+  "publisher": "GDC Vault",
   "year": 2011,
   "length": "60 min",
   "access": "Free",
@@ -18,7 +18,7 @@
   ],
   "description": "Jordan Mechner looks back at four years of designing, programming, and animating Prince of Persia for the Apple II.",
   "useful": "A first-hand production history covering rotoscoped animation, solo development, influences, and scope.",
-  "url": "https://www.gamedeveloper.com/audio/video-postmortem-the-making-of-i-prince-of-persia-i-",
+  "url": "https://www.gdcvault.com/play/1014634/Classic-Game-Postmortem-PRINCE-OF",
   "image": "",
   "subjects": [
     "History",
@@ -41,11 +41,16 @@
     "spelunky-book",
     "racing-the-beam"
   ],
-  "lastChecked": "2026-07-18",
+  "lastChecked": "2026-07-19",
+  "manualLinkStatus": {
+    "status": "ok",
+    "checkedAt": "2026-07-19",
+    "note": "The official GDC Vault page identifies the session as Classic Game Postmortem: PRINCE OF PERSIA, lists Jordan Mechner as the speaker, and marks it as free GDC 2011 content."
+  },
   "addedAt": "2026-07-18",
   "editorial": {
     "status": "published",
-    "reviewedAt": "2026-07-18",
-    "note": ""
+    "reviewedAt": "2026-07-19",
+    "note": "Updated to the official GDC Vault session page and verified the title, speaker, event year, track, and free access."
   }
 }

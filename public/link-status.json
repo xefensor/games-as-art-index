@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T23:15:29.144Z",
+  "generatedAt": "2026-07-19T00:15:08.000Z",
   "resourceCount": 78,
   "complete": true,
   "summary": {
@@ -30,24 +30,28 @@
     {
       "id": "doom-postmortem",
       "title": "Classic Game Postmortem: DOOM",
-      "url": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
-      "finalUrl": "https://www.gamedeveloper.com/business/video-hall-and-romero-s-i-doom-i-postmortem",
+      "url": "https://www.gdcvault.com/play/1014627/Classic-Game-Postmortem",
+      "finalUrl": "https://www.gdcvault.com/play/1014627/Classic-Game-Postmortem",
       "status": "ok",
-      "httpStatus": 200,
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T23:14:52.994Z",
-      "durationMs": 4403
+      "checkedAt": "2026-07-19T00:15:08.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official GDC Vault page identifies the session as Classic Game Postmortem - DOOM, lists Tom Hall and John Romero as speakers, and marks it as free GDC 2011 content."
     },
     {
       "id": "prince-of-persia-postmortem",
       "title": "Classic Game Postmortem: Prince of Persia",
-      "url": "https://www.gamedeveloper.com/audio/video-postmortem-the-making-of-i-prince-of-persia-i-",
-      "finalUrl": "https://www.gamedeveloper.com/audio/video-postmortem-the-making-of-i-prince-of-persia-i-",
+      "url": "https://www.gdcvault.com/play/1014634/Classic-Game-Postmortem-PRINCE-OF",
+      "finalUrl": "https://www.gdcvault.com/play/1014634/Classic-Game-Postmortem-PRINCE-OF",
       "status": "ok",
-      "httpStatus": 200,
+      "httpStatus": null,
       "redirected": false,
-      "checkedAt": "2026-07-18T23:14:52.998Z",
-      "durationMs": 4405
+      "checkedAt": "2026-07-19T00:15:08.000Z",
+      "durationMs": 0,
+      "checkMethod": "manual",
+      "note": "The official GDC Vault page identifies the session as Classic Game Postmortem: PRINCE OF PERSIA, lists Jordan Mechner as the speaker, and marks it as free GDC 2011 content."
     },
     {
       "id": "doom-behind-music",
