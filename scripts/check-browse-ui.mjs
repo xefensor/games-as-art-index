@@ -63,6 +63,12 @@ assert.equal(Object.keys(thumbnailManifest.resources).length, catalogue.resource
 assert.ok(catalogue.resources.every(item => thumbnailManifest.resources[item.id]?.path), "every catalogue record resolves to a local thumbnail fallback");
 assert.ok([...initial.document.querySelectorAll(".resource-card .resource-cover img")].every(image => image.getAttribute("src").startsWith("/thumbnails/")), "all resource cards use the unified local thumbnail set");
 assert.match(initial.document.querySelector('[data-resource-id="doom-behind-music"] .resource-cover img').getAttribute("src"), /^\/thumbnails\//, "old externally hosted artwork is replaced by the unified thumbnail set");
+const firstCatalogueResource = catalogue.resources[0];
+const firstSourceHost = new URL(firstCatalogueResource.url).hostname.replace(/^www\./, "");
+assert.match(initial.document.querySelector(`[data-resource-id="${firstCatalogueResource.id}"] .card-source`).textContent, new RegExp(firstCatalogueResource.publisher.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "resource cards identify the publisher or channel");
+assert.match(initial.document.querySelector(`[data-resource-id="${firstCatalogueResource.id}"] .card-source`).textContent, new RegExp(firstSourceHost.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "resource cards identify the original host site");
+initial.document.querySelector("#openSearch").click();
+assert.ok([...initial.document.querySelectorAll(".search-result-copy small")].every(node => node.textContent.includes("Source:")), "global search results identify their source");
 assert.match(initial.document.querySelector("#browseStatus").textContent, new RegExp(`Showing 24 of ${catalogue.resources.length}`));
 initial.document.querySelector("[data-show-more]").click();
 assert.equal(initial.document.querySelectorAll(".resource-card").length, 48, "show more reveals the next 24 cards");
@@ -72,6 +78,8 @@ assert.equal(initial.document.querySelectorAll(".resource-list-item").length, 24
 assert.equal(initial.document.querySelectorAll(".resource-card").length, 0, "compact view replaces cards");
 assert.equal(initial.document.querySelectorAll(".resource-list-item .list-state").length, 24, "every compact row reserves the status column");
 assert.ok(initial.document.querySelector(".resource-list-item .list-state.is-empty"), "unmarked rows keep an invisible alignment placeholder");
+assert.equal(initial.document.querySelector(".resource-list-item .list-source dt").textContent, "Source", "compact rows expose a dedicated source field");
+assert.match(initial.document.querySelector(".resource-list-item .list-source").textContent, new RegExp(firstCatalogueResource.publisher.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "compact rows show the publisher or channel");
 assert.equal(initial.location.pathname, "/browse/", "compact view remains on the clean browse path");
 assert.equal(initial.location.search, "?view=list", "compact view is reflected in the query string");
 assert.equal(initial.values.get("gaa-browse-view"), '"list"', "compact preference is saved locally");
@@ -104,6 +112,8 @@ assert.equal(firstCleanLink.getAttribute("href"), `/resource/${firstId}/`, "rend
 assert.equal(firstCleanLink.dataset.indexRoute, `/resource/${firstId}`, "clean links retain their client-side route target");
 const directResource = createLibrary(`/resource/${firstId}/`);
 assert.match(directResource.document.querySelector(".resource-intro h1").textContent, new RegExp(catalogue.resources[0].title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "a resource renders when loaded directly from its clean path");
+assert.match(directResource.document.querySelector(".resource-byline").textContent, /Source:/, "resource pages label their original source explicitly");
+assert.match(directResource.document.querySelector(".resource-byline").textContent, new RegExp(firstSourceHost.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), "resource pages show the original host site");
 directResource.document.querySelector('.breadcrumb a[data-index-route="/browse"]').click();
 assert.equal(directResource.location.pathname, "/browse/", "client navigation changes the clean pathname without a reload");
 const visited = createLibrary(`#/resource/${firstId}`);
@@ -164,6 +174,7 @@ assert.ok(blowCollection.resources.every(id => catalogue.resources.some(item => 
 const blowCollectionPage = createLibrary("#/collection/jonathan-blow");
 assert.match(blowCollectionPage.document.querySelector(".collection-hero h1").textContent, /Jonathan Blow/);
 assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .resource-card").length, 10, "the Jonathan Blow collection renders every resource");
+assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .card-source").length, 10, "collection entries identify every resource source");
 assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .direct-control").length, 10, "every collection entry can open its original source directly");
 
 const generalHome = createLibrary("#/");

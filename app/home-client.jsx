@@ -31,8 +31,8 @@ export default function HomeClient() {
       document.body.appendChild(script);
     });
 
-    loadScript("/data.js?v=index-11", "data")
-      .then(() => loadScript("/app.js?v=index-11", "app"))
+    loadScript("/data.js?v=index-12", "data")
+      .then(() => loadScript("/app.js?v=index-12", "app"))
       .catch((error) => {
         window.__GAA_RUNTIME_LOADING__ = false;
         console.error("Games as Art failed to initialize", error);
