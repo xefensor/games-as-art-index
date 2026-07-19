@@ -1,7 +1,7 @@
 {
   "id": "history-from-sources",
-  "title": "Game history from primary sources",
-  "description": "Postmortems, code, archives, and platform studies for evidence-led historical work.",
+  "title": "Studying game history from evidence",
+  "description": "Build historical arguments from first-hand postmortems, source code, archives, hardware constraints, and carefully researched platform studies.",
   "color": "green",
   "resources": [
     "doom-postmortem",

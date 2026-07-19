@@ -1,13 +1,13 @@
 {
   "id": "first-project",
-  "title": "Finish a first project",
-  "description": "Engine instruction, scope advice, accessibility, and a sustainable route from prototype to release.",
+  "title": "Build and finish your first game",
+  "description": "Start with either the Godot or Unity starter course, then use the scope, production, accessibility, and release guidance to finish a small playable project.",
   "color": "violet",
   "resources": [
+    "finishing-a-game",
     "godot-first-2d",
     "unity-create-code",
-    "finishing-a-game",
-    "playful-production",
-    "gaming-accessibility-fundamentals"
+    "gaming-accessibility-fundamentals",
+    "playful-production"
   ]
 }

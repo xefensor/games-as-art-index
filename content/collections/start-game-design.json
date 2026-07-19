@@ -1,7 +1,7 @@
 {
   "id": "start-game-design",
-  "title": "Start studying game design",
-  "description": "A practical route from basic vocabulary to playtesting, analysis, and a first design process.",
+  "title": "Game design fundamentals",
+  "description": "Build a working vocabulary for mechanics and player experience, then move through prototyping, playtesting, feedback, and reflective design practice.",
   "color": "red",
   "resources": [
     "elements-game-design",

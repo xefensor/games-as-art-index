@@ -1,13 +1,13 @@
 {
   "id": "level-and-space",
-  "title": "Design levels that teach",
-  "description": "Learn how routes, landmarks, architecture, difficulty, and repetition guide a player through space.",
+  "title": "Teaching through level design",
+  "description": "Study how movement verbs, routes, landmarks, architecture, difficulty, and environmental pacing teach players without constant explanation.",
   "color": "gold",
   "resources": [
+    "designing-celeste",
+    "witness-architecture",
     "architectural-level-design",
     "valve-level-design",
-    "witness-architecture",
-    "designing-celeste",
     "designing-journey"
   ]
 }

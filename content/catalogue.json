@@ -44,14 +44,14 @@
   },
   "collectionOrder": [
     "start-game-design",
-    "level-and-space",
-    "sound-and-music",
-    "history-from-sources",
     "first-project",
-    "technical-foundations",
-    "games-critically",
+    "level-and-space",
     "narrative-design",
+    "sound-and-music",
     "inclusive-design",
+    "technical-foundations",
+    "history-from-sources",
+    "games-critically",
     "jonathan-blow"
   ],
   "resourceOrder": [

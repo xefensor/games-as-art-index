@@ -45,8 +45,8 @@
   "collections": [
     {
       "id": "start-game-design",
-      "title": "Start studying game design",
-      "description": "A practical route from basic vocabulary to playtesting, analysis, and a first design process.",
+      "title": "Game design fundamentals",
+      "description": "Build a working vocabulary for mechanics and player experience, then move through prototyping, playtesting, feedback, and reflective design practice.",
       "color": "red",
       "resources": [
         "elements-game-design",
@@ -57,62 +57,75 @@
       ]
     },
     {
+      "id": "first-project",
+      "title": "Build and finish your first game",
+      "description": "Start with either the Godot or Unity starter course, then use the scope, production, accessibility, and release guidance to finish a small playable project.",
+      "color": "violet",
+      "resources": [
+        "finishing-a-game",
+        "godot-first-2d",
+        "unity-create-code",
+        "gaming-accessibility-fundamentals",
+        "playful-production"
+      ]
+    },
+    {
       "id": "level-and-space",
-      "title": "Design levels that teach",
-      "description": "Learn how routes, landmarks, architecture, difficulty, and repetition guide a player through space.",
+      "title": "Teaching through level design",
+      "description": "Study how movement verbs, routes, landmarks, architecture, difficulty, and environmental pacing teach players without constant explanation.",
       "color": "gold",
       "resources": [
+        "designing-celeste",
+        "witness-architecture",
         "architectural-level-design",
         "valve-level-design",
-        "witness-architecture",
-        "designing-celeste",
         "designing-journey"
       ]
     },
     {
+      "id": "narrative-design",
+      "title": "Writing and procedural narrative",
+      "description": "Start with the affordances of digital narrative, then study collaborative writing, interactive-fiction practice, systemic story structures, and procedural generation.",
+      "color": "violet",
+      "resources": [
+        "hamlet-holodeck",
+        "game-writing",
+        "emily-short-blog",
+        "narrative-legos",
+        "procedural-storytelling"
+      ]
+    },
+    {
       "id": "sound-and-music",
-      "title": "Build game audio deliberately",
-      "description": "Move from listening and composition principles to implementation, procedural sound, and production assets.",
+      "title": "Game audio in practice",
+      "description": "Move from interactive-audio fundamentals into engine implementation, adaptive music, sound synthesis, and production-ready source material.",
       "color": "blue",
       "resources": [
-        "composers-guide-game-music",
         "game-audio-tutorial",
+        "game-audio-implementation",
+        "composers-guide-game-music",
         "doom-behind-music",
         "designing-sound",
         "sonniss-gdc-audio"
       ]
     },
     {
-      "id": "history-from-sources",
-      "title": "Game history from primary sources",
-      "description": "Postmortems, code, archives, and platform studies for evidence-led historical work.",
+      "id": "inclusive-design",
+      "title": "Designing accessible games",
+      "description": "Learn how disabled players encounter games, translate barriers into design patterns, apply detailed guidelines, test decisions, and build inclusion into production.",
       "color": "green",
       "resources": [
-        "doom-postmortem",
-        "prince-of-persia-postmortem",
-        "id-source-code",
-        "vghf-library",
-        "racing-the-beam",
-        "i-am-error"
-      ]
-    },
-    {
-      "id": "first-project",
-      "title": "Finish a first project",
-      "description": "Engine instruction, scope advice, accessibility, and a sustainable route from prototype to release.",
-      "color": "violet",
-      "resources": [
-        "godot-first-2d",
-        "unity-create-code",
-        "finishing-a-game",
-        "playful-production",
-        "gaming-accessibility-fundamentals"
+        "gaming-accessibility-fundamentals",
+        "accessible-player-experiences",
+        "accessibility-guidelines",
+        "xbox-accessibility-guidelines",
+        "inclusive-game-design-paper"
       ]
     },
     {
       "id": "technical-foundations",
-      "title": "Strengthen technical foundations",
-      "description": "A progressive route through game architecture, simulation, shaders, and real-time rendering.",
+      "title": "Game programming foundations",
+      "description": "Progress from reusable code structure and deterministic simulation to shaders, engine rendering, real-time graphics, and physically based light transport.",
       "color": "blue",
       "resources": [
         "game-programming-patterns",
@@ -124,9 +137,23 @@
       ]
     },
     {
+      "id": "history-from-sources",
+      "title": "Studying game history from evidence",
+      "description": "Build historical arguments from first-hand postmortems, source code, archives, hardware constraints, and carefully researched platform studies.",
+      "color": "green",
+      "resources": [
+        "doom-postmortem",
+        "prince-of-persia-postmortem",
+        "id-source-code",
+        "vghf-library",
+        "racing-the-beam",
+        "i-am-error"
+      ]
+    },
+    {
       "id": "games-critically",
-      "title": "Write and think about games",
-      "description": "A reading path for criticism that connects close attention, history, culture, and procedural argument.",
+      "title": "Writing game criticism",
+      "description": "Move from writing closely about individual games to academic research, critical play, procedural rhetoric, and culturally situated design.",
       "color": "red",
       "resources": [
         "how-talk-videogames",
@@ -137,44 +164,17 @@
       ]
     },
     {
-      "id": "narrative-design",
-      "title": "Design interactive stories",
-      "description": "Begin with the distinctive properties of digital narrative, then study writing, systems, and procedural structures.",
-      "color": "violet",
-      "resources": [
-        "hamlet-holodeck",
-        "game-writing",
-        "emily-short-blog",
-        "narrative-legos",
-        "procedural-storytelling"
-      ]
-    },
-    {
-      "id": "inclusive-design",
-      "title": "Make games more accessible",
-      "description": "A production-ready sequence of foundations, design patterns, platform guidance, and team resources.",
-      "color": "green",
-      "resources": [
-        "gaming-accessibility-fundamentals",
-        "accessible-player-experiences",
-        "accessibility-guidelines",
-        "xbox-accessibility-guidelines",
-        "inclusive-game-design-paper"
-      ]
-    },
-    {
       "id": "jonathan-blow",
-      "title": "Jonathan Blow—from Braid to The Witness",
-      "description": "Follow Blow's work from early independent prototyping through Braid's rewind system, his design philosophy, and the long development of The Witness.",
+      "title": "Jonathan Blow: design philosophy",
+      "description": "Trace Blow's ideas about discovery, truth, rules, and artistic responsibility, then see how those commitments shaped Braid, The Witness, and his approach to long-form creative work.",
       "color": "gold",
       "resources": [
         "blow-indie-prototyping",
-        "braid-rewind-implementation",
         "blow-truth-game-design",
-        "witness-architecture",
-        "witness-audio",
         "blow-medium-is-message",
         "blow-design-deep-games",
+        "braid-rewind-implementation",
+        "witness-architecture",
         "witness-music",
         "witness-science-language-reality",
         "witness-dev-archive"

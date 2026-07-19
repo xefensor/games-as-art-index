@@ -1,7 +1,7 @@
 {
   "id": "inclusive-design",
-  "title": "Make games more accessible",
-  "description": "A production-ready sequence of foundations, design patterns, platform guidance, and team resources.",
+  "title": "Designing accessible games",
+  "description": "Learn how disabled players encounter games, translate barriers into design patterns, apply detailed guidelines, test decisions, and build inclusion into production.",
   "color": "green",
   "resources": [
     "gaming-accessibility-fundamentals",

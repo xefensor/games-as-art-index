@@ -1,11 +1,12 @@
 {
   "id": "sound-and-music",
-  "title": "Build game audio deliberately",
-  "description": "Move from listening and composition principles to implementation, procedural sound, and production assets.",
+  "title": "Game audio in practice",
+  "description": "Move from interactive-audio fundamentals into engine implementation, adaptive music, sound synthesis, and production-ready source material.",
   "color": "blue",
   "resources": [
-    "composers-guide-game-music",
     "game-audio-tutorial",
+    "game-audio-implementation",
+    "composers-guide-game-music",
     "doom-behind-music",
     "designing-sound",
     "sonniss-gdc-audio"

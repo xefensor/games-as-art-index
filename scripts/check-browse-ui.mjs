@@ -169,13 +169,21 @@ const collectionIndex = createLibrary("#/collections", { "gaa-library-queue": gu
 assert.match(collectionIndex.document.querySelector(".collection-card .collection-progress small").textContent, /1 of .* finished/i, "collection cards expose local completion progress");
 
 const blowCollection = catalogue.collections.find(item => item.id === "jonathan-blow");
-assert.equal(blowCollection.resources.length, 10, "the Jonathan Blow collection contains the complete curated sequence");
+assert.match(blowCollection.title, /design philosophy/i, "the Jonathan Blow path has a specific intellectual focus");
+assert.equal(blowCollection.resources.length, 9, "the Jonathan Blow path keeps a focused nine-resource sequence");
+assert.ok(!blowCollection.resources.includes("witness-audio"), "the Jonathan Blow path excludes production material that does not support its design-philosophy focus");
 assert.ok(blowCollection.resources.every(id => catalogue.resources.some(item => item.id === id)), "every Jonathan Blow collection entry resolves to a catalogue record");
 const blowCollectionPage = createLibrary("#/collection/jonathan-blow");
 assert.match(blowCollectionPage.document.querySelector(".collection-hero h1").textContent, /Jonathan Blow/);
-assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .resource-card").length, 10, "the Jonathan Blow collection renders every resource");
-assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .card-source").length, 10, "collection entries identify every resource source");
-assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .direct-control").length, 10, "every collection entry can open its original source directly");
+assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .resource-card").length, 9, "the Jonathan Blow path renders every resource");
+assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .card-source").length, 9, "path entries identify every resource source");
+assert.equal(blowCollectionPage.document.querySelectorAll(".collection-sequence .direct-control").length, 9, "every path entry can open its original source directly");
+const audioCollection = catalogue.collections.find(item => item.id === "sound-and-music");
+assert.ok(audioCollection.resources.includes("game-audio-implementation"), "the game-audio path includes a dedicated implementation resource");
+const historyCollection = catalogue.collections.find(item => item.id === "history-from-sources");
+assert.match(historyCollection.title, /history from evidence/i, "the history path accurately describes its mix of primary and secondary evidence");
+const firstProjectCollection = catalogue.collections.find(item => item.id === "first-project");
+assert.match(firstProjectCollection.description, /either the Godot or Unity starter course/i, "the first-game path makes its engine alternatives explicit");
 
 const generalHome = createLibrary("#/");
 assert.equal(generalHome.document.querySelector(".personal-home"), null, "the first-visit homepage remains general without local signals");
